@@ -13,129 +13,129 @@ msgstr ""
 "POT-Creation-Date: 2020-07-07 12:45+0200\n"
 "PO-Revision-Date: 2020-07-07 10:45+0000\n"
 "Last-Translator: Xfce Bot <transifex@xfce.org>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/xfce/libxfce4ui/language/uk/)\n"
+"Language-Team: Ukrainian (http://www.transifex.com/xfce/libexpidus1ui/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: uk\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Не можу відкрити переглядач для документації онлайн"
 
-#: ../libxfce4ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Ви бажаєте переглянути документацію по %s онлайн?"
 
-#: ../libxfce4ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Ви бажаєте переглянути документацію онлайн?"
 
-#: ../libxfce4ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Вас буде скеровано до веб-сторінки з документацією, що містить допомогу і її переклади."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_Скасувати"
 
-#: ../libxfce4ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/xfce-dialogs.c:277
 msgid "_Read Online"
 msgstr "_Переглянути онлайн"
 
-#: ../libxfce4ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "_Завжди переходити безпосередньо до документації онлайн"
 
-#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
-#: ../libxfce4ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
+#: ../libexpidus1ui/xfce-dialogs.c:406
 msgid "Close"
 msgstr "Закрити"
 
-#: ../libxfce4ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/xfce-dialogs.c:453
 msgid "No"
 msgstr "Ні"
 
-#: ../libxfce4ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/xfce-dialogs.c:455
 msgid "Yes"
 msgstr "Так"
 
-#: ../libxfce4ui/xfce-dialogs.c:459
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/xfce-dialogs.c:459
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Закрити вікно з декількома вкладками?"
 
-#: ../libxfce4ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Це вікно має декілька відкритих вкладок. Закриття цього вікна призведе до закриття всіх його вкладок."
 
-#: ../libxfce4ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Це вікно має %d відкритих вкладок. Закриття цього вікна призведе до закриття всіх його вкладок."
 
-#: ../libxfce4ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/xfce-dialogs.c:529
 msgid "Warning"
 msgstr "Попередження"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Закрити вк_ладку"
 
-#: ../libxfce4ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "Закрити _вікно"
 
-#: ../libxfce4ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "_Не питати надалі"
 
-#: ../libxfce4ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/xfce-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "ID клієнта менеджера сесії"
 
-#: ../libxfce4ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/xfce-sm-client.c:1427
 msgid "ID"
 msgstr "ІН"
 
-#: ../libxfce4ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/xfce-sm-client.c:1428
 msgid "Disable session management"
 msgstr "Відключення менеджера сесії"
 
-#: ../libxfce4ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/xfce-sm-client.c:1438
 msgid "Session management options"
 msgstr "Властивості менеджера сесії"
 
-#: ../libxfce4ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/xfce-sm-client.c:1439
 msgid "Show session management options"
 msgstr "Показати властивості менеджера сесії"
 
-#: ../libxfce4ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/xfce-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Не вдалось з'єднатись з менеджером сеансів: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/xfce-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Менеджер сеансів не повернув правильного ІН клієнта"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:423
+#: ../libexpidus1ui/xfce-spawn.c:423
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -143,53 +143,53 @@ msgid ""
 msgstr "Робоча тека \"%s\" не існує. Вона не буде використовуватися, поки створюється \"%s\"."
 
 #. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "Ім'я файлу не може містити символ розділювача тек"
 
 #. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/xfce-filename-input.c:422
 msgid "Filename is too long"
 msgstr "Ім'я файлу занадто довге"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "Ім'я файлу не повинно починатись і закінчуватись пробілами"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "Цей запускач вже використовувався для іншої команди '%s'. Яку дію ви бажаєте використати?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Використовувати '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "Зберегти '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "Цей запускач вже використовувався для іншої команди '%s'. Яку дію ви бажаєте використати?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -198,375 +198,375 @@ msgstr "Цей запускач вже використовувався для �
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Будь ласка, використайте іншу комбінацію клавіш"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "%s вже відповідає за цю дію."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Конфліктуючі дії для %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "Цей запускач вже використовується для чогось іншого."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Комбінації клавіш дій віконного менеджера"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr "дія"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Комбінація клавіш для команди"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr "команда"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Комбінація клавіш"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "Очистити"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Неможливо захопити клавіатуру."
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
 msgstr "Меню операцій з вікнами"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
 msgstr "Вгору"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
 msgstr "Вниз"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
 msgstr "Зліва"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Справа"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
 msgstr "Перемикати вікна"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Перемикання вікон (Зворотнє)"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
 msgstr "Перемикати вікна однієї програми"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
 msgstr "Перемикати програми"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
 msgstr "Закрити вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
 msgstr "Розгорнути вікно по горизонталі"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
 msgstr "Розгорнути вікно по вертикалі"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
 msgstr "Розгорнути вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
 msgstr "Приховати вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
 msgstr "Перемістити вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
 msgstr "Змінити розмір вікна"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
 msgstr "Згорнути вікно у заголовок"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
 msgstr "Приліпити вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
 msgstr "Підняти вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
 msgstr "Опустити вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
 msgstr "Підняти або опустити вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
 msgstr "Заповнити вікно"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
 msgstr "Заповнити вікно по горизонталі"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
 msgstr "Заповнити вікно по вертикалі"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
 msgstr "Вікно згори"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
 msgstr "Повноекранний режим"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
 msgstr "Перемістити вікно на верхню робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
 msgstr "Перемістити вікно на нижню робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
 msgstr "Перемістити вікно на ліву робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
 msgstr "Перемістити вікно на праву робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
 msgstr "Перемістити вікно на попередню робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
 msgstr "Перемістити вікно на наступну робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
 msgstr "Перемістити вікно на робочу область 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
 msgstr "Перемістити вікно на робочу область 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
 msgstr "Перемістити вікно на робочу область 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
 msgstr "Перемістити вікно на робочу область 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
 msgstr "Перемістити вікно на робочу область 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
 msgstr "Перемістити вікно на робочу область 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
 msgstr "Перемістити вікно на робочу область 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
 msgstr "Перемістити вікно на робочу область 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
 msgstr "Перемістити вікно на робочу область 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
 msgstr "Перемістити вікно на робочу область 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
 msgstr "Перемістити вікно на робочу область 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
 msgstr "Перемістити вікно на робочу область 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
 msgstr "Перемістити вікно догори"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
 msgstr "Перемістити вікно донизу"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
 msgstr "Перемістити вікно ліворуч"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
 msgstr "Перемістити вікно праворуч"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
 msgstr "Перемістити вікно вверх ліворуч"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
 msgstr "Перемістити вікно вверх праворуч"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
 msgstr "Перемістити вікно вниз ліворуч"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
 msgstr "Перемістити вікно вниз праворуч"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "Показати стільницю"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
 msgstr "Верхня робоча область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
 msgstr "Нижня робоча область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
 msgstr "Ліва робоча область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
 msgstr "Права робоча область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
 msgstr "Попередня робоча область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
 msgstr "Наступна робоча область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
 msgstr "Робоча область 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
 msgstr "Робоча область 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
 msgstr "Робоча область 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
 msgstr "Робоча область 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
 msgstr "Робоча область 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
 msgstr "Робоча область 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
 msgstr "Робоча область 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
 msgstr "Робоча область 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
 msgstr "Робоча область 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
 msgstr "Робоча область 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
 msgstr "Робоча область 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
 msgstr "Робоча область 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
 msgstr "Додати робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
 msgstr "Додати суміжну робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
 msgstr "Видалити останню робочу область"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
 msgstr "Видалити активну робочу область"
 
-#: ../glade/libxfce4ui-2.xml.in.h:1
+#: ../glade/libexpidus1ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Відображуваний діалог"
 
-#: ../glade/libxfce4ui-2.xml.in.h:2
+#: ../glade/libexpidus1ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Підзаголовок"
 
-#: ../glade/libxfce4ui-2.xml.in.h:3
+#: ../glade/libexpidus1ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Віджети Xfce 4"
 
@@ -666,7 +666,7 @@ msgstr ""
 #: ../xfce4-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
 msgstr ""
 
 #: ../xfce4-about/main.c:333
@@ -681,20 +681,20 @@ msgstr "Всі права на Xfce 4 належать до Olivier Fourdan (fou
 
 #: ../xfce4-about/main.c:355
 msgid ""
-"The libxfce4ui, libxfce4util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Пакунки libxfce4ui, libxfcegui4 і exo розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
+msgstr "Пакунки libexpidus1ui, libxfcegui4 і exo розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
 
 #: ../xfce4-about/main.c:362
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
+"xfce4-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Пакунки thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop і xfwm4 розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
+msgstr "Пакунки thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, esconf, xfdesktop і xfwm4 розповсюджуються згідно умов GNU Library General Public License, виданою Free Software Foundation; або версії 2 цієї ліцензії, або (на Ваш розгляд) будь-якої пізнішої версії."
 
 #: ../xfce4-about/main.c:509
 #, c-format
@@ -876,5 +876,5 @@ msgid "Failed to migrate the old panel configuration"
 msgstr "Не вдалось провести міграцію старої конфігурації панелі"
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
-msgid "Customize settings stored by Xfconf"
-msgstr "Змінити налаштування, збережені за допомогою Xfconf"
+msgid "Customize settings stored by Esconf"
+msgstr "Змінити налаштування, збережені за допомогою Esconf"

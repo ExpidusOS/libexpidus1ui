@@ -11,129 +11,129 @@ msgstr ""
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
 "PO-Revision-Date: 2021-01-08 11:23+0000\n"
 "Last-Translator: Priit Jõerüüt <transifex@joeruut.com>\n"
-"Language-Team: Estonian (http://www.transifex.com/xfce/libxfce4ui/language/et/)\n"
+"Language-Team: Estonian (http://www.transifex.com/xfce/libexpidus1ui/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: et\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Veebibrauseri avamine veebis asuvate juhendite lugemiseks ei õnnestunud"
 
-#: ../libxfce4ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Kas sa soovid lugeda %s juhendit veebis?"
 
-#: ../libxfce4ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Kas sa soovid lugeda juhendit veebis?"
 
-#: ../libxfce4ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Sind suunatakse edasi meie dokumentatsiooni veebisaiti, kus juhendeid ja abiteavet hallatakse ja tõlgitakse. Enamus materjale on inglise keeles."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_Loobu"
 
-#: ../libxfce4ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/xfce-dialogs.c:277
 msgid "_Read Online"
 msgstr "_Loe veebis"
 
-#: ../libxfce4ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "_Alati mine veebis leiduvate kasutusjuhendite juurde"
 
-#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
-#: ../libxfce4ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
+#: ../libexpidus1ui/xfce-dialogs.c:406
 msgid "Close"
 msgstr "Sulge"
 
-#: ../libxfce4ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/xfce-dialogs.c:453
 msgid "No"
 msgstr "Ei"
 
-#: ../libxfce4ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/xfce-dialogs.c:455
 msgid "Yes"
 msgstr "Jah"
 
-#: ../libxfce4ui/xfce-dialogs.c:459
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/xfce-dialogs.c:459
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "Loobu"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Kas sulgen mitme kaardiga akna?"
 
-#: ../libxfce4ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Selles aknas on avatud mitu kaarti. Akna sulgemine sulgeb ka kõik kaardid."
 
-#: ../libxfce4ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Selles aknas on avatud %d kaart(i). Akna sulgemine sulgeb ka kõik selle kaardid."
 
-#: ../libxfce4ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/xfce-dialogs.c:529
 msgid "Warning"
 msgstr "Hoiatus"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Sulge _kaart"
 
-#: ../libxfce4ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "Sulge _aken"
 
-#: ../libxfce4ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "Ära küsi mi_nult uuesti"
 
-#: ../libxfce4ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/xfce-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "Klienditunnus sessioonihalduses"
 
-#: ../libxfce4ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/xfce-sm-client.c:1427
 msgid "ID"
 msgstr "Tunnus"
 
-#: ../libxfce4ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/xfce-sm-client.c:1428
 msgid "Disable session management"
 msgstr "Lülita sessioonihaldus välja"
 
-#: ../libxfce4ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/xfce-sm-client.c:1438
 msgid "Session management options"
 msgstr "Sessioonihalduse valikud"
 
-#: ../libxfce4ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/xfce-sm-client.c:1439
 msgid "Show session management options"
 msgstr "Näita sessioonihalduse valikuid"
 
-#: ../libxfce4ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/xfce-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Ei õnnestunud ühendust saada sessioonihalduriga: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/xfce-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Sessioonihaldur ei leidnud kehtivat klienditunnust"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:400
+#: ../libexpidus1ui/xfce-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -141,53 +141,53 @@ msgid ""
 msgstr "Töökausta \"%s\" pole olemas. Seega teda ei kasutata \"%s\" käivitamisel."
 
 #. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "Kaustade eraldaja ei tohi sisalduda faili nimes"
 
 #. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/xfce-filename-input.c:422
 msgid "Filename is too long"
 msgstr "Faili nimi on liiga pikk"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "Faili nimi ei tohi alata ega lõppeda tühikuga"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "Seda kiirklahvi juba kasutatakse '%s' tegevuse jaoks. Mis tegevuse jaoks sa soovid seda kasutada?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Kasuta '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "Hoia '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "Seda kiirklahvi juba kasutatakse '%s' käsu jaoks. Mis tegevuse jaoks sa soovid seda kasutada?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -196,375 +196,375 @@ msgstr "Seda kiirklahvi juba kasutatakse '%s' tegevuse poolt. Mis tegevuse jaoks
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Palun kasuta teistsugust klahvikombiatsiooni."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "%s juba käivitab selle tegevuse."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Vastuolulised tegevused %s jaoks"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "Seda kiirklahvi juba kasutatakse millegi muu jaoks."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Aknahalduri tegevuste kiirklahv"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr "tegevus"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Käskude kiirklahv"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr "käsk"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Kiirklahv"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "Puhasta"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr "%s '%s' käivitamiseks vajuta klahve klaviatuuril."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr "Vajuta üht klahvi"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Ei õnnestunud klahvivajutust fikseerida."
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
 msgstr "Aknatoimingute menüü"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
 msgstr "Üles"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
 msgstr "Alla"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
 msgstr "Vasak"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "Parem"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
 msgstr "Lappa aknaid läbi"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Lappa aknaid läbi (tagurpidi)"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
 msgstr "Vaheta ühe rakenduse aknaid"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
 msgstr "Vaheta rakendust"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
 msgstr "Sulge aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
 msgstr "Suurenda akent horisontaalselt"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
 msgstr "Suurenda akent vertikaalselt"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
 msgstr "Suurenda aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
 msgstr "Peida aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
 msgstr "Liiuta akent"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
 msgstr "Muuda akna suurust"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
 msgstr "Varja aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
 msgstr "Kleebi aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
 msgstr "Tõsta aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
 msgstr "Langeta aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
 msgstr "Tõsta või langeta aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
 msgstr "Täida aken"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
 msgstr "Täida aken horisontaalselt"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
 msgstr "Täida aken vertikaalselt"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
 msgstr "Klõpsi üles"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
 msgstr "Lülita täisekraanivaadet"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
 msgstr "Saada aken ülemisse tööruumi"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
 msgstr "Saada aken alumisse tööruumi"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
 msgstr "Saada aken vasakpoolsesse tööruumi"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
 msgstr "Saada aken parempoolsesse tööruumi"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
 msgstr "Saada aken eelmisesse tööruumi"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
 msgstr "Saada aken järgmisesse tööruumi"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
 msgstr "Saada aken tööruumi 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
 msgstr "Saada aken tööruumi 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
 msgstr "Saada aken tööruumi 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
 msgstr "Saada aken tööruumi 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
 msgstr "Saada aken tööruumi 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
 msgstr "Saada aken tööruumi 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
 msgstr "Saada aken tööruumi 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
 msgstr "Saada aken tööruumi 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
 msgstr "Saada aken tööruumi 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
 msgstr "Saada aken tööruumi 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
 msgstr "Saada aken tööruumi 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
 msgstr "Saada aken tööruumi 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
 msgstr "Paani aken üles"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
 msgstr "Paani aken alla"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
 msgstr "Paani aken vasakule"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
 msgstr "Paani aken paremale"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
 msgstr "Paani aken üles vasakule"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
 msgstr "Paani aken üles paremale"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
 msgstr "Paani aken alla vasakule"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
 msgstr "Paani aken alla paremale"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "Näita töölauda"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
 msgstr "Ülemine töölaud"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
 msgstr "Alumine töölaud"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
 msgstr "Vasak töölaud"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
 msgstr "Parem töölaud"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
 msgstr "Eelmine töölaud"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
 msgstr "Järgmine töölaud"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
 msgstr "Tööruum 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
 msgstr "Tööruum 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
 msgstr "Tööruum 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
 msgstr "Tööruum 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
 msgstr "Tööruum 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
 msgstr "Tööruum 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
 msgstr "Tööruum 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
 msgstr "Tööruum 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
 msgstr "Tööruum 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
 msgstr "Tööruum 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
 msgstr "Tööruum 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
 msgstr "Tööruum 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
 msgstr "Lisa tööruum"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
 msgstr "Lisa külgnev tööruum"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
 msgstr "Kustuta viimane tööruum"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
 msgstr "Kustuta aktiivne tööruum"
 
-#: ../glade/libxfce4ui-2.xml.in.h:1
+#: ../glade/libexpidus1ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "Pealkirjaga dialoogiaken"
 
-#: ../glade/libxfce4ui-2.xml.in.h:2
+#: ../glade/libexpidus1ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "Subtiiter"
 
-#: ../glade/libxfce4ui-2.xml.in.h:3
+#: ../glade/libexpidus1ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 vidinad"
 
@@ -672,8 +672,8 @@ msgstr "Lisateavet leiad <https://www.xfce.org/about/credits>"
 #: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
-msgstr "Kui sa tead kedagi, kes on siit loendist puudu, siis ära kõhkle esitamast veateadet meie arendussaidis <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
+"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+msgstr "Kui sa tead kedagi, kes on siit loendist puudu, siis ära kõhkle esitamast veateadet meie arendussaidis <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
 
 #: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -687,20 +687,20 @@ msgstr "Xfce 4 autoriõigused kuuluvad Olivier Fourdan'ile (fourdan@xfce.org). E
 
 #: ../xfce4-about/main.c:326
 msgid ""
-"The libxfce4ui, libxfce4util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Libxfce4ui, libxfce4util ja exo teegid on avaldatud Vaba Tarkvara Fondi GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
+msgstr "Libxfce4ui, libexpidus1util ja exo teegid on avaldatud Vaba Tarkvara Fondi GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
 #: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
+"xfce4-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Rakendused thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop ja xfwm4 on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU GPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
+msgstr "Rakendused thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, esconf, xfdesktop ja xfwm4 on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU GPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
 #: ../xfce4-about/main.c:479
 #, c-format
@@ -892,5 +892,5 @@ msgid "Failed to migrate the old panel configuration"
 msgstr "Riba vanade sätete ülekandmine ebaõnnestus"
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
-msgid "Customize settings stored by Xfconf"
-msgstr "Kohanda Xfconf'i salvestatud seadistusi"
+msgid "Customize settings stored by Esconf"
+msgstr "Kohanda Esconf'i salvestatud seadistusi"

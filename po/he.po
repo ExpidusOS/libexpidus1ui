@@ -17,129 +17,129 @@ msgstr ""
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
 "PO-Revision-Date: 2020-12-26 11:58+0000\n"
 "Last-Translator: Elishai Eliyahu <elishai@mailfence.com>\n"
-"Language-Team: Hebrew (http://www.transifex.com/xfce/libxfce4ui/language/he/)\n"
+"Language-Team: Hebrew (http://www.transifex.com/xfce/libexpidus1ui/language/he/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: he\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/xfce-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "נכשל לפתוח דפדפן רשת עבור תיעוד מקוון"
 
-#: ../libxfce4ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/xfce-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "האם ברצונך לקרוא את מדריך %s אונליין?"
 
-#: ../libxfce4ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/xfce-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "האם ברצונך לקרוא את המדריך אונליין?"
 
-#: ../libxfce4ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/xfce-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "המערכת תפנה אותך אל אתר רשת תיעוד היכן שעמודי עזרה הינם מתוחזקים ומתורגמים."
 
 #. Create cancel button
-#: ../libxfce4ui/xfce-dialogs.c:275 ../libxfce4ui/xfce-dialogs.c:533
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_ביטול"
 
-#: ../libxfce4ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/xfce-dialogs.c:277
 msgid "_Read Online"
 msgstr "קרא _אונליין"
 
-#: ../libxfce4ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/xfce-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "_המשך ישירות תמיד אל התיעוד המקוון"
 
-#: ../libxfce4ui/xfce-dialogs.c:335 ../libxfce4ui/xfce-dialogs.c:370
-#: ../libxfce4ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
+#: ../libexpidus1ui/xfce-dialogs.c:406
 msgid "Close"
 msgstr "סגור"
 
-#: ../libxfce4ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/xfce-dialogs.c:453
 msgid "No"
 msgstr "לא"
 
-#: ../libxfce4ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/xfce-dialogs.c:455
 msgid "Yes"
 msgstr "כן"
 
-#: ../libxfce4ui/xfce-dialogs.c:459
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/xfce-dialogs.c:459
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
 msgid "Cancel"
 msgstr "ביטול"
 
-#: ../libxfce4ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/xfce-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "לסגור חלון עם לשוניות?"
 
-#: ../libxfce4ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/xfce-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "לחלון זה מספר לשוניות פתוחות. סגירת חלון זה תסגור גם את כל הלשוניות שלו."
 
-#: ../libxfce4ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/xfce-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "לחלון זה %d לשוניות פתוחות. סגירת חלון זה תסגור גם את כל הלשוניות שלו."
 
-#: ../libxfce4ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/xfce-dialogs.c:529
 msgid "Warning"
 msgstr "אזהרה"
 
-#: ../libxfce4ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/xfce-dialogs.c:534
 msgid "Close T_ab"
 msgstr "סגור ל_שונית"
 
-#: ../libxfce4ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/xfce-dialogs.c:535
 msgid "Close _Window"
 msgstr "סגור _חלון"
 
-#: ../libxfce4ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/xfce-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "_אל תשאל אותי שוב"
 
-#: ../libxfce4ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/xfce-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "זהות לקוח ניהול סשן"
 
-#: ../libxfce4ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/xfce-sm-client.c:1427
 msgid "ID"
 msgstr "זהות"
 
-#: ../libxfce4ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/xfce-sm-client.c:1428
 msgid "Disable session management"
 msgstr "הפסק ניהול סשן"
 
-#: ../libxfce4ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/xfce-sm-client.c:1438
 msgid "Session management options"
 msgstr "אפשרויות ניהול סשן"
 
-#: ../libxfce4ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/xfce-sm-client.c:1439
 msgid "Show session management options"
 msgstr "הצג אפשרויות ניהול סשן"
 
-#: ../libxfce4ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/xfce-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "נכשלה התחברות למנהל הסשן: %s"
 
-#: ../libxfce4ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/xfce-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "מנהל הסשן לא השיב זהות לקוח תקפה"
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:400
+#: ../libexpidus1ui/xfce-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -147,53 +147,53 @@ msgid ""
 msgstr "תיקיית עבודה \"%s\" לא קיימת. היא לא תהיה בשימוש כאשר תובא \"%s\"."
 
 #. the string contains a directory separator
-#: ../libxfce4ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/xfce-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "מפריד ספריה לא חוקי בשם קובץ"
 
 #. the string is too long
-#: ../libxfce4ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/xfce-filename-input.c:422
 msgid "Filename is too long"
 msgstr "שם קובץ יותר מדי ארוך"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libxfce4ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/xfce-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "שמות קבצים לא אמורים להתחיל או להסתיים עם רווח"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "קיצור דרך זה כבר מצוי בשימוש עבור הפעולה '%s'. באיזו פעולה ברצונך להשתמש?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "השתמש ב- '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "שמור על '%s'"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "קיצור דרך זה כבר מצוי בשימוש עבור הפקודה '%s'. באיזו פעולה ברצונך להשתמש?"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -202,375 +202,375 @@ msgstr "קיצור דרך זה כבר מצוי בשימוש על ידי הפעו
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "אנא השתמש בשילוב מקשים אחר."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "‏%s כבר מעוררת את פעולה זו."
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "פעולות סותרות עבור %s"
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "קיצור דרך זה כבר מצוי בשימוש עבור משהו אחר."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "קיצור דרך פעולת מנהל חלונות"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:217
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
 msgid "action"
 msgstr "פעולה"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "קיצור דרך פקודה"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
 msgid "command"
 msgstr "פקודה"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "קיצור דרך"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "נקה"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr "לחץ על מקשי המקלדת כדי להפעיל את %s '%s'."
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr "אנא לחץ על מקש"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "לא יכול לתפוס את המקלדת."
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
 msgid "Window operations menu"
 msgstr "תפריט פעולות חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
 msgid "Up"
 msgstr "מעלה"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
 msgid "Down"
 msgstr "מטה"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
 msgid "Left"
 msgstr "שמאל"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
 msgid "Right"
 msgstr "ימין"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
 msgid "Cycle windows"
 msgstr "עבור במחזוריות בין חלונות"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "עבור במחזוריות בין חלונות (הפוך)"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
 msgid "Switch window for same application"
 msgstr "העבר חלון עבור אותו יישום"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
 msgid "Switch application"
 msgstr "החלף יישום"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
 msgid "Close window"
 msgstr "סגור חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
 msgid "Maximize window horizontally"
 msgstr "הגדל חלון אופקית"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
 msgid "Maximize window vertically"
 msgstr "הגדל חלון אנכית"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
 msgid "Maximize window"
 msgstr "הגדל חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
 msgid "Hide window"
 msgstr "הסתר חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
 msgid "Move window"
 msgstr "הזז חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
 msgid "Resize window"
 msgstr "שנה גודל חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
 msgid "Shade window"
 msgstr "גלול חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
 msgid "Stick window"
 msgstr "הדבק חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
 msgid "Raise window"
 msgstr "הרם חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
 msgid "Lower window"
 msgstr "הנמך חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
 msgid "Raise or lower window"
 msgstr "הרם או הנמך חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
 msgid "Fill window"
 msgstr "מלא חלון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
 msgid "Fill window horizontally"
 msgstr "מלא חלון אופקית"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
 msgid "Fill window vertically"
 msgstr "מלא חלון אנכית"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
 msgid "Toggle above"
 msgstr "החלף מעל"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
 msgid "Toggle fullscreen"
 msgstr "החלף מסך מלא"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
 msgid "Move window to upper workspace"
 msgstr "העבר חלון למשטח עבודה עליון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
 msgid "Move window to bottom workspace"
 msgstr "העבר חלון למשטח עבודה תחתון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
 msgid "Move window to left workspace"
 msgstr "העבר חלון למשטח עבודה שמאלי"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
 msgid "Move window to right workspace"
 msgstr "העבר חלון למרחב עבודה ימני"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
 msgid "Move window to previous workspace"
 msgstr "העבר חלון למשטח עבודה קודם"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
 msgid "Move window to next workspace"
 msgstr "העבר חלון למשטח עבודה הבא"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
 msgid "Move window to workspace 1"
 msgstr "העבר חלון למשטח עבודה 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
 msgid "Move window to workspace 2"
 msgstr "העבר חלון למשטח עבודה 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
 msgid "Move window to workspace 3"
 msgstr "העבר חלון למשטח עבודה 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
 msgid "Move window to workspace 4"
 msgstr "העבר חלון למשטח עבודה 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
 msgid "Move window to workspace 5"
 msgstr "העבר חלון למשטח עבודה 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
 msgid "Move window to workspace 6"
 msgstr "העבר חלון למשטח עבודה 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
 msgid "Move window to workspace 7"
 msgstr "העבר חלון למשטח עבודה 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
 msgid "Move window to workspace 8"
 msgstr "העבר חלון למשטח עבודה 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
 msgid "Move window to workspace 9"
 msgstr "העבר חלון למשטח עבודה 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
 msgid "Move window to workspace 10"
 msgstr "העבר חלון למשטח עבודה 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
 msgid "Move window to workspace 11"
 msgstr "העבר חלון למשטח עבודה 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
 msgid "Move window to workspace 12"
 msgstr "העבר חלון למשטח עבודה 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
 msgid "Tile window to the top"
 msgstr "הפוך חלון לאריח עליון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
 msgid "Tile window to the bottom"
 msgstr "הפוך חלון לאריח תחתון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
 msgid "Tile window to the left"
 msgstr "הפוך חלון לאריח שמאלי"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
 msgid "Tile window to the right"
 msgstr "הפוך חלון לאריח ימני"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
 msgid "Tile window to the top-left"
 msgstr "הפוך חלון לאריח עליון-שמאלי"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
 msgid "Tile window to the top-right"
 msgstr "הפוך חלון לאריח עליון-ימני"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
 msgid "Tile window to the bottom-left"
 msgstr "הפוך חלון לאריח תחתון-שמאלי"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
 msgid "Tile window to the bottom-right"
 msgstr "הפוך חלון לאריח תחתון-ימני"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
 msgid "Show desktop"
 msgstr "הצג שולחן עבודה"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
 msgid "Upper workspace"
 msgstr "משטח עבודה עליון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
 msgid "Bottom workspace"
 msgstr "משטח עבודה תחתון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
 msgid "Left workspace"
 msgstr "משטח עבודה שמאלי"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
 msgid "Right workspace"
 msgstr "משטח עבודה ימני"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
 msgid "Previous workspace"
 msgstr "משטח עבודה קודם"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
 msgid "Next workspace"
 msgstr "משטח עבודה הבא"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
 msgid "Workspace 1"
 msgstr "משטח עבודה 1"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
 msgid "Workspace 2"
 msgstr "משטח עבודה 2"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
 msgid "Workspace 3"
 msgstr "משטח עבודה 3"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
 msgid "Workspace 4"
 msgstr "משטח עבודה 4"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
 msgid "Workspace 5"
 msgstr "משטח עבודה 5"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
 msgid "Workspace 6"
 msgstr "משטח עבודה 6"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
 msgid "Workspace 7"
 msgstr "משטח עבודה 7"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
 msgid "Workspace 8"
 msgstr "משטח עבודה 8"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
 msgid "Workspace 9"
 msgstr "משטח עבודה 9"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
 msgid "Workspace 10"
 msgstr "משטח עבודה 10"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
 msgid "Workspace 11"
 msgstr "משטח עבודה 11"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
 msgid "Workspace 12"
 msgstr "משטח עבודה 12"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
 msgid "Add workspace"
 msgstr "הוסף משטח עבודה"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
 msgid "Add adjacent workspace"
 msgstr "הוסף משטח עבודה סמוך"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
 msgid "Delete last workspace"
 msgstr "מחק משטח עבודה אחרון"
 
-#: ../libxfce4kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
 msgid "Delete active workspace"
 msgstr "מחק משטח עבודה פעיל"
 
-#: ../glade/libxfce4ui-2.xml.in.h:1
+#: ../glade/libexpidus1ui-2.xml.in.h:1
 msgid "Titled Dialog"
 msgstr "דו שיח בעל כותרת"
 
-#: ../glade/libxfce4ui-2.xml.in.h:2
+#: ../glade/libexpidus1ui-2.xml.in.h:2
 msgid "Subtitle"
 msgstr "כותרת משנה"
 
-#: ../glade/libxfce4ui-2.xml.in.h:3
+#: ../glade/libexpidus1ui-2.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr "יישומונים Xfce 4"
 
@@ -678,8 +678,8 @@ msgstr "אנא ראה <https://www.xfce.org/about/credits>"
 #: ../xfce4-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.org/xfce/libxfce4ui/-/issues> ."
-msgstr "אם אתה מכיר מישהו שחסר ברשימה זו, אל תהסס לפתוח באג ב-<https://gitlab.xfce.org/xfce/libxfce4ui/-/issues>."
+"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+msgstr "אם אתה מכיר מישהו שחסר ברשימה זו, אל תהסס לפתוח באג ב-<https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues>."
 
 #: ../xfce4-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -693,20 +693,20 @@ msgstr "‏Xfce 4 הינו מוגן בזכויות יוצרים לטובת Olivi
 
 #: ../xfce4-about/main.c:326
 msgid ""
-"The libxfce4ui, libxfce4util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "החבילות libxfce4ui, libxfce4util וגם exo מופצות תחת התנאים של ספריית GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לבחירתך) כל מהדורה מאוחרת יותר."
+msgstr "החבילות libexpidus1ui, libexpidus1util וגם exo מופצות תחת התנאים של ספריית GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לבחירתך) כל מהדורה מאוחרת יותר."
 
 #: ../xfce4-about/main.c:333
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, xfconf, xfdesktop and xfwm4 are distributed under the terms "
+"xfce4-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, xfconf, xfdesktop וגם xfwm4 מופצות תחת התנאים של GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לבחירתך) כל מהדורה מאוחרת יותר."
+msgstr "החבילות thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, esconf, xfdesktop וגם xfwm4 מופצות תחת התנאים של GNU רישיון ציבורי כללי כפי שפורסם על ידי קרן תוכנה חופשית: מהדורה 2 של הרישיון, או (לבחירתך) כל מהדורה מאוחרת יותר."
 
 #: ../xfce4-about/main.c:479
 #, c-format
@@ -898,5 +898,5 @@ msgid "Failed to migrate the old panel configuration"
 msgstr "נכשל ייבוא תצורת לוח ישנה"
 
 #: ../tests/test-ui.c:170 ../tests/test-ui.c:195
-msgid "Customize settings stored by Xfconf"
-msgstr "התאם הגדרות מאוחסנות על ידי Xfconf"
+msgid "Customize settings stored by Esconf"
+msgstr "התאם הגדרות מאוחסנות על ידי Esconf"

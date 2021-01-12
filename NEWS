@@ -16,7 +16,7 @@
 
 4.15.7
 ======
-- libxfce4ui now needs libxfce4util >= 4.15.6
+- libexpidus1ui now needs libexpidus1util >= 4.15.6
 - Update configure.ac.in syntax
 - Namespace of the gir needs capital first letter
 - Remove hardcoded translators list
@@ -108,7 +108,7 @@
 - Add "xfce_gtk_accel_group_disconnect_action_entries" to be able to
   revert "xfce_gtk_accel_group_connect_action_entries"
 - Add title to xfce_dialog_confirm_close_tabs
-- Add new methods to libxfce4ui.symbols. Followup of
+- Add new methods to libexpidus1ui.symbols. Followup of
   231e57daccb5946379f413ed440629c32025f6f3
 - Translation Updates:
   Albanian, Amharic, Arabic, Armenian, Armenian (Armenia), Basque,
@@ -181,7 +181,7 @@
 - Fix compiler warnings
 - Remove trailing whitespace
 - Always provides needed files for vala binding in dist tarball
-- Add recents functions to libxfce4ui.symbols
+- Add recents functions to libexpidus1ui.symbols
 - Drop xfce-header from pot files
 - Update docstrings
 - Fix license text box too small (Bug #16259)
@@ -247,8 +247,8 @@
 - Add PrintScreen as shortcut for xfce4-screenshooter (Bug #14524)
 - Add Ctrl + Alt + t as default shortcut for terminal (Bug #14510)
 - Add xfce_gdk_screen_get_geometry (a replacement for gdk_screen_width/gdk_screen_height)
-- Remove useless glade_*dir variables from libxfce4ui-{1,2}.pc (Bug #13945)
-- Fix release tarball by adding libxfce4ui-dialog-ui.ui
+- Remove useless glade_*dir variables from libexpidus1ui-{1,2}.pc (Bug #13945)
+- Fix release tarball by adding libexpidus1ui-dialog-ui.ui
 - Fixes for gladeui2 detection
 - Install icons when gladeui2 is set (Bug #15207)
 - Fix build error with --disable-gtk2 and having gladeui-1.0 installed
@@ -279,8 +279,8 @@
 - Move gresource building out of maintainer mode
 - Fix condition in confirm dialog
 - Add POTFILES.skip to appease gmake distcheck gods on OpenBSD
-- ship libxfce4ui.gresource.xml in the tarball too
-- Add libxfce4ui-marshal.list to EXTRA_DIST to fix
+- ship libexpidus1ui.gresource.xml in the tarball too
+- Add libexpidus1ui-marshal.list to EXTRA_DIST to fix
   --enable-maintainer-mode on released tarballs
 - Fix build error with --disable-gtk2
 - Translation updates: bg, cs, fr, it, ca, hr, it, da, ru.
@@ -292,7 +292,7 @@
 - Set a reasonable default window width to make sure labels wrap
 - Improve vertical alignment of primary and secondary label
 - Bump the default dialog width to 500px
-- Update libxfce4ui documentation
+- Update libexpidus1ui documentation
 - Fix make docs compilation warning
 - Fix xfce_dialog_show_help(_with_version) doc
 - Remove Makefile.am space to fix autogen.sh warning
@@ -300,7 +300,7 @@
 - Change xfce_dialog_show_help(_with_version)
 - Default debug to yes instead of full
 - Remove exo dependancy Bug #13326
-- fix: add libxfce4ui_get_resource to abi check symbols Bug #13326
+- fix: add libexpidus1ui_get_resource to abi check symbols Bug #13326
 - Let autotools find and invoke glib-compile-resources Bug #13326
 - Add support for GOBJECT-INTROSPECTION Bug #13461
 - Add GtkDoc checks
@@ -384,7 +384,7 @@
 
 4.11.0
 ======
-- Compile GTK+-3 version of libxfce4ui when possible.
+- Compile GTK+-3 version of libexpidus1ui when possible.
 - Depend on GTK 2.24 and Glib 2.28.
 - Only define distclean files in maintainer mode (bug #8974).
 - Don't remove keyboard shortcut when entered twice (bug #8749).

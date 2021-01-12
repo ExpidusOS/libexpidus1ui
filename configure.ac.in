@@ -5,18 +5,18 @@ dnl
 dnl ***************************
 dnl *** Version information ***
 dnl ***************************
-m4_define([libxfce4ui_verinfo], [0:0:0])
-m4_define([libxfce4ui_version_api], [2])
-m4_define([libxfce4ui_version_major], [4])
-m4_define([libxfce4ui_version_minor], [16])
-m4_define([libxfce4ui_version_micro], [0])
-m4_define([libxfce4ui_version_nano], []) dnl leave this empty to have no nano version
-m4_define([libxfce4ui_version_build], [@REVISION@])
-m4_define([libxfce4ui_version_tag], [git])
-m4_define([libxfce4ui_version], [libxfce4ui_version_major().libxfce4ui_version_minor().libxfce4ui_version_micro()ifelse(libxfce4ui_version_nano(), [], [], [.libxfce4ui_version_nano()])ifelse(libxfce4ui_version_tag(), [git], [libxfce4ui_version_tag()-libxfce4ui_version_build()], [libxfce4ui_version_tag()])])
+m4_define([libexpidus1ui_verinfo], [0:0:0])
+m4_define([libexpidus1ui_version_api], [2])
+m4_define([libexpidus1ui_version_major], [1])
+m4_define([libexpidus1ui_version_minor], [0])
+m4_define([libexpidus1ui_version_micro], [0])
+m4_define([libexpidus1ui_version_nano], []) dnl leave this empty to have no nano version
+m4_define([libexpidus1ui_version_build], [@REVISION@])
+m4_define([libexpidus1ui_version_tag], [git])
+m4_define([libexpidus1ui_version], [libexpidus1ui_version_major().libexpidus1ui_version_minor().libexpidus1ui_version_micro()ifelse(libexpidus1ui_version_nano(), [], [], [.libexpidus1ui_version_nano()])ifelse(libexpidus1ui_version_tag(), [git], [libexpidus1ui_version_tag()-libexpidus1ui_version_build()], [libexpidus1ui_version_tag()])])
 
-m4_define([libxfce4kbd_private_verinfo], [0:0:0])
-m4_define([libxfce4kbd_private_version_api], [3])
+m4_define([libexpidus1kbd_private_verinfo], [0:0:0])
+m4_define([libexpidus1kbd_private_version_api], [3])
 
 dnl # DO NOT MODIFY ANYTHING BELOW THIS LINE, UNLESS YOU KNOW WHAT
 dnl # YOU ARE DOING.
@@ -25,16 +25,16 @@ dnl # YOU ARE DOING.
 dnl ********************************************
 dnl *** Full debug support for GIT snapshots ***
 dnl ********************************************
-m4_define([libxfce4ui_debug_default], [ifelse(libxfce4ui_version_tag(), [git], [yes], [minimum])])
+m4_define([libexpidus1ui_debug_default], [ifelse(libexpidus1ui_version_tag(), [git], [yes], [minimum])])
 
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2007-2019 The Xfce development team])
-AC_INIT([libxfce4ui], [libxfce4ui_version], [https://gitlab.xfce.org/xfce/libxfce4ui/-/issues], [libxfce4ui])
+AC_INIT([libexpidus1ui], [libexpidus1ui_version], [https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues], [libexpidus1ui])
 AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIRS([m4])
-AC_REVISION([libxfce4ui_version_build])
+AC_REVISION([libexpidus1ui_version_build])
 AC_CANONICAL_TARGET()
 
 dnl ***************************
@@ -87,20 +87,20 @@ LT_INIT([disable-static])
 dnl **************************************
 dnl *** Substitute version information ***
 dnl **************************************
-LIBXFCE4UI_VERINFO=libxfce4ui_verinfo()
-LIBXFCE4UI_VERSION_API=libxfce4ui_version_api()
-LIBXFCE4UI_VERSION_MAJOR=libxfce4ui_version_major()
-LIBXFCE4UI_VERSION_MINOR=libxfce4ui_version_minor()
-LIBXFCE4UI_VERSION_MICRO=libxfce4ui_version_micro()
-LIBXFCE4KBD_PRIVATE_VERINFO=libxfce4kbd_private_verinfo()
-LIBXFCE4KBD_PRIVATE_VERSION_API=libxfce4kbd_private_version_api()
-AC_SUBST([LIBXFCE4UI_VERINFO])
-AC_SUBST([LIBXFCE4UI_VERSION_API])
-AC_SUBST([LIBXFCE4UI_VERSION_MAJOR])
-AC_SUBST([LIBXFCE4UI_VERSION_MINOR])
-AC_SUBST([LIBXFCE4UI_VERSION_MICRO])
-AC_SUBST([LIBXFCE4KBD_PRIVATE_VERINFO])
-AC_SUBST([LIBXFCE4KBD_PRIVATE_VERSION_API])
+LIBEXPIDUS1UI_VERINFO=libexpidus1ui_verinfo()
+LIBEXPIDUS1UI_VERSION_API=libexpidus1ui_version_api()
+LIBEXPIDUS1UI_VERSION_MAJOR=libexpidus1ui_version_major()
+LIBEXPIDUS1UI_VERSION_MINOR=libexpidus1ui_version_minor()
+LIBEXPIDUS1UI_VERSION_MICRO=libexpidus1ui_version_micro()
+LIBEXPIDUS1KBD_PRIVATE_VERINFO=libexpidus1kbd_private_verinfo()
+LIBEXPIDUS1KBD_PRIVATE_VERSION_API=libexpidus1kbd_private_version_api()
+AC_SUBST([LIBEXPIDUS1UI_VERINFO])
+AC_SUBST([LIBEXPIDUS1UI_VERSION_API])
+AC_SUBST([LIBEXPIDUS1UI_VERSION_MAJOR])
+AC_SUBST([LIBEXPIDUS1UI_VERSION_MINOR])
+AC_SUBST([LIBEXPIDUS1UI_VERSION_MICRO])
+AC_SUBST([LIBEXPIDUS1KBD_PRIVATE_VERINFO])
+AC_SUBST([LIBEXPIDUS1KBD_PRIVATE_VERSION_API])
 
 dnl ***************************************
 dnl *** Check for standard header files ***
@@ -127,7 +127,7 @@ dnl *** Check for required packages ***
 dnl ***********************************
 XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([GTK3], [gtk+-3.0], [3.22.0])
-XDT_CHECK_PACKAGE([LIBXFCE4UTIL], [libxfce4util-1.0], [4.15.6])
+XDT_CHECK_PACKAGE([LIBEXPIDUS1UTIL], [libexpidus1util-1.0], [4.15.6])
 
 dnl ****************************************************************
 dnl *** Optional support for system information based on glibtop ***
@@ -193,7 +193,7 @@ AC_ARG_ENABLE([keyboard-library],
                               [Do not compile the keyboard library needed by xfwm4 and xfce4-settings (default=enabled)])],
               [enable_keyboard_library=$enableval], [enable_keyboard_library=yes])
 if test "x$enable_keyboard_library" = "xyes"; then
-  XDT_CHECK_PACKAGE([XFCONF], [libxfconf-0], [4.12.0])
+  XDT_CHECK_PACKAGE([ESCONF], [libesconf-0], [4.12.0])
 fi
 AM_CONDITIONAL([ENABLE_KEYBOARD_LIBRARY], [test "x$enable_keyboard_library" = "xyes"])
 
@@ -270,7 +270,7 @@ GTK_DOC_CHECK([1.0])
 dnl ***********************************
 dnl *** Check for debugging support ***
 dnl ***********************************
-XDT_FEATURE_DEBUG([libxfce4ui_debug_default])
+XDT_FEATURE_DEBUG([libexpidus1ui_debug_default])
 
 dnl **************************************
 dnl *** Check for linker optimizations ***
@@ -361,11 +361,11 @@ icons/16x16/Makefile
 icons/48x48/Makefile
 icons/128x128/Makefile
 icons/scalable/Makefile
-libxfce4kbd-private/libxfce4kbd-private-3.pc
-libxfce4kbd-private/Makefile
-libxfce4ui/libxfce4ui-2.pc
-libxfce4ui/libxfce4ui-config.h
-libxfce4ui/Makefile
+libexpidus1kbd-private/libexpidus1kbd-private-3.pc
+libexpidus1kbd-private/Makefile
+libexpidus1ui/libexpidus1ui-2.pc
+libexpidus1ui/libexpidus1ui-config.h
+libexpidus1ui/Makefile
 xfce4-about/Makefile
 po/Makefile.in
 tests/Makefile

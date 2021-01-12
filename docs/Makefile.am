@@ -1,7 +1,7 @@
 AUTOMAKE_OPTIONS = 1.11
 
 # The name of the module.
-DOC_MODULE=libxfce4ui
+DOC_MODULE=libexpidus1ui
 
 # The top-level SGML file.
 DOC_MAIN_SGML_FILE=$(DOC_MODULE)-docs.xml
@@ -13,7 +13,7 @@ SCAN_OPTIONS=--deprecated-guards="XFCE_DISABLE_DEPRECATED"
 SCANGOBJ_OPTIONS=
 
 # The directory containing the source code. Relative to $(srcdir)
-DOC_SOURCE_DIR=../libxfce4ui
+DOC_SOURCE_DIR=../libexpidus1ui
 
 # Extra options to supply to gtkdoc-mkdb
 MKDB_OPTIONS=--sgml-mode --output-format=xml
@@ -22,19 +22,19 @@ MKDB_OPTIONS=--sgml-mode --output-format=xml
 FIXXREF_OPTIONS=
 
 # Used for dependencies
-HFILE_GLOB=$(top_srcdir)/libxfce4ui/*.h
-CFILE_GLOB=$(top_srcdir)/libxfce4ui/*.c
+HFILE_GLOB=$(top_srcdir)/libexpidus1ui/*.h
+CFILE_GLOB=$(top_srcdir)/libexpidus1ui/*.c
 
 # Header files to ignore when scanning
 IGNORE_HFILES=								\
-	libxfce4ui.h							\
-	libxfce4ui-private.h						\
+	libexpidus1ui.h							\
+	libexpidus1ui-private.h						\
 	xfce-heading.h							\
-	libxfce4ui-enum-types.h						\
-	libxfce4ui-alias.h						\
-	stamp-libxfce4ui-marshal.h					\
-	libxfce4ui-marshal.h						\
-	libxfce4ui-resources.h
+	libexpidus1ui-enum-types.h						\
+	libexpidus1ui-alias.h						\
+	stamp-libexpidus1ui-marshal.h					\
+	libexpidus1ui-marshal.h						\
+	libexpidus1ui-resources.h
 
 # Extra files to add when scanning (relative to $srcdir)
 EXTRA_HFILES=
@@ -51,14 +51,14 @@ content_files = 							\
 AM_CPPFLAGS =	 							\
 	-I$(top_srcdir) 						\
 	-I$(top_builddir) 						\
-	$(LIBXFCE4UTIL_CFLAGS)						\
+	$(LIBEXPIDUS1UTIL_CFLAGS)						\
 	$(GTK3_CFLAGS)	 						\
 	$(GTK_DOC_EXTRA_CFLAGS)
 
 GTKDOC_LIBS =  								\
-	$(LIBXFCE4UTIL_LIBS)						\
+	$(LIBEXPIDUS1UTIL_LIBS)						\
 	$(GTK3_LIBS)							\
-	$(top_builddir)/libxfce4ui/libxfce4ui-$(LIBXFCE4UI_VERSION_API).la
+	$(top_builddir)/libexpidus1ui/libexpidus1ui-$(LIBEXPIDUS1UI_VERSION_API).la
 
 include $(top_srcdir)/gtk-doc.make
 

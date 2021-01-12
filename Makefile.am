@@ -2,8 +2,8 @@ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
 
 SUBDIRS = \
-	libxfce4ui \
-	libxfce4kbd-private \
+	libexpidus1ui \
+	libexpidus1kbd-private \
 	xfce4-about \
 	glade \
 	icons \

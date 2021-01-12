@@ -19,7 +19,7 @@
 
 AM_CPPFLAGS =								\
 	-I$(top_srcdir)							\
-	-DG_LOG_DOMAIN=\"libxfce4ui-tests\"
+	-DG_LOG_DOMAIN=\"libexpidus1ui-tests\"
 
 noinst_PROGRAMS =
 
@@ -36,17 +36,17 @@ test_ui_CFLAGS =					\
 	$(LIBSM_CFLAGS) \
 	$(GTK3_CFLAGS) \
 	$(LIBSTARTUP_NOTIFICATION_CFLAGS) \
-	$(LIBXFCE4UTIL_CFLAGS) \
+	$(LIBEXPIDUS1UTIL_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
 test_ui_DEPENDENCIES =				\
-	$(top_builddir)/libxfce4ui/libxfce4ui-2.la
+	$(top_builddir)/libexpidus1ui/libexpidus1ui-2.la
 
 test_ui_LDADD =					\
 	$(LIBSM_LIBS) \
 	$(GTK3_LIBS) \
 	$(LIBSTARTUP_NOTIFICATION_LIBS) \
-	$(LIBXFCE4UTIL_LIBS) \
-	$(top_builddir)/libxfce4ui/libxfce4ui-2.la
+	$(LIBEXPIDUS1UTIL_LIBS) \
+	$(top_builddir)/libexpidus1ui/libexpidus1ui-2.la
 
 endif # BUILD_TESTS

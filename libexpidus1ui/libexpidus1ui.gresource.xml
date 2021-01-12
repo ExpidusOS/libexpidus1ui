@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/expidus/libexpidus1ui">
+    <file>libexpidus1ui-dialog-ui.ui</file>
+  </gresource>
+</gresources>

@@ -27,10 +27,10 @@
 
 #include <gtk/gtk.h>
 #include <glib.h>
-#include <libxfce4ui/libxfce4ui.h>
+#include <libexpidus1ui/libexpidus1ui.h>
 
 
-static const gchar *APP_NAME = "libxfce4ui: Test";
+static const gchar *APP_NAME = "libexpidus1ui: Test";
 
 static void
 main_window_destroy (GtkWidget *window)
@@ -167,7 +167,7 @@ show_xfce_titled_dialog_new_with_buttons (GtkButton *button,
                                                 NULL);
 
   xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk3),
-                                   _("Customize settings stored by Xfconf"));
+                                   _("Customize settings stored by Esconf"));
 
   gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk3), "preferences-system");
   gtk_window_set_type_hint (GTK_WINDOW (dialog_gtk3), GDK_WINDOW_TYPE_HINT_NORMAL);
@@ -192,7 +192,7 @@ show_xfce_titled_dialog_new_with_mixed_buttons (GtkButton *button,
                                                            NULL);
 
   xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk3),
-                                   _("Customize settings stored by Xfconf"));
+                                   _("Customize settings stored by Esconf"));
 
   gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk3), "preferences-system");
   gtk_window_set_type_hint (GTK_WINDOW (dialog_gtk3), GDK_WINDOW_TYPE_HINT_NORMAL);

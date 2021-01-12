@@ -17,128 +17,128 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libxfce4ui/xfce-dialogs.c:98
+#: ../libexpidus1ui/xfce-dialogs.c:98
 msgid "Failed to open web browser for online documentation"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:213
+#: ../libexpidus1ui/xfce-dialogs.c:213
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:215
+#: ../libexpidus1ui/xfce-dialogs.c:215
 msgid "Do you want to read the manual online?"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:218
+#: ../libexpidus1ui/xfce-dialogs.c:218
 msgid "Online Documentation"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:221
+#: ../libexpidus1ui/xfce-dialogs.c:221
 msgid ""
 "You will be redirected to the documentation website where the help pages are "
 "maintained and translated."
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:225
+#: ../libexpidus1ui/xfce-dialogs.c:225
 msgid "_Read Online"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:237
+#: ../libexpidus1ui/xfce-dialogs.c:237
 msgid "_Always go directly to the online documentation"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:281
+#: ../libexpidus1ui/xfce-dialogs.c:281
 #, fuzzy
 msgid "Information"
 msgstr "අනුවාද තොරතුරු"
 
-#: ../libxfce4ui/xfce-dialogs.c:314
+#: ../libexpidus1ui/xfce-dialogs.c:314
 msgid "Warning"
 msgstr "අවවාදයයි"
 
-#: ../libxfce4ui/xfce-dialogs.c:348
+#: ../libexpidus1ui/xfce-dialogs.c:348
 msgid "Error"
 msgstr ""
 
-#: ../libxfce4ui/xfce-dialogs.c:399
+#: ../libexpidus1ui/xfce-dialogs.c:399
 msgid "Question"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libexpidus1ui/xfce-sm-client.c:1403
 #, fuzzy
 msgid "Session management client ID"
 msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
-#: ../libxfce4ui/xfce-sm-client.c:1403
+#: ../libexpidus1ui/xfce-sm-client.c:1403
 msgid "ID"
 msgstr "ID"
 
-#: ../libxfce4ui/xfce-sm-client.c:1404
+#: ../libexpidus1ui/xfce-sm-client.c:1404
 #, fuzzy
 msgid "Disable session management"
 msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
-#: ../libxfce4ui/xfce-sm-client.c:1414
+#: ../libexpidus1ui/xfce-sm-client.c:1414
 #, fuzzy
 msgid "Session management options"
 msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
-#: ../libxfce4ui/xfce-sm-client.c:1415
+#: ../libexpidus1ui/xfce-sm-client.c:1415
 #, fuzzy
 msgid "Show session management options"
 msgstr "සැසි කළමනාකරන සොකට්ටුව"
 
-#: ../libxfce4ui/xfce-sm-client.c:1591
+#: ../libexpidus1ui/xfce-sm-client.c:1591
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr ""
 
-#: ../libxfce4ui/xfce-sm-client.c:1598
+#: ../libexpidus1ui/xfce-sm-client.c:1598
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr ""
 
 #. print warning for user
-#: ../libxfce4ui/xfce-spawn.c:413
+#: ../libexpidus1ui/xfce-spawn.c:413
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning \"%s"
 "\"."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you "
 "want to use?"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:54
-#: ../libxfce4kbd-private/xfce-shortcuts.c:57
-#: ../libxfce4kbd-private/xfce-shortcuts.c:60
-#: ../libxfce4kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:56
-#: ../libxfce4kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -147,393 +147,393 @@ msgstr ""
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libxfce4kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcuts.c:189
+#: ../libexpidus1kbd-private/xfce-shortcuts.c:189
 msgid "This shortcut is already being used for something else."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:209
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:209
 #, fuzzy
 msgid "Window Manager Action Shortcut"
 msgstr "කවුළු කළමනාකරු"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:212
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:226
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:212
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:226
 #, fuzzy
 msgid "action"
 msgstr "ක්‍රියාව"
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:216
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:216
 #, fuzzy
 msgid "Command Shortcut"
 msgstr "කෙටිමඟ "
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:219
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:219
 msgid "command"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:223
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:223
 msgid "Shortcut"
 msgstr "කෙටිමඟ "
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:267
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:267
 #, c-format
 msgid "Press now the keyboard keys you want to use to trigger the %s '%s'."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
 #, fuzzy
 msgid "Shortcut:"
 msgstr "කෙටිමඟ "
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:296
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:475
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:296
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:475
 msgid "No keys pressed yet, proceed."
 msgstr ""
 
-#: ../libxfce4kbd-private/xfce-shortcut-dialog.c:378
+#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:378
 #, fuzzy
 msgid "Could not grab the keyboard."
 msgstr "සැකසුම් සංවාද කොටුව තැනීමට නොහැකි විය."
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:33
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:33
 msgid "Window operations menu"
 msgstr "කවුළු කාර්යකරණ මෙනුව"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:34
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:34
 msgid "Up"
 msgstr "ඉහළ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:35
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:35
 msgid "Down"
 msgstr "පහළ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:36
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:36
 msgid "Left"
 msgstr "වම"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:37
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:37
 msgid "Right"
 msgstr "දකුණ"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:38
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:38
 #, fuzzy
 msgid "Cancel"
 msgstr "අවලංගුකරන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:39
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:39
 #, fuzzy
 msgid "Cycle windows"
 msgstr "කවුළු අතර චක්‍රීය ලෙස යන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:40
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:40
 #, fuzzy
 msgid "Cycle windows (Reverse)"
 msgstr "කවුළු අතර (අනෙක් අතට) චක්‍රීය ලෙස යන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:41
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:41
 #, fuzzy
 msgid "Switch window for same application"
 msgstr "එකම යෙදුම සඳහා කවුළුව අතර මාරු වන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:42
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:42
 msgid "Switch application"
 msgstr "යෙදුම මාරු කරන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:43
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:43
 msgid "Close window"
 msgstr "කවුළුව වසන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:44
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:44
 msgid "Maximize window horizontally"
 msgstr "කවුළුව තිරස්ව විහිදන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:45
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:45
 msgid "Maximize window vertically"
 msgstr "කවුළුව සිරස්ව විහිදන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:46
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:46
 msgid "Maximize window"
 msgstr "කවුළුව විහිදන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:47
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:47
 msgid "Hide window"
 msgstr "කවුළුව සඟවන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:48
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:48
 msgid "Move window"
 msgstr "කවුළුව එහා මෙහා කරන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:49
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:49
 #, fuzzy
 msgid "Resize window"
 msgstr "කවුළු ප්‍රමාණය වෙනස් කරන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:50
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:50
 #, fuzzy
 msgid "Shade window"
 msgstr "කවුළුව අඳුරු කරන්න."
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:51
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:51
 #, fuzzy
 msgid "Stick window"
 msgstr "කවුළුව අලවන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:52
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:52
 #, fuzzy
 msgid "Raise window"
 msgstr "කවුළුව නගන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:53
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:53
 #, fuzzy
 msgid "Lower window"
 msgstr "කවුළුව හෙලන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:54
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:54
 #, fuzzy
 msgid "Raise or lower window"
 msgstr "කවුළුව නගන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:55
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:55
 #, fuzzy
 msgid "Fill window"
 msgstr "කවුළුව පුරවන්න"
 
 # පුරවන්න
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:56
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:56
 #, fuzzy
 msgid "Fill window horizontally"
 msgstr "කවුළු තිරස්ව පිහිටුවන්න"
 
 # පුරවන්න
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:57
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:57
 #, fuzzy
 msgid "Fill window vertically"
 msgstr "කවුළු සිරස්ව පිහිටුවන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:58
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:58
 #, fuzzy
 msgid "Toggle above"
 msgstr "ඉහළ සමඟ මාරු වන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:59
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:59
 msgid "Toggle fullscreen"
 msgstr ""
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:60
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:60
 msgid "Move window to upper workspace"
 msgstr "කවුළුව  ඉහළ වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:61
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:61
 msgid "Move window to bottom workspace"
 msgstr "කවුළුව  පහළ වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:62
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:62
 msgid "Move window to left workspace"
 msgstr "කවුළුව වම් වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:63
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:63
 msgid "Move window to right workspace"
 msgstr "කවුළුව දකුණු වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:64
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:64
 msgid "Move window to previous workspace"
 msgstr "කවුළුව කලින් වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:65
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:65
 msgid "Move window to next workspace"
 msgstr "කවුළුව ඊලඟ වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:66
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:66
 msgid "Move window to workspace 1"
 msgstr "කවුළුව වැඩ අවකාශ 1 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:67
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:67
 msgid "Move window to workspace 2"
 msgstr "කවුළුව වැඩ අවකාශ 2 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:68
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:68
 msgid "Move window to workspace 3"
 msgstr "කවුළුව වැඩ අවකාශ 3 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:69
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:69
 msgid "Move window to workspace 4"
 msgstr "කවුළුව වැඩ අවකාශ 4 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:70
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:70
 msgid "Move window to workspace 5"
 msgstr "කවුළුව වැඩ අවකාශ 5 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:71
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:71
 msgid "Move window to workspace 6"
 msgstr "කවුළුව වැඩ අවකාශ 6 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:72
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:72
 msgid "Move window to workspace 7"
 msgstr "කවුළුව වැඩ අවකාශ 7 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:73
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:73
 msgid "Move window to workspace 8"
 msgstr "කවුළුව වැඩ අවකාශ 8 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:74
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:74
 msgid "Move window to workspace 9"
 msgstr "කවුළුව වැඩ අවකාශ 9 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:75
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:75
 msgid "Move window to workspace 10"
 msgstr "කවුළුව වැඩ අවකාශ 10 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:76
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:76
 msgid "Move window to workspace 11"
 msgstr "කවුළුව වැඩ අවකාශ 11 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:77
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:77
 msgid "Move window to workspace 12"
 msgstr "කවුළුව වැඩ අවකාශ 12 ට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:78
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:78
 #, fuzzy
 msgid "Tile window to the top"
 msgstr "කවුළුව වම් වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:79
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:79
 #, fuzzy
 msgid "Tile window to the bottom"
 msgstr "කවුළුව  පහළ වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:80
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:80
 #, fuzzy
 msgid "Tile window to the left"
 msgstr "කවුළුව වම් වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:81
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:81
 #, fuzzy
 msgid "Tile window to the right"
 msgstr "කවුළුව දකුණු වැඩ අවකාශයට ගෙනයනන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:82
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:82
 msgid "Show desktop"
 msgstr "වැඩතලය පෙන්වන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:83
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:83
 msgid "Upper workspace"
 msgstr "ඉහළ වැඩ අවකාශය"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:84
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:84
 msgid "Bottom workspace"
 msgstr "පහළ වැඩ අවකාශය"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:85
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:85
 msgid "Left workspace"
 msgstr "වම් වැඩ අවකාශය"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:86
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:86
 msgid "Right workspace"
 msgstr "දකුණු වැඩ අවකාශය"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:87
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:87
 msgid "Previous workspace"
 msgstr "කලින් වැඩ අවකාශය"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:88
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:88
 msgid "Next workspace"
 msgstr "ඊලඟ වැඩ අවකාශය"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:89
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:89
 msgid "Workspace 1"
 msgstr "වැඩ අවකාශය 1"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:90
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:90
 msgid "Workspace 2"
 msgstr "වැඩ අවකාශය 2"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:91
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:91
 msgid "Workspace 3"
 msgstr "වැඩ අවකාශය 3"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:92
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:92
 msgid "Workspace 4"
 msgstr "වැඩ අවකාශය 4"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:93
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:93
 msgid "Workspace 5"
 msgstr "වැඩ අවකාශය 5"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:94
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:94
 msgid "Workspace 6"
 msgstr "වැඩ අවකාශය 6"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:95
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:95
 msgid "Workspace 7"
 msgstr "වැඩ අවකාශය 7"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:96
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:96
 msgid "Workspace 8"
 msgstr "වැඩ අවකාශය 8"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:97
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:97
 msgid "Workspace 9"
 msgstr "වැඩ අවකාශය 9"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:98
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:98
 msgid "Workspace 10"
 msgstr "වැඩ අවකාශය 10"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:99
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:99
 msgid "Workspace 11"
 msgstr "වැඩ අවකාශය 11"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:100
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:100
 msgid "Workspace 12"
 msgstr "වැඩ අවකාශය 12"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:101
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:101
 msgid "Add workspace"
 msgstr "වැඩ අවකාශයක් එක් කරන්න "
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:102
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:102
 msgid "Add adjacent workspace"
 msgstr "යාබද වැඩ අවකාශයක් එක් කරන්න"
 
 # last = final or last = previous
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:103
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:103
 #, fuzzy
 msgid "Delete last workspace"
 msgstr "අවසන් වැඩ අවකාශය මකා දමන්න"
 
-#: ../libxfce4kbd-private/xfwm4-shortcut-values.h:104
+#: ../libexpidus1kbd-private/xfwm4-shortcut-values.h:104
 #, fuzzy
 msgid "Delete active workspace"
 msgstr "සක්‍රීය වැඩ අවකාශය මකා දමන්න"
 
-#: ../glade/libxfce4ui.xml.in.h:1
+#: ../glade/libexpidus1ui.xml.in.h:1
 msgid "Titled Dialog"
 msgstr ""
 
-#: ../glade/libxfce4ui.xml.in.h:2
+#: ../glade/libexpidus1ui.xml.in.h:2
 #, fuzzy
 msgid "Subtitle"
 msgstr "සිරැසිය"
 
-#: ../glade/libxfce4ui.xml.in.h:3
+#: ../glade/libexpidus1ui.xml.in.h:3
 msgid "Xfce 4 Widgets"
 msgstr ""
 
@@ -670,7 +670,7 @@ msgstr ""
 
 #: ../xfce4-about/main.c:288
 msgid ""
-"The libxfce4ui, libxfcegui4, libxfce4util, thunar-vfs and exo packages are "
+"The libexpidus1ui, libxfcegui4, libexpidus1util, thunar-vfs and exo packages are "
 "distributed under the terms of the GNU Library General Public License as "
 "published by the Free Software Foundation; either version 2 of the License, "
 "or (at your option) any later version."
@@ -679,7 +679,7 @@ msgstr ""
 #: ../xfce4-about/main.c:295
 msgid ""
 "The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-"
-"settings, xfce-utils, xfconf, xfdesktop and xfwm4 are distributed under the "
+"settings, xfce-utils, esconf, xfdesktop and xfwm4 are distributed under the "
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."

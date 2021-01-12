@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libexpidus1ui
+Description: Widgets library for Xfce
+Requires: gtk+-2.0 libexpidus1util-1.0
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lxfce4ui-@LIBEXPIDUS1UI_VERSION_API@
+Cflags: -I${includedir}/xfce4/libexpidus1ui-@LIBEXPIDUS1UI_VERSION_API@
