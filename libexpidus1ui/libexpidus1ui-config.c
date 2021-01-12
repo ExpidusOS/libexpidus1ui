@@ -24,7 +24,7 @@
  * @stability: Stable
  * @include: libexpidus1ui/libexpidus1ui.h
  *
- * Variables and functions to check the Libxfce4ui version.
+ * Variables and functions to check the Libexpidus1ui version.
  **/
 
 #ifdef HAVE_CONFIG_H
@@ -76,7 +76,7 @@ const guint libexpidus1ui_micro_version = LIBEXPIDUS1UI_MICRO_VERSION;
  * compiled against.
  *
  * <example>
- * <title>Checking the runtime version of the Libxfce4ui library</title>
+ * <title>Checking the runtime version of the Libexpidus1ui library</title>
  * <programlisting>
  * const gchar *mismatch;
  * mismatch = libexpidus1ui_check_version (LIBEXPIDUS1UI_MAJOR_VERSION,
@@ -98,13 +98,13 @@ libexpidus1ui_check_version (guint required_major,
                           guint required_micro)
 {
   if (required_major > LIBEXPIDUS1UI_MAJOR_VERSION)
-    return "Libxfce4ui version too old (major mismatch)";
+    return "Libexpidus1ui version too old (major mismatch)";
   if (required_major < LIBEXPIDUS1UI_MAJOR_VERSION)
-    return "Libxfce4ui version too new (major mismatch)";
+    return "Libexpidus1ui version too new (major mismatch)";
   if (required_minor > LIBEXPIDUS1UI_MINOR_VERSION)
-    return "Libxfce4ui version too old (minor mismatch)";
+    return "Libexpidus1ui version too old (minor mismatch)";
   if (required_minor == LIBEXPIDUS1UI_MINOR_VERSION && required_micro > LIBEXPIDUS1UI_MICRO_VERSION)
-    return "Libxfce4ui version too old (micro mismatch)";
+    return "Libexpidus1ui version too old (micro mismatch)";
   return NULL;
 }
 

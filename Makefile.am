@@ -4,7 +4,7 @@ ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 SUBDIRS = \
 	libexpidus1ui \
 	libexpidus1kbd-private \
-	xfce4-about \
+	expidus1-about \
 	glade \
 	icons \
 	docs \

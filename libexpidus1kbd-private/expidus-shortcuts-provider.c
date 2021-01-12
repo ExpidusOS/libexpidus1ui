@@ -147,7 +147,7 @@ xfce_shortcuts_provider_init (XfceShortcutsProvider *provider)
 {
   provider->priv = XFCE_SHORTCUTS_PROVIDER_GET_PRIVATE (provider);
 
-  provider->priv->channel = esconf_channel_new ("xfce4-keyboard-shortcuts");
+  provider->priv->channel = esconf_channel_new ("expidus1-keyboard-shortcuts");
 
   g_signal_connect (provider->priv->channel, "property-changed",
                     G_CALLBACK (xfce_shortcuts_provider_property_changed), provider);
@@ -328,7 +328,7 @@ xfce_shortcuts_provider_get_providers (void)
   gchar        **names;
   gint           i;
 
-  channel = esconf_channel_get ("xfce4-keyboard-shortcuts");
+  channel = esconf_channel_get ("expidus1-keyboard-shortcuts");
   names = esconf_channel_get_string_list (channel, "/providers");
 
   if (G_LIKELY (names != NULL))

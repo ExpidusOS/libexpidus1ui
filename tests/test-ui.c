@@ -42,7 +42,7 @@ static void
 show_xfce_message_dialog (GtkButton *button,
                           gpointer unused)
 {
-  GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_size ("../icons/48x48/xfce4-logo.png", 24, 24, NULL);
+  GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_size ("../icons/48x48/expidus1-logo.png", 24, 24, NULL);
 
   xfce_message_dialog (NULL, "Question - Gtk3 version with no deprecated symbols",
                        "dialog-question",
@@ -64,14 +64,14 @@ static void
 show_xfce_dialog_show_help (GtkButton *button,
                             gpointer unused)
 {
-  xfce_dialog_show_help (NULL, "xfce4-session", "preferences", NULL);
+  xfce_dialog_show_help (NULL, "expidus1-session", "preferences", NULL);
 }
 
 static void
 show_xfce_dialog_show_help_with_version (GtkButton *button,
                                          gpointer unused)
 {
-  xfce_dialog_show_help_with_version (NULL, "xfce4-power-manager", "start", NULL, "4.14");
+  xfce_dialog_show_help_with_version (NULL, "expidus1-power-manager", "start", NULL, "4.14");
 }
 
 static void
@@ -89,7 +89,7 @@ remove_auto_online (GtkButton *button,
   if (response == FALSE)
     return;
 
-  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "xfce4/help.rc", FALSE);
+  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "expidus1/help.rc", FALSE);
   if (rc != NULL)
     {
       xfce_rc_write_bool_entry (rc, "auto-online", FALSE);
@@ -266,7 +266,7 @@ create_main_window (void)
                                                       NULL);
 
 
-  gtk_window_set_icon_name (GTK_WINDOW (window), "xfce4-logo");
+  gtk_window_set_icon_name (GTK_WINDOW (window), "expidus1-logo");
   gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER);
   gtk_container_set_border_width (GTK_CONTAINER (window), 12);
 

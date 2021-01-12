@@ -1934,7 +1934,7 @@ xfce_sm_client_request_shutdown(XfceSMClient *sm_client,
     if(startup_options.sm_disable)
         return;
 
-    /* TODO: support xfce4-session's DBus interface */
+    /* TODO: support expidus1-session's DBus interface */
 
 #ifdef HAVE_LIBSM
     if(G_LIKELY(sm_client->session_connection)) {

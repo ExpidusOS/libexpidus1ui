@@ -56,7 +56,7 @@ libexpidus1ui_sources = \
 ##
 
 libexpidus1ui2_includedir = \
-	$(includedir)/xfce4/libexpidus1ui-2/libexpidus1ui
+	$(includedir)/expidus1/libexpidus1ui-2/libexpidus1ui
 
 libexpidus1ui2_include_HEADERS = \
 	$(libexpidus1ui_headers)
@@ -120,13 +120,13 @@ INTROSPECTION_COMPILER_ARGS = \
 if HAVE_INTROSPECTION
 introspection_sources = $(libexpidus1ui_2_la_SOURCES)
 
-Libxfce4ui-2.0.gir: libexpidus1ui-2.la Makefile
-Libxfce4ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libxfce4util-1.0
-Libxfce4ui_2_0_gir_CFLAGS = $(AM_CPPFLAGS)
-Libxfce4ui_2_0_gir_LIBS = libexpidus1ui-2.la
-Libxfce4ui_2_0_gir_FILES = $(introspection_sources)
-Libxfce4ui_2_0_gir_EXPORT_PACKAGES = libexpidus1ui-2
-INTROSPECTION_GIRS += Libxfce4ui-2.0.gir
+Libexpidus1ui-2.0.gir: libexpidus1ui-2.la Makefile
+Libexpidus1ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libexpidus1util-1.0
+Libexpidus1ui_2_0_gir_CFLAGS = $(AM_CPPFLAGS)
+Libexpidus1ui_2_0_gir_LIBS = libexpidus1ui-2.la
+Libexpidus1ui_2_0_gir_FILES = $(introspection_sources)
+Libexpidus1ui_2_0_gir_EXPORT_PACKAGES = libexpidus1ui-2
+INTROSPECTION_GIRS += Libexpidus1ui-2.0.gir
 
 girdir = $(datadir)/gir-1.0
 gir_DATA = $(INTROSPECTION_GIRS)
@@ -228,13 +228,13 @@ EXTRA_DIST = \
 if ENABLE_VAPIGEN
 -include $(VAPIGEN_MAKEFILE)
 
-libexpidus1ui-2.vapi: Libxfce4ui-2.0.gir libexpidus1ui-2.deps
+libexpidus1ui-2.vapi: Libexpidus1ui-2.0.gir libexpidus1ui-2.deps
 
 VAPIGEN_VAPIS = libexpidus1ui-2.vapi
 VAPIGEN_GIRDIRS = $(prefix)/share/gir-1.0
 
 libexpidus1ui_2_vapi_METADATADIRS = .
-libexpidus1ui_2_vapi_FILES = Libxfce4ui-2.0.gir
+libexpidus1ui_2_vapi_FILES = Libexpidus1ui-2.0.gir
 
 vapidir = $(datadir)/vala/vapi
 vapi_DATA = $(VAPIGEN_VAPIS) $(VAPIGEN_VAPIS:.vapi=.deps)

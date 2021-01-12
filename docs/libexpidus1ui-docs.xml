@@ -6,7 +6,7 @@
 
 <book id="index">
   <bookinfo>
-    <title>Libxfce4ui Reference Manual</title>
+    <title>Libexpidus1ui Reference Manual</title>
     <releaseinfo>Version <xi:include href="version.xml" parse="text"/></releaseinfo>
     <pubdate>Apr 2019</pubdate>
 
@@ -38,7 +38,7 @@
       <author>
         <firstname>The Xfce development team</firstname>
         <affiliation>
-          <address><email>xfce4-dev@xfce.org</email></address>
+          <address><email>expidus1-dev@xfce.org</email></address>
         </affiliation>
       </author>
     </authorgroup>
@@ -47,7 +47,7 @@
   <part id="libexpidus1ui-introduction">
     <title>Introduction</title>
     <para>
-      Libxfce4ui is used to share commonly used Xfce widgets amoung the Xfce applications.
+      Libexpidus1ui is used to share commonly used Xfce widgets amoung the Xfce applications.
     </para>
   </part>
 

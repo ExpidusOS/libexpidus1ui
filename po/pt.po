@@ -7,7 +7,7 @@
 # Nuno Miguel <nunomgue@gmail.com>, 2015-2017,2019
 msgid ""
 msgstr ""
-"Project-Id-Version: Libxfce4ui\n"
+"Project-Id-Version: Libexpidus1ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-22 00:45+0100\n"
 "PO-Revision-Date: 2020-12-22 16:38+0000\n"
@@ -569,124 +569,124 @@ msgstr "Subtítulo"
 msgid "Xfce 4 Widgets"
 msgstr "\"Widgets\" Xfce 4"
 
-#: ../xfce4-about/main.c:58
+#: ../expidus1-about/main.c:58
 msgid "Version information"
 msgstr "Informações da versão"
 
-#: ../xfce4-about/main.c:117
+#: ../expidus1-about/main.c:117
 msgid "GPUs"
 msgstr "GPUs"
 
-#: ../xfce4-about/main.c:135
+#: ../expidus1-about/main.c:135
 msgid "Window Manager"
 msgstr "Gestor de janelas"
 
-#: ../xfce4-about/main.c:136
+#: ../expidus1-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "Gere o posicionamento das janelas no ecrã."
 
-#: ../xfce4-about/main.c:140
+#: ../expidus1-about/main.c:140
 msgid "Panel"
 msgstr "Painel"
 
-#: ../xfce4-about/main.c:141
+#: ../expidus1-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "Fornece uma casa para botões de janela, lançadores, menu de aplicações e muito mais."
 
-#: ../xfce4-about/main.c:145
+#: ../expidus1-about/main.c:145
 msgid "Desktop Manager"
 msgstr "Gestor de janelas"
 
-#: ../xfce4-about/main.c:146
+#: ../expidus1-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "Define os fundos do ambiente de trabalho, gere os ícones e muito mais."
 
-#: ../xfce4-about/main.c:150
+#: ../expidus1-about/main.c:150
 msgid "File Manager"
 msgstr "Gestor de ficheiros"
 
-#: ../xfce4-about/main.c:151
+#: ../expidus1-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "Gere os seus ficheiros de uma forma moderna, fácil de usar e rápida."
 
-#: ../xfce4-about/main.c:155
+#: ../expidus1-about/main.c:155
 msgid "Volume Manager"
 msgstr "Gestor de volume"
 
-#: ../xfce4-about/main.c:156
+#: ../expidus1-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "Gere unidades e suportes amovíveis para o Thunar."
 
-#: ../xfce4-about/main.c:160
+#: ../expidus1-about/main.c:160
 msgid "Session Manager"
 msgstr "Gestor de sessão"
 
-#: ../xfce4-about/main.c:161
+#: ../expidus1-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "Guarda e restaura a sua sessão, trata do arranque, arranque automático e encerramento."
 
-#: ../xfce4-about/main.c:165
+#: ../expidus1-about/main.c:165
 msgid "Setting System"
 msgstr "Definições do sistema"
 
-#: ../xfce4-about/main.c:166
+#: ../expidus1-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "Configura a aparência, visualização, teclado e definições do rato."
 
-#: ../xfce4-about/main.c:170
+#: ../expidus1-about/main.c:170
 msgid "Application Finder"
 msgstr "Localizar aplicações"
 
-#: ../xfce4-about/main.c:171
+#: ../expidus1-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "Rapidamente encontra e lança aplicações instaladas no seu sistema."
 
-#: ../xfce4-about/main.c:175
+#: ../expidus1-about/main.c:175
 msgid "Settings Daemon"
 msgstr "Serviço de definições"
 
-#: ../xfce4-about/main.c:176
+#: ../expidus1-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "Armazena as suas definições num sistema de configuração baseado em D-Bus."
 
-#: ../xfce4-about/main.c:180
+#: ../expidus1-about/main.c:180
 msgid "A Menu Library"
 msgstr "Uma biblioteca de menu"
 
-#: ../xfce4-about/main.c:181
+#: ../expidus1-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "Implementa um menu compatível com freedesktop.org baseado em GLib e GIO."
 
-#: ../xfce4-about/main.c:185
+#: ../expidus1-about/main.c:185
 msgid "Thumbnails Service"
 msgstr "Serviço de miniaturas"
 
-#: ../xfce4-about/main.c:186
+#: ../expidus1-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "Implementa a especificação de gestão de miniaturas D-Bus."
 
-#: ../xfce4-about/main.c:240
+#: ../expidus1-about/main.c:240
 msgid "Please see <https://www.xfce.org/about/credits>"
 msgstr "Consulte <https://www.xfce.org/about/credits>"
 
-#: ../xfce4-about/main.c:300
+#: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
 msgstr "Se conhece alguém que está em falta nesta lista; não hesite e registe um bug no <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
 
-#: ../xfce4-about/main.c:304
+#: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "Obrigado a todas as pessoas que ajudaram na disponibilização do Xfce!"
 
-#: ../xfce4-about/main.c:321
+#: ../expidus1-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Os direitos do Xfce 4 pertencem a Olivier Fourdan (fourdan@xfce.org). Os direitos dos restantes componentes são dos seus autores."
 
-#: ../xfce4-about/main.c:326
+#: ../expidus1-about/main.c:326
 msgid ""
 "The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -694,131 +694,131 @@ msgid ""
 "any later version."
 msgstr "Os pacotes libexpidus1ui, libexpidus1util e exo são distribuídos nos termos da GNU Library General Public License como publicado pela Free Software Foundation; tanto na versão 2 da licença, ou (por sua opção) qualquer versão mais recente."
 
-#: ../xfce4-about/main.c:333
+#: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
+"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Os pacotes thunar, xfce4-appfinder, xfce4-panel, xfce4-session, xfce4-settings, esconf, xfdesktop e xfwm4 são distribuídos nos termos da GNU General Public License como publicado pela Free Software Foundation; tanto a versão 2 da licença, ou (por sua opção) qualquer versão mais recente."
+msgstr "Os pacotes thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop e xfwm4 são distribuídos nos termos da GNU General Public License como publicado pela Free Software Foundation; tanto a versão 2 da licença, ou (por sua opção) qualquer versão mais recente."
 
-#: ../xfce4-about/main.c:479
+#: ../expidus1-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "Digite '%s --help' para instruções de utilização."
 
-#: ../xfce4-about/main.c:485
+#: ../expidus1-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "Incapaz de iniciar GTK+."
 
-#: ../xfce4-about/main.c:494
+#: ../expidus1-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "A equipa de desenvolvimento do Xfce. Todos os direitos reservados."
 
-#: ../xfce4-about/main.c:495
+#: ../expidus1-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "Por favor, reporte os erros em <%s>."
 
-#: ../xfce4-about/main.c:505
+#: ../expidus1-about/main.c:505
 msgid "Failed to load interface"
 msgstr "Falha ao carregar a interface"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:136
+#: ../expidus1-about/contributors.h:136
 msgid "Core developers"
 msgstr "Programadores principais"
 
-#: ../xfce4-about/contributors.h:139
+#: ../expidus1-about/contributors.h:139
 msgid "Active contributors"
 msgstr "Programadores ativos"
 
-#: ../xfce4-about/contributors.h:142
+#: ../expidus1-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "Manutenção dos servidores por"
 
-#: ../xfce4-about/contributors.h:145
+#: ../expidus1-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "Supervisão das traduções"
 
-#: ../xfce4-about/contributors.h:148
+#: ../expidus1-about/contributors.h:148
 msgid "Documentation supervision"
 msgstr "Supervisão da documentação"
 
-#: ../xfce4-about/contributors.h:151
+#: ../expidus1-about/contributors.h:151
 msgid "Translators"
 msgstr "Tradutores"
 
-#: ../xfce4-about/contributors.h:154
+#: ../expidus1-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "Contributos anteriores"
 
-#: ../xfce4-about/xfce4-about.desktop.in.h:1
+#: ../expidus1-about/expidus1-about.desktop.in.h:1
 msgid "About Xfce"
 msgstr "Sobre o Xfce"
 
-#: ../xfce4-about/xfce4-about.desktop.in.h:2
+#: ../expidus1-about/expidus1-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
 msgstr "Informações do ambiente de trabalho Xfce"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:1
+#: ../expidus1-about/expidus1-about-dialog.glade.h:1
 msgid "License"
 msgstr "Licença"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+#: ../expidus1-about/expidus1-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "Sobre o ambiente de trabalho Xfce"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:3
+#: ../expidus1-about/expidus1-about-dialog.glade.h:3
 msgid "label"
 msgstr "legenda"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../expidus1-about/expidus1-about-dialog.glade.h:4
 msgid "OS Name"
 msgstr "Nome do SO"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../expidus1-about/expidus1-about-dialog.glade.h:5
 msgid "Device"
 msgstr "Dispositivo"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../expidus1-about/expidus1-about-dialog.glade.h:6
 msgid "Memory"
 msgstr "Memória"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../expidus1-about/expidus1-about-dialog.glade.h:7
 msgid "CPU"
 msgstr "CPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../expidus1-about/expidus1-about-dialog.glade.h:8
 msgid "OS Type"
 msgstr "Tipo de SO"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../expidus1-about/expidus1-about-dialog.glade.h:9
 msgid "Xfce Version"
 msgstr "Versão do Xfce"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../expidus1-about/expidus1-about-dialog.glade.h:10
 msgid "Distributor"
 msgstr "Distribuidor"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../expidus1-about/expidus1-about-dialog.glade.h:11
 msgid "GPU"
 msgstr "GPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid "System"
 msgstr "Sistema"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "O Xfce é constituído por uma colecão de programas que usados em conjunto, disponibilizam um ambiente de trabalho completo. Os seguintes programas fazem parte da base do Xfce:"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../expidus1-about/expidus1-about-dialog.glade.h:15
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -829,46 +829,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "O Xfce é também uma plataforma de desenvolvimento que fornece várias bibliotecas que ajudam os programadores a criar aplicações que se encaixam bem com o ambiente de trabalho.\n\nOs componentes Xfce são licenciados sob licenças livres ou de código aberto; GPL ou BSDL para aplicações e LGPL ou BSDL para bibliotecas. Veja a documentação, o código fonte ou o website Xfce (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) para mais informações.\n\nObrigado pelo seu interesse no Xfce.\n\n\t- A Equipa de desenvolvimento do Xfce"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../expidus1-about/expidus1-about-dialog.glade.h:22
 msgid "About"
 msgstr "Sobre"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../expidus1-about/expidus1-about-dialog.glade.h:23
 msgid "Credits"
 msgstr "Créditos"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../expidus1-about/expidus1-about-dialog.glade.h:24
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../expidus1-about/expidus1-about-dialog.glade.h:25
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../expidus1-about/expidus1-about-dialog.glade.h:26
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../expidus1-about/expidus1-about-dialog.glade.h:27
 msgid "Copyright"
 msgstr "Direitos de autor"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../expidus1-about/system-info.c:533 ../expidus1-about/system-info.c:555
+#: ../expidus1-about/system-info.c:656 ../expidus1-about/system-info.c:701
 msgid "Unknown"
 msgstr "Desconhecido"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../expidus1-about/system-info.c:641
 msgid "64-bit (32-bit userspace)"
 msgstr "64-bit (32-bit userspace)"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../expidus1-about/system-info.c:644
 msgid "64-bit"
 msgstr "64-bit"
 
-#: ../xfce4-about/system-info.c:644
+#: ../expidus1-about/system-info.c:644
 msgid "32-bit"
 msgstr "32-bit"
 
@@ -876,7 +876,7 @@ msgstr "32-bit"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../expidus1-about/system-info.c:709
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; ID de compilação: %s"

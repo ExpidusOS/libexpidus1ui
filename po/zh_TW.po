@@ -9,7 +9,7 @@
 # 黃柏諺 <s8321414@gmail.com>, 2019-2020
 msgid ""
 msgstr ""
-"Project-Id-Version: Libxfce4ui\n"
+"Project-Id-Version: Libexpidus1ui\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-20 00:45+0100\n"
 "PO-Revision-Date: 2020-12-21 01:38+0000\n"
@@ -571,124 +571,124 @@ msgstr "子標題"
 msgid "Xfce 4 Widgets"
 msgstr "Xfce 4 器件"
 
-#: ../xfce4-about/main.c:58
+#: ../expidus1-about/main.c:58
 msgid "Version information"
 msgstr "版本資訊"
 
-#: ../xfce4-about/main.c:117
+#: ../expidus1-about/main.c:117
 msgid "GPUs"
 msgstr "GPU"
 
-#: ../xfce4-about/main.c:135
+#: ../expidus1-about/main.c:135
 msgid "Window Manager"
 msgstr "視窗管理程式"
 
-#: ../xfce4-about/main.c:136
+#: ../expidus1-about/main.c:136
 msgid "Handles the placement of windows on the screen."
 msgstr "處理如何於螢幕置放視窗。"
 
-#: ../xfce4-about/main.c:140
+#: ../expidus1-about/main.c:140
 msgid "Panel"
 msgstr "面板"
 
-#: ../xfce4-about/main.c:141
+#: ../expidus1-about/main.c:141
 msgid "Provides a home for window buttons, launchers, app menu and more."
 msgstr "提供視窗按鈕、啟動器、應用程式選單與更多其他東西的首頁。"
 
-#: ../xfce4-about/main.c:145
+#: ../expidus1-about/main.c:145
 msgid "Desktop Manager"
 msgstr "視窗管理程式"
 
-#: ../xfce4-about/main.c:146
+#: ../expidus1-about/main.c:146
 msgid "Sets desktop backgrounds, handles icons and more."
 msgstr "設定桌面背景、處理圖示與更多。"
 
-#: ../xfce4-about/main.c:150
+#: ../expidus1-about/main.c:150
 msgid "File Manager"
 msgstr "檔案管理員"
 
-#: ../xfce4-about/main.c:151
+#: ../expidus1-about/main.c:151
 msgid "Manages your files in a modern, easy-to-use and fast way."
 msgstr "以現在化、易於使用且快速的方式管理您的檔案。"
 
-#: ../xfce4-about/main.c:155
+#: ../expidus1-about/main.c:155
 msgid "Volume manager"
 msgstr "卷冊管理員"
 
-#: ../xfce4-about/main.c:156
+#: ../expidus1-about/main.c:156
 msgid "Manages removable drives and media for Thunar."
 msgstr "使用 Thunar 管理可移除式磁碟與媒體。"
 
-#: ../xfce4-about/main.c:160
+#: ../expidus1-about/main.c:160
 msgid "Session Manager"
 msgstr "工作階段管理員"
 
-#: ../xfce4-about/main.c:161
+#: ../expidus1-about/main.c:161
 msgid ""
 "Saves and restores your session, handles startup, autostart and shutdown."
 msgstr "儲存並復原您的工作階段、處理啟動程式、自動啟動與關機。"
 
-#: ../xfce4-about/main.c:165
+#: ../expidus1-about/main.c:165
 msgid "Setting System"
 msgstr "設定值系統"
 
-#: ../xfce4-about/main.c:166
+#: ../expidus1-about/main.c:166
 msgid "Configures appearance, display, keyboard and mouse settings."
 msgstr "設定外觀、顯示、鍵盤與滑鼠設定。"
 
-#: ../xfce4-about/main.c:170
+#: ../expidus1-about/main.c:170
 msgid "Application Finder"
 msgstr "應用程式協尋器"
 
-#: ../xfce4-about/main.c:171
+#: ../expidus1-about/main.c:171
 msgid "Quickly finds and launches applications installed on your system."
 msgstr "快速搜尋與啟動安裝自您的系統上的應用程式。"
 
-#: ../xfce4-about/main.c:175
+#: ../expidus1-about/main.c:175
 msgid "Settings Daemon"
 msgstr "設定值幕後程式"
 
-#: ../xfce4-about/main.c:176
+#: ../expidus1-about/main.c:176
 msgid "Stores your settings in a D-Bus-based configuration system."
 msgstr "將您的設定儲存在以 D-Bus 為基礎的設定系統中。"
 
-#: ../xfce4-about/main.c:180
+#: ../expidus1-about/main.c:180
 msgid "A menu library"
 msgstr "選單函式庫"
 
-#: ../xfce4-about/main.c:181
+#: ../expidus1-about/main.c:181
 msgid "Implements a freedesktop.org compliant menu based on GLib and GIO."
 msgstr "以 GLib 與 GIO 為基礎實作與 freedesktop.org 相容的選單。"
 
-#: ../xfce4-about/main.c:185
+#: ../expidus1-about/main.c:185
 msgid "Thumbnails service"
 msgstr "縮圖服務"
 
-#: ../xfce4-about/main.c:186
+#: ../expidus1-about/main.c:186
 msgid "Implements the thumbnail management D-Bus specification."
 msgstr "實作縮圖管理的 D-Bus 規範。"
 
-#: ../xfce4-about/main.c:240
+#: ../expidus1-about/main.c:240
 msgid "Please see <https://www.xfce.org/about/credits>"
 msgstr "請見 <https://www.xfce.org/about/credits>"
 
-#: ../xfce4-about/main.c:300
+#: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
 "on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
 msgstr "若您發現清單中有些人沒有列出來，請不要猶豫在 <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> 遞交臭蟲回報。"
 
-#: ../xfce4-about/main.c:304
+#: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
 msgstr "感謝所有幫助製作出這個軟體的人！"
 
-#: ../xfce4-about/main.c:321
+#: ../expidus1-about/main.c:321
 msgid ""
 "Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
 msgstr "Xfce 4 著作權所有者為 Olivier Fourdan (fourdan@xfce.org)。不同的部件是由其各自的作者擁有其著作權。"
 
-#: ../xfce4-about/main.c:326
+#: ../expidus1-about/main.c:326
 msgid ""
 "The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
@@ -696,131 +696,131 @@ msgid ""
 "any later version."
 msgstr "libexpidus1ui、libexpidus1util 與 exo 套件是基於自由軟體基金會發佈的 GNU Library General Public License 授權條款給予授權；不管是該授權的第 2 版，或（根據您自己選擇）的後續版本都可以。"
 
-#: ../xfce4-about/main.c:333
+#: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-"xfce4-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
+"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar、xfce4-appfinder、xfce-panel、xfce4-session、xfce4-settings、esconf、xfdeskop 與 xfwm4 套件是基於自由軟體基金會發佈的 GNU General Public License 授權條款給予授權；不管是該授權的第 2 版，或（根據您自己選擇）的後續版本都可以。"
+msgstr "thunar、expidus1-appfinder、xfce-panel、expidus1-session、expidus1-settings、esconf、xfdeskop 與 xfwm4 套件是基於自由軟體基金會發佈的 GNU General Public License 授權條款給予授權；不管是該授權的第 2 版，或（根據您自己選擇）的後續版本都可以。"
 
-#: ../xfce4-about/main.c:479
+#: ../expidus1-about/main.c:479
 #, c-format
 msgid "Type '%s --help' for usage information."
 msgstr "請輸入「%s --help」以瞭解用法資訊。"
 
-#: ../xfce4-about/main.c:485
+#: ../expidus1-about/main.c:485
 msgid "Unable to initialize GTK+."
 msgstr "無法初始化 GTK+。"
 
-#: ../xfce4-about/main.c:494
+#: ../expidus1-about/main.c:494
 msgid "The Xfce development team. All rights reserved."
 msgstr "Xfce 開發團隊。保留所有權利。"
 
-#: ../xfce4-about/main.c:495
+#: ../expidus1-about/main.c:495
 #, c-format
 msgid "Please report bugs to <%s>."
 msgstr "請回報臭蟲至 <%s>。"
 
-#: ../xfce4-about/main.c:505
+#: ../expidus1-about/main.c:505
 msgid "Failed to load interface"
 msgstr "無法載入介面"
 
 #. { N_("Project Lead"),
 #. xfce_contributors_lead
 #. },
-#: ../xfce4-about/contributors.h:136
+#: ../expidus1-about/contributors.h:136
 msgid "Core developers"
 msgstr "核心開發者"
 
-#: ../xfce4-about/contributors.h:139
+#: ../expidus1-about/contributors.h:139
 msgid "Active contributors"
 msgstr "活躍的開發者"
 
-#: ../xfce4-about/contributors.h:142
+#: ../expidus1-about/contributors.h:142
 msgid "Servers maintained by"
 msgstr "伺服器維護者"
 
-#: ../xfce4-about/contributors.h:145
+#: ../expidus1-about/contributors.h:145
 msgid "Translations supervision"
 msgstr "翻譯監督"
 
-#: ../xfce4-about/contributors.h:148
+#: ../expidus1-about/contributors.h:148
 msgid "Documentation supervision"
 msgstr "文件監督"
 
-#: ../xfce4-about/contributors.h:151
+#: ../expidus1-about/contributors.h:151
 msgid "Translators"
 msgstr "翻譯者"
 
-#: ../xfce4-about/contributors.h:154
+#: ../expidus1-about/contributors.h:154
 msgid "Previous contributors"
 msgstr "之前的貢獻者"
 
-#: ../xfce4-about/xfce4-about.desktop.in.h:1
+#: ../expidus1-about/expidus1-about.desktop.in.h:1
 msgid "About Xfce"
 msgstr "關於 Xfce"
 
-#: ../xfce4-about/xfce4-about.desktop.in.h:2
+#: ../expidus1-about/expidus1-about.desktop.in.h:2
 msgid "Information about the Xfce Desktop Environment"
 msgstr "有關 Xfce 桌面環境的資訊"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:1
+#: ../expidus1-about/expidus1-about-dialog.glade.h:1
 msgid "License"
 msgstr "授權"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:2
+#: ../expidus1-about/expidus1-about-dialog.glade.h:2
 msgid "About the Xfce Desktop Environment"
 msgstr "關於 Xfce 桌面環境"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:3
+#: ../expidus1-about/expidus1-about-dialog.glade.h:3
 msgid "label"
 msgstr "標籤"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:4
+#: ../expidus1-about/expidus1-about-dialog.glade.h:4
 msgid "OS Name"
 msgstr "作業系統名稱"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:5
+#: ../expidus1-about/expidus1-about-dialog.glade.h:5
 msgid "Device"
 msgstr "裝置"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:6
+#: ../expidus1-about/expidus1-about-dialog.glade.h:6
 msgid "Memory"
 msgstr "記憶體"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:7
+#: ../expidus1-about/expidus1-about-dialog.glade.h:7
 msgid "CPU"
 msgstr "CPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:8
+#: ../expidus1-about/expidus1-about-dialog.glade.h:8
 msgid "OS Type"
 msgstr "作業系統類型"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:9
+#: ../expidus1-about/expidus1-about-dialog.glade.h:9
 msgid "Xfce Version"
 msgstr "Xfce 版本"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:10
+#: ../expidus1-about/expidus1-about-dialog.glade.h:10
 msgid "Distributor"
 msgstr "散佈者"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:11
+#: ../expidus1-about/expidus1-about-dialog.glade.h:11
 msgid "GPU"
 msgstr "GPU"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:12
+#: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid "System"
 msgstr "系統"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:13
+#: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
 "Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
 "The following programs are part of the Xfce core:"
 msgstr "Xfce 是個程式的集合，這些程式一同提供多功能的桌面環境。\n下列程式為 Xfce 的核心部份："
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:15
+#: ../expidus1-about/expidus1-about-dialog.glade.h:15
 msgid ""
 "Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
@@ -831,46 +831,46 @@ msgid ""
 "\t- The Xfce Development Team"
 msgstr "Xfce 也是一個提供許多協助程式設計師建立適於桌面環境使用的應用程式的函式庫之開發平臺。\n\nXfce 元件以自由或開放原始碼的授權條款提供；應用程式使用 GPL 或 BSDL，而函式庫則使用 LGPL 或 BSDL。請見文件、原始碼或 Xfce 網站 (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) 以取得更多資訊。\n\n感謝您對 Xfce 的關心。\n\n\t- Xfce 開發團隊"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:22
+#: ../expidus1-about/expidus1-about-dialog.glade.h:22
 msgid "About"
 msgstr "關於"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:23
+#: ../expidus1-about/expidus1-about-dialog.glade.h:23
 msgid "Credits"
 msgstr "鳴謝"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:24
+#: ../expidus1-about/expidus1-about-dialog.glade.h:24
 msgid "GPL"
 msgstr "GPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:25
+#: ../expidus1-about/expidus1-about-dialog.glade.h:25
 msgid "LGPL"
 msgstr "LGPL"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:26
+#: ../expidus1-about/expidus1-about-dialog.glade.h:26
 msgid "BSD"
 msgstr "BSD"
 
-#: ../xfce4-about/xfce4-about-dialog.glade.h:27
+#: ../expidus1-about/expidus1-about-dialog.glade.h:27
 msgid "Copyright"
 msgstr "著作權所有"
 
-#: ../xfce4-about/system-info.c:533 ../xfce4-about/system-info.c:555
-#: ../xfce4-about/system-info.c:656 ../xfce4-about/system-info.c:701
+#: ../expidus1-about/system-info.c:533 ../expidus1-about/system-info.c:555
+#: ../expidus1-about/system-info.c:656 ../expidus1-about/system-info.c:701
 msgid "Unknown"
 msgstr "未知"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:641
+#: ../expidus1-about/system-info.c:641
 msgid "64-bit (32-bit userspace)"
 msgstr "64 位元（32 位元使用者空間）"
 
 #. translators: This is the type of architecture for the OS
-#: ../xfce4-about/system-info.c:644
+#: ../expidus1-about/system-info.c:644
 msgid "64-bit"
 msgstr "64 位元"
 
-#: ../xfce4-about/system-info.c:644
+#: ../expidus1-about/system-info.c:644
 msgid "32-bit"
 msgstr "32 位元"
 
@@ -878,7 +878,7 @@ msgstr "32 位元"
 #. * example:
 #. * "Fedora 25 (Workstation Edition); Build ID: xyz" or
 #. * "Ubuntu 16.04 LTS; Build ID: jki"
-#: ../xfce4-about/system-info.c:709
+#: ../expidus1-about/system-info.c:709
 #, c-format
 msgid "%s; Build ID: %s"
 msgstr "%s; 組建 ID：%s"

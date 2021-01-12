@@ -1,4 +1,4 @@
-<glade-catalog name="libexpidus1ui-2" supports="gtkbuilder" library="xfce4uiglade2" version="4.12.0" book="xfce4" domain="glade3" depends="gtk+">
+<glade-catalog name="libexpidus1ui-2" supports="gtkbuilder" library="expidus1uiglade2" version="4.12.0" book="expidus1" domain="glade3" depends="gtk+">
   <glade-widget-classes>
     <glade-widget-class name="XfceTitledDialog" generic-name="xfce-titled-dialog" _title="Titled Dialog">
       <post-create-function>glade_xfce_titled_dialog_post_create</post-create-function>
@@ -12,7 +12,7 @@
       </properties>
     </glade-widget-class>
   </glade-widget-classes>
-  <glade-widget-group name="xfce4-widgets" _title="Xfce 4 Widgets">
+  <glade-widget-group name="expidus1-widgets" _title="Xfce 4 Widgets">
     <glade-widget-class-ref name="XfceTitledDialog"/>
   </glade-widget-group>
 </glade-catalog>

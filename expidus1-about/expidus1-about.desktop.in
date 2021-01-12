@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=xfce4-about
+Exec=expidus1-about
 Icon=com.expidus.about
 StartupNotify=false
 Terminal=false

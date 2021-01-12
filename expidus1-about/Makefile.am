@@ -1,31 +1,31 @@
 
 AM_CPPFLAGS = \
 	-I$(top_srcdir) \
-	-DG_LOG_DOMAIN=\"xfce4-about\" \
-	-DDATADIR=\"$(datadir)/xfce4\" \
+	-DG_LOG_DOMAIN=\"expidus1-about\" \
+	-DDATADIR=\"$(datadir)/expidus1\" \
 	-DPACKAGE_LOCALE_DIR=\"$(localedir)\" \
 	$(PLATFORM_CPPFLAGS)
 
 bin_PROGRAMS = \
-	xfce4-about
+	expidus1-about
 
-xfce4_about_built_sources = \
+expidus1_about_built_sources = \
 	about-dialog-ui.h
 
-xfce4_about_SOURCES = \
-	$(xfce4_about_built_sources) \
+expidus1_about_SOURCES = \
+	$(expidus1_about_built_sources) \
 	contributors.h \
 	main.c
 
 if ENABLE_GLIBTOP
 
-xfce4_about_SOURCES += \
+expidus1_about_SOURCES += \
 	system-info.c \
 	system-info.h
 
 endif
 
-xfce4_about_CFLAGS = \
+expidus1_about_CFLAGS = \
 	$(LIBEXPIDUS1UTIL_CFLAGS) \
 	$(GTK3_CFLAGS) \
 	$(GLIBTOP_CFLAGS) \
@@ -34,7 +34,7 @@ xfce4_about_CFLAGS = \
 	$(LIBX11_CFLAGS) \
 	$(PLATFORM_CFLAGS)
 
-xfce4_about_LDADD = \
+expidus1_about_LDADD = \
 	$(top_builddir)/libexpidus1ui/libexpidus1ui-2.la \
 	$(LIBEXPIDUS1UTIL_LIBS) \
 	$(GLIBTOP_LIBS) \
@@ -44,11 +44,11 @@ xfce4_about_LDADD = \
 	$(LIBX11_LDFLAGS) \
 	$(GTK3_LIBS)
 
-xfce4_about_DEPENDENCIES = \
+expidus1_about_DEPENDENCIES = \
 	$(top_builddir)/libexpidus1ui/libexpidus1ui-2.la
 
 desktopdir = $(datadir)/applications
-desktop_in_files = xfce4-about.desktop.in
+desktop_in_files = expidus1-about.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
@@ -57,17 +57,17 @@ DISTCLEANFILES = \
 
 if MAINTAINER_MODE
 
-about-dialog-ui.h: $(srcdir)/xfce4-about-dialog.glade Makefile
+about-dialog-ui.h: $(srcdir)/expidus1-about-dialog.glade Makefile
 	$(AM_V_GEN) xdt-csource --static --strip-comments --strip-content --name=xfce_about_dialog_ui $< >$@
 
 BUILT_SOURCES = \
-	$(xfce4_about_built_sources)
+	$(expidus1_about_built_sources)
 
 DISTCLEANFILES += \
-	$(xfce4_about_built_sources)
+	$(expidus1_about_built_sources)
 
 endif
 
 EXTRA_DIST = \
 	$(desktop_in_files) \
-	xfce4-about-dialog.glade
+	expidus1-about-dialog.glade

@@ -135,7 +135,7 @@ xfce_about_about (GtkWidget *vbox)
         N_("Window Manager"),
         N_("Handles the placement of windows on the screen.")
       },
-      { "xfce4-panel",
+      { "expidus1-panel",
         "com.expidus.panel",
         N_("Panel"),
         N_("Provides a home for window buttons, launchers, app menu and more.")
@@ -155,17 +155,17 @@ xfce_about_about (GtkWidget *vbox)
         N_("Volume Manager"),
         N_("Manages removable drives and media for Thunar.")
       },
-      { "xfce4-session",
+      { "expidus1-session",
         "com.expidus.session",
         N_("Session Manager"),
         N_("Saves and restores your session, handles startup, autostart and shutdown.")
       },
-      { "xfce4-settings",
+      { "expidus1-settings",
         "com.expidus.settings.manager",
         N_("Setting System"),
         N_("Configures appearance, display, keyboard and mouse settings.")
       },
-      { "xfce4-appfinder",
+      { "expidus1-appfinder",
         "com.expidus.appfinder",
         N_("Application Finder"),
         N_("Quickly finds and launches applications installed on your system.")
@@ -330,8 +330,8 @@ xfce_about_copyright (GtkTextBuffer *buffer)
 
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
-      _("The packages thunar, xfce4-appfinder, xfce4-panel, xfce4-session, "
-        "xfce4-settings, esconf, xfdesktop and xfwm4 are "
+      _("The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+        "expidus1-settings, esconf, xfdesktop and xfwm4 are "
         "distributed under the terms of the GNU General Public License as "
         "published by the Free Software Foundation; either version 2 of the "
         "License, or (at your option) any later version."), -1);

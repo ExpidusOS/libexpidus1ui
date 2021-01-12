@@ -35,7 +35,7 @@ libexpidus1kbd_sources = \
 lib_LTLIBRARIES = libexpidus1kbd-private-3.la
 
 libexpidus1kbd3_private_includedir = \
-	$(includedir)/xfce4/libexpidus1kbd-private-3/libexpidus1kbd-private
+	$(includedir)/expidus1/libexpidus1kbd-private-3/libexpidus1kbd-private
 
 libexpidus1kbd3_private_include_HEADERS = \
 	$(libexpidus1kbd_headers)
@@ -68,8 +68,8 @@ libexpidus1kbd_private_3_la_LIBADD = \
 	$(LIBEXPIDUS1UTIL_LIBS) \
 	$(ESCONF_LIBS)
 
-settingsdir = $(sysconfdir)/xdg/xfce4/esconf/xfce-perchannel-xml
-settings_DATA = xfce4-keyboard-shortcuts.xml
+settingsdir = $(sysconfdir)/xdg/expidus1/esconf/xfce-perchannel-xml
+settings_DATA = expidus1-keyboard-shortcuts.xml
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = libexpidus1kbd-private-3.pc

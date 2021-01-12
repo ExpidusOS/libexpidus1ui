@@ -65,7 +65,7 @@ xfce_dialog_show_help_auto_toggled (GtkWidget *button)
   if (button != NULL)
     active = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button));
 
-  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "xfce4/help.rc", FALSE);
+  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "expidus1/help.rc", FALSE);
   if (rc != NULL)
     {
       xfce_rc_write_bool_entry (rc, "auto-online", active);
@@ -235,7 +235,7 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
     g_string_append_printf (uri, "&offset=%s", offset);
 
   /* check if we should automatically go online */
-  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "xfce4/help.rc", TRUE);
+  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "expidus1/help.rc", TRUE);
   if (rc != NULL)
     {
       auto_online = xfce_rc_read_bool_entry (rc, "auto-online", FALSE);
@@ -603,7 +603,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 
   gxml = gtk_builder_new_from_resource ("/com/expidus/libexpidus1ui/libexpidus1ui-dialog-ui.ui");
 
-  dialog = GTK_WIDGET(gtk_builder_get_object(gxml, "xfce4ui-dialog"));
+  dialog = GTK_WIDGET(gtk_builder_get_object(gxml, "expidus1ui-dialog"));
   label_box = GTK_WIDGET(gtk_builder_get_object(gxml, "label-box"));
   dialog_image = GTK_WIDGET(gtk_builder_get_object(gxml, "icon_stock_id"));
   gtk_window_set_default_size (GTK_WINDOW (dialog), 500, -1);
