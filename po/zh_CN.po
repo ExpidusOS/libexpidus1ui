@@ -26,122 +26,122 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../libexpidus1ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/expidus-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "无法打开网络浏览器以获取在线文档"
 
-#: ../libexpidus1ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/expidus-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "您要在线阅读 %s 手册吗？"
 
-#: ../libexpidus1ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/expidus-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "您要在线阅读手册吗？"
 
-#: ../libexpidus1ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/expidus-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "您将被重定向至维护和翻译帮助文档的网站。"
 
 #. Create cancel button
-#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/expidus-dialogs.c:275 ../libexpidus1ui/expidus-dialogs.c:533
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "取消 (_C)"
 
-#: ../libexpidus1ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/expidus-dialogs.c:277
 msgid "_Read Online"
 msgstr "在线阅读(_R)"
 
-#: ../libexpidus1ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/expidus-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "总是直接进入在线文档(_A)"
 
-#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
-#: ../libexpidus1ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/expidus-dialogs.c:335 ../libexpidus1ui/expidus-dialogs.c:370
+#: ../libexpidus1ui/expidus-dialogs.c:406
 msgid "Close"
 msgstr "关闭"
 
-#: ../libexpidus1ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/expidus-dialogs.c:453
 msgid "No"
 msgstr "否"
 
-#: ../libexpidus1ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/expidus-dialogs.c:455
 msgid "Yes"
 msgstr "是的"
 
-#: ../libexpidus1ui/xfce-dialogs.c:459
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/expidus-dialogs.c:459
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:41
 msgid "Cancel"
 msgstr "取消"
 
-#: ../libexpidus1ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/expidus-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "关闭带有多个标签的窗口？"
 
-#: ../libexpidus1ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/expidus-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "此窗口打开了多个标签。 关闭此窗口将会关闭所有标签。"
 
-#: ../libexpidus1ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/expidus-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "此窗口打开了%d 个标签。 关闭此窗口也将关闭所有标签。"
 
-#: ../libexpidus1ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/expidus-dialogs.c:529
 msgid "Warning"
 msgstr "警告"
 
-#: ../libexpidus1ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/expidus-dialogs.c:534
 msgid "Close T_ab"
 msgstr "关闭标签(_A)"
 
-#: ../libexpidus1ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/expidus-dialogs.c:535
 msgid "Close _Window"
 msgstr "关闭窗口(_W)"
 
-#: ../libexpidus1ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/expidus-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "不再询问(_N)"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "会话管理客户端 ID"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "ID"
 msgstr "ID"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/expidus-sm-client.c:1428
 msgid "Disable session management"
 msgstr "禁用会话管理"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/expidus-sm-client.c:1438
 msgid "Session management options"
 msgstr "会话管理选项"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/expidus-sm-client.c:1439
 msgid "Show session management options"
 msgstr "显示会话管理选项"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/expidus-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "无法与会话管理器连接：%s"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/expidus-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "会话管理器未返回一个有效的客户端 ID"
 
 #. print warning for user
-#: ../libexpidus1ui/xfce-spawn.c:400
+#: ../libexpidus1ui/expidus-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -149,53 +149,53 @@ msgid ""
 msgstr "工作目录 \"%s\" 不存在。启动 \"%s\" 时不会使用它。"
 
 #. the string contains a directory separator
-#: ../libexpidus1ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/expidus-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "文件名中的目录分隔符非法"
 
 #. the string is too long
-#: ../libexpidus1ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/expidus-filename-input.c:422
 msgid "Filename is too long"
 msgstr "文件名太长"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libexpidus1ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/expidus-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "文件名不应以空格开头或结尾"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "该快捷键已被用于动作 '%s'。您要使用哪个动作？"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "使用 '%s'"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "保留 '%s'"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "该快捷键已被用于命令 '%s'。您要使用哪个动作？"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -204,363 +204,363 @@ msgstr "该快捷键已被动作 '%s' 使用。您要使用哪个动作？"
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "请使用另一组按键组合。"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "%s 已经触发此动作。"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "因 %s 冲突的动作"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "其它动作在使用此快捷键。"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "窗口管理器动作快捷键"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:233
 msgid "action"
 msgstr "动作"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "命令快捷键"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:225
 msgid "command"
 msgstr "命令"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "快捷键"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "清除"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr "按键触发 %s '%s'."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr "请按一个键"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "未能捕获键盘输入。"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:36
 msgid "Window operations menu"
 msgstr "窗口操作菜单"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:37
 msgid "Up"
 msgstr "上"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:38
 msgid "Down"
 msgstr "下"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:39
 msgid "Left"
 msgstr "左"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:40
 msgid "Right"
 msgstr "右"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:42
 msgid "Cycle windows"
 msgstr "循环窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "循环窗口(反向)"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:44
 msgid "Switch window for same application"
 msgstr "切换同一应用程序的窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:45
 msgid "Switch application"
 msgstr "切换应用程序"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:46
 msgid "Close window"
 msgstr "关闭窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:47
 msgid "Maximize window horizontally"
 msgstr "水平最大化窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:48
 msgid "Maximize window vertically"
 msgstr "竖直最大化窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:49
 msgid "Maximize window"
 msgstr "最大化窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:50
 msgid "Hide window"
 msgstr "隐藏窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:51
 msgid "Move window"
 msgstr "移动窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:52
 msgid "Resize window"
 msgstr "调整窗口大小"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:53
 msgid "Shade window"
 msgstr "折叠窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:54
 msgid "Stick window"
 msgstr "粘滞窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:55
 msgid "Raise window"
 msgstr "提升窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:56
 msgid "Lower window"
 msgstr "降低窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:57
 msgid "Raise or lower window"
 msgstr "提升或降低窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:58
 msgid "Fill window"
 msgstr "填充窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:59
 msgid "Fill window horizontally"
 msgstr "水平填充窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:60
 msgid "Fill window vertically"
 msgstr "竖直填充窗口"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:61
 msgid "Toggle above"
 msgstr "切换以上"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:62
 msgid "Toggle fullscreen"
 msgstr "全屏切换"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:63
 msgid "Move window to upper workspace"
 msgstr "移动窗口至上方工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:64
 msgid "Move window to bottom workspace"
 msgstr "移动窗口至下方工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:65
 msgid "Move window to left workspace"
 msgstr "移动窗口至左边工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:66
 msgid "Move window to right workspace"
 msgstr "移动窗口至右边工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:67
 msgid "Move window to previous workspace"
 msgstr "移动窗口至上一工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:68
 msgid "Move window to next workspace"
 msgstr "移动窗口至下一工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:69
 msgid "Move window to workspace 1"
 msgstr "移动窗口至工作区 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:70
 msgid "Move window to workspace 2"
 msgstr "移动窗口至工作区 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:71
 msgid "Move window to workspace 3"
 msgstr "移动窗口至工作区 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:72
 msgid "Move window to workspace 4"
 msgstr "移动窗口至工作区 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:73
 msgid "Move window to workspace 5"
 msgstr "移动窗口至工作区 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:74
 msgid "Move window to workspace 6"
 msgstr "移动窗口至工作区 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:75
 msgid "Move window to workspace 7"
 msgstr "移动窗口至工作区 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:76
 msgid "Move window to workspace 8"
 msgstr "移动窗口至工作区 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:77
 msgid "Move window to workspace 9"
 msgstr "移动窗口至工作区 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:78
 msgid "Move window to workspace 10"
 msgstr "移动窗口至工作区 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:79
 msgid "Move window to workspace 11"
 msgstr "移动窗口至工作区 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:80
 msgid "Move window to workspace 12"
 msgstr "移动窗口至工作区 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:81
 msgid "Tile window to the top"
 msgstr "窗口平铺在顶部"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:82
 msgid "Tile window to the bottom"
 msgstr "窗口平铺在底部"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:83
 msgid "Tile window to the left"
 msgstr "窗口平铺在左边"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:84
 msgid "Tile window to the right"
 msgstr "窗口平铺在右边"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:85
 msgid "Tile window to the top-left"
 msgstr "窗口平铺在左上"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:86
 msgid "Tile window to the top-right"
 msgstr "窗口平铺在右上"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:87
 msgid "Tile window to the bottom-left"
 msgstr "窗口平铺在左下"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:88
 msgid "Tile window to the bottom-right"
 msgstr "窗口平铺在右下"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:89
 msgid "Show desktop"
 msgstr "显示桌面"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:90
 msgid "Upper workspace"
 msgstr "上方工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:91
 msgid "Bottom workspace"
 msgstr "下方工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:92
 msgid "Left workspace"
 msgstr "左边工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:93
 msgid "Right workspace"
 msgstr "右边工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:94
 msgid "Previous workspace"
 msgstr "上一工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:95
 msgid "Next workspace"
 msgstr "下一工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:96
 msgid "Workspace 1"
 msgstr "工作区 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:97
 msgid "Workspace 2"
 msgstr "工作区 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:98
 msgid "Workspace 3"
 msgstr "工作区 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:99
 msgid "Workspace 4"
 msgstr "工作区 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:100
 msgid "Workspace 5"
 msgstr "工作区 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:101
 msgid "Workspace 6"
 msgstr "工作区 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:102
 msgid "Workspace 7"
 msgstr "工作区 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:103
 msgid "Workspace 8"
 msgstr "工作区 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:104
 msgid "Workspace 9"
 msgstr "工作区 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:105
 msgid "Workspace 10"
 msgstr "工作区 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:106
 msgid "Workspace 11"
 msgstr "工作区 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:107
 msgid "Workspace 12"
 msgstr "工作区 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:108
 msgid "Add workspace"
 msgstr "添加工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:109
 msgid "Add adjacent workspace"
 msgstr "添加相邻工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:110
 msgid "Delete last workspace"
 msgstr "删除最后一个工作区"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:111
 msgid "Delete active workspace"
 msgstr "删除当前工作区"
 
@@ -573,8 +573,8 @@ msgid "Subtitle"
 msgstr "子标题"
 
 #: ../glade/libexpidus1ui-2.xml.in.h:3
-msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 控件"
+msgid "Expidus 4 Widgets"
+msgstr "Expidus 4 控件"
 
 #: ../expidus1-about/main.c:59
 msgid "Version information"
@@ -685,9 +685,9 @@ msgstr "感谢所有成就该软件的人们！"
 
 #: ../expidus1-about/main.c:361
 msgid ""
-"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 版权归 Olivier Fourdan(fourdan@xfce.org)所有。不同组件的版权归它们各自的作者所有。"
+msgstr "Expidus 4 版权归 Olivier Fourdan(fourdan@xfce.org)所有。不同组件的版权归它们各自的作者所有。"
 
 #: ../expidus1-about/main.c:366
 msgid ""
@@ -700,11 +700,11 @@ msgstr "libexpidus1ui、libexpidus1util 和 exo 软件包以自由软件基金�
 #: ../expidus1-about/main.c:373
 msgid ""
 "The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
+"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar、expidus1-appfinder、expidus1-panel、expidus1-session、expidus1-settings、esconf、xfdesktop 和 xfwm4 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第 2 版或按（您可以选择的）更高版本发布。"
+msgstr "thunar、expidus1-appfinder、expidus1-panel、expidus1-session、expidus1-settings、esconf、xfdesktop 和 eswm1 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第 2 版或按（您可以选择的）更高版本发布。"
 
 #: ../expidus1-about/main.c:519
 #, c-format
@@ -716,8 +716,8 @@ msgid "Unable to initialize GTK+."
 msgstr "未能初始化 GTK+。"
 
 #: ../expidus1-about/main.c:534
-msgid "The Xfce development team. All rights reserved."
-msgstr "Xfce 开发团队。保留所有权利。"
+msgid "The Expidus development team. All rights reserved."
+msgstr "Expidus 开发团队。保留所有权利。"
 
 #: ../expidus1-about/main.c:535
 #, c-format
@@ -729,7 +729,7 @@ msgid "Failed to load interface"
 msgstr "无法载入界面"
 
 #. { N_("Project Lead"),
-#. xfce_contributors_lead
+#. expidus_contributors_lead
 #. },
 #: ../expidus1-about/contributors.h:128
 msgid "Core developers"
@@ -756,20 +756,20 @@ msgid "Previous contributors"
 msgstr "先前的贡献者"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:1
-msgid "About Xfce"
-msgstr "关于 Xfce"
+msgid "About Expidus"
+msgstr "关于 Expidus"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:2
-msgid "Information about the Xfce Desktop Environment"
-msgstr "有关 Xfce 桌面环境的信息"
+msgid "Information about the Expidus Desktop Environment"
+msgstr "有关 Expidus 桌面环境的信息"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:1
 msgid "License"
 msgstr "许可协议"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:2
-msgid "About the Xfce Desktop Environment"
-msgstr "关于 Xfce 桌面环境"
+msgid "About the Expidus Desktop Environment"
+msgstr "关于 Expidus 桌面环境"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:3
 msgid "label"
@@ -796,8 +796,8 @@ msgid "OS Type"
 msgstr "操作系统类型"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:9
-msgid "Xfce Version"
-msgstr "Xfce 版本"
+msgid "Expidus Version"
+msgstr "Expidus 版本"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:10
 msgid "Distributor"
@@ -813,20 +813,20 @@ msgstr "系统"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Xfce core:"
-msgstr "Xfce 是一个提供全功能桌面环境的程序集。\n以下程序是 Xfce 核心的部分："
+"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Expidus core:"
+msgstr "Expidus 是一个提供全功能桌面环境的程序集。\n以下程序是 Expidus 核心的部分："
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15
 msgid ""
-"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"Expidus is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
-"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"Expidus components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Expidus website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
 "\n"
-"Thank you for your interest in Xfce.\n"
+"Thank you for your interest in Expidus.\n"
 "\n"
-"\t- The Xfce Development Team"
-msgstr "Xfce 还是一个开发平台，提供了多个库，可帮助程序员创建与桌面环境相适应的应用程序。\n\nXfce 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。浏览文档、源代码或 Xfce 站点 (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) 以获取详情。\n\n感谢您对 Xfce 的关注。\n\n\t- Xfce 开发团队"
+"\t- The Expidus Development Team"
+msgstr "Expidus 还是一个开发平台，提供了多个库，可帮助程序员创建与桌面环境相适应的应用程序。\n\nExpidus 组件以自由或开源许可协议授权；应用程序以 GPL 或 BSDL，库文件以 LGPL 或BSDL 授权。浏览文档、源代码或 Expidus 站点 (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) 以获取详情。\n\n感谢您对 Expidus 的关注。\n\n\t- Expidus 开发团队"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:22
 msgid "About"

@@ -7,7 +7,7 @@ DOC_MODULE=libexpidus1ui
 DOC_MAIN_SGML_FILE=$(DOC_MODULE)-docs.xml
 
 # Extra options to supply to gtkdoc-scan
-SCAN_OPTIONS=--deprecated-guards="XFCE_DISABLE_DEPRECATED"
+SCAN_OPTIONS=--deprecated-guards="EXPIDUS_DISABLE_DEPRECATED"
 
 # Extra options to pass to gtkdoc-scangobj
 SCANGOBJ_OPTIONS=
@@ -29,7 +29,7 @@ CFILE_GLOB=$(top_srcdir)/libexpidus1ui/*.c
 IGNORE_HFILES=								\
 	libexpidus1ui.h							\
 	libexpidus1ui-private.h						\
-	xfce-heading.h							\
+	expidus-heading.h							\
 	libexpidus1ui-enum-types.h						\
 	libexpidus1ui-alias.h						\
 	stamp-libexpidus1ui-marshal.h					\

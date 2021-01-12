@@ -18,122 +18,122 @@ msgstr ""
 "Language: kk\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../libexpidus1ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/expidus-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Желідегі онлайн құжаттамасы үшін веб браузерді ашу сәтсіз аяқталды."
 
-#: ../libexpidus1ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/expidus-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "%s құжаттамасын онлайн оқуды қалайсыз ба?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/expidus-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Желідегі онлайн құжаттаманы оқуды қалайсыз ба?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/expidus-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Сіз құжаттама парақтары әзірленіп, аударылатын веб сайтына өтесіз."
 
 #. Create cancel button
-#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/expidus-dialogs.c:275 ../libexpidus1ui/expidus-dialogs.c:533
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "Ба_с тарту"
 
-#: ../libexpidus1ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/expidus-dialogs.c:277
 msgid "_Read Online"
 msgstr "Же_ліден оқу"
 
-#: ../libexpidus1ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/expidus-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "Әрқ_ашан желідегі онлайн құжаттамаға өту"
 
-#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
-#: ../libexpidus1ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/expidus-dialogs.c:335 ../libexpidus1ui/expidus-dialogs.c:370
+#: ../libexpidus1ui/expidus-dialogs.c:406
 msgid "Close"
 msgstr "Жабу"
 
-#: ../libexpidus1ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/expidus-dialogs.c:453
 msgid "No"
 msgstr "Жабу"
 
-#: ../libexpidus1ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/expidus-dialogs.c:455
 msgid "Yes"
 msgstr "Иә"
 
-#: ../libexpidus1ui/xfce-dialogs.c:459
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/expidus-dialogs.c:459
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:41
 msgid "Cancel"
 msgstr "Бас тарту"
 
-#: ../libexpidus1ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/expidus-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Бірнеше беті бар терезені жабу керек пе?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/expidus-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Бұл терезеде бірнеше ашық бет бар. Бұл бетті жабу нәтижесінде ол беттердің барлығы да жабылады."
 
-#: ../libexpidus1ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/expidus-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Бұл терезеде %d ашық бет бар. Бұл бетті жабу нәтижесінде ол беттердің барлығы да жабылады."
 
-#: ../libexpidus1ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/expidus-dialogs.c:529
 msgid "Warning"
 msgstr "Ескерту"
 
-#: ../libexpidus1ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/expidus-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Бе_тті жабу"
 
-#: ../libexpidus1ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/expidus-dialogs.c:535
 msgid "Close _Window"
 msgstr "Тере_зені жабу"
 
-#: ../libexpidus1ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/expidus-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "М_ені қайта сұрамау"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "Сессиялар басқарушысының клиент ID-і"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "ID"
 msgstr "ID"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/expidus-sm-client.c:1428
 msgid "Disable session management"
 msgstr "Сессияларды басқаруын сөндіру"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/expidus-sm-client.c:1438
 msgid "Session management options"
 msgstr "Сессияларды басқару опциялары"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/expidus-sm-client.c:1439
 msgid "Show session management options"
 msgstr "Сессияларды басқарудың опцияларын көрсету"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/expidus-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Сессияларды басқарушыға байланысты орнату сәтсіз аяқталды: %s"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/expidus-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Сессияны басқарушысы дұрыс клиент ID-ін қайтармады"
 
 #. print warning for user
-#: ../libexpidus1ui/xfce-spawn.c:423
+#: ../libexpidus1ui/expidus-spawn.c:423
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -141,53 +141,53 @@ msgid ""
 msgstr "\"%s\" жұмыс бумасы жоқ болып тұр. Ол \"%s\" жасалғанда қолданылмайды."
 
 #. the string contains a directory separator
-#: ../libexpidus1ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/expidus-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "Файл атында бумалар ажыратқышы жарамсыз"
 
 #. the string is too long
-#: ../libexpidus1ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/expidus-filename-input.c:422
 msgid "Filename is too long"
 msgstr "Файл аты тым ұзын"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libexpidus1ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/expidus-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "Файл аттару бос аралықпен басталмауы және аяқталмауы тиіс"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "Жарлық қазір '%s' командасы үшін қолданылуда. Қай әрекетті қолдануды қалайсыз?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "'%s' қолдану"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "'%s' қалдыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "Жарлық қазір '%s' командасы үшін қолданылуда. Қай әрекетті қолдануды қалайсыз?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -196,363 +196,363 @@ msgstr "Жарлық қазір '%s' командасы үшін қолданы�
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Басқа пернелер комбинациясын қолданыңыз."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "Бұл әрекетті %s іске қосуға бапталған."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "%s үшін ерегісетін әрекеттер"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "Жарлық қазір басқа бір әрекет үшін орнатылып тұр."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Терезелер басқарушысы әрекетінің жарлығы"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:233
 msgid "action"
 msgstr "әрекет"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Команда жарлығы"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:225
 msgid "command"
 msgstr "команда"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Жарлық"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "Тазарту"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr "%s '%s' жөнелту үшін пернетақта пернелерін басыңыз."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr "Пернені басыңыз"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Пернетақта басқаруын алу мүмкін емес."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:36
 msgid "Window operations menu"
 msgstr "Терезе әрекеттер мәзірі"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:37
 msgid "Up"
 msgstr "Жоғары"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:38
 msgid "Down"
 msgstr "Төмен"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:39
 msgid "Left"
 msgstr "Сол жақ"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:40
 msgid "Right"
 msgstr "Оң жақ"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:42
 msgid "Cycle windows"
 msgstr "Терезелерді ауыстыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Терезелерді (керісінше) ауыстыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:44
 msgid "Switch window for same application"
 msgstr "Бір қолданба терезелерін ауыстыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:45
 msgid "Switch application"
 msgstr "Қолданбаны ауыстыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:46
 msgid "Close window"
 msgstr "Терезені жабу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:47
 msgid "Maximize window horizontally"
 msgstr "Терезені енінен максималды қылу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:48
 msgid "Maximize window vertically"
 msgstr "Терезені биіктігінен максималды қылу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:49
 msgid "Maximize window"
 msgstr "Терезені максималды қылу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:50
 msgid "Hide window"
 msgstr "Терезені жасыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:51
 msgid "Move window"
 msgstr "Терезені жылжыту"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:52
 msgid "Resize window"
 msgstr "Терезе өлшемдерін өзгерту"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:53
 msgid "Shade window"
 msgstr "Терезені атау жолағына жинау"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:54
 msgid "Stick window"
 msgstr "Терезені жабыстыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:55
 msgid "Raise window"
 msgstr "Терезені көтеру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:56
 msgid "Lower window"
 msgstr "Терезені артқа апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:57
 msgid "Raise or lower window"
 msgstr "Терезені көтеру не төмендету"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:58
 msgid "Fill window"
 msgstr "Терезені жазық қылу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:59
 msgid "Fill window horizontally"
 msgstr "Терезені енінен жазу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:60
 msgid "Fill window vertically"
 msgstr "Терезені биіктігінен жазу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:61
 msgid "Toggle above"
 msgstr "Басқа терезелердің үстінде болуды қосу/сөндіру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:62
 msgid "Toggle fullscreen"
 msgstr "Толық экранға болуды қосу/сөндіру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:63
 msgid "Move window to upper workspace"
 msgstr "Терезені жоғарғы жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:64
 msgid "Move window to bottom workspace"
 msgstr "Терезені төмендегі жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:65
 msgid "Move window to left workspace"
 msgstr "Терезені сол жақтағы жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:66
 msgid "Move window to right workspace"
 msgstr "Терезені оң жақтағы жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:67
 msgid "Move window to previous workspace"
 msgstr "Терезені алдыңғы жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:68
 msgid "Move window to next workspace"
 msgstr "Терезені келесі жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:69
 msgid "Move window to workspace 1"
 msgstr "Терезені 1-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:70
 msgid "Move window to workspace 2"
 msgstr "Терезені 2-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:71
 msgid "Move window to workspace 3"
 msgstr "Терезені 3-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:72
 msgid "Move window to workspace 4"
 msgstr "Терезені 4-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:73
 msgid "Move window to workspace 5"
 msgstr "Терезені 5-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:74
 msgid "Move window to workspace 6"
 msgstr "Терезені 6-шы жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:75
 msgid "Move window to workspace 7"
 msgstr "Терезені 7-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:76
 msgid "Move window to workspace 8"
 msgstr "Терезені 8-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:77
 msgid "Move window to workspace 9"
 msgstr "Терезені 9-шы жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:78
 msgid "Move window to workspace 10"
 msgstr "Терезені 10-шы жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:79
 msgid "Move window to workspace 11"
 msgstr "Терезені 11-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:80
 msgid "Move window to workspace 12"
 msgstr "Терезені 12-ші жұмыс орнына апару"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:81
 msgid "Tile window to the top"
 msgstr "Терезені үстіге толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:82
 msgid "Tile window to the bottom"
 msgstr "Терезені астыға толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:83
 msgid "Tile window to the left"
 msgstr "Терезені сол жаққа толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:84
 msgid "Tile window to the right"
 msgstr "Терезені оң жаққа толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:85
 msgid "Tile window to the top-left"
 msgstr "Терезені сол жақ жоғарыға толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:86
 msgid "Tile window to the top-right"
 msgstr "Терезені оң жақ жоғарыға толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:87
 msgid "Tile window to the bottom-left"
 msgstr "Терезені сол жақ төменге толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:88
 msgid "Tile window to the bottom-right"
 msgstr "Терезені оң жақ төменге толтыру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:89
 msgid "Show desktop"
 msgstr "Жұмыс үстелін көрсету"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:90
 msgid "Upper workspace"
 msgstr "Жоғарғы жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:91
 msgid "Bottom workspace"
 msgstr "Төменгі жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:92
 msgid "Left workspace"
 msgstr "Сол жақтағы жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:93
 msgid "Right workspace"
 msgstr "Оң жақтағы жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:94
 msgid "Previous workspace"
 msgstr "Алдыңғы жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:95
 msgid "Next workspace"
 msgstr "Келесі жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:96
 msgid "Workspace 1"
 msgstr "1-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:97
 msgid "Workspace 2"
 msgstr "2-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:98
 msgid "Workspace 3"
 msgstr "3-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:99
 msgid "Workspace 4"
 msgstr "4-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:100
 msgid "Workspace 5"
 msgstr "5-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:101
 msgid "Workspace 6"
 msgstr "6-шы жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:102
 msgid "Workspace 7"
 msgstr "7-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:103
 msgid "Workspace 8"
 msgstr "8-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:104
 msgid "Workspace 9"
 msgstr "9-шы жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:105
 msgid "Workspace 10"
 msgstr "10-шы жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:106
 msgid "Workspace 11"
 msgstr "11-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:107
 msgid "Workspace 12"
 msgstr "12-ші жұмыс орны"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:108
 msgid "Add workspace"
 msgstr "Жұмыс орнын қосу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:109
 msgid "Add adjacent workspace"
 msgstr "Сыбайлас жұмыс орнын қосу"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:110
 msgid "Delete last workspace"
 msgstr "Соңғы жұмыс орнын өшіру"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:111
 msgid "Delete active workspace"
 msgstr "Белсенді тұрған жұмыс орнын жою"
 
@@ -565,8 +565,8 @@ msgid "Subtitle"
 msgstr "Қосымша атауы"
 
 #: ../glade/libexpidus1ui-2.xml.in.h:3
-msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 виджеттері"
+msgid "Expidus 4 Widgets"
+msgstr "Expidus 4 виджеттері"
 
 #: ../expidus1-about/main.c:59
 msgid "Version information"
@@ -673,9 +673,9 @@ msgstr "Осы бағдарламалық қамтаманы қолжетерл�
 
 #: ../expidus1-about/main.c:350
 msgid ""
-"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 құқықтарына Olivier Fourdan (fourdan@xfce.org) ие. Әр түрлі құрауыштар өз авторларының меншігі болып табылады."
+msgstr "Expidus 4 құқықтарына Olivier Fourdan (fourdan@xfce.org) ие. Әр түрлі құрауыштар өз авторларының меншігі болып табылады."
 
 #: ../expidus1-about/main.c:355
 msgid ""
@@ -688,11 +688,11 @@ msgstr "libexpidus1ui, libexpidus1util және exo дестелері Free Soft
 #: ../expidus1-about/main.c:362
 msgid ""
 "The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
+"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop және xfwm4 дестелері Free Software Foundation жариялаған GNU General Public License аясында таратылады; нұсқасы 2 немесе (таңдауыңызша) одан кейін шыққан кез-келгені."
+msgstr "thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop және eswm1 дестелері Free Software Foundation жариялаған GNU General Public License аясында таратылады; нұсқасы 2 немесе (таңдауыңызша) одан кейін шыққан кез-келгені."
 
 #: ../expidus1-about/main.c:509
 #, c-format
@@ -704,8 +704,8 @@ msgid "Unable to initialize GTK+."
 msgstr "GTK+ іске қосу мүмкін емес."
 
 #: ../expidus1-about/main.c:524
-msgid "The Xfce development team. All rights reserved."
-msgstr "Xfce өндіру тобы. Барлық құқықтары қорғалған."
+msgid "The Expidus development team. All rights reserved."
+msgstr "Expidus өндіру тобы. Барлық құқықтары қорғалған."
 
 #: ../expidus1-about/main.c:525
 #, c-format
@@ -723,14 +723,14 @@ msgstr "Интерфейсті жүктеу сәтсіз"
 msgid "Version %s, distributed by %s"
 msgstr "Нұсқасы %s, таратушы %s"
 
-#. I18N: %s will be replaced by the Xfce version number
+#. I18N: %s will be replaced by the Expidus version number
 #: ../expidus1-about/main.c:553
 #, c-format
 msgid "Version %s"
 msgstr "Нұсқасы %s"
 
 #. { N_("Project Lead"),
-#. xfce_contributors_lead
+#. expidus_contributors_lead
 #. },
 #: ../expidus1-about/contributors.h:128
 msgid "Core developers"
@@ -757,20 +757,20 @@ msgid "Previous contributors"
 msgstr "Алдыңғы үлес қосушылар"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:1
-msgid "About Xfce"
-msgstr "Xfce туралы"
+msgid "About Expidus"
+msgstr "Expidus туралы"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:2
-msgid "Information about the Xfce Desktop Environment"
-msgstr "Xfce жұмыс үстел ортасы туралы ақпарат"
+msgid "Information about the Expidus Desktop Environment"
+msgstr "Expidus жұмыс үстел ортасы туралы ақпарат"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:1
 msgid "License"
 msgstr "Лицензиясы"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:2
-msgid "About the Xfce Desktop Environment"
-msgstr "Xfce жұмыс үстел ортасы туралы"
+msgid "About the Expidus Desktop Environment"
+msgstr "Expidus жұмыс үстел ортасы туралы"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:3
 msgid "label"
@@ -797,8 +797,8 @@ msgid "OS Type"
 msgstr "ОЖ түрі"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:9
-msgid "Xfce Version"
-msgstr "Xfce нұсқасы"
+msgid "Expidus Version"
+msgstr "Expidus нұсқасы"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:10
 msgid "Distributor"
@@ -810,20 +810,20 @@ msgstr "Жүйелік"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid ""
-"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Xfce core:"
-msgstr "Xfce - бұл мүмкіндіктері көп жұмыс үстел ортасын құрайтын бірнеше бағдарламалардың жинағы.\nКелесі бағдарламалар Xfce өзегін құрайды:"
+"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Expidus core:"
+msgstr "Expidus - бұл мүмкіндіктері көп жұмыс үстел ортасын құрайтын бірнеше бағдарламалардың жинағы.\nКелесі бағдарламалар Expidus өзегін құрайды:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:14
 msgid ""
-"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"Expidus is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
-"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"Expidus components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Expidus website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
 "\n"
-"Thank you for your interest in Xfce.\n"
+"Thank you for your interest in Expidus.\n"
 "\n"
-"\t- The Xfce Development Team"
-msgstr "Сонымен қатар, Xfce бағдарламашыларға жұмыс үстеліне сәйкес келетін қолданбаларды жасауға көмектесетін бірнеше библиотекаларды ұсынатын әзірлеу платформасы болып табылады.\n\nXfce құрауыштары еркін не ашық лицензиялар аясында таратылады; қолданбалар үшін GPL не BSDL, жинақтар үшін LGPL не BSDL. Көбірек білу үшін құжаттаманы, бастапқы кодты мен Xfce веб сайтын (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) қараңыз.\n\nXfce жобасына көрсеткен қызығыңыз үшін рахмет.\n\n\t- Xfce әзірлеушілер тобы"
+"\t- The Expidus Development Team"
+msgstr "Сонымен қатар, Expidus бағдарламашыларға жұмыс үстеліне сәйкес келетін қолданбаларды жасауға көмектесетін бірнеше библиотекаларды ұсынатын әзірлеу платформасы болып табылады.\n\nExpidus құрауыштары еркін не ашық лицензиялар аясында таратылады; қолданбалар үшін GPL не BSDL, жинақтар үшін LGPL не BSDL. Көбірек білу үшін құжаттаманы, бастапқы кодты мен Expidus веб сайтын (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) қараңыз.\n\nExpidus жобасына көрсеткен қызығыңыз үшін рахмет.\n\n\t- Expidus әзірлеушілер тобы"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:21
 msgid "About"

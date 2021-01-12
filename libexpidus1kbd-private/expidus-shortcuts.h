@@ -18,15 +18,15 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef __XFCE_SHORTCUTS_H__
-#define __XFCE_SHORTCUTS_H__
+#ifndef __EXPIDUS_SHORTCUTS_H__
+#define __EXPIDUS_SHORTCUTS_H__
 
 #include <X11/Xlib.h>
 #include <esconf/esconf.h>
 
 G_BEGIN_DECLS
 
-gboolean xfce_shortcut_conflict_dialog (GtkWindow   *parent,
+gboolean expidus_shortcut_conflict_dialog (GtkWindow   *parent,
                                         const gchar *owner,
                                         const gchar *other,
                                         const gchar *shortcut,
@@ -36,4 +36,4 @@ gboolean xfce_shortcut_conflict_dialog (GtkWindow   *parent,
 
 G_END_DECLS
 
-#endif /* !__XFCE_SHORTCUTS_H__ */
+#endif /* !__EXPIDUS_SHORTCUTS_H__ */

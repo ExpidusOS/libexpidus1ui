@@ -19,122 +19,122 @@ msgstr ""
 "Language: lt\n"
 "Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: ../libexpidus1ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/expidus-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Nepavyko atverti naršyklės tinklo dokumentacijai"
 
-#: ../libexpidus1ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/expidus-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Ar norite skaityti %s naudotojo vadovą internete?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/expidus-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Ar norite skaityti naudotojo vadovą internete?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/expidus-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Jūs būsite nukreipti į dokumentacijos svetainę, kurioje yra verčiami ir prižiūrimi žinyno puslapiai."
 
 #. Create cancel button
-#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/expidus-dialogs.c:275 ../libexpidus1ui/expidus-dialogs.c:533
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_Atsisakyti"
 
-#: ../libexpidus1ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/expidus-dialogs.c:277
 msgid "_Read Online"
 msgstr "_Skaityti internete"
 
-#: ../libexpidus1ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/expidus-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "_Visada pereiti tiesiai į dokumentaciją internete"
 
-#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
-#: ../libexpidus1ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/expidus-dialogs.c:335 ../libexpidus1ui/expidus-dialogs.c:370
+#: ../libexpidus1ui/expidus-dialogs.c:406
 msgid "Close"
 msgstr "Užverti"
 
-#: ../libexpidus1ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/expidus-dialogs.c:453
 msgid "No"
 msgstr "Ne"
 
-#: ../libexpidus1ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/expidus-dialogs.c:455
 msgid "Yes"
 msgstr "Taip"
 
-#: ../libexpidus1ui/xfce-dialogs.c:459
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/expidus-dialogs.c:459
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:41
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: ../libexpidus1ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/expidus-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Užverti langą su keliomis kortelėmis?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/expidus-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Šiame lange yra kelios atvertos kortelės. Užvėrus šį langą, tuo pačiu bus užvertos ir visos jame esančios kortelės."
 
-#: ../libexpidus1ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/expidus-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Šiame lange yra %d atvertos kortelės. Užvėrus šį langą, tuo pačiu bus užvertos ir visos jame esančios kortelės."
 
-#: ../libexpidus1ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/expidus-dialogs.c:529
 msgid "Warning"
 msgstr "Įspėjimas"
 
-#: ../libexpidus1ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/expidus-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Užverti _kortelę"
 
-#: ../libexpidus1ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/expidus-dialogs.c:535
 msgid "Close _Window"
 msgstr "Užverti _langą"
 
-#: ../libexpidus1ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/expidus-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "_Daugiau nebeklausti"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "Seanso tvarkymo kliento ID"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "ID"
 msgstr "ID"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/expidus-sm-client.c:1428
 msgid "Disable session management"
 msgstr "Išjungti seanso tvarkymą"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/expidus-sm-client.c:1438
 msgid "Session management options"
 msgstr "Seanso tvarkymo parametrai"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/expidus-sm-client.c:1439
 msgid "Show session management options"
 msgstr "Rodyti seanso tvarkymo parametrus"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/expidus-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nepavyko prisijungti prie seansų tvarkytuvės: %s"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/expidus-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Seansų tvarkytuvė negrąžino tinkamo kliento id"
 
 #. print warning for user
-#: ../libexpidus1ui/xfce-spawn.c:400
+#: ../libexpidus1ui/expidus-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -142,53 +142,53 @@ msgid ""
 msgstr "Darbinio katalogo „%s“ nėra. Jis nebus naudojamas atvaizduojant „%s“."
 
 #. the string contains a directory separator
-#: ../libexpidus1ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/expidus-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "Katalogų skirtukas failo pavadinime yra neleistinas"
 
 #. the string is too long
-#: ../libexpidus1ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/expidus-filename-input.c:422
 msgid "Filename is too long"
 msgstr "Failo pavadinimas yra per ilgas"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libexpidus1ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/expidus-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "Failo pavadinimai neturėtų prasidėti ar baigtis tarpu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "Šis susiejimas jau yra naudojamas veiksmui '%s'. Kurį veiksmą norėsite naudoti?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Naudoti „%s“"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "Palikti „%s“"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "Šis susiejimas jau naudojamas komandai „%s“. Kurį veiksmą norėsite naudoti?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -197,363 +197,363 @@ msgstr "Šis susiejimas jau yra naudojamas veiksmo '%s'. Kurį veiksmą norėsit
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Prašome naudoti kitokią klavišų kombinaciją."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "%s jau yra nustatyta, kad paleistų šį veiksmą."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Nesuderinami veiksmai, skirti %s"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "Šis susiejimas jau naudojamas kažkam kitam."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Langų tvarkytuvės veiksmų susiejimas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:233
 msgid "action"
 msgstr "veiksmas"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Komandos susiejimas"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:225
 msgid "command"
 msgstr "komandą"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Susiejimas"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "Išvalyti"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr "Paspauskite klaviatūros klavišus, kurie paleis %s '%s'."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr "Paspauskite klavišą"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Nepavyko sučiupti klaviatūros."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:36
 msgid "Window operations menu"
 msgstr "Lango operacijų meniu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:37
 msgid "Up"
 msgstr "Aukštyn"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:38
 msgid "Down"
 msgstr "Žemyn"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:39
 msgid "Left"
 msgstr "Kairė"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:40
 msgid "Right"
 msgstr "Dešinė"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:42
 msgid "Cycle windows"
 msgstr "Perjungti langus"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Perjungti langus (atvirkščiai)"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:44
 msgid "Switch window for same application"
 msgstr "Perjungti langą tai pačiai programai"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:45
 msgid "Switch application"
 msgstr "Perjungti programą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:46
 msgid "Close window"
 msgstr "Užverti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:47
 msgid "Maximize window horizontally"
 msgstr "Išskleisti langą horizontaliai"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:48
 msgid "Maximize window vertically"
 msgstr "Išskleisti langą vertikaliai"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:49
 msgid "Maximize window"
 msgstr "Išskleisti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:50
 msgid "Hide window"
 msgstr "Paslėpti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:51
 msgid "Move window"
 msgstr "Perkelti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:52
 msgid "Resize window"
 msgstr "Keisti lango dydį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:53
 msgid "Shade window"
 msgstr "Uždengti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:54
 msgid "Stick window"
 msgstr "Priklijuoti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:55
 msgid "Raise window"
 msgstr "Iškelti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:56
 msgid "Lower window"
 msgstr "Nuleisti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:57
 msgid "Raise or lower window"
 msgstr "Iškelti ar nuleisti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:58
 msgid "Fill window"
 msgstr "Užpildyti langą"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:59
 msgid "Fill window horizontally"
 msgstr "Užpildyti langą horizontaliai"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:60
 msgid "Fill window vertically"
 msgstr "Užpildyti langą vertikaliai"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:61
 msgid "Toggle above"
 msgstr "Perjungti aukščiau"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:62
 msgid "Toggle fullscreen"
 msgstr "Perjungti viso ekrano veikseną"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:63
 msgid "Move window to upper workspace"
 msgstr "Perkelti langą į aukštesniąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:64
 msgid "Move window to bottom workspace"
 msgstr "Perkelti langą į žemesniąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:65
 msgid "Move window to left workspace"
 msgstr "Perkelti langą į kairiąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:66
 msgid "Move window to right workspace"
 msgstr "Perkelti langą į dešiniąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:67
 msgid "Move window to previous workspace"
 msgstr "Perkelti langą į buvusią darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:68
 msgid "Move window to next workspace"
 msgstr "Perkelti langą į kitą darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:69
 msgid "Move window to workspace 1"
 msgstr "Perkelti langą į darbo sritį 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:70
 msgid "Move window to workspace 2"
 msgstr "Perkelti langą į darbo sritį 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:71
 msgid "Move window to workspace 3"
 msgstr "Perkelti langą į darbo sritį 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:72
 msgid "Move window to workspace 4"
 msgstr "Perkelti langą į darbo sritį 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:73
 msgid "Move window to workspace 5"
 msgstr "Perkelti langą į darbo sritį 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:74
 msgid "Move window to workspace 6"
 msgstr "Perkelti langą į darbo sritį 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:75
 msgid "Move window to workspace 7"
 msgstr "Perkelti langą į darbo sritį 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:76
 msgid "Move window to workspace 8"
 msgstr "Perkelti langą į darbo sritį 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:77
 msgid "Move window to workspace 9"
 msgstr "Perkelti langą į darbo sritį 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:78
 msgid "Move window to workspace 10"
 msgstr "Perkelti langą į darbo sritį 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:79
 msgid "Move window to workspace 11"
 msgstr "Perkelti langą į darbo sritį 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:80
 msgid "Move window to workspace 12"
 msgstr "Perkelti langą į darbo sritį 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:81
 msgid "Tile window to the top"
 msgstr "Perkelti langą į aukštesniąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:82
 msgid "Tile window to the bottom"
 msgstr "Perkelti langą į žemesniąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:83
 msgid "Tile window to the left"
 msgstr "Perkelti langą į kairiąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:84
 msgid "Tile window to the right"
 msgstr "Perkelti langą į dešinąją darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:85
 msgid "Tile window to the top-left"
 msgstr "Iškloti langą viršuje kairėje"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:86
 msgid "Tile window to the top-right"
 msgstr "Iškloti langą viršuje dešinėje"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:87
 msgid "Tile window to the bottom-left"
 msgstr "Iškloti langą apačioje kairėje"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:88
 msgid "Tile window to the bottom-right"
 msgstr "Iškloti langą apačioje dešinėje"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:89
 msgid "Show desktop"
 msgstr "Rodyti darbalaukį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:90
 msgid "Upper workspace"
 msgstr "Viršutinė darbo sritis"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:91
 msgid "Bottom workspace"
 msgstr "Žemutinė darbo sritis"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:92
 msgid "Left workspace"
 msgstr "Kairioji darbo sritis"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:93
 msgid "Right workspace"
 msgstr "Dešinioji darbo sritis"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:94
 msgid "Previous workspace"
 msgstr "Ankstesnė darbo sritis"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:95
 msgid "Next workspace"
 msgstr "Kita darbo sritis"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:96
 msgid "Workspace 1"
 msgstr "Darbo sritis 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:97
 msgid "Workspace 2"
 msgstr "Darbo sritis 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:98
 msgid "Workspace 3"
 msgstr "Darbo sritis 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:99
 msgid "Workspace 4"
 msgstr "Darbo sritis 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:100
 msgid "Workspace 5"
 msgstr "Darbo sritis 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:101
 msgid "Workspace 6"
 msgstr "Darbo sritis 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:102
 msgid "Workspace 7"
 msgstr "Darbo sritis 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:103
 msgid "Workspace 8"
 msgstr "Darbo sritis 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:104
 msgid "Workspace 9"
 msgstr "Darbo sritis 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:105
 msgid "Workspace 10"
 msgstr "Darbo sritis 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:106
 msgid "Workspace 11"
 msgstr "Darbo sritis 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:107
 msgid "Workspace 12"
 msgstr "Darbo sritis 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:108
 msgid "Add workspace"
 msgstr "Pridėti darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:109
 msgid "Add adjacent workspace"
 msgstr "Pridėti darbo sritį šalia"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:110
 msgid "Delete last workspace"
 msgstr "Pašalinti paskutinę darbo sritį"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:111
 msgid "Delete active workspace"
 msgstr "Pašalinti aktyvią darbo sritį"
 
@@ -566,8 +566,8 @@ msgid "Subtitle"
 msgstr "Paantraštė"
 
 #: ../glade/libexpidus1ui-2.xml.in.h:3
-msgid "Xfce 4 Widgets"
-msgstr "Xfce 4 valdikliai"
+msgid "Expidus 4 Widgets"
+msgstr "Expidus 4 valdikliai"
 
 #: ../expidus1-about/main.c:58
 msgid "Version information"
@@ -682,9 +682,9 @@ msgstr "Dėkojame visiems, kurie prisidėjo tam, kad ši programinė įranga bū
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 autorinės teisės priklauso Olivier Fourdan (fourdan@xfce.org). Kiti komponentai priklauso atitinkamiems autoriams."
+msgstr "Expidus 4 autorinės teisės priklauso Olivier Fourdan (fourdan@xfce.org). Kiti komponentai priklauso atitinkamiems autoriams."
 
 #: ../expidus1-about/main.c:326
 msgid ""
@@ -697,11 +697,11 @@ msgstr "Libexpidus1ui, libexpidus1util ir exo paketai yra platinami pagal Free S
 #: ../expidus1-about/main.c:333
 msgid ""
 "The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
+"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Paketai thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop ir xfwm4 yra platinami pagal Free Software Foundation paskelbtą GNU Bendrąją Viešąją Licenciją; arba pagal licencijos versiją 2, arba (jūsų nuožiūra) bet kurią vėlesnę versiją. "
+msgstr "Paketai thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop ir eswm1 yra platinami pagal Free Software Foundation paskelbtą GNU Bendrąją Viešąją Licenciją; arba pagal licencijos versiją 2, arba (jūsų nuožiūra) bet kurią vėlesnę versiją. "
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -713,8 +713,8 @@ msgid "Unable to initialize GTK+."
 msgstr "Nepavyko inicijuoti GTK+."
 
 #: ../expidus1-about/main.c:494
-msgid "The Xfce development team. All rights reserved."
-msgstr "Xfce kūrėjų komanda. Visos teisės saugomos."
+msgid "The Expidus development team. All rights reserved."
+msgstr "Expidus kūrėjų komanda. Visos teisės saugomos."
 
 #: ../expidus1-about/main.c:495
 #, c-format
@@ -726,7 +726,7 @@ msgid "Failed to load interface"
 msgstr "Nepavyko įkelti sąsajos"
 
 #. { N_("Project Lead"),
-#. xfce_contributors_lead
+#. expidus_contributors_lead
 #. },
 #: ../expidus1-about/contributors.h:136
 msgid "Core developers"
@@ -757,20 +757,20 @@ msgid "Previous contributors"
 msgstr "Ankstesni talkininkai"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:1
-msgid "About Xfce"
-msgstr "Apie Xfce"
+msgid "About Expidus"
+msgstr "Apie Expidus"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:2
-msgid "Information about the Xfce Desktop Environment"
-msgstr "Informacija apie Xfce darbalaukio aplinką"
+msgid "Information about the Expidus Desktop Environment"
+msgstr "Informacija apie Expidus darbalaukio aplinką"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:1
 msgid "License"
 msgstr "Licencija"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:2
-msgid "About the Xfce Desktop Environment"
-msgstr "Apie Xfce darbalaukio aplinką"
+msgid "About the Expidus Desktop Environment"
+msgstr "Apie Expidus darbalaukio aplinką"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:3
 msgid "label"
@@ -797,8 +797,8 @@ msgid "OS Type"
 msgstr "OS tipas"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:9
-msgid "Xfce Version"
-msgstr "Xfce versija"
+msgid "Expidus Version"
+msgstr "Expidus versija"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:10
 msgid "Distributor"
@@ -814,20 +814,20 @@ msgstr "Sistema"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Xfce core:"
-msgstr "Xfce - tai programų rinkinys, kartu sudarantis pilną darbalaukio aplinką.\nĮ Xfce branduolį įeina šios programos:"
+"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Expidus core:"
+msgstr "Expidus - tai programų rinkinys, kartu sudarantis pilną darbalaukio aplinką.\nĮ Expidus branduolį įeina šios programos:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15
 msgid ""
-"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"Expidus is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
-"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"Expidus components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Expidus website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
 "\n"
-"Thank you for your interest in Xfce.\n"
+"Thank you for your interest in Expidus.\n"
 "\n"
-"\t- The Xfce Development Team"
-msgstr "Xfce tap pat yra plėtojimo platforma, teikianti kelias bibliotekas, padedančias programuotojams kurti programas, kurios prisiderina prie darbalaukio aplinkos.\n\nXfce komponentai yra licencijuoti pagal laisvas ar atvirojo kodo licencijas; programos pagal GPL ar BSDL licencijas, o bibliotekos pagal LGPL ar BSDL licencijas. Išsamesnei informacijai, žiūrėkite dokumentaciją, pradinį kodą ar Xfce internetinę svetainę (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>).\n\nDėkojame už jūsų susidomėjimą Xfce.\n\n\t- Xfce plėtojimo komanda"
+"\t- The Expidus Development Team"
+msgstr "Expidus tap pat yra plėtojimo platforma, teikianti kelias bibliotekas, padedančias programuotojams kurti programas, kurios prisiderina prie darbalaukio aplinkos.\n\nExpidus komponentai yra licencijuoti pagal laisvas ar atvirojo kodo licencijas; programos pagal GPL ar BSDL licencijas, o bibliotekos pagal LGPL ar BSDL licencijas. Išsamesnei informacijai, žiūrėkite dokumentaciją, pradinį kodą ar Expidus internetinę svetainę (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>).\n\nDėkojame už jūsų susidomėjimą Expidus.\n\n\t- Expidus plėtojimo komanda"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:22
 msgid "About"

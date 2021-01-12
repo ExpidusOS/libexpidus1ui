@@ -2,22 +2,22 @@
 # Libexpidus1ui sources
 #
 libexpidus1ui/libexpidus1ui-config.c
-libexpidus1ui/xfce-dialogs.c
-libexpidus1ui/xfce-gdk-extensions.c
-libexpidus1ui/xfce-gtk-extensions.c
-libexpidus1ui/xfce-sm-client.c
-libexpidus1ui/xfce-spawn.c
-libexpidus1ui/xfce-filename-input.c
-libexpidus1ui/xfce-titled-dialog.c
+libexpidus1ui/expidus-dialogs.c
+libexpidus1ui/expidus-gdk-extensions.c
+libexpidus1ui/expidus-gtk-extensions.c
+libexpidus1ui/expidus-sm-client.c
+libexpidus1ui/expidus-spawn.c
+libexpidus1ui/expidus-filename-input.c
+libexpidus1ui/expidus-titled-dialog.c
 
 #
 # Libexpidus1kbd-private sources
 #
-libexpidus1kbd-private/xfce-shortcuts.c
-libexpidus1kbd-private/xfce-shortcut-dialog.c
-libexpidus1kbd-private/xfce-shortcuts-grabber.c
-libexpidus1kbd-private/xfce-shortcuts-provider.c
-libexpidus1kbd-private/xfce-shortcuts-xfwm4.c
+libexpidus1kbd-private/expidus-shortcuts.c
+libexpidus1kbd-private/expidus-shortcut-dialog.c
+libexpidus1kbd-private/expidus-shortcuts-grabber.c
+libexpidus1kbd-private/expidus-shortcuts-provider.c
+libexpidus1kbd-private/expidus-shortcuts-eswm1.c
 
 #
 # Support for GtkBuilder
@@ -26,7 +26,7 @@ glade/libexpidus1ui-glade.c
 glade/libexpidus1ui-2.xml.in
 
 #
-# Xfce4-about
+# Expidus4-about
 #
 expidus1-about/main.c
 expidus1-about/contributors.h

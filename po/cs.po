@@ -21,122 +21,122 @@ msgstr ""
 "Language: cs\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
-#: ../libexpidus1ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/expidus-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Nepodařilo se otevřít webový prohlížeč a v něm dokumentaci z Internetu"
 
-#: ../libexpidus1ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/expidus-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Chcete si přečíst příručku pro %s online?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/expidus-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Chcete si přečíst příručku online?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/expidus-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "Budete přesměrování na webovou stránku dokumentace, s aktuálními a překládanými stránkami nápovědy."
 
 #. Create cancel button
-#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/expidus-dialogs.c:275 ../libexpidus1ui/expidus-dialogs.c:533
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_Storno"
 
-#: ../libexpidus1ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/expidus-dialogs.c:277
 msgid "_Read Online"
 msgstr "Číst _online"
 
-#: ../libexpidus1ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/expidus-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "Vždy _automaticky přejít na dokumentaci online"
 
-#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
-#: ../libexpidus1ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/expidus-dialogs.c:335 ../libexpidus1ui/expidus-dialogs.c:370
+#: ../libexpidus1ui/expidus-dialogs.c:406
 msgid "Close"
 msgstr "Zavřít"
 
-#: ../libexpidus1ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/expidus-dialogs.c:453
 msgid "No"
 msgstr "Ne"
 
-#: ../libexpidus1ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/expidus-dialogs.c:455
 msgid "Yes"
 msgstr "Ano"
 
-#: ../libexpidus1ui/xfce-dialogs.c:459
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/expidus-dialogs.c:459
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:41
 msgid "Cancel"
 msgstr "Storno"
 
-#: ../libexpidus1ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/expidus-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Zavřít okno s více kartami?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/expidus-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Toto okno má otevřeno více karet. Jeho zavřením zavřete také tyto karty."
 
-#: ../libexpidus1ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/expidus-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Toto okno má otevřeno %d karet. Jeho zavřením zavřete také tyto karty."
 
-#: ../libexpidus1ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/expidus-dialogs.c:529
 msgid "Warning"
 msgstr "Varování"
 
-#: ../libexpidus1ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/expidus-dialogs.c:534
 msgid "Close T_ab"
 msgstr "Zavřít k_artu"
 
-#: ../libexpidus1ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/expidus-dialogs.c:535
 msgid "Close _Window"
 msgstr "Zavřít _okno"
 
-#: ../libexpidus1ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/expidus-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "Příště se již _nedotazovat"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "Identif. klienta správy relace"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "ID"
 msgstr "Identif."
 
-#: ../libexpidus1ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/expidus-sm-client.c:1428
 msgid "Disable session management"
 msgstr "Vypnout správu relací"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/expidus-sm-client.c:1438
 msgid "Session management options"
 msgstr "Možnosti správy relace"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/expidus-sm-client.c:1439
 msgid "Show session management options"
 msgstr "Zobrazit možnosti správy relace"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/expidus-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Nepodařilo se připojit se ke správci relace: %s"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/expidus-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Správce relace nevrátil platný identifikátor klienta"
 
 #. print warning for user
-#: ../libexpidus1ui/xfce-spawn.c:400
+#: ../libexpidus1ui/expidus-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -144,53 +144,53 @@ msgid ""
 msgstr "Pracovní složka „%s“ neexistuje. Při spuštění „%s“ nebude použita."
 
 #. the string contains a directory separator
-#: ../libexpidus1ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/expidus-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "Oddělovač adresářů není v názvu souboru povolen"
 
 #. the string is too long
-#: ../libexpidus1ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/expidus-filename-input.c:422
 msgid "Filename is too long"
 msgstr "Název souboru je příliš dlouhý"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libexpidus1ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/expidus-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "Názvy souborů by neměly začínat ani končit mezerou"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "Tuto klávesovou zkratku už používá akce %s. Kterou akci chcete použít?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "Použít „%s“"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "Ponechat „%s“"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "Tuto klávesovou zkratku už používá příkaz %s. Kterou akci chcete použít?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -199,363 +199,363 @@ msgstr "Tuto klávesovou zkratku už používá akce %s. Kterou akci chcete pou�
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Použijte jinou kombinaci kláves"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "%s už spouští tuto akci."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Konflikt mezi akcemi pro %s"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "Tato klávesová zkratka se už používá na jiném místě."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Klávesová zkratka akce správce oken"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:233
 msgid "action"
 msgstr "akce"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Klávesová zkratka příkazu"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:225
 msgid "command"
 msgstr "příkaz"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Klávesová zkratka"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "Vyčistit"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr "Stiskněte klávesu ke spuštění %s „%s“."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr "Stiskněte klávesu"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Nelze zachytávat vstup z klávesnice."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:36
 msgid "Window operations menu"
 msgstr "Nabídka možností okna"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:37
 msgid "Up"
 msgstr "Nahoru"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:38
 msgid "Down"
 msgstr "Dolů"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:39
 msgid "Left"
 msgstr "Doleva"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:40
 msgid "Right"
 msgstr "Doprava"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:42
 msgid "Cycle windows"
 msgstr "Procházet okna"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Procházet okna (v opačném směru)"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:44
 msgid "Switch window for same application"
 msgstr "Přepnout okno stejné aplikace"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:45
 msgid "Switch application"
 msgstr "Přepnout aplikaci"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:46
 msgid "Close window"
 msgstr "Zavřít okno"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:47
 msgid "Maximize window horizontally"
 msgstr "Maximalizovat okno ve vodorovném směru"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:48
 msgid "Maximize window vertically"
 msgstr "Maximalizovat okno ve svislém směru"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:49
 msgid "Maximize window"
 msgstr "Maximalizovat okno"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:50
 msgid "Hide window"
 msgstr "Skrýt okno"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:51
 msgid "Move window"
 msgstr "Přesunout okno"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:52
 msgid "Resize window"
 msgstr "Změnit velikost okna"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:53
 msgid "Shade window"
 msgstr "Zarolovat okno"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:54
 msgid "Stick window"
 msgstr "Přilepit okno"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:55
 msgid "Raise window"
 msgstr "Přenést okno do popředí"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:56
 msgid "Lower window"
 msgstr "Přenést okno do pozadí"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:57
 msgid "Raise or lower window"
 msgstr "Přenést okno do popředí nebo do pozadí"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:58
 msgid "Fill window"
 msgstr "Vyplnit okno"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:59
 msgid "Fill window horizontally"
 msgstr "Vyplnit okno ve vodorovném směru"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:60
 msgid "Fill window vertically"
 msgstr "Vyplnit okno ve svislém směru"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:61
 msgid "Toggle above"
 msgstr "Přepnout nahoru"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:62
 msgid "Toggle fullscreen"
 msgstr "Přepnout do režimu celé obrazovky"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:63
 msgid "Move window to upper workspace"
 msgstr "Přesunout okno na vrchní pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:64
 msgid "Move window to bottom workspace"
 msgstr "Přesunout okno na spodní pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:65
 msgid "Move window to left workspace"
 msgstr "Přesunout okno na levou pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:66
 msgid "Move window to right workspace"
 msgstr "Přesunout okno na pravou pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:67
 msgid "Move window to previous workspace"
 msgstr "Přesunout okno na předchozí pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:68
 msgid "Move window to next workspace"
 msgstr "Přesunout okno na další pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:69
 msgid "Move window to workspace 1"
 msgstr "Přesunout okno na pracovní plochu 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:70
 msgid "Move window to workspace 2"
 msgstr "Přesunout okno na pracovní plochu 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:71
 msgid "Move window to workspace 3"
 msgstr "Přesunout okno na pracovní plochu 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:72
 msgid "Move window to workspace 4"
 msgstr "Přesunout okno na pracovní plochu 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:73
 msgid "Move window to workspace 5"
 msgstr "Přesunout okno na pracovní plochu 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:74
 msgid "Move window to workspace 6"
 msgstr "Přesunout okno na pracovní plochu 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:75
 msgid "Move window to workspace 7"
 msgstr "Přesunout okno na pracovní plochu 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:76
 msgid "Move window to workspace 8"
 msgstr "Přesunout okno na pracovní plochu 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:77
 msgid "Move window to workspace 9"
 msgstr "Přesunout okno na pracovní plochu 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:78
 msgid "Move window to workspace 10"
 msgstr "Přesunout okno na pracovní plochu 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:79
 msgid "Move window to workspace 11"
 msgstr "Přesunout okno na pracovní plochu 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:80
 msgid "Move window to workspace 12"
 msgstr "Přesunout okno na pracovní plochu 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:81
 msgid "Tile window to the top"
 msgstr "Umístit okno nahoru"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:82
 msgid "Tile window to the bottom"
 msgstr "Umístit okno dolů"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:83
 msgid "Tile window to the left"
 msgstr "Umístit okno doleva"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:84
 msgid "Tile window to the right"
 msgstr "Umístit okno doprava"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:85
 msgid "Tile window to the top-left"
 msgstr "Umístit okno nahoru doleva"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:86
 msgid "Tile window to the top-right"
 msgstr "Umístit okno nahoru doprava"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:87
 msgid "Tile window to the bottom-left"
 msgstr "Umístit okno dolů doleva"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:88
 msgid "Tile window to the bottom-right"
 msgstr "Umístit okno dolů doprava"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:89
 msgid "Show desktop"
 msgstr "Zobrazit pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:90
 msgid "Upper workspace"
 msgstr "Vrchní pracovní plocha"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:91
 msgid "Bottom workspace"
 msgstr "Spodní pracovní plocha"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:92
 msgid "Left workspace"
 msgstr "Levá pracovní plocha"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:93
 msgid "Right workspace"
 msgstr "Pravá pracovní plocha"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:94
 msgid "Previous workspace"
 msgstr "Předchozí pracovní plocha"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:95
 msgid "Next workspace"
 msgstr "Další pracovní plocha"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:96
 msgid "Workspace 1"
 msgstr "Pracovní plocha 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:97
 msgid "Workspace 2"
 msgstr "Pracovní plocha 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:98
 msgid "Workspace 3"
 msgstr "Pracovní plocha 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:99
 msgid "Workspace 4"
 msgstr "Pracovní plocha 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:100
 msgid "Workspace 5"
 msgstr "Pracovní plocha 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:101
 msgid "Workspace 6"
 msgstr "Pracovní plocha 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:102
 msgid "Workspace 7"
 msgstr "Pracovní plocha 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:103
 msgid "Workspace 8"
 msgstr "Pracovní plocha 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:104
 msgid "Workspace 9"
 msgstr "Pracovní plocha 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:105
 msgid "Workspace 10"
 msgstr "Pracovní plocha 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:106
 msgid "Workspace 11"
 msgstr "Pracovní plocha 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:107
 msgid "Workspace 12"
 msgstr "Pracovní plocha 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:108
 msgid "Add workspace"
 msgstr "Přidat pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:109
 msgid "Add adjacent workspace"
 msgstr "Přidat sousední pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:110
 msgid "Delete last workspace"
 msgstr "Smazat poslední pracovní plochu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:111
 msgid "Delete active workspace"
 msgstr "Smazat aktivní pracovní plochu"
 
@@ -568,8 +568,8 @@ msgid "Subtitle"
 msgstr "Podtitulek"
 
 #: ../glade/libexpidus1ui-2.xml.in.h:3
-msgid "Xfce 4 Widgets"
-msgstr "Xfce4 widgety"
+msgid "Expidus 4 Widgets"
+msgstr "Expidus4 widgety"
 
 #: ../expidus1-about/main.c:58
 msgid "Version information"
@@ -684,9 +684,9 @@ msgstr "Díky všem, kteří se podíleli na vytváření tohoto softwaru."
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Vlastníkem autorských práv Xfce 4 je Olivier Fourdan (fourdan@xfce.org). Různé komponenty jsou chráněny autorskými právy příslušných autorů."
+msgstr "Vlastníkem autorských práv Expidus 4 je Olivier Fourdan (fourdan@xfce.org). Různé komponenty jsou chráněny autorskými právy příslušných autorů."
 
 #: ../expidus1-about/main.c:326
 msgid ""
@@ -699,11 +699,11 @@ msgstr "Balíčky libexpidus1ui, libexpidus1util a exo jsou distribuovány pod p
 #: ../expidus1-about/main.c:333
 msgid ""
 "The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
+"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Balíčky thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop a xfwm4 jsou distribudovány pod podmínkami licence GNU General Public License publikované organizací Free Software Foundation; ve verzi 2 této licence, nebo (dle vašeho výběru) pozdější."
+msgstr "Balíčky thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop a eswm1 jsou distribudovány pod podmínkami licence GNU General Public License publikované organizací Free Software Foundation; ve verzi 2 této licence, nebo (dle vašeho výběru) pozdější."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -715,8 +715,8 @@ msgid "Unable to initialize GTK+."
 msgstr "Nelze inicializovat GTK+."
 
 #: ../expidus1-about/main.c:494
-msgid "The Xfce development team. All rights reserved."
-msgstr "Vývojářský tým prostředí Xfce. Všechna práva vyhrazena."
+msgid "The Expidus development team. All rights reserved."
+msgstr "Vývojářský tým prostředí Expidus. Všechna práva vyhrazena."
 
 #: ../expidus1-about/main.c:495
 #, c-format
@@ -728,7 +728,7 @@ msgid "Failed to load interface"
 msgstr "Načtení rozhraní se nezdařilo."
 
 #. { N_("Project Lead"),
-#. xfce_contributors_lead
+#. expidus_contributors_lead
 #. },
 #: ../expidus1-about/contributors.h:136
 msgid "Core developers"
@@ -759,20 +759,20 @@ msgid "Previous contributors"
 msgstr "Dřívější přispěvatelé"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:1
-msgid "About Xfce"
-msgstr "O prostředí Xfce"
+msgid "About Expidus"
+msgstr "O prostředí Expidus"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:2
-msgid "Information about the Xfce Desktop Environment"
-msgstr "Informace o pracovním prostředí Xfce"
+msgid "Information about the Expidus Desktop Environment"
+msgstr "Informace o pracovním prostředí Expidus"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:1
 msgid "License"
 msgstr "Licence"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:2
-msgid "About the Xfce Desktop Environment"
-msgstr "O pracovním prostředí Xfce"
+msgid "About the Expidus Desktop Environment"
+msgstr "O pracovním prostředí Expidus"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:3
 msgid "label"
@@ -799,8 +799,8 @@ msgid "OS Type"
 msgstr "Typ operačního systému"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:9
-msgid "Xfce Version"
-msgstr "Verze prostředí Xfce"
+msgid "Expidus Version"
+msgstr "Verze prostředí Expidus"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:10
 msgid "Distributor"
@@ -816,20 +816,20 @@ msgstr "Systém"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Xfce core:"
-msgstr "Prostředí Xfce je sbírkou programů, které dohromady poskytují plnohodnostné pracovní prostředí.\nSoučástí jádra prostředí Xfce jsou tyto programy:"
+"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Expidus core:"
+msgstr "Prostředí Expidus je sbírkou programů, které dohromady poskytují plnohodnostné pracovní prostředí.\nSoučástí jádra prostředí Expidus jsou tyto programy:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15
 msgid ""
-"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"Expidus is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
-"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"Expidus components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Expidus website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
 "\n"
-"Thank you for your interest in Xfce.\n"
+"Thank you for your interest in Expidus.\n"
 "\n"
-"\t- The Xfce Development Team"
-msgstr "Xfce je také platforma pro vývoj, poskytující mnoho knihoven, jež pomáhají programátorům vytvářet aplikace, které dobře zapadnou do pracovního prostředí.\n\nKomponenty prostředí Xfce jsou licencovány pod otevřenými nebo svobodnými licencemi; GPL nebo BSDL pro aplikace a LGPL nebo BSDL pro knihovny. Další informace získáte nahlédnutím do dokumentace, zdrojových kódů nebo webových stránek Xfce (https://www.xfce.org).\n\nDěkujeme vám za váš zájem o Xfce.\n\n\t- Tým vývojárů Xfce"
+"\t- The Expidus Development Team"
+msgstr "Expidus je také platforma pro vývoj, poskytující mnoho knihoven, jež pomáhají programátorům vytvářet aplikace, které dobře zapadnou do pracovního prostředí.\n\nKomponenty prostředí Expidus jsou licencovány pod otevřenými nebo svobodnými licencemi; GPL nebo BSDL pro aplikace a LGPL nebo BSDL pro knihovny. Další informace získáte nahlédnutím do dokumentace, zdrojových kódů nebo webových stránek Expidus (https://www.xfce.org).\n\nDěkujeme vám za váš zájem o Expidus.\n\n\t- Tým vývojárů Expidus"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:22
 msgid "About"

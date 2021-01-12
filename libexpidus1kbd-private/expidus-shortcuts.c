@@ -32,8 +32,8 @@
 #include <libexpidus1ui/libexpidus1ui.h>
 #include <esconf/esconf.h>
 
-#include <libexpidus1kbd-private/xfce-shortcuts.h>
-#include <libexpidus1kbd-private/xfce-shortcuts-xfwm4.h>
+#include <libexpidus1kbd-private/expidus-shortcuts.h>
+#include <libexpidus1kbd-private/expidus-shortcuts-eswm1.h>
 
 
 
@@ -44,21 +44,21 @@ typedef struct
   const gchar *message;
   const gchar *owner_button_text;
   const gchar *other_button_text;
-} XfceShortcutConflictMessage;
+} ExpidusShortcutConflictMessage;
 
 
 
-static XfceShortcutConflictMessage conflict_messages[] = {
-  { "xfwm4", "xfwm4",
+static ExpidusShortcutConflictMessage conflict_messages[] = {
+  { "eswm1", "eswm1",
     N_("This shortcut is already being used for the action '%s'. Which action do you want to use?"),
     N_("Use '%s'"), N_("Keep '%s'") },
-  { "xfwm4", "commands",
+  { "eswm1", "commands",
     N_("This shortcut is already being used for the command '%s'. Which action do you want to use?"),
     N_("Use '%s'"), N_("Keep '%s'") },
   { "commands","commands",
     N_("This shortcut is already being used for the command '%s'. Which action do you want to use?"),
     N_("Use '%s'"), N_("Keep '%s'") },
-  { "commands", "xfwm4",
+  { "commands", "eswm1",
     N_("This shortcut is already being used by the action '%s'. Which action do you want to use?"),
     N_("Use '%s'"), N_("Keep '%s'") },
   { 0, 0, NULL, NULL, NULL },
@@ -67,7 +67,7 @@ static XfceShortcutConflictMessage conflict_messages[] = {
 
 
 gint
-xfce_shortcut_conflict_dialog (GtkWindow   *parent,
+expidus_shortcut_conflict_dialog (GtkWindow   *parent,
                                const gchar *owner,
                                const gchar *other,
                                const gchar *shortcut,
@@ -93,7 +93,7 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
   handled = FALSE;
 
   /* Make sure to use the translations from libexpidus1ui */
-  xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
+  expidus_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
   if (g_utf8_collate (owner, other) == 0 && ignore_same_provider)
     return GTK_RESPONSE_ACCEPT;
@@ -107,7 +107,7 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
       /* This shortcut already exists in the provider, we don't want it twice */
 
       /* Warn the user */
-      xfce_dialog_show_warning (parent, _("Please use another key combination."),
+      expidus_dialog_show_warning (parent, _("Please use another key combination."),
                                 _("%s already triggers this action."), shortcut_label);
 
       return GTK_RESPONSE_REJECT;
@@ -121,13 +121,13 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
       {
         if (owner_action == NULL)
           owner_action_name = NULL;
-        else if (g_utf8_collate (owner, "xfwm4") == 0)
+        else if (g_utf8_collate (owner, "eswm1") == 0)
           {
-            DBG ("Owner action %s is an xfwm4 action, get the string", owner_action);
+            DBG ("Owner action %s is an eswm1 action, get the string", owner_action);
 
             /* We need to get the human readable string of the action name */
             owner_action_name =
-              g_strdup (xfce_shortcuts_xfwm4_get_feature_name (owner_action));
+              g_strdup (expidus_shortcuts_eswm1_get_feature_name (owner_action));
 
           }
         else
@@ -137,12 +137,12 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
 
         if (other_action == NULL)
           other_action_name = NULL;
-        else if (g_utf8_collate (other, "xfwm4") == 0)
+        else if (g_utf8_collate (other, "eswm1") == 0)
           {
             /* We need to get the human readable string of the action name */
 
             other_action_name =
-              g_strdup (xfce_shortcuts_xfwm4_get_feature_name (other_action));
+              g_strdup (expidus_shortcuts_eswm1_get_feature_name (other_action));
 
           }
         else
@@ -153,11 +153,11 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
         owner_button_text = g_strdup_printf (_(conflict_messages[i].owner_button_text), owner_action_name);
         other_button_text = g_strdup_printf (_(conflict_messages[i].other_button_text), other_action_name);
 
-        response = xfce_message_dialog (parent, title,
+        response = expidus_message_dialog (parent, title,
                                         "dialog-question",
                                         title, secondary_text,
-                                        XFCE_BUTTON_TYPE_MIXED, NULL, owner_button_text, GTK_RESPONSE_ACCEPT,
-                                        XFCE_BUTTON_TYPE_MIXED, NULL, other_button_text, GTK_RESPONSE_REJECT,
+                                        EXPIDUS_BUTTON_TYPE_MIXED, NULL, owner_button_text, GTK_RESPONSE_ACCEPT,
+                                        EXPIDUS_BUTTON_TYPE_MIXED, NULL, other_button_text, GTK_RESPONSE_REJECT,
                                         NULL);
 
         g_free (other_button_text);
@@ -173,7 +173,7 @@ xfce_shortcut_conflict_dialog (GtkWindow   *parent,
 
   if (G_UNLIKELY (!handled))
     {
-      xfce_message_dialog (parent, title,
+      expidus_message_dialog (parent, title,
                            "dialog-error",
                            title, _("This shortcut is already being used for something else."),
                            "window-close-symbolic",

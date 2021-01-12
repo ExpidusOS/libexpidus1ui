@@ -19,122 +19,122 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../libexpidus1ui/xfce-dialogs.c:110
+#: ../libexpidus1ui/expidus-dialogs.c:110
 msgid "Failed to open web browser for online documentation"
 msgstr "Kon de webbrowser niet openen voor de internetdocumentatie"
 
-#: ../libexpidus1ui/xfce-dialogs.c:265
+#: ../libexpidus1ui/expidus-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
 msgstr "Wilt u de handleiding voor %s op het internet lezen?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:267
+#: ../libexpidus1ui/expidus-dialogs.c:267
 msgid "Do you want to read the manual online?"
 msgstr "Wilt u de handleiding op het internet lezen?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:273
+#: ../libexpidus1ui/expidus-dialogs.c:273
 msgid ""
 "You will be redirected to the documentation website where the help pages are"
 " maintained and translated."
 msgstr "U zult worden omgeleid naar de documentatiewebstek, waar de hulppagina's worden onderhouden en vertaald."
 
 #. Create cancel button
-#: ../libexpidus1ui/xfce-dialogs.c:275 ../libexpidus1ui/xfce-dialogs.c:533
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:253
+#: ../libexpidus1ui/expidus-dialogs.c:275 ../libexpidus1ui/expidus-dialogs.c:533
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:253
 msgid "_Cancel"
 msgstr "_Afbreken"
 
-#: ../libexpidus1ui/xfce-dialogs.c:277
+#: ../libexpidus1ui/expidus-dialogs.c:277
 msgid "_Read Online"
 msgstr "Lees op het internet"
 
-#: ../libexpidus1ui/xfce-dialogs.c:286
+#: ../libexpidus1ui/expidus-dialogs.c:286
 msgid "_Always go directly to the online documentation"
 msgstr "Ga altijd meteen naar de internetdocumentatie"
 
-#: ../libexpidus1ui/xfce-dialogs.c:335 ../libexpidus1ui/xfce-dialogs.c:370
-#: ../libexpidus1ui/xfce-dialogs.c:406
+#: ../libexpidus1ui/expidus-dialogs.c:335 ../libexpidus1ui/expidus-dialogs.c:370
+#: ../libexpidus1ui/expidus-dialogs.c:406
 msgid "Close"
 msgstr "Sluiten"
 
-#: ../libexpidus1ui/xfce-dialogs.c:453
+#: ../libexpidus1ui/expidus-dialogs.c:453
 msgid "No"
 msgstr "Nee"
 
-#: ../libexpidus1ui/xfce-dialogs.c:455
+#: ../libexpidus1ui/expidus-dialogs.c:455
 msgid "Yes"
 msgstr "Ja"
 
-#: ../libexpidus1ui/xfce-dialogs.c:459
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:41
+#: ../libexpidus1ui/expidus-dialogs.c:459
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:41
 msgid "Cancel"
 msgstr "Afbreken"
 
-#: ../libexpidus1ui/xfce-dialogs.c:518
+#: ../libexpidus1ui/expidus-dialogs.c:518
 msgid "Close window with multiple tabs?"
 msgstr "Venster met meerdere tabbladen sluiten?"
 
-#: ../libexpidus1ui/xfce-dialogs.c:520
+#: ../libexpidus1ui/expidus-dialogs.c:520
 msgid ""
 "This window has multiple tabs open. Closing this window will also close all "
 "its tabs."
 msgstr "Dit venster heeft meerdere tabbladen open staan. Het sluiten van dit venster zal ook al zijn tabbladen sluiten."
 
-#: ../libexpidus1ui/xfce-dialogs.c:523
+#: ../libexpidus1ui/expidus-dialogs.c:523
 #, c-format
 msgid ""
 "This window has %d tabs open. Closing this window will also close all its "
 "tabs."
 msgstr "Dit venster heeft %d tabbladen open staan. Het sluiten van dit venster zal ook al zijn tabbladen sluiten."
 
-#: ../libexpidus1ui/xfce-dialogs.c:529
+#: ../libexpidus1ui/expidus-dialogs.c:529
 msgid "Warning"
 msgstr "Waarschuwing"
 
-#: ../libexpidus1ui/xfce-dialogs.c:534
+#: ../libexpidus1ui/expidus-dialogs.c:534
 msgid "Close T_ab"
 msgstr "_Tabblad sluiten"
 
-#: ../libexpidus1ui/xfce-dialogs.c:535
+#: ../libexpidus1ui/expidus-dialogs.c:535
 msgid "Close _Window"
 msgstr "_Venster sluiten"
 
-#: ../libexpidus1ui/xfce-dialogs.c:540
+#: ../libexpidus1ui/expidus-dialogs.c:540
 msgid "Do _not ask me again"
 msgstr "Vraag me dit _niet opnieuw"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "Session management client ID"
 msgstr "Client-ID voor sessiebeheer"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1427
+#: ../libexpidus1ui/expidus-sm-client.c:1427
 msgid "ID"
 msgstr "ID"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1428
+#: ../libexpidus1ui/expidus-sm-client.c:1428
 msgid "Disable session management"
 msgstr "Sessiebeheer uitschakelen"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1438
+#: ../libexpidus1ui/expidus-sm-client.c:1438
 msgid "Session management options"
 msgstr "Opties voor sessiebeheer"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1439
+#: ../libexpidus1ui/expidus-sm-client.c:1439
 msgid "Show session management options"
 msgstr "Toon opties voor sessiebeheer"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1614
+#: ../libexpidus1ui/expidus-sm-client.c:1614
 #, c-format
 msgid "Failed to connect to the session manager: %s"
 msgstr "Kon geen verbinding maken met de sessiebeheerder: %s"
 
-#: ../libexpidus1ui/xfce-sm-client.c:1620
+#: ../libexpidus1ui/expidus-sm-client.c:1620
 #, c-format
 msgid "Session manager did not return a valid client id"
 msgstr "Geen geldige client-ID van de sessiebeheerder ontvangen"
 
 #. print warning for user
-#: ../libexpidus1ui/xfce-spawn.c:400
+#: ../libexpidus1ui/expidus-spawn.c:400
 #, c-format
 msgid ""
 "Working directory \"%s\" does not exist. It won't be used when spawning "
@@ -142,53 +142,53 @@ msgid ""
 msgstr "Werkmap '%s' bestaat niet. Hij zal niet worden gebruikt wanneer '%s' wordt uitgezaaid."
 
 #. the string contains a directory separator
-#: ../libexpidus1ui/xfce-filename-input.c:414
+#: ../libexpidus1ui/expidus-filename-input.c:414
 msgid "Directory separator illegal in file name"
 msgstr "In bestandnaam mag geen mapscheidingsteken voorkomen"
 
 #. the string is too long
-#: ../libexpidus1ui/xfce-filename-input.c:422
+#: ../libexpidus1ui/expidus-filename-input.c:422
 msgid "Filename is too long"
 msgstr "Bestandnaam is te lang"
 
 #. the string starts or ends with whitespace
 #. * this does not make the filename invalid, but we warn the user about it
-#: ../libexpidus1ui/xfce-filename-input.c:430
+#: ../libexpidus1ui/expidus-filename-input.c:430
 msgid "Filenames should not start or end with a space"
 msgstr "Bestandnamen mogen niet beginnen of eindigen met een spatie"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:53
 #, c-format
 msgid ""
 "This shortcut is already being used for the action '%s'. Which action do you"
 " want to use?"
 msgstr "Deze sneltoets wordt reeds gebruikt voor de actie '%s'. Welke actie wilt u gebruiken?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Use '%s'"
 msgstr "'%s' gebruiken"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:54
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:57
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:60
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:63
 #, c-format
 msgid "Keep '%s'"
 msgstr "'%s' behouden"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:56
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:59
 #, c-format
 msgid ""
 "This shortcut is already being used for the command '%s'. Which action do "
 "you want to use?"
 msgstr "Deze sneltoets wordt reeds gebruikt voor de opdracht '%s'. Welke actie wilt u gebruiken?"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:62
 #, c-format
 msgid ""
 "This shortcut is already being used by the action '%s'. Which action do you "
@@ -197,363 +197,363 @@ msgstr "Deze sneltoets wordt reeds gebruikt door de actie '%s'. Welke actie wilt
 
 #. This shortcut already exists in the provider, we don't want it twice
 #. Warn the user
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:110
 msgid "Please use another key combination."
 msgstr "Gebruik a.u.b. een andere toetscombinatie."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:111
 #, c-format
 msgid "%s already triggers this action."
 msgstr "Deze actie wordt al opgeroepen door %s."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:116
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:116
 #, c-format
 msgid "Conflicting actions for %s"
 msgstr "Tegenstrijdige acties voor %s"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts.c:178
+#: ../libexpidus1kbd-private/expidus-shortcuts.c:178
 msgid "This shortcut is already being used for something else."
 msgstr "De sneltoets wordt al gebruikt voor iets anders."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:214
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:214
 msgid "Window Manager Action Shortcut"
 msgstr "Sneltoets voor actie van vensterbeheerder"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:217
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:233
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:217
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:233
 msgid "action"
 msgstr "actie"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:222
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:222
 msgid "Command Shortcut"
 msgstr "Sneltoets voor opdracht"
 
 #. TRANSLATORS: this string will be used to create an explanation for
 #. * the user in a following string
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:225
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:225
 msgid "command"
 msgstr "opdracht"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:230
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:230
 msgid "Shortcut"
 msgstr "Sneltoets"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:247
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:247
 msgid "Clear"
 msgstr "Wissen"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:270
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:270
 #, c-format
 msgid "Press keyboard keys to trigger the %s '%s'."
 msgstr "Druk toetsen in voor het oproepen van de %s '%s'."
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:291
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:291
 msgid "Please press a key"
 msgstr "Druk a.u.b. een toets in"
 
-#: ../libexpidus1kbd-private/xfce-shortcut-dialog.c:345
+#: ../libexpidus1kbd-private/expidus-shortcut-dialog.c:345
 msgid "Could not grab the keyboard."
 msgstr "Kon het toetsenbord niet bemachtigen."
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:36
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:36
 msgid "Window operations menu"
 msgstr "Vensteractiesmenu"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:37
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:37
 msgid "Up"
 msgstr "Naar boven"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:38
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:38
 msgid "Down"
 msgstr "Naar beneden"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:39
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:39
 msgid "Left"
 msgstr "Links"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:40
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:40
 msgid "Right"
 msgstr "Rechts"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:42
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:42
 msgid "Cycle windows"
 msgstr "Vensters roteren"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:43
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:43
 msgid "Cycle windows (Reverse)"
 msgstr "Vensters roteren (achterwaarts)"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:44
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:44
 msgid "Switch window for same application"
 msgstr "Wissel venster voor dezelfde toepassing"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:45
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:45
 msgid "Switch application"
 msgstr "Wissel toepassing"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:46
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:46
 msgid "Close window"
 msgstr "Sluit venster"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:47
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:47
 msgid "Maximize window horizontally"
 msgstr "Maximaliseer venster horizontaal"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:48
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:48
 msgid "Maximize window vertically"
 msgstr "Maximaliseer venster verticaal"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:49
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:49
 msgid "Maximize window"
 msgstr "Maximaliseer venster"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:50
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:50
 msgid "Hide window"
 msgstr "Verberg venster"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:51
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:51
 msgid "Move window"
 msgstr "Verplaats venster"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:52
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:52
 msgid "Resize window"
 msgstr "Pas venstergrootte aan"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:53
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:53
 msgid "Shade window"
 msgstr "Rol venster op"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:54
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:54
 msgid "Stick window"
 msgstr "Plak venster vast"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:55
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:55
 msgid "Raise window"
 msgstr "Haal venster omhoog"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:56
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:56
 msgid "Lower window"
 msgstr "Minimaliseer venster"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:57
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:57
 msgid "Raise or lower window"
 msgstr "Venster omhoog halen of minimaliseren"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:58
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:58
 msgid "Fill window"
 msgstr "Vul venster"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:59
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:59
 msgid "Fill window horizontally"
 msgstr "Vul venster horizontaal"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:60
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:60
 msgid "Fill window vertically"
 msgstr "Vul venster verticaal"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:61
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:61
 msgid "Toggle above"
 msgstr "Schakel het bovenstaande om"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:62
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:62
 msgid "Toggle fullscreen"
 msgstr "Schakel schermvullend om"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:63
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:63
 msgid "Move window to upper workspace"
 msgstr "Verplaats venster naar bovenliggend werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:64
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:64
 msgid "Move window to bottom workspace"
 msgstr "Verplaats venster naar onderliggend werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:65
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:65
 msgid "Move window to left workspace"
 msgstr "Verplaats venster naar linkerwerkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:66
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:66
 msgid "Move window to right workspace"
 msgstr "Verplaats venster naar rechterwerkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:67
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:67
 msgid "Move window to previous workspace"
 msgstr "Verplaats venster naar vorig werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:68
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:68
 msgid "Move window to next workspace"
 msgstr "Verplaats venster naar volgend werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:69
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:69
 msgid "Move window to workspace 1"
 msgstr "Verplaats venster naar werkblad 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:70
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:70
 msgid "Move window to workspace 2"
 msgstr "Verplaats venster naar werkblad 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:71
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:71
 msgid "Move window to workspace 3"
 msgstr "Verplaats venster naar werkblad 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:72
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:72
 msgid "Move window to workspace 4"
 msgstr "Verplaats venster naar werkblad 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:73
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:73
 msgid "Move window to workspace 5"
 msgstr "Verplaats venster naar werkblad 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:74
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:74
 msgid "Move window to workspace 6"
 msgstr "Verplaats venster naar werkblad 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:75
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:75
 msgid "Move window to workspace 7"
 msgstr "Verplaats venster naar werkblad 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:76
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:76
 msgid "Move window to workspace 8"
 msgstr "Verplaats venster naar werkblad 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:77
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:77
 msgid "Move window to workspace 9"
 msgstr "Verplaats venster naar werkblad 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:78
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:78
 msgid "Move window to workspace 10"
 msgstr "Verplaats venster naar werkblad 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:79
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:79
 msgid "Move window to workspace 11"
 msgstr "Verplaats venster naar werkblad 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:80
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:80
 msgid "Move window to workspace 12"
 msgstr "Verplaats venster naar werkblad 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:81
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:81
 msgid "Tile window to the top"
 msgstr "Plaats venstertegel naar boven"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:82
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:82
 msgid "Tile window to the bottom"
 msgstr "Plaats venstertegel naar beneden"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:83
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:83
 msgid "Tile window to the left"
 msgstr "Plaats venstertegel naar links"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:84
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:84
 msgid "Tile window to the right"
 msgstr "Plaats venstertegel naar rechts"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:85
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:85
 msgid "Tile window to the top-left"
 msgstr "Venster naar linksboven tegelen"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:86
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:86
 msgid "Tile window to the top-right"
 msgstr "Venster naar rechtsboven tegelen"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:87
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:87
 msgid "Tile window to the bottom-left"
 msgstr "Venster naar linksonder tegelen"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:88
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:88
 msgid "Tile window to the bottom-right"
 msgstr "Venster naar rechtsonder tegelen"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:89
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:89
 msgid "Show desktop"
 msgstr "Toon bureaublad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:90
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:90
 msgid "Upper workspace"
 msgstr "Bovenste werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:91
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:91
 msgid "Bottom workspace"
 msgstr "Onderste werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:92
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:92
 msgid "Left workspace"
 msgstr "Linkerwerkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:93
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:93
 msgid "Right workspace"
 msgstr "Rechterwerkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:94
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:94
 msgid "Previous workspace"
 msgstr "Vorig werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:95
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:95
 msgid "Next workspace"
 msgstr "Volgend werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:96
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:96
 msgid "Workspace 1"
 msgstr "Werkblad 1"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:97
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:97
 msgid "Workspace 2"
 msgstr "Werkblad 2"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:98
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:98
 msgid "Workspace 3"
 msgstr "Werkblad 3"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:99
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:99
 msgid "Workspace 4"
 msgstr "Werkblad 4"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:100
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:100
 msgid "Workspace 5"
 msgstr "Werkblad 5"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:101
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:101
 msgid "Workspace 6"
 msgstr "Werkblad 6"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:102
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:102
 msgid "Workspace 7"
 msgstr "Werkblad 7"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:103
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:103
 msgid "Workspace 8"
 msgstr "Werkblad 8"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:104
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:104
 msgid "Workspace 9"
 msgstr "Werkblad 9"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:105
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:105
 msgid "Workspace 10"
 msgstr "Werkblad 10"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:106
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:106
 msgid "Workspace 11"
 msgstr "Werkblad 11"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:107
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:107
 msgid "Workspace 12"
 msgstr "Werkblad 12"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:108
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:108
 msgid "Add workspace"
 msgstr "Voeg werkblad toe"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:109
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:109
 msgid "Add adjacent workspace"
 msgstr "Voeg aangrenzend werkblad toe"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:110
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:110
 msgid "Delete last workspace"
 msgstr "Verwijder laatste werkblad"
 
-#: ../libexpidus1kbd-private/xfce-shortcuts-xfwm4.c:111
+#: ../libexpidus1kbd-private/expidus-shortcuts-eswm1.c:111
 msgid "Delete active workspace"
 msgstr "Verwijder actief werkblad"
 
@@ -566,8 +566,8 @@ msgid "Subtitle"
 msgstr "Ondertitel"
 
 #: ../glade/libexpidus1ui-2.xml.in.h:3
-msgid "Xfce 4 Widgets"
-msgstr "Xfce 4-programmaatjes"
+msgid "Expidus 4 Widgets"
+msgstr "Expidus 4-programmaatjes"
 
 #: ../expidus1-about/main.c:58
 msgid "Version information"
@@ -682,9 +682,9 @@ msgstr "Dank aan allen die geholpen hebben om deze programmatuur beschikbaar te 
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
 "components are copyrighted by their respective authors."
-msgstr "Xfce 4 behoort auteursrechtelijk aan Olivier Fourdan (fourdan@xfce.org). De verschillende onderdelen behoren auteursrechtelijk aan hun respectievelijke makers."
+msgstr "Expidus 4 behoort auteursrechtelijk aan Olivier Fourdan (fourdan@xfce.org). De verschillende onderdelen behoren auteursrechtelijk aan hun respectievelijke makers."
 
 #: ../expidus1-about/main.c:326
 msgid ""
@@ -697,11 +697,11 @@ msgstr "De pakketten libexpidus1ui, libexpidus1util en exo worden gedistribueerd
 #: ../expidus1-about/main.c:333
 msgid ""
 "The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and xfwm4 are distributed under the terms "
+"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "De pakketten thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop en xfwm4 worden gedistribueerd onder de voorwaarden van de GNU General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van die licentie, hetzij (naar uw keuze) enige nieuwere versie."
+msgstr "De pakketten thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop en eswm1 worden gedistribueerd onder de voorwaarden van de GNU General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van die licentie, hetzij (naar uw keuze) enige nieuwere versie."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -713,8 +713,8 @@ msgid "Unable to initialize GTK+."
 msgstr "Kon GTK+ niet initialiseren."
 
 #: ../expidus1-about/main.c:494
-msgid "The Xfce development team. All rights reserved."
-msgstr "De Xfce-ontwikkelploeg. Alle rechten voorbehouden."
+msgid "The Expidus development team. All rights reserved."
+msgstr "De Expidus-ontwikkelploeg. Alle rechten voorbehouden."
 
 #: ../expidus1-about/main.c:495
 #, c-format
@@ -726,7 +726,7 @@ msgid "Failed to load interface"
 msgstr "Kon gebruikersschil niet laden"
 
 #. { N_("Project Lead"),
-#. xfce_contributors_lead
+#. expidus_contributors_lead
 #. },
 #: ../expidus1-about/contributors.h:136
 msgid "Core developers"
@@ -757,20 +757,20 @@ msgid "Previous contributors"
 msgstr "Vroegere bijdragers"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:1
-msgid "About Xfce"
-msgstr "Over Xfce"
+msgid "About Expidus"
+msgstr "Over Expidus"
 
 #: ../expidus1-about/expidus1-about.desktop.in.h:2
-msgid "Information about the Xfce Desktop Environment"
-msgstr "Inlichtingen over de Xfce-werkomgeving"
+msgid "Information about the Expidus Desktop Environment"
+msgstr "Inlichtingen over de Expidus-werkomgeving"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:1
 msgid "License"
 msgstr "Licentie"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:2
-msgid "About the Xfce Desktop Environment"
-msgstr "Over de Xfce-werkomgeving"
+msgid "About the Expidus Desktop Environment"
+msgstr "Over de Expidus-werkomgeving"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:3
 msgid "label"
@@ -797,8 +797,8 @@ msgid "OS Type"
 msgstr "Soort besturingssysteem"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:9
-msgid "Xfce Version"
-msgstr "Versie van Xfce"
+msgid "Expidus Version"
+msgstr "Versie van Expidus"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:10
 msgid "Distributor"
@@ -814,20 +814,20 @@ msgstr "Systeem"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Xfce is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Xfce core:"
-msgstr "Xfce is een verzameling programma's die gezamenlijk een volledige functierijke werkomgeving bieden.\nDe volgende programma's maken deel uit van de kern van Xfce:"
+"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the Expidus core:"
+msgstr "Expidus is een verzameling programma's die gezamenlijk een volledige functierijke werkomgeving bieden.\nDe volgende programma's maken deel uit van de kern van Expidus:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15
 msgid ""
-"Xfce is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
+"Expidus is also a development platform providing several libraries that help programmers create applications that fit in well with the desktop environment.\n"
 "\n"
-"Xfce components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Xfce website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
+"Expidus components are licensed under free or open source licences; GPL or BSDL for applications and LGPL or BSDL for libraries. Look at the documentation, the source code or the Expidus website (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) for more information.\n"
 "\n"
-"Thank you for your interest in Xfce.\n"
+"Thank you for your interest in Expidus.\n"
 "\n"
-"\t- The Xfce Development Team"
-msgstr "Xfce is ook een ontwikkelplatform dat verschillende bibliotheekbestanden beschikbaar stelt die programmeurs helpen om toepassingen te maken die goed passen in de werkomgeving.\n\nDe Xfce-bestanddelen worden ter beschikking gesteld onder vrije of open-bron licenties; GPL of BSDL voor toepassingen en LGPL of BSDL voor bibliotheekbestanden. Kijk naar de documentatie, de broncode of de webstek van Xfce (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) voor meer informatie.\n\nBedankt voor uw belangstelling voor Xfce.\n\n\t- De ontwikkelaarsploeg van Xfce"
+"\t- The Expidus Development Team"
+msgstr "Expidus is ook een ontwikkelplatform dat verschillende bibliotheekbestanden beschikbaar stelt die programmeurs helpen om toepassingen te maken die goed passen in de werkomgeving.\n\nDe Expidus-bestanddelen worden ter beschikking gesteld onder vrije of open-bron licenties; GPL of BSDL voor toepassingen en LGPL of BSDL voor bibliotheekbestanden. Kijk naar de documentatie, de broncode of de webstek van Expidus (<a href=\"https://www.xfce.org\">https://www.xfce.org</a>) voor meer informatie.\n\nBedankt voor uw belangstelling voor Expidus.\n\n\t- De ontwikkelaarsploeg van Expidus"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:22
 msgid "About"

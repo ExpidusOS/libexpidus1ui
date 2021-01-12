@@ -12,7 +12,7 @@
 
     <copyright>
       <year>2019</year>
-      <holder>The Xfce Development Team</holder>
+      <holder>The Expidus Development Team</holder>
     </copyright>
 
     <legalnotice id="legalnotice">
@@ -36,7 +36,7 @@
         </affiliation>
       </author>
       <author>
-        <firstname>The Xfce development team</firstname>
+        <firstname>The Expidus development team</firstname>
         <affiliation>
           <address><email>expidus1-dev@xfce.org</email></address>
         </affiliation>
@@ -47,32 +47,32 @@
   <part id="libexpidus1ui-introduction">
     <title>Introduction</title>
     <para>
-      Libexpidus1ui is used to share commonly used Xfce widgets amoung the Xfce applications.
+      Libexpidus1ui is used to share commonly used Expidus widgets amoung the Expidus applications.
     </para>
   </part>
 
   <part id="libexpidus1ui-fundamentals">
-    <title>Xfce Fundamentals</title>
+    <title>Expidus Fundamentals</title>
     <xi:include href="xml/libexpidus1ui-config.xml"/>
-    <xi:include href="xml/xfce-spawn.xml"/>
+    <xi:include href="xml/expidus-spawn.xml"/>
   </part>
 
   <part id="libexpidus1ui-extensions">
-    <title>Xfce UI Extensions</title>
-    <xi:include href="xml/xfce-gdk-extensions.xml"/>
-    <xi:include href="xml/xfce-gtk-extensions.xml"/>
+    <title>Expidus UI Extensions</title>
+    <xi:include href="xml/expidus-gdk-extensions.xml"/>
+    <xi:include href="xml/expidus-gtk-extensions.xml"/>
   </part>
 
   <part id="libexpidus1ui-widgets">
-    <title>Xfce UI Widget</title>
-    <xi:include href="xml/xfce-dialogs.xml"/>
-    <xi:include href="xml/xfce-filename-input.xml"/>
-    <xi:include href="xml/xfce-titled-dialog.xml"/>
+    <title>Expidus UI Widget</title>
+    <xi:include href="xml/expidus-dialogs.xml"/>
+    <xi:include href="xml/expidus-filename-input.xml"/>
+    <xi:include href="xml/expidus-titled-dialog.xml"/>
   </part>
 
   <part id="libexpidus1ui-sm">
-    <title>Xfce Session Management Support</title>
-    <xi:include href="xml/xfce-sm-client.xml"/>
+    <title>Expidus Session Management Support</title>
+    <xi:include href="xml/expidus-sm-client.xml"/>
   </part>
     <index id="api-index-full">
     <title>Index of all symbols</title>

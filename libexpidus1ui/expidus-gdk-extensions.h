@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 The Xfce Development Team
+ * Copyright (c) 2007 The Expidus Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -21,18 +21,18 @@
 #error "Only <libexpidus1ui/libexpidus1ui.h> can be included directly, this file is not part of the public API."
 #endif
 
-#ifndef __XFCE_GDK_EXTENSIONS_H__
-#define __XFCE_GDK_EXTENSIONS_H__
+#ifndef __EXPIDUS_GDK_EXTENSIONS_H__
+#define __EXPIDUS_GDK_EXTENSIONS_H__
 
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gdk/gdk.h>
 
 G_BEGIN_DECLS
 
-GdkScreen    *xfce_gdk_screen_get_active   (gint *monitor_return);
+GdkScreen    *expidus_gdk_screen_get_active   (gint *monitor_return);
 
-GdkRectangle *xfce_gdk_screen_get_geometry (void);
+GdkRectangle *expidus_gdk_screen_get_geometry (void);
 
 G_END_DECLS
 
-#endif /* !__XFCE_GDK_EXTENSIONS_H__ */
+#endif /* !__EXPIDUS_GDK_EXTENSIONS_H__ */

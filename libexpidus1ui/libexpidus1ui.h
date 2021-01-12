@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 The Xfce Development Team
+ * Copyright (c) 2007 The Expidus Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -25,13 +25,13 @@
 #define LIBEXPIDUS1UI_INSIDE_LIBEXPIDUS1UI_H
 
 #include <libexpidus1ui/libexpidus1ui-config.h>
-#include <libexpidus1ui/xfce-dialogs.h>
-#include <libexpidus1ui/xfce-gdk-extensions.h>
-#include <libexpidus1ui/xfce-gtk-extensions.h>
-#include <libexpidus1ui/xfce-spawn.h>
-#include <libexpidus1ui/xfce-filename-input.h>
-#include <libexpidus1ui/xfce-sm-client.h>
-#include <libexpidus1ui/xfce-titled-dialog.h>
+#include <libexpidus1ui/expidus-dialogs.h>
+#include <libexpidus1ui/expidus-gdk-extensions.h>
+#include <libexpidus1ui/expidus-gtk-extensions.h>
+#include <libexpidus1ui/expidus-spawn.h>
+#include <libexpidus1ui/expidus-filename-input.h>
+#include <libexpidus1ui/expidus-sm-client.h>
+#include <libexpidus1ui/expidus-titled-dialog.h>
 #include <libexpidus1ui/libexpidus1ui-enum-types.h>
 
 #undef LIBEXPIDUS1UI_INSIDE_LIBEXPIDUS1UI_H

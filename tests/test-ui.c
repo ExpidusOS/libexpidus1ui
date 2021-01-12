@@ -39,19 +39,19 @@ main_window_destroy (GtkWidget *window)
 }
 
 static void
-show_xfce_message_dialog (GtkButton *button,
+show_expidus_message_dialog (GtkButton *button,
                           gpointer unused)
 {
   GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_size ("../icons/48x48/expidus1-logo.png", 24, 24, NULL);
 
-  xfce_message_dialog (NULL, "Question - Gtk3 version with no deprecated symbols",
+  expidus_message_dialog (NULL, "Question - Gtk3 version with no deprecated symbols",
                        "dialog-question",
                        "There are unsaved modifications",
                        "The menu has been modified, do you want to save it before quitting?",
-                       XFCE_BUTTON_TYPE_MIXED, "document-save", "Save", GTK_RESPONSE_YES,
-                       XFCE_BUTTON_TYPE_MIXED, "edit-delete", "Forget modifications", GTK_RESPONSE_APPLY,
-                       XFCE_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
-                       XFCE_BUTTON_TYPE_MIXED, "process-stop", "Cancel", GTK_RESPONSE_CANCEL,
+                       EXPIDUS_BUTTON_TYPE_MIXED, "document-save", "Save", GTK_RESPONSE_YES,
+                       EXPIDUS_BUTTON_TYPE_MIXED, "edit-delete", "Forget modifications", GTK_RESPONSE_APPLY,
+                       EXPIDUS_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
+                       EXPIDUS_BUTTON_TYPE_MIXED, "process-stop", "Cancel", GTK_RESPONSE_CANCEL,
                        NULL);
 
   if (pixbuf != NULL)
@@ -61,27 +61,27 @@ show_xfce_message_dialog (GtkButton *button,
 }
 
 static void
-show_xfce_dialog_show_help (GtkButton *button,
+show_expidus_dialog_show_help (GtkButton *button,
                             gpointer unused)
 {
-  xfce_dialog_show_help (NULL, "expidus1-session", "preferences", NULL);
+  expidus_dialog_show_help (NULL, "expidus1-session", "preferences", NULL);
 }
 
 static void
-show_xfce_dialog_show_help_with_version (GtkButton *button,
+show_expidus_dialog_show_help_with_version (GtkButton *button,
                                          gpointer unused)
 {
-  xfce_dialog_show_help_with_version (NULL, "expidus1-power-manager", "start", NULL, "4.14");
+  expidus_dialog_show_help_with_version (NULL, "expidus1-power-manager", "start", NULL, "4.14");
 }
 
 static void
 remove_auto_online (GtkButton *button,
                     gpointer unused)
 {
-  XfceRc   *rc;
+  ExpidusRc   *rc;
   gboolean  response;
 
-  response = xfce_dialog_confirm (NULL, "system-run", "Execute",
+  response = expidus_dialog_confirm (NULL, "system-run", "Execute",
                                   "Removing this will enable the show help "
                                   "dialogs to appear. Do you want to do this?",
                                   "Remove auto-online in rc file? (Gtk3)");
@@ -89,46 +89,46 @@ remove_auto_online (GtkButton *button,
   if (response == FALSE)
     return;
 
-  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "expidus1/help.rc", FALSE);
+  rc = expidus_rc_config_open (EXPIDUS_RESOURCE_CONFIG, "expidus1/help.rc", FALSE);
   if (rc != NULL)
     {
-      xfce_rc_write_bool_entry (rc, "auto-online", FALSE);
-      xfce_rc_close (rc);
+      expidus_rc_write_bool_entry (rc, "auto-online", FALSE);
+      expidus_rc_close (rc);
     }
 }
 
 static void
-show_xfce_dialog_show_info (GtkButton *button,
+show_expidus_dialog_show_info (GtkButton *button,
                             gpointer unused)
 {
-  xfce_dialog_show_info(NULL, NULL, "%s", "xfburn_transcoder_get_description (priv->trans)");
+  expidus_dialog_show_info(NULL, NULL, "%s", "xfburn_transcoder_get_description (priv->trans)");
 }
 
 static void
-show_xfce_dialog_show_warning (GtkButton *button,
+show_expidus_dialog_show_warning (GtkButton *button,
                                gpointer unused)
 {
-  xfce_dialog_show_warning(NULL, NULL, _("A file named \"%s\" already exists in this directory, the file hasn't been added."), "name");
+  expidus_dialog_show_warning(NULL, NULL, _("A file named \"%s\" already exists in this directory, the file hasn't been added."), "name");
 }
 
 static void
-show_xfce_dialog_show_error (GtkButton *button,
+show_expidus_dialog_show_error (GtkButton *button,
                              gpointer unused)
 {
   GError *error = NULL;
 
   g_set_error (&error, G_FILE_ERROR, G_FILE_ERROR_NOENT, "This isn't a real error");
 
-  xfce_dialog_show_error (NULL, error, _("Failed to migrate the old panel configuration"));
+  expidus_dialog_show_error (NULL, error, _("Failed to migrate the old panel configuration"));
 
   g_clear_error (&error);
 }
 
 static void
-show_xfce_dialog_confirm (GtkButton *button,
+show_expidus_dialog_confirm (GtkButton *button,
                           gpointer unused)
 {
-  xfce_dialog_confirm (NULL, "system-run", "Execute",
+  expidus_dialog_confirm (NULL, "system-run", "Execute",
                        "Do you want to start the panel? If you do, make sure "
                        "you save the session on logout, so the panel is "
                        "automatically started the next time you login.",
@@ -136,11 +136,11 @@ show_xfce_dialog_confirm (GtkButton *button,
 }
 
 static void
-show_xfce_dialog_confirm_close_tabs (GtkButton *button,
+show_expidus_dialog_confirm_close_tabs (GtkButton *button,
                                      gpointer unused)
 {
   gboolean checked = TRUE;
-  xfce_dialog_confirm_close_tabs (NULL,
+  expidus_dialog_confirm_close_tabs (NULL,
                                   3,
                                   TRUE,
                                   &checked);
@@ -155,18 +155,18 @@ close_window (GtkDialog *dialog,
 }
 
 static void
-show_xfce_titled_dialog_new_with_buttons (GtkButton *button,
+show_expidus_titled_dialog_new_with_buttons (GtkButton *button,
                                           gpointer unused)
 {
   GtkWidget *dialog_gtk3;
 
-  dialog_gtk3 = xfce_titled_dialog_new_with_buttons ("Settings Editor (Gtk3)", NULL,
+  dialog_gtk3 = expidus_titled_dialog_new_with_buttons ("Settings Editor (Gtk3)", NULL,
                                                 GTK_DIALOG_DESTROY_WITH_PARENT,
                                                 "help-browser", GTK_RESPONSE_HELP,
                                                 "window-close-symbolic", GTK_RESPONSE_OK,
                                                 NULL);
 
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk3),
+  expidus_titled_dialog_set_subtitle (EXPIDUS_TITLED_DIALOG (dialog_gtk3),
                                    _("Customize settings stored by Esconf"));
 
   gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk3), "preferences-system");
@@ -178,12 +178,12 @@ show_xfce_titled_dialog_new_with_buttons (GtkButton *button,
 }
 
 static void
-show_xfce_titled_dialog_new_with_mixed_buttons (GtkButton *button,
+show_expidus_titled_dialog_new_with_mixed_buttons (GtkButton *button,
                                                 gpointer unused)
 {
   GtkWidget *dialog_gtk3;
 
-  dialog_gtk3 = xfce_titled_dialog_new_with_mixed_buttons ("Settings Editor (Gtk3)", NULL,
+  dialog_gtk3 = expidus_titled_dialog_new_with_mixed_buttons ("Settings Editor (Gtk3)", NULL,
                                                            GTK_DIALOG_DESTROY_WITH_PARENT,
                                                            "help-browser", "Help", GTK_RESPONSE_HELP,
                                                            "weather-snow", "Snow!", GTK_RESPONSE_APPLY,
@@ -191,7 +191,7 @@ show_xfce_titled_dialog_new_with_mixed_buttons (GtkButton *button,
                                                            "window-close-symbolic", "Close", GTK_RESPONSE_OK,
                                                            NULL);
 
-  xfce_titled_dialog_set_subtitle (XFCE_TITLED_DIALOG (dialog_gtk3),
+  expidus_titled_dialog_set_subtitle (EXPIDUS_TITLED_DIALOG (dialog_gtk3),
                                    _("Customize settings stored by Esconf"));
 
   gtk_window_set_icon_name (GTK_WINDOW (dialog_gtk3), "preferences-system");
@@ -204,24 +204,24 @@ show_xfce_titled_dialog_new_with_mixed_buttons (GtkButton *button,
 }
 
 static void
-show_xfce_gdk_screen_get_active (GtkButton *button,
+show_expidus_gdk_screen_get_active (GtkButton *button,
                                  gpointer unused)
 {
   gint       monitor_num;
   GdkScreen *screen;
 
-  screen = xfce_gdk_screen_get_active (&monitor_num);
+  screen = expidus_gdk_screen_get_active (&monitor_num);
 
-  xfce_dialog_show_info (NULL, NULL, "monitor num: %d of %d",
+  expidus_dialog_show_info (NULL, NULL, "monitor num: %d of %d",
                          monitor_num, gdk_screen_get_n_monitors (screen));
 }
 
 static void
-show_xfce_filename_input_dialog (GtkButton *button,
+show_expidus_filename_input_dialog (GtkButton *button,
                                  gpointer   unused)
 {
   GtkWidget         *dialog;
-  XfceFilenameInput *filename_input;
+  ExpidusFilenameInput *filename_input;
 
   dialog = gtk_dialog_new_with_buttons ("Enter file name",
                                         NULL,
@@ -233,17 +233,17 @@ show_xfce_filename_input_dialog (GtkButton *button,
   gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
   gtk_window_set_default_size (GTK_WINDOW (dialog), 250, -1);
 
-  filename_input = g_object_new (XFCE_TYPE_FILENAME_INPUT,
+  filename_input = g_object_new (EXPIDUS_TYPE_FILENAME_INPUT,
                                  "original-filename", "example.txt", "max-text-length", 30, NULL);
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))),
                      GTK_WIDGET (filename_input));
   gtk_widget_show_all (GTK_WIDGET (filename_input));
 
-  g_signal_connect_swapped (filename_input, "text-invalid", G_CALLBACK (xfce_filename_input_desensitise_widget),
+  g_signal_connect_swapped (filename_input, "text-invalid", G_CALLBACK (expidus_filename_input_desensitise_widget),
                             gtk_dialog_get_widget_for_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK));
-  g_signal_connect_swapped (filename_input, "text-valid", G_CALLBACK (xfce_filename_input_sensitise_widget),
+  g_signal_connect_swapped (filename_input, "text-valid", G_CALLBACK (expidus_filename_input_sensitise_widget),
                             gtk_dialog_get_widget_for_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK));
-  xfce_filename_input_check (filename_input); /* this call ensures that the "Submit" button has its
+  expidus_filename_input_check (filename_input); /* this call ensures that the "Submit" button has its
                                                 sensitivity set correctly */
   gtk_dialog_run (GTK_DIALOG (dialog));
   gtk_widget_destroy (dialog);
@@ -260,7 +260,7 @@ create_main_window (void)
   GtkWidget *label;
 
   /* Create main window */
-  window = xfce_titled_dialog_new_with_mixed_buttons (APP_NAME, NULL,
+  window = expidus_titled_dialog_new_with_mixed_buttons (APP_NAME, NULL,
                                                       GTK_DIALOG_DESTROY_WITH_PARENT,
                                                       "window-close-symbolic", "_Close", GTK_RESPONSE_CLOSE,
                                                       NULL);
@@ -281,86 +281,86 @@ create_main_window (void)
   gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (window))), grid);
 
   /* Create buttons */
-  /* Xfce Dialogs */
-  label = gtk_label_new ("Xfce Dialogs");
+  /* Expidus Dialogs */
+  label = gtk_label_new ("Expidus Dialogs");
   gtk_grid_attach (GTK_GRID (grid), label, 0, 0, 1, 1);
 
-  /* xfce_message_dialog */
-  button = gtk_button_new_with_label ("xfce_message_dialog");
+  /* expidus_message_dialog */
+  button = gtk_button_new_with_label ("expidus_message_dialog");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 1, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_message_dialog), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_message_dialog), NULL);
 
-  /* xfce_dialog_show_info */
-  button = gtk_button_new_with_label ("xfce_dialog_show_info");
+  /* expidus_dialog_show_info */
+  button = gtk_button_new_with_label ("expidus_dialog_show_info");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 2, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_info), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_dialog_show_info), NULL);
 
-  /* xfce_dialog_show_warning */
-  button = gtk_button_new_with_label ("xfce_dialog_show_warning");
+  /* expidus_dialog_show_warning */
+  button = gtk_button_new_with_label ("expidus_dialog_show_warning");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 3, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_warning), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_dialog_show_warning), NULL);
 
-  /* xfce_dialog_show_error */
-  button = gtk_button_new_with_label ("xfce_dialog_show_error");
+  /* expidus_dialog_show_error */
+  button = gtk_button_new_with_label ("expidus_dialog_show_error");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 4, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_error), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_dialog_show_error), NULL);
 
-  /* xfce_dialog_confirm */
-  button = gtk_button_new_with_label ("xfce_dialog_confirm");
+  /* expidus_dialog_confirm */
+  button = gtk_button_new_with_label ("expidus_dialog_confirm");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 5, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_confirm), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_dialog_confirm), NULL);
 
-  /* xfce_dialog_confirm_close_tabs */
-  button = gtk_button_new_with_label ("xfce_dialog_confirm_close_tabs");
+  /* expidus_dialog_confirm_close_tabs */
+  button = gtk_button_new_with_label ("expidus_dialog_confirm_close_tabs");
   gtk_grid_attach (GTK_GRID (grid), button, 0, 6, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_confirm_close_tabs), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_dialog_confirm_close_tabs), NULL);
 
   /* Online Help Dialogs */
   label = gtk_label_new ("Online Help Dialogs");
   gtk_grid_attach (GTK_GRID (grid), label, 1, 0, 1, 1);
 
-  /* xfce_dialog_show_help */
-  button = gtk_button_new_with_label ("xfce_dialog_show_help");
+  /* expidus_dialog_show_help */
+  button = gtk_button_new_with_label ("expidus_dialog_show_help");
   gtk_grid_attach (GTK_GRID (grid), button, 1, 1, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_help), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_dialog_show_help), NULL);
 
-  /* xfce_dialog_show_help_with_version */
-  button = gtk_button_new_with_label ("xfce_dialog_show_help_with_version");
+  /* expidus_dialog_show_help_with_version */
+  button = gtk_button_new_with_label ("expidus_dialog_show_help_with_version");
   gtk_grid_attach (GTK_GRID (grid), button, 1, 2, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_dialog_show_help_with_version), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_dialog_show_help_with_version), NULL);
 
   /* remove auto-online check from rc file */
   button = gtk_button_new_with_label ("remove auto-online check from rc file");
   gtk_grid_attach (GTK_GRID (grid), button, 1, 3, 1, 1);
   g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (remove_auto_online), NULL);
 
-  /* Xfce Titled Dialogs */
-  label = gtk_label_new ("Xfce Titled Dialog");
+  /* Expidus Titled Dialogs */
+  label = gtk_label_new ("Expidus Titled Dialog");
   gtk_grid_attach (GTK_GRID (grid), label, 2, 0, 1, 1);
 
-  /* xfce_titled_dialog_new_with_buttons */
-  button = gtk_button_new_with_label ("xfce_titled_dialog_new_with_buttons");
+  /* expidus_titled_dialog_new_with_buttons */
+  button = gtk_button_new_with_label ("expidus_titled_dialog_new_with_buttons");
   gtk_grid_attach (GTK_GRID (grid), button, 2, 1, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_titled_dialog_new_with_buttons), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_titled_dialog_new_with_buttons), NULL);
 
-  /* xfce_titled_dialog_new_with_mixed_buttons */
-  button = gtk_button_new_with_label ("xfce_titled_dialog_new_with_mixed_buttons");
+  /* expidus_titled_dialog_new_with_mixed_buttons */
+  button = gtk_button_new_with_label ("expidus_titled_dialog_new_with_mixed_buttons");
   gtk_grid_attach (GTK_GRID (grid), button, 2, 2, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_titled_dialog_new_with_mixed_buttons), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_titled_dialog_new_with_mixed_buttons), NULL);
 
   /* Other Dialogs */
   label = gtk_label_new ("Other Dialogs and Widgets");
   gtk_grid_attach (GTK_GRID (grid), label, 3, 0, 1, 1);
 
-  /* xfce_gdk_screen_get_active */
-  button = gtk_button_new_with_label ("xfce_gdk_screen_get_active");
+  /* expidus_gdk_screen_get_active */
+  button = gtk_button_new_with_label ("expidus_gdk_screen_get_active");
   gtk_grid_attach (GTK_GRID (grid), button, 3, 1, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_gdk_screen_get_active), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_gdk_screen_get_active), NULL);
 
-  /* xfce_filename_input */
-  button = gtk_button_new_with_label ("XfceFilenameInput");
+  /* expidus_filename_input */
+  button = gtk_button_new_with_label ("ExpidusFilenameInput");
   gtk_grid_attach (GTK_GRID (grid), button, 3, 2, 1, 1);
-  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_xfce_filename_input_dialog), NULL);
+  g_signal_connect (G_OBJECT (button), "clicked", G_CALLBACK (show_expidus_filename_input_dialog), NULL);
 
   gtk_widget_show_all (window);
 }

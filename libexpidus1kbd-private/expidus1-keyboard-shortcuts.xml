@@ -31,7 +31,7 @@
       </property>
     </property>
   </property>
-  <property name="xfwm4" type="empty">
+  <property name="eswm1" type="empty">
     <property name="default" type="empty">
       <property name="&lt;Alt&gt;Insert" type="string" value="add_workspace_key"/>
       <property name="Escape" type="string" value="cancel_key"/>

@@ -21,25 +21,25 @@
 #error "Only <libexpidus1ui/libexpidus1ui.h> can be included directly, this file is not part of the public API."
 #endif
 
-#ifndef __XFCE_TITLED_DIALOG_H__
-#define __XFCE_TITLED_DIALOG_H__
+#ifndef __EXPIDUS_TITLED_DIALOG_H__
+#define __EXPIDUS_TITLED_DIALOG_H__
 
 #include <gtk/gtk.h>
 
 G_BEGIN_DECLS
 
-typedef struct _XfceTitledDialogPrivate XfceTitledDialogPrivate;
-typedef struct _XfceTitledDialogClass   XfceTitledDialogClass;
-typedef struct _XfceTitledDialog        XfceTitledDialog;
+typedef struct _ExpidusTitledDialogPrivate ExpidusTitledDialogPrivate;
+typedef struct _ExpidusTitledDialogClass   ExpidusTitledDialogClass;
+typedef struct _ExpidusTitledDialog        ExpidusTitledDialog;
 
-#define XFCE_TYPE_TITLED_DIALOG             (xfce_titled_dialog_get_type ())
-#define XFCE_TITLED_DIALOG(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), XFCE_TYPE_TITLED_DIALOG, XfceTitledDialog))
-#define XFCE_TITLED_DIALOG_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), XFCE_TYPE_TITLED_DIALOG, XfceTitledDialogClass))
-#define XFCE_IS_TITLED_DIALOG(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), XFCE_TYPE_TITLED_DIALOG))
-#define XFCE_IS_TITLED_DIALOG_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), XFCE_TYPE_TITLED_DIALOG))
-#define XFCE_TITLED_DIALOG_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), XFCE_TYPE_TITLED_DIALOG, XfceTitledDialogClass))
+#define EXPIDUS_TYPE_TITLED_DIALOG             (expidus_titled_dialog_get_type ())
+#define EXPIDUS_TITLED_DIALOG(obj)             (G_TYPE_CHECK_INSTANCE_CAST ((obj), EXPIDUS_TYPE_TITLED_DIALOG, ExpidusTitledDialog))
+#define EXPIDUS_TITLED_DIALOG_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST ((klass), EXPIDUS_TYPE_TITLED_DIALOG, ExpidusTitledDialogClass))
+#define EXPIDUS_IS_TITLED_DIALOG(obj)          (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EXPIDUS_TYPE_TITLED_DIALOG))
+#define EXPIDUS_IS_TITLED_DIALOG_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE ((klass), EXPIDUS_TYPE_TITLED_DIALOG))
+#define EXPIDUS_TITLED_DIALOG_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS ((obj), EXPIDUS_TYPE_TITLED_DIALOG, ExpidusTitledDialogClass))
 
-struct _XfceTitledDialogClass
+struct _ExpidusTitledDialogClass
 {
   /*< private >*/
   GtkDialogClass __parent__;
@@ -54,46 +54,46 @@ struct _XfceTitledDialogClass
 };
 
 /**
- * XfceTitledDialog:
+ * ExpidusTitledDialog:
  *
  * An opaque struct with only private fields.
  **/
-struct _XfceTitledDialog
+struct _ExpidusTitledDialog
 {
   /*< private >*/
   GtkDialog                __parent__;
-  XfceTitledDialogPrivate *priv;
+  ExpidusTitledDialogPrivate *priv;
 };
 
-GType                 xfce_titled_dialog_get_type         (void) G_GNUC_CONST;
+GType                 expidus_titled_dialog_get_type         (void) G_GNUC_CONST;
 
-GtkWidget            *xfce_titled_dialog_new              (void) G_GNUC_MALLOC;
-GtkWidget            *xfce_titled_dialog_new_with_buttons (const gchar      *title,
+GtkWidget            *expidus_titled_dialog_new              (void) G_GNUC_MALLOC;
+GtkWidget            *expidus_titled_dialog_new_with_buttons (const gchar      *title,
                                                            GtkWindow        *parent,
                                                            GtkDialogFlags    flags,
                                                            const gchar      *first_button_text,
                                                            ...) G_GNUC_MALLOC;
 
-GtkWidget            *xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
+GtkWidget            *expidus_titled_dialog_new_with_mixed_buttons (const gchar    *title,
                                                                  GtkWindow      *parent,
                                                                  GtkDialogFlags  flags,
                                                                  const gchar    *first_button_icon_name,
                                                                  const gchar    *first_button_text,
                                                                  ...) G_GNUC_MALLOC;
 
-void                  xfce_titled_dialog_create_action_area   (XfceTitledDialog *titled_dialog);
-GtkWidget            *xfce_titled_dialog_add_button           (XfceTitledDialog *titled_dialog,
+void                  expidus_titled_dialog_create_action_area   (ExpidusTitledDialog *titled_dialog);
+GtkWidget            *expidus_titled_dialog_add_button           (ExpidusTitledDialog *titled_dialog,
                                                                const gchar      *button_text,
                                                                gint              response_id);
-void                  xfce_titled_dialog_add_action_widget    (XfceTitledDialog *titled_dialog,
+void                  expidus_titled_dialog_add_action_widget    (ExpidusTitledDialog *titled_dialog,
                                                                GtkWidget        *child,
                                                                gint              response_id);
-void                  xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
+void                  expidus_titled_dialog_set_default_response (ExpidusTitledDialog *titled_dialog,
                                                                gint              response_id);
-const gchar          *xfce_titled_dialog_get_subtitle         (XfceTitledDialog *titled_dialog);
-void                  xfce_titled_dialog_set_subtitle         (XfceTitledDialog *titled_dialog,
+const gchar          *expidus_titled_dialog_get_subtitle         (ExpidusTitledDialog *titled_dialog);
+void                  expidus_titled_dialog_set_subtitle         (ExpidusTitledDialog *titled_dialog,
                                                                const gchar      *subtitle);
 
 G_END_DECLS
 
-#endif /* !__XFCE_TITLED_DIALOG_H__ */
+#endif /* !__EXPIDUS_TITLED_DIALOG_H__ */

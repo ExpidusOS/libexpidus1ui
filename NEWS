@@ -1,7 +1,7 @@
 4.16.0
 ======
 - about: Harmonize capitalisation
-- Update credits for Xfce 4.16
+- Update credits for Expidus 4.16
 - Translation Updates:
   Basque, Bulgarian, Catalan, Chinese (Taiwan), Dutch, Galician,
   Japanese, Lithuanian, Norwegian Bokmål, Portuguese, Portuguese
@@ -9,7 +9,7 @@
 
 4.15.8
 ======
-- Add xfce_has_gtk_frame_extents to better handle CSD
+- Add expidus_has_gtk_frame_extents to better handle CSD
 - Translation Updates:
   Catalan, French, German, Italian, Japanese, Portuguese, Serbian,
   Spanish, Swedish, Turkish
@@ -26,14 +26,14 @@
 
 4.15.6
 ======
-- Introduce xfce_spawn and xfce_spawn_command_line
-  in favor and instead of xfce_spawn_no_child
+- Introduce expidus_spawn and expidus_spawn_command_line
+  in favor and instead of expidus_spawn_no_child
 - Bump GLib (and gio, gthread, etc) minimum to 2.50.0
 - about: Support multiple GPUs and print GPU memory size
 - about: Drop window subtitle
 - Always perform sanity check
 - Avoid checking for epoxy if libgtop is disabled
-- XfceTitledDialog: Fix erroneous check (Fixes #30)
+- ExpidusTitledDialog: Fix erroneous check (Fixes #30)
 - No startup notification in Wayland to prevent crash (Issue #17)
 - Translation Updates:
   Chinese (China), Chinese (Taiwan), Estonian, French, German, Hebrew,
@@ -43,13 +43,13 @@
 
 4.15.5
 ======
-- Add new API xfce_spawn_no_child (!8):
+- Add new API expidus_spawn_no_child (!8):
   Launch processes re-parenting them to init vs. as children
 - about: Fix icon names
 - about: Display userspace bitness if it differs from OS kernel bitness
 - about: Print GPU name in system info
 - about: Use more understandable arch labels (Issue #27)
-- Improve xfce_icon_name API
+- Improve expidus_icon_name API
 - No startup notification in wayland to prevent crash (Issue #17)
 - Add missing docstring
 - Fix typos
@@ -66,13 +66,13 @@
 - AC_CONFIG_MACRO_DIR → AC_CONFIG_MACRO_DIRS
 - Add default shortcuts for tiling (Fixes #4)
 - Avoid shortening the keycodes GArray while walking it.
-- about: Revamp About Xfce tab
+- about: Revamp About Expidus tab
 - about: More icon name fixes
 - Add more logo icons and new about icon
 - Update deprecated icon names
 - keyboard-shortcuts: Improve UI for setting shortcuts
 - shortcut-dialog: Add label to clear button
-- shortcut-dialog: Port to new XfceTitledDialog API
+- shortcut-dialog: Port to new ExpidusTitledDialog API
 - shortcut-dialog: Only grab keyboard
 - Always return GTK_RESPONSE_OK for accepted shortcut keys (fixes #20)
 - Translation Updates:
@@ -90,7 +90,7 @@
 4.15.3
 ======
 - Update bug URLs to point to gitlab.xfce
-- xfce-about: Hide empty email address tags (Fixes #12)
+- expidus-about: Hide empty email address tags (Fixes #12)
 - Remove translator email address as per request (Fixes #11)
 - Add missing translator "Hugo Carvalho" to expidus1-about (issue #18)
 - Replace deprecated 'gdk_keyboard_ungrab' function (Fixes #15)
@@ -100,14 +100,14 @@
 - Allow more granular control over menu item accelerators.
   - No automatic accelerator activation formenu items
   - Added 'gtk_menu_item_set_accel_label'
-  - Added 'xfce_gtk_accel_group_connect_action_entries'
-- renamed 'xfce_gtk_accel_group_append' to
-  'xfce_gtk_accel_map_add_entries' and modified internals accordingly.
+  - Added 'expidus_gtk_accel_group_connect_action_entries'
+- renamed 'expidus_gtk_accel_group_append' to
+  'expidus_gtk_accel_map_add_entries' and modified internals accordingly.
   No automatic add to an accel_group any more, since this may lead to
   double-activation in some cases.
-- Add "xfce_gtk_accel_group_disconnect_action_entries" to be able to
-  revert "xfce_gtk_accel_group_connect_action_entries"
-- Add title to xfce_dialog_confirm_close_tabs
+- Add "expidus_gtk_accel_group_disconnect_action_entries" to be able to
+  revert "expidus_gtk_accel_group_connect_action_entries"
+- Add title to expidus_dialog_confirm_close_tabs
 - Add new methods to libexpidus1ui.symbols. Followup of
   231e57daccb5946379f413ed440629c32025f6f3
 - Translation Updates:
@@ -124,18 +124,18 @@
 
 4.15.2
 ======
-- Introduced 'XfceGtkActionEntry' as replacement for the deprecated 'GtkAction',
+- Introduced 'ExpidusGtkActionEntry' as replacement for the deprecated 'GtkAction',
   'GtkActionEntry' in order to keep simple menu creation. This includes various
   support methods, like:
-  'xfce_gtk_translate_action_entries' to to translate a list of XfceGtkActionEntrys
-  'xfce_gtk_accel_group_append' to register the provided accelerators of the entries
-  'xfce_gtk_get_action_entry_by_id' to find a single XfceGtkActionEntry, e.g. by
+  'expidus_gtk_translate_action_entries' to to translate a list of ExpidusGtkActionEntrys
+  'expidus_gtk_accel_group_append' to register the provided accelerators of the entries
+  'expidus_gtk_get_action_entry_by_id' to find a single ExpidusGtkActionEntry, e.g. by
    using a enumeration
-  'xfce_gtk_***_new_from_action_entry' to create the specific menu- or
-   tool-items from an XfceGtkActionEntry
+  'expidus_gtk_***_new_from_action_entry' to create the specific menu- or
+   tool-items from an ExpidusGtkActionEntry
 - Add a widget for filename input (Bug #16542)
-- Enabled doc generation for XfceGtkActionEntry and related methods
-- Enabled doc generation for new widget 'xfce-filename-input'
+- Enabled doc generation for ExpidusGtkActionEntry and related methods
+- Enabled doc generation for new widget 'expidus-filename-input'
 - Switch Ctrl+Alt+Del to expidus1-session-logout (Bug #11979)
 - Add more default keyboard shortcuts (Bug #16470)
 - shortcuts: Replace xfrun4 by expidus1-appfinder
@@ -150,27 +150,27 @@
 
 4.15.1
 ======
-- Switch XfceTitledDialog to headerbar layout
-- XfceTitledDialog: Keep buttons in the action area
-- XfceTitledDialog: Also repack xfce_titled_dialog_new
-- XfceTitledDialog: Make sure windows can be dragged
-- XfceTitledDialog: Add _create_action_area, _add_button
+- Switch ExpidusTitledDialog to headerbar layout
+- ExpidusTitledDialog: Keep buttons in the action area
+- ExpidusTitledDialog: Also repack expidus_titled_dialog_new
+- ExpidusTitledDialog: Make sure windows can be dragged
+- ExpidusTitledDialog: Add _create_action_area, _add_button
   and _add_action_widget
-- Introduce xfce_titled_dialog_set_default_response
-- Mark xfce_titled_dialog_new_with_buttons as deprecated
+- Introduce expidus_titled_dialog_set_default_response
+- Mark expidus_titled_dialog_new_with_buttons as deprecated
 - Add two new functions to search for app icons
-- xfce-about: Fix Makefile
+- expidus-about: Fix Makefile
 - shortcut-dialog: Show dialog content (Bug #16338)
-- xfce-dialogs: Use GtkMessageDialog as base class
-- xfce-dialogs: Improve layout of confirm_close_tabs
-- xfce-dialogs: Improve alignment and layout of dialogs
-- xfce-dialogs: Add right margin back to labels
-- xfce-dialogs: Drop default window titles
-- docs: Add xfce_dialog_confirm_close_tabs
-- tests: Add xfce_dialog_confirm_close_tabs
+- expidus-dialogs: Use GtkMessageDialog as base class
+- expidus-dialogs: Improve layout of confirm_close_tabs
+- expidus-dialogs: Improve alignment and layout of dialogs
+- expidus-dialogs: Add right margin back to labels
+- expidus-dialogs: Drop default window titles
+- docs: Add expidus_dialog_confirm_close_tabs
+- tests: Add expidus_dialog_confirm_close_tabs
 - tests: Improve UI
 - tests: Add icons to dialog buttons
-- tests: Simplify code by using XfceTitledDialog
+- tests: Simplify code by using ExpidusTitledDialog
 - tests: Re-order buttons
 - tests: Fix typo in test-ui.c (Bug #16253)
 - Rename test-ui-gtk3 to test-ui
@@ -182,7 +182,7 @@
 - Remove trailing whitespace
 - Always provides needed files for vala binding in dist tarball
 - Add recents functions to libexpidus1ui.symbols
-- Drop xfce-header from pot files
+- Drop expidus-header from pot files
 - Update docstrings
 - Fix license text box too small (Bug #16259)
 - .gitignore: ignore all .o files
@@ -246,7 +246,7 @@
 ======
 - Add PrintScreen as shortcut for expidus1-screenshooter (Bug #14524)
 - Add Ctrl + Alt + t as default shortcut for terminal (Bug #14510)
-- Add xfce_gdk_screen_get_geometry (a replacement for gdk_screen_width/gdk_screen_height)
+- Add expidus_gdk_screen_get_geometry (a replacement for gdk_screen_width/gdk_screen_height)
 - Remove useless glade_*dir variables from libexpidus1ui-{1,2}.pc (Bug #13945)
 - Fix release tarball by adding libexpidus1ui-dialog-ui.ui
 - Fixes for gladeui2 detection
@@ -294,10 +294,10 @@
 - Bump the default dialog width to 500px
 - Update libexpidus1ui documentation
 - Fix make docs compilation warning
-- Fix xfce_dialog_show_help(_with_version) doc
+- Fix expidus_dialog_show_help(_with_version) doc
 - Remove Makefile.am space to fix autogen.sh warning
 - Better documentation processing
-- Change xfce_dialog_show_help(_with_version)
+- Change expidus_dialog_show_help(_with_version)
 - Default debug to yes instead of full
 - Remove exo dependancy Bug #13326
 - fix: add libexpidus1ui_get_resource to abi check symbols Bug #13326
@@ -314,7 +314,7 @@
 
 4.13.1
 ======
-- Better Gtk3.20 compatibility (fix XfceHeading style, drop deprecated call)
+- Better Gtk3.20 compatibility (fix ExpidusHeading style, drop deprecated call)
 - Translation updates: Bulgarian, Catalan, Chinese (China), Chinese (Taiwan),
   Croatian, Czech, Danish, Dutch (Flemish), English (Australia), French, German,
   Hebrew, Japanese, Korean, Lithuanian, Norwegian Bokmål, Polish, Portuguese
@@ -322,10 +322,10 @@
 
 4.13.0
 ======
-- Add xfce_widget_reparent to replace the deprecated gtk_widget_reparent
-- Add xfce_titled_dialog_new_with_mixed_buttons to allow for setting
+- Add expidus_widget_reparent to replace the deprecated gtk_widget_reparent
+- Add expidus_titled_dialog_new_with_mixed_buttons to allow for setting
   icon names, button label text and response id.
-- Add xfce_gtk_menu_popup_until_mapped as a convenience function to fix
+- Add expidus_gtk_menu_popup_until_mapped as a convenience function to fix
   widespread problems with popping up menus (e.g. on keyboard shortcuts)
 - Add dialog UI tests for Gtk2 and Gtk3
 - Fix Glade Gtk3 support
@@ -339,7 +339,7 @@
 4.12.1
 ======
 - Fix glade directory information in .pc file (bug #11353)
-- Add shortcuts for xfwm4 to tile windows to corners (bug #11652)
+- Add shortcuts for eswm1 to tile windows to corners (bug #11652)
 - Remove unused 'has_member' variable in expidus1-about (bug #11654)
 - Update .gitignore
 - Increase expidus1-about default size
@@ -358,7 +358,7 @@
 
 4.11.2
 ======
-- Bump dependencies versions (autotools, Xfce libraries)
+- Bump dependencies versions (autotools, Expidus libraries)
 - Remove SVN $Id$ tags
 - Properly quote AC_LANG_SOURCE
 - Fix autoconf m4 directory warning
@@ -369,11 +369,11 @@
 - Avoid double forking when spawning external apps (bug #9373)
 - Don't drop startup notify hint when resetting to defaults (bug #10630)
 - Add <Ctrl><Alt>l shortcut for screen locking (xflock4) (bug #10728)
-- Fix xfce_dialog_show_help()
+- Fix expidus_dialog_show_help()
 
 4.11.1
 ======
-- Add xfce_dialog_show_help_with_version() so applications can send
+- Add expidus_dialog_show_help_with_version() so applications can send
   their own version number and not the desktop version.
 - Translation updates: Arabic, Bulgarian, Bengali, Danish, German,
   Greek, Finnish, Galician, Croatian, Icelandic, Japanese, Kazakh,
@@ -394,7 +394,7 @@
 - Fix keyboard shortcuts with keypad (bug #4178).
 - Autotools updates.
 - Prefer exo-open for opening the manual pages.
-- Add error domain for XfceSmClient.
+- Add error domain for ExpidusSmClient.
 - Translation updates: Amharic, Arabic, Asturian, Bulgarian, Bengali,
   Catalan (Valencian), Czech, Danish, German, Greek, English (United
   Kingdom), Spanish (Castilian), Basque, Finnish, French, Galician,
@@ -428,7 +428,7 @@
 4.9.1
 =====
 - Open docs.xfce.org when Help in expidus1-about is clicked.
-- Cache header icons and avoid large icons in XfceTitledDialog.
+- Cache header icons and avoid large icons in ExpidusTitledDialog.
 - Restore glade directory information in .pc file.
 - Update translator credits.
 - Translation updates (ar, ca, cs, da, de, es, eu, fi, fr, hu, id,
@@ -439,13 +439,13 @@
 - A lot of improvements in the shortcuts code.
 - Add Alt + F1 as a shortcut for applications menu.
 - Remove unused code from the internal header widget.
-- Add expidus1-about from xfce-utils package.
+- Add expidus1-about from expidus-utils package.
 - Use xdt-csource instead of exo-csource, depend on xdt 4.9.0.
 - Update to new expidus1-appfinder commands.
 - Fix build against 3.9 Glade (bug #7334).
 - Add shortcuts for XF86WWW and XF86Mail.
-- Simplify the xfce_gdk_screen_get_active fucntion.
-- Add xfce_dialog_show_help function.
+- Simplify the expidus_gdk_screen_get_active fucntion.
+- Add expidus_dialog_show_help function.
 
 4.8.1
 =====
@@ -487,10 +487,10 @@
 - Add key binding to popup Xfdesktop menu (bug #4994).
 - Print warning before calling exit(0) in the session client.
 - Test if working directory exists before spawning command.
-- Allow icon names in xfce_gtk_button_new_mixed().
+- Allow icon names in expidus_gtk_button_new_mixed().
 - Unset startup notification when launching in terminal.
 - Make variable a volatile for thread safety.
-- Fix bold labels in xfce_gtk_frame_box_new().
+- Fix bold labels in expidus_gtk_frame_box_new().
 - Cleanup code comments.
 - Translation updates (gl, de, nl, fi, ru, hu, uk, si, kk, pt, da,
   es, hr, eu, pr_BR, bn, pa, zh_CN).
@@ -498,8 +498,8 @@
 
 4.7.1
 =====
-- New function xfce_spawn_on_screen_with_child_watch().
-- Don't generate enums for XfceSMClientPriority.
+- New function expidus_spawn_on_screen_with_child_watch().
+- Don't generate enums for ExpidusSMClientPriority.
 - Build ChangeLog during make dist.
 - Add visibility/alias handing code.
 - Rename configure.in.in to configure.ac.in.

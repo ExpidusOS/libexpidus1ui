@@ -18,8 +18,8 @@
  * MA 02110-1301 USA
  */
 
-#ifndef __XFCE_SM_CLIENT_H__
-#define __XFCE_SM_CLIENT_H__
+#ifndef __EXPIDUS_SM_CLIENT_H__
+#define __EXPIDUS_SM_CLIENT_H__
 
 #if !defined(LIBEXPIDUS1UI_INSIDE_LIBEXPIDUS1UI_H) && !defined(LIBEXPIDUS1UI_COMPILATION)
 #error "Only <libexpidus1ui/libexpidus1ui.h> can be included directly, this file is not part of the public API."
@@ -27,116 +27,116 @@
 
 #include <glib-object.h>
 
-#define XFCE_TYPE_SM_CLIENT             (xfce_sm_client_get_type())
-#define XFCE_SM_CLIENT(obj)             (G_TYPE_CHECK_INSTANCE_CAST((obj), XFCE_TYPE_SM_CLIENT, XfceSMClient))
-#define XFCE_IS_SM_CLIENT(obj)          (G_TYPE_CHECK_INSTANCE_TYPE((obj), XFCE_TYPE_SM_CLIENT))
-#define XFCE_SM_CLIENT_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST((klass), XFCE_TYPE_SM_CLIENT, XfceSMClientClass))
-#define XFCE_IS_SM_CLIENT_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE((klass), XFCE_TYPE_SM_CLIENT))
-#define XFCE_SM_CLIENT_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS((obj), XFCE_TYPE_SM_CLIENT, XfceSMClientClass))
+#define EXPIDUS_TYPE_SM_CLIENT             (expidus_sm_client_get_type())
+#define EXPIDUS_SM_CLIENT(obj)             (G_TYPE_CHECK_INSTANCE_CAST((obj), EXPIDUS_TYPE_SM_CLIENT, ExpidusSMClient))
+#define EXPIDUS_IS_SM_CLIENT(obj)          (G_TYPE_CHECK_INSTANCE_TYPE((obj), EXPIDUS_TYPE_SM_CLIENT))
+#define EXPIDUS_SM_CLIENT_CLASS(klass)     (G_TYPE_CHECK_CLASS_CAST((klass), EXPIDUS_TYPE_SM_CLIENT, ExpidusSMClientClass))
+#define EXPIDUS_IS_SM_CLIENT_CLASS(klass)  (G_TYPE_CHECK_CLASS_TYPE((klass), EXPIDUS_TYPE_SM_CLIENT))
+#define EXPIDUS_SM_CLIENT_GET_CLASS(obj)   (G_TYPE_INSTANCE_GET_CLASS((obj), EXPIDUS_TYPE_SM_CLIENT, ExpidusSMClientClass))
 
 /**
- * XFCE_SM_CLIENT_ERROR:
+ * EXPIDUS_SM_CLIENT_ERROR:
  *
- * Error domain for XfceSmCLient. Errors in this domain will be from the #XfceSmCLientErrorEnum enumeration.
+ * Error domain for ExpidusSmCLient. Errors in this domain will be from the #ExpidusSmCLientErrorEnum enumeration.
  * See #GError for more information on error domains.
  **/
-#define XFCE_SM_CLIENT_ERROR xfce_sm_client_error_quark()
+#define EXPIDUS_SM_CLIENT_ERROR expidus_sm_client_error_quark()
 
 /**
- * XfceSmCLientErrorEnum:
- * @XFCE_SM_CLIENT_ERROR_FAILED: Failed to connect to the session manager.
- * @XFCE_SM_CLIENT_ERROR_INVALID_CLIENT: Session does not have a valid client id.
+ * ExpidusSmCLientErrorEnum:
+ * @EXPIDUS_SM_CLIENT_ERROR_FAILED: Failed to connect to the session manager.
+ * @EXPIDUS_SM_CLIENT_ERROR_INVALID_CLIENT: Session does not have a valid client id.
  *
- * Error codes returned by XfceSmCLient functions.
+ * Error codes returned by ExpidusSmCLient functions.
  **/
 typedef enum {
-  XFCE_SM_CLIENT_ERROR_FAILED,
-  XFCE_SM_CLIENT_ERROR_INVALID_CLIENT
-} XfceSmCLientErrorEnum;
+  EXPIDUS_SM_CLIENT_ERROR_FAILED,
+  EXPIDUS_SM_CLIENT_ERROR_INVALID_CLIENT
+} ExpidusSmCLientErrorEnum;
 
 G_BEGIN_DECLS
 
 typedef enum
 {
-    XFCE_SM_CLIENT_RESTART_NORMAL = 0,
-    XFCE_SM_CLIENT_RESTART_IMMEDIATELY,
-} XfceSMClientRestartStyle;
+    EXPIDUS_SM_CLIENT_RESTART_NORMAL = 0,
+    EXPIDUS_SM_CLIENT_RESTART_IMMEDIATELY,
+} ExpidusSMClientRestartStyle;
 
 typedef enum /*< skip >*/
 {
-    XFCE_SM_CLIENT_PRIORITY_HIGHEST = 0,
-    XFCE_SM_CLIENT_PRIORITY_WM = 15,
-    XFCE_SM_CLIENT_PRIORITY_CORE = 25,
-    XFCE_SM_CLIENT_PRIORITY_DESKTOP = 35,
-    XFCE_SM_CLIENT_PRIORITY_DEFAULT = 50,
-    XFCE_SM_CLIENT_PRIORITY_LOWEST = 255,
-} XfceSMClientPriority;
+    EXPIDUS_SM_CLIENT_PRIORITY_HIGHEST = 0,
+    EXPIDUS_SM_CLIENT_PRIORITY_WM = 15,
+    EXPIDUS_SM_CLIENT_PRIORITY_CORE = 25,
+    EXPIDUS_SM_CLIENT_PRIORITY_DESKTOP = 35,
+    EXPIDUS_SM_CLIENT_PRIORITY_DEFAULT = 50,
+    EXPIDUS_SM_CLIENT_PRIORITY_LOWEST = 255,
+} ExpidusSMClientPriority;
 
 typedef enum
 {
-    XFCE_SM_CLIENT_SHUTDOWN_HINT_ASK = 0,
-    XFCE_SM_CLIENT_SHUTDOWN_HINT_LOGOUT,
-    XFCE_SM_CLIENT_SHUTDOWN_HINT_HALT,
-    XFCE_SM_CLIENT_SHUTDOWN_HINT_REBOOT,
-} XfceSMClientShutdownHint;
+    EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_ASK = 0,
+    EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_LOGOUT,
+    EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_HALT,
+    EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_REBOOT,
+} ExpidusSMClientShutdownHint;
 
-typedef struct _XfceSMClient  XfceSMClient;
+typedef struct _ExpidusSMClient  ExpidusSMClient;
 
-GType xfce_sm_client_get_type(void) G_GNUC_CONST;
+GType expidus_sm_client_get_type(void) G_GNUC_CONST;
 
-GQuark xfce_sm_client_error_quark (void);
+GQuark expidus_sm_client_error_quark (void);
 
-GOptionGroup *xfce_sm_client_get_option_group(gint argc,
+GOptionGroup *expidus_sm_client_get_option_group(gint argc,
                                               gchar **argv);
 
-XfceSMClient *xfce_sm_client_get(void);
+ExpidusSMClient *expidus_sm_client_get(void);
 
-XfceSMClient *xfce_sm_client_get_with_argv(gint argc,
+ExpidusSMClient *expidus_sm_client_get_with_argv(gint argc,
                                            gchar **argv,
-                                           XfceSMClientRestartStyle restart_style,
+                                           ExpidusSMClientRestartStyle restart_style,
                                            guchar priority);
 
-XfceSMClient *xfce_sm_client_get_full(XfceSMClientRestartStyle restart_style,
+ExpidusSMClient *expidus_sm_client_get_full(ExpidusSMClientRestartStyle restart_style,
                                       guchar priority,
                                       const gchar *resumed_client_id,
                                       const gchar *current_directory,
                                       const gchar **restart_command,
                                       const gchar *desktop_file);
 
-gboolean xfce_sm_client_connect(XfceSMClient *sm_client,
+gboolean expidus_sm_client_connect(ExpidusSMClient *sm_client,
                                 GError **error);
-void xfce_sm_client_disconnect(XfceSMClient *sm_client);
+void expidus_sm_client_disconnect(ExpidusSMClient *sm_client);
 
-void xfce_sm_client_request_shutdown(XfceSMClient *sm_client,
-                                     XfceSMClientShutdownHint shutdown_hint);
+void expidus_sm_client_request_shutdown(ExpidusSMClient *sm_client,
+                                     ExpidusSMClientShutdownHint shutdown_hint);
 
-gboolean xfce_sm_client_is_connected(XfceSMClient *sm_client);
-gboolean xfce_sm_client_is_resumed(XfceSMClient *sm_client);
+gboolean expidus_sm_client_is_connected(ExpidusSMClient *sm_client);
+gboolean expidus_sm_client_is_resumed(ExpidusSMClient *sm_client);
 
-void xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
+void expidus_sm_client_set_desktop_file(ExpidusSMClient *sm_client,
                                      const gchar *desktop_file);
 
-const gchar *xfce_sm_client_get_client_id(XfceSMClient *sm_client);
+const gchar *expidus_sm_client_get_client_id(ExpidusSMClient *sm_client);
 
-const gchar *xfce_sm_client_get_state_file(XfceSMClient *sm_client);
+const gchar *expidus_sm_client_get_state_file(ExpidusSMClient *sm_client);
 
-void xfce_sm_client_set_restart_style(XfceSMClient *sm_client,
-                                      XfceSMClientRestartStyle restart_style);
-XfceSMClientRestartStyle xfce_sm_client_get_restart_style(XfceSMClient *sm_client);
+void expidus_sm_client_set_restart_style(ExpidusSMClient *sm_client,
+                                      ExpidusSMClientRestartStyle restart_style);
+ExpidusSMClientRestartStyle expidus_sm_client_get_restart_style(ExpidusSMClient *sm_client);
 
-void xfce_sm_client_set_priority(XfceSMClient *sm_client,
+void expidus_sm_client_set_priority(ExpidusSMClient *sm_client,
                                  guint8 priority);
-guint8 xfce_sm_client_get_priority(XfceSMClient *sm_client);
+guint8 expidus_sm_client_get_priority(ExpidusSMClient *sm_client);
 
-void xfce_sm_client_set_current_directory(XfceSMClient *sm_client,
+void expidus_sm_client_set_current_directory(ExpidusSMClient *sm_client,
                                           const gchar *current_directory);
-const gchar *xfce_sm_client_get_current_directory(XfceSMClient *sm_client);
+const gchar *expidus_sm_client_get_current_directory(ExpidusSMClient *sm_client);
 
-void xfce_sm_client_set_restart_command(XfceSMClient *sm_client,
+void expidus_sm_client_set_restart_command(ExpidusSMClient *sm_client,
                                         gchar **restart_command);
 const gchar * const *
-xfce_sm_client_get_restart_command(XfceSMClient *sm_client);
+expidus_sm_client_get_restart_command(ExpidusSMClient *sm_client);
 
 G_END_DECLS
 
-#endif  /* __XFCE_SM_CLIENT_H__ */
+#endif  /* __EXPIDUS_SM_CLIENT_H__ */

@@ -19,7 +19,7 @@
  */
 
 /**
- * SECTION:xfce-spawn
+ * SECTION:expidus-spawn
  * @title: Spawn
  * @short_description: spawn a command with startup notification
  * @stability: Stable
@@ -62,8 +62,8 @@
 
 #include <glib/gstdio.h>
 #include <libexpidus1util/libexpidus1util.h>
-#include <libexpidus1ui/xfce-spawn.h>
-#include <libexpidus1ui/xfce-gdk-extensions.h>
+#include <libexpidus1ui/expidus-spawn.h>
+#include <libexpidus1ui/expidus-gdk-extensions.h>
 #include <libexpidus1ui/libexpidus1ui-private.h>
 #include <libexpidus1ui/libexpidus1ui-alias.h>
 
@@ -76,7 +76,7 @@ extern gchar **environ;
 #endif
 
 /* the maximum time (seconds) for an application to startup */
-#define XFCE_SPAWN_STARTUP_TIMEOUT (30)
+#define EXPIDUS_SPAWN_STARTUP_TIMEOUT (30)
 
 
 
@@ -92,15 +92,15 @@ typedef struct
   guint              watch_id;
   GPid               pid;
   GClosure          *closure;
-} XfceSpawnData;
+} ExpidusSpawnData;
 
 
 
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
 static gboolean
-xfce_spawn_startup_timeout (gpointer user_data)
+expidus_spawn_startup_timeout (gpointer user_data)
 {
-  XfceSpawnData *spawn_data = user_data;
+  ExpidusSpawnData *spawn_data = user_data;
   GTimeVal       now;
   gdouble        elapsed;
   glong          tv_sec;
@@ -113,15 +113,15 @@ xfce_spawn_startup_timeout (gpointer user_data)
   sn_launcher_context_get_last_active_time (spawn_data->sn_launcher, &tv_sec, &tv_usec);
   elapsed = now.tv_sec - tv_sec + ((gdouble) (now.tv_usec - tv_usec) / G_USEC_PER_SEC);
 
-  return elapsed < XFCE_SPAWN_STARTUP_TIMEOUT;
+  return elapsed < EXPIDUS_SPAWN_STARTUP_TIMEOUT;
 }
 
 
 
 static void
-xfce_spawn_startup_timeout_destroy (gpointer user_data)
+expidus_spawn_startup_timeout_destroy (gpointer user_data)
 {
-  XfceSpawnData *spawn_data = user_data;
+  ExpidusSpawnData *spawn_data = user_data;
   GPid           pid;
 
   spawn_data->timeout_id = 0;
@@ -151,11 +151,11 @@ xfce_spawn_startup_timeout_destroy (gpointer user_data)
 
 
 static void
-xfce_spawn_startup_watch (GPid     pid,
+expidus_spawn_startup_watch (GPid     pid,
                           gint     status,
                           gpointer user_data)
 {
-  XfceSpawnData *spawn_data = user_data;
+  ExpidusSpawnData *spawn_data = user_data;
   GValue         instance_and_params[2] = { { 0, }, { 0, } };
 
   g_return_if_fail (spawn_data->pid == pid);
@@ -182,9 +182,9 @@ xfce_spawn_startup_watch (GPid     pid,
 
 
 static void
-xfce_spawn_startup_watch_destroy (gpointer user_data)
+expidus_spawn_startup_watch_destroy (gpointer user_data)
 {
-  XfceSpawnData *spawn_data = user_data;
+  ExpidusSpawnData *spawn_data = user_data;
 
   spawn_data->watch_id = 0;
 
@@ -199,14 +199,14 @@ xfce_spawn_startup_watch_destroy (gpointer user_data)
       g_closure_unref (spawn_data->closure);
     }
 
-  g_slice_free (XfceSpawnData, spawn_data);
+  g_slice_free (ExpidusSpawnData, spawn_data);
 }
 
 
 
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
 static gint
-xfce_spawn_get_active_workspace_number (GdkScreen *screen)
+expidus_spawn_get_active_workspace_number (GdkScreen *screen)
 {
   GdkWindow *root;
   gulong     bytes_after_ret = 0;
@@ -264,7 +264,7 @@ xfce_spawn_get_active_workspace_number (GdkScreen *screen)
 
 
 /* Called by g_spawn_async before execv() is run in the new child process
- * Used if child_process is set to FALSE in xfce_spawn_process */
+ * Used if child_process is set to FALSE in expidus_spawn_process */
 static void
 background_process_call (gpointer _unused)
 {
@@ -272,14 +272,14 @@ background_process_call (gpointer _unused)
    * 0 = redirect /dev/{stdin, stdout, stderr} to /dev/null */
   if (G_UNLIKELY (daemon (1, 0) == -1))
     {
-      perror ("xfce_spawn: daemon() failed");
+      perror ("expidus_spawn: daemon() failed");
     }
 }
 
 
 
 static gboolean
-xfce_spawn_process (GdkScreen    *screen,
+expidus_spawn_process (GdkScreen    *screen,
                     const gchar  *working_directory,
                     gchar       **argv,
                     gchar       **envp,
@@ -297,7 +297,7 @@ xfce_spawn_process (GdkScreen    *screen,
   guint               n_cenvp;
   gchar              *display_name;
   GPid                pid;
-  XfceSpawnData      *spawn_data;
+  ExpidusSpawnData      *spawn_data;
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
   SnLauncherContext  *sn_launcher = NULL;
   SnDisplay          *sn_display = NULL;
@@ -324,7 +324,7 @@ xfce_spawn_process (GdkScreen    *screen,
 
   /* lookup the screen with the pointer */
   if (screen == NULL)
-    screen = xfce_gdk_screen_get_active (NULL);
+    screen = expidus_gdk_screen_get_active (NULL);
 
   /* setup the child environment (stripping $DESKTOP_STARTUP_ID and $DISPLAY) */
   if (G_LIKELY (envp == NULL))
@@ -362,7 +362,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
           if (G_LIKELY (sn_launcher != NULL))
             {
               /* initiate the sn launcher context */
-              sn_workspace = xfce_spawn_get_active_workspace_number (screen);
+              sn_workspace = expidus_spawn_get_active_workspace_number (screen);
               sn_launcher_context_set_workspace (sn_launcher, sn_workspace);
               sn_launcher_context_set_binary_name (sn_launcher, argv[0]);
               sn_launcher_context_set_icon_name (sn_launcher, startup_icon_name != NULL ?
@@ -412,7 +412,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
   if (G_LIKELY (succeed))
     {
       /* setup data to watch the child */
-      spawn_data = g_slice_new0 (XfceSpawnData);
+      spawn_data = g_slice_new0 (ExpidusSpawnData);
       spawn_data->pid = pid;
       if (child_watch_closure != NULL)
         {
@@ -421,9 +421,9 @@ G_GNUC_END_IGNORE_DEPRECATIONS
         }
 
       spawn_data->watch_id = g_child_watch_add_full (G_PRIORITY_LOW, pid,
-                                                     xfce_spawn_startup_watch,
+                                                     expidus_spawn_startup_watch,
                                                      spawn_data,
-                                                     xfce_spawn_startup_watch_destroy);
+                                                     expidus_spawn_startup_watch_destroy);
 
 #ifdef HAVE_LIBSTARTUP_NOTIFICATION
       if (G_LIKELY (sn_launcher != NULL))
@@ -433,10 +433,10 @@ G_GNUC_END_IGNORE_DEPRECATIONS
            * properly implement startup notify */
           spawn_data->sn_launcher = sn_launcher;
           spawn_data->timeout_id = g_timeout_add_seconds_full (G_PRIORITY_LOW,
-                                                               XFCE_SPAWN_STARTUP_TIMEOUT,
-                                                               xfce_spawn_startup_timeout,
+                                                               EXPIDUS_SPAWN_STARTUP_TIMEOUT,
+                                                               expidus_spawn_startup_timeout,
                                                                spawn_data,
-                                                               xfce_spawn_startup_timeout_destroy);
+                                                               expidus_spawn_startup_timeout_destroy);
         }
 #endif
     }
@@ -464,7 +464,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
 
 static gboolean
-_xfce_spawn_command_line (GdkScreen    *screen,
+_expidus_spawn_command_line (GdkScreen    *screen,
                           const gchar  *command_line,
                           gboolean      in_terminal,
                           gboolean      startup_notify,
@@ -500,7 +500,7 @@ _xfce_spawn_command_line (GdkScreen    *screen,
       startup_notify = FALSE;
     }
 
-  succeed = xfce_spawn_process (screen, NULL, argv, NULL, G_SPAWN_SEARCH_PATH,
+  succeed = expidus_spawn_process (screen, NULL, argv, NULL, G_SPAWN_SEARCH_PATH,
                                 startup_notify, gtk_get_current_event_time (),
                                 NULL, NULL, error, child_process);
 
@@ -512,9 +512,9 @@ _xfce_spawn_command_line (GdkScreen    *screen,
 
 
 /**
- * xfce_spawn_on_screen_with_child_watch
+ * expidus_spawn_on_screen_with_child_watch
  * @screen              : (allow-none): a #GdkScreen or %NULL to use the active screen,
- *                        see xfce_gdk_screen_get_active().
+ *                        see expidus_gdk_screen_get_active().
  * @working_directory   : (allow-none): child's current working directory or %NULL to
  *                        inherit parent's.
  * @argv                : child's argument vector.
@@ -535,7 +535,7 @@ _xfce_spawn_command_line (GdkScreen    *screen,
  *                        or %NULL.
  * @error               : (out) (allow-none) (transfer full): return location for errors or %NULL.
  *
- * Like xfce_spawn_on_screen(), but allows to attach a closure to watch the
+ * Like expidus_spawn_on_screen(), but allows to attach a closure to watch the
  * child's exit status. This because only one g_child_watch_add() is allowed on
  * Unix (per PID) and this is already internally needed for a proper
  * startup notification implementation.
@@ -557,7 +557,7 @@ _xfce_spawn_command_line (GdkScreen    *screen,
  *
  *   child_watch = g_cclosure_new_swap (G_CALLBACK (child_watch_callback),
  *                                      object, NULL);
- *   xfce_spawn_on_screen_with_child_watch (...,
+ *   expidus_spawn_on_screen_with_child_watch (...,
  *                                          child_watch,
  *                                          ...);
  * }
@@ -567,7 +567,7 @@ _xfce_spawn_command_line (GdkScreen    *screen,
  * Return value: %TRUE on success, %FALSE if @error is set.
  **/
 gboolean
-xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
+expidus_spawn_on_screen_with_child_watch (GdkScreen    *screen,
                                        const gchar  *working_directory,
                                        gchar       **argv,
                                        gchar       **envp,
@@ -578,7 +578,7 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
                                        GClosure     *child_watch_closure,
                                        GError      **error)
 {
-  return xfce_spawn_process (screen, working_directory, argv,
+  return expidus_spawn_process (screen, working_directory, argv,
                              envp, flags, startup_notify,
                              startup_timestamp, startup_icon_name,
                              child_watch_closure, error, TRUE);
@@ -587,16 +587,16 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
 
 
 /**
- * xfce_spawn_on_screen:
+ * expidus_spawn_on_screen:
  * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen,
- *                      see xfce_gdk_screen_get_active().
+ *                      see expidus_gdk_screen_get_active().
  * @working_directory : (allow-none): child's current working directory or %NULL to
  *                      inherit parent's.
  * @argv              : child's argument vector.
  * @envp              : (allow-none): child's environment vector or %NULL to inherit
  *                      parent's.
  * @flags             : flags from #GSpawnFlags. #G_SPAWN_DO_NOT_REAP_CHILD
- *                      is not allowed, use xfce_spawn_on_screen_with_child_watch()
+ *                      is not allowed, use expidus_spawn_on_screen_with_child_watch()
  *                      if you want a child watch.
  * @startup_notify    : whether to use startup notification.
  * @startup_timestamp : the timestamp to pass to startup notification, use
@@ -613,10 +613,10 @@ xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
  *
  * Return value: %TRUE on success, %FALSE if @error is set.
  * 
- * Deprecated: 4.16: Use #xfce_spawn instead.
+ * Deprecated: 4.16: Use #expidus_spawn instead.
  **/
 gboolean
-xfce_spawn_on_screen (GdkScreen    *screen,
+expidus_spawn_on_screen (GdkScreen    *screen,
                       const gchar  *working_directory,
                       gchar       **argv,
                       gchar       **envp,
@@ -626,23 +626,23 @@ xfce_spawn_on_screen (GdkScreen    *screen,
                       const gchar  *startup_icon_name,
                       GError      **error)
 {
-  return xfce_spawn_process (screen, working_directory, argv,
+  return expidus_spawn_process (screen, working_directory, argv,
                              envp, flags, startup_notify,
                              startup_timestamp, startup_icon_name,
                              NULL, error, TRUE);
 }
 
 /**
- * xfce_spawn
+ * expidus_spawn
  * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen,
- *                      see xfce_gdk_screen_get_active().
+ *                      see expidus_gdk_screen_get_active().
  * @working_directory : (allow-none): child's current working directory or %NULL to
  *                      inherit parent's.
  * @argv              : child's argument vector.
  * @envp              : (allow-none): child's environment vector or %NULL to inherit
  *                      parent's.
  * @flags             : flags from #GSpawnFlags. #G_SPAWN_DO_NOT_REAP_CHILD
- *                      is not allowed, use xfce_spawn_on_screen_with_child_watch()
+ *                      is not allowed, use expidus_spawn_on_screen_with_child_watch()
  *                      if you want a child watch.
  * @startup_notify    : whether to use startup notification.
  * @startup_timestamp : the timestamp to pass to startup notification, use
@@ -664,7 +664,7 @@ xfce_spawn_on_screen (GdkScreen    *screen,
  * Since: 4.16
  **/
 gboolean
-xfce_spawn (GdkScreen    *screen,
+expidus_spawn (GdkScreen    *screen,
             const gchar  *working_directory,
             gchar       **argv,
             gchar       **envp,
@@ -675,7 +675,7 @@ xfce_spawn (GdkScreen    *screen,
             gboolean      child_process,
             GError      **error)
 {
-  return xfce_spawn_process (screen, working_directory, argv,
+  return expidus_spawn_process (screen, working_directory, argv,
                              envp, flags, startup_notify,
                              startup_timestamp, startup_icon_name,
                              NULL, error, child_process);
@@ -684,8 +684,8 @@ xfce_spawn (GdkScreen    *screen,
 
 
 /**
- * xfce_spawn_command_line_on_screen:
- * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen, see xfce_gdk_screen_get_active().
+ * expidus_spawn_command_line_on_screen:
+ * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen, see expidus_gdk_screen_get_active().
  * @command_line      : command line to run.
  * @in_terminal       : whether to run @command_line in a terminal.
  * @startup_notify    : whether to use startup notification.
@@ -698,24 +698,24 @@ xfce_spawn (GdkScreen    *screen,
  * Returns: %TRUE if the @command_line was executed
  *          successfully, %FALSE if @error is set.
  * 
- * Deprecated: 4.16: Use #xfce_spawn_command_line instead.
+ * Deprecated: 4.16: Use #expidus_spawn_command_line instead.
  */
 gboolean
-xfce_spawn_command_line_on_screen (GdkScreen    *screen,
+expidus_spawn_command_line_on_screen (GdkScreen    *screen,
                                    const gchar  *command_line,
                                    gboolean      in_terminal,
                                    gboolean      startup_notify,
                                    GError      **error)
 {
-  return _xfce_spawn_command_line (screen, command_line, in_terminal,
+  return _expidus_spawn_command_line (screen, command_line, in_terminal,
                                    startup_notify, error, TRUE);
 }
 
 
 
 /**
- * xfce_spawn_command_line:
- * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen, see xfce_gdk_screen_get_active().
+ * expidus_spawn_command_line:
+ * @screen            : (allow-none): a #GdkScreen or %NULL to use the active screen, see expidus_gdk_screen_get_active().
  * @command_line      : command line to run.
  * @in_terminal       : whether to run @command_line in a terminal.
  * @startup_notify    : whether to use startup notification.
@@ -732,18 +732,18 @@ xfce_spawn_command_line_on_screen (GdkScreen    *screen,
  * Since: 4.16
  */
 gboolean
-xfce_spawn_command_line (GdkScreen    *screen,
+expidus_spawn_command_line (GdkScreen    *screen,
                          const gchar  *command_line,
                          gboolean      in_terminal,
                          gboolean      startup_notify,
                          gboolean      child_process,
                          GError      **error)
 {
-  return _xfce_spawn_command_line (screen, command_line, in_terminal,
+  return _expidus_spawn_command_line (screen, command_line, in_terminal,
                                    startup_notify, error, child_process);
 }
 
 
 
-#define __XFCE_SPAWN_C__
+#define __EXPIDUS_SPAWN_C__
 #include <libexpidus1ui/libexpidus1ui-aliasdef.c>

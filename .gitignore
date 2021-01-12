@@ -56,8 +56,8 @@ docs/xml/
 *.lo
 *.o
 *.stamp
-libexpidus1kbd-private/xfce-shortcuts-marshal.c
-libexpidus1kbd-private/xfce-shortcuts-marshal.h
+libexpidus1kbd-private/expidus-shortcuts-marshal.c
+libexpidus1kbd-private/expidus-shortcuts-marshal.h
 libexpidus1ui/libexpidus1ui-alias.h
 libexpidus1ui/libexpidus1ui-aliasdef.c
 libexpidus1ui/libexpidus1ui-enum-types.c

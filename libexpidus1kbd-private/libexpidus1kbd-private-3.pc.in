@@ -4,7 +4,7 @@ libdir=@libdir@
 includedir=@includedir@
 
 Name: libexpidus1kbd-private
-Description: Private Xfce library for shared code between xfwm4 and expidus1-settings
+Description: Private Expidus library for shared code between eswm1 and expidus1-settings
 Requires: gdk-3.0 gtk+-3.0 libexpidus1util-1.0 libesconf-0 libexpidus1ui-2
 Version: @PACKAGE_VERSION@
 Libs: @LIBX11_LDFLAGS@ -L${libdir} -lexpidus1kbd-private-3

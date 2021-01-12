@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 The Xfce Development Team
+ * Copyright (c) 2007 The Expidus Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -21,14 +21,14 @@
 #error "Only <libexpidus1ui/libexpidus1ui.h> can be included directly, this file is not part of the public API."
 #endif
 
-#ifndef __XFCE_SPAWN_H__
-#define __XFCE_SPAWN_H__
+#ifndef __EXPIDUS_SPAWN_H__
+#define __EXPIDUS_SPAWN_H__
 
 #include <gdk/gdk.h>
 
 G_BEGIN_DECLS
 
-gboolean xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
+gboolean expidus_spawn_on_screen_with_child_watch (GdkScreen    *screen,
                                                 const gchar  *working_directory,
                                                 gchar       **argv,
                                                 gchar       **envp,
@@ -39,7 +39,7 @@ gboolean xfce_spawn_on_screen_with_child_watch (GdkScreen    *screen,
                                                 GClosure     *child_watch_closure,
                                                 GError      **error);
 
-gboolean xfce_spawn_on_screen                  (GdkScreen    *screen,
+gboolean expidus_spawn_on_screen                  (GdkScreen    *screen,
                                                 const gchar  *working_directory,
                                                 gchar       **argv,
                                                 gchar       **envp,
@@ -49,7 +49,7 @@ gboolean xfce_spawn_on_screen                  (GdkScreen    *screen,
                                                 const gchar  *startup_icon_name,
                                                 GError      **error);
 
-gboolean xfce_spawn                            (GdkScreen    *screen,
+gboolean expidus_spawn                            (GdkScreen    *screen,
                                                 const gchar  *working_directory,
                                                 gchar       **argv,
                                                 gchar       **envp,
@@ -60,13 +60,13 @@ gboolean xfce_spawn                            (GdkScreen    *screen,
                                                 gboolean      child_process,
                                                 GError      **error);
 
-gboolean xfce_spawn_command_line_on_screen     (GdkScreen    *screen,
+gboolean expidus_spawn_command_line_on_screen     (GdkScreen    *screen,
                                                 const gchar  *command_line,
                                                 gboolean      in_terminal,
                                                 gboolean      startup_notify,
                                                 GError      **error);
 
-gboolean xfce_spawn_command_line               (GdkScreen    *screen,
+gboolean expidus_spawn_command_line               (GdkScreen    *screen,
                                                 const gchar  *command_line,
                                                 gboolean      in_terminal,
                                                 gboolean      startup_notify,
@@ -75,4 +75,4 @@ gboolean xfce_spawn_command_line               (GdkScreen    *screen,
 
 G_END_DECLS
 
-#endif /* !__XFCE_SPAWN_H__ */
+#endif /* !__EXPIDUS_SPAWN_H__ */

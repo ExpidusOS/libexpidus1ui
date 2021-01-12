@@ -1,5 +1,5 @@
 dnl
-dnl Copyright (c) 2007-2020 The Xfce development team
+dnl Copyright (c) 2007-2020 The Expidus development team
 dnl
 
 dnl ***************************
@@ -30,7 +30,7 @@ m4_define([libexpidus1ui_debug_default], [ifelse(libexpidus1ui_version_tag(), [g
 dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
-AC_COPYRIGHT([Copyright (c) 2007-2019 The Xfce development team])
+AC_COPYRIGHT([Copyright (c) 2007-2019 The Expidus development team])
 AC_INIT([libexpidus1ui], [libexpidus1ui_version], [https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues], [libexpidus1ui])
 AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIRS([m4])
@@ -127,7 +127,7 @@ dnl *** Check for required packages ***
 dnl ***********************************
 XDT_CHECK_PACKAGE([GLIB], [glib-2.0], [2.50.0])
 XDT_CHECK_PACKAGE([GTK3], [gtk+-3.0], [3.22.0])
-XDT_CHECK_PACKAGE([LIBEXPIDUS1UTIL], [libexpidus1util-1.0], [4.15.6])
+XDT_CHECK_PACKAGE([LIBEXPIDUS1UTIL], [libexpidus1util-1.0], [1.0.0])
 
 dnl ****************************************************************
 dnl *** Optional support for system information based on glibtop ***
@@ -190,10 +190,10 @@ dnl *** Check whether to build the keyboard libary ***
 dnl **************************************************
 AC_ARG_ENABLE([keyboard-library],
               [AC_HELP_STRING([--disable-keyboard-library],
-                              [Do not compile the keyboard library needed by xfwm4 and expidus1-settings (default=enabled)])],
+                              [Do not compile the keyboard library needed by eswm1 and expidus1-settings (default=enabled)])],
               [enable_keyboard_library=$enableval], [enable_keyboard_library=yes])
 if test "x$enable_keyboard_library" = "xyes"; then
-  XDT_CHECK_PACKAGE([ESCONF], [libesconf-0], [4.12.0])
+  XDT_CHECK_PACKAGE([ESCONF], [libesconf-0], [1.0.0])
 fi
 AM_CONDITIONAL([ENABLE_KEYBOARD_LIBRARY], [test "x$enable_keyboard_library" = "xyes"])
 

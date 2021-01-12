@@ -20,7 +20,7 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 # see if it works
-titled_dialog = Libexpidus1ui.TitledDialog(subtitle="    Hello Xfce Python Developer!    ")
+titled_dialog = Libexpidus1ui.TitledDialog(subtitle="    Hello Expidus Python Developer!    ")
 titled_dialog.connect("delete-event", Gtk.main_quit)
 titled_dialog.show()
 Gtk.main()

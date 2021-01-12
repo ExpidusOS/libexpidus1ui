@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 Xfce Development Team
+ * Copyright (C) 2019 Expidus Development Team
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -62,7 +62,7 @@ static GOptionEntry opt_entries[] =
 
 #ifdef HAVE_GLIBTOP
 static void
-xfce_about_system (GtkBuilder *builder)
+expidus_about_system (GtkBuilder *builder)
 {
   GObject *label;
   GObject *vendor_info;
@@ -88,8 +88,8 @@ xfce_about_system (GtkBuilder *builder)
   os_type_text = get_os_type ();
   gtk_label_set_text (GTK_LABEL (label), os_type_text ? os_type_text : "");
 
-  label = gtk_builder_get_object (builder, "xfce-version");
-  gtk_label_set_text (GTK_LABEL (label), xfce_version_string ());
+  label = gtk_builder_get_object (builder, "expidus-version");
+  gtk_label_set_text (GTK_LABEL (label), expidus_version_string ());
 
   label = gtk_builder_get_object (builder, "vendor-info");
   vendor_info = gtk_builder_get_object (builder, "vendor-info-label");
@@ -124,14 +124,14 @@ xfce_about_system (GtkBuilder *builder)
 
 
 static void
-xfce_about_about (GtkWidget *vbox)
+expidus_about_about (GtkWidget *vbox)
 {
   guint                i;
   AboutModules        *info;
-  static AboutModules  xfce_about_info[] =
+  static AboutModules  expidus_about_info[] =
     {
-      { "xfwm4",
-        "com.expidus.xfwm4",
+      { "eswm1",
+        "com.expidus.eswm1",
         N_("Window Manager"),
         N_("Handles the placement of windows on the screen.")
       },
@@ -189,7 +189,7 @@ xfce_about_about (GtkWidget *vbox)
 
   g_return_if_fail (GTK_IS_BOX (vbox));
 
-  for (i = 0; i < G_N_ELEMENTS (xfce_about_info); i++)
+  for (i = 0; i < G_N_ELEMENTS (expidus_about_info); i++)
     {
       GtkWidget     *grid;
       GtkWidget     *image;
@@ -198,7 +198,7 @@ xfce_about_about (GtkWidget *vbox)
       const gchar   *format;
       gchar         *str;
 
-      info = xfce_about_info + i;
+      info = expidus_about_info + i;
       format = "<b>%s</b> (<a href='%s%s%s'>%s</a>)";
       str = g_markup_printf_escaped (format, _(info->display_name), DOCS_URL,
                                      info->name, DOCS_URL_SLUG, info->name);
@@ -233,7 +233,7 @@ xfce_about_about (GtkWidget *vbox)
 
 
 static void
-xfce_about_credits_translators (GtkTextBuffer *buffer, GtkTextIter *end)
+expidus_about_credits_translators (GtkTextBuffer *buffer, GtkTextIter *end)
 {
   gtk_text_buffer_get_end_iter (buffer, end);
   gtk_text_buffer_insert (buffer, end,
@@ -244,7 +244,7 @@ xfce_about_credits_translators (GtkTextBuffer *buffer, GtkTextIter *end)
 
 
 static void
-xfce_about_credits (GtkTextBuffer *buffer)
+expidus_about_credits (GtkTextBuffer *buffer)
 {
   guint                   i;
   GtkTextTag             *title;
@@ -265,9 +265,9 @@ xfce_about_credits (GtkTextBuffer *buffer)
 
   gtk_text_buffer_get_end_iter (buffer, &end);
 
-  for (i = 0; i < G_N_ELEMENTS (xfce_contributors); i++)
+  for (i = 0; i < G_N_ELEMENTS (expidus_contributors); i++)
     {
-      group = xfce_contributors + i;
+      group = expidus_contributors + i;
 
       gtk_text_buffer_insert_with_tags (buffer, &end, _(group->name), -1, title, NULL);
       gtk_text_buffer_insert (buffer, &end, "\n", -1);
@@ -290,7 +290,7 @@ xfce_about_credits (GtkTextBuffer *buffer)
       else
         {
           /* add the translators */
-          xfce_about_credits_translators (buffer, &end);
+          expidus_about_credits_translators (buffer, &end);
         }
 
       gtk_text_buffer_insert (buffer, &end, "\n", -1);
@@ -309,7 +309,7 @@ xfce_about_credits (GtkTextBuffer *buffer)
 
 
 static void
-xfce_about_copyright (GtkTextBuffer *buffer)
+expidus_about_copyright (GtkTextBuffer *buffer)
 {
   GtkTextIter end;
 
@@ -318,7 +318,7 @@ xfce_about_copyright (GtkTextBuffer *buffer)
   gtk_text_buffer_get_end_iter (buffer, &end);
 
   gtk_text_buffer_insert (buffer, &end,
-      _("Xfce 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+      _("Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
         "components are copyrighted by their respective authors."), -1);
 
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
@@ -331,7 +331,7 @@ xfce_about_copyright (GtkTextBuffer *buffer)
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
       _("The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-        "expidus1-settings, esconf, xfdesktop and xfwm4 are "
+        "expidus1-settings, esconf, xfdesktop and eswm1 are "
         "distributed under the terms of the GNU General Public License as "
         "published by the Free Software Foundation; either version 2 of the "
         "License, or (at your option) any later version."), -1);
@@ -343,7 +343,7 @@ xfce_about_copyright (GtkTextBuffer *buffer)
 
 #ifdef VENDOR_INFO
 static void
-xfce_about_vendor (GtkBuilder *builder)
+expidus_about_vendor (GtkBuilder *builder)
 {
   gchar   *contents;
   gchar   *filename;
@@ -388,7 +388,7 @@ xfce_about_vendor (GtkBuilder *builder)
 
 
 static void
-xfce_about_license (GtkBuilder *builder,
+expidus_about_license (GtkBuilder *builder,
                     GObject    *buffer)
 {
   GObject         *dialog;
@@ -423,38 +423,38 @@ xfce_about_license (GtkBuilder *builder,
 
 
 static void
-xfce_about_license_gpl (GtkBuilder *builder)
+expidus_about_license_gpl (GtkBuilder *builder)
 {
-  xfce_about_license (builder,
+  expidus_about_license (builder,
       gtk_builder_get_object (builder, "gpl-buffer"));
 }
 
 
 
 static void
-xfce_about_license_lgpl (GtkBuilder *builder)
+expidus_about_license_lgpl (GtkBuilder *builder)
 {
-  xfce_about_license (builder,
+  expidus_about_license (builder,
       gtk_builder_get_object (builder, "lgpl-buffer"));
 }
 
 
 
 static void
-xfce_about_license_bsd (GtkBuilder *builder)
+expidus_about_license_bsd (GtkBuilder *builder)
 {
-  xfce_about_license (builder,
+  expidus_about_license (builder,
       gtk_builder_get_object (builder, "bsd-buffer"));
 }
 
 
 
 static void
-xfce_about_help (GtkWidget *button,
+expidus_about_help (GtkWidget *button,
                  GtkWidget *dialog)
 {
   g_return_if_fail (GTK_IS_BUTTON (button));
-  xfce_dialog_show_help (GTK_WINDOW (dialog),
+  expidus_dialog_show_help (GTK_WINDOW (dialog),
                          NULL, NULL, NULL);
 }
 
@@ -469,7 +469,7 @@ main (gint    argc,
   GObject    *dialog;
   GObject    *object;
 
-  xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
+  expidus_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
   if (G_UNLIKELY (!gtk_init_with_args (&argc, &argv, NULL, opt_entries, PACKAGE, &error)))
     {
@@ -489,9 +489,9 @@ main (gint    argc,
 
   if (G_UNLIKELY (opt_version))
     {
-      g_print ("%s %s (Xfce %s)\n\n", G_LOG_DOMAIN, PACKAGE_VERSION, xfce_version_string ());
+      g_print ("%s %s (Expidus %s)\n\n", G_LOG_DOMAIN, PACKAGE_VERSION, expidus_version_string ());
       g_print ("%s\n", "Copyright (c) 2008-2019");
-      g_print ("\t%s\n\n", _("The Xfce development team. All rights reserved."));
+      g_print ("\t%s\n\n", _("The Expidus development team. All rights reserved."));
       g_print (_("Please report bugs to <%s>."), PACKAGE_BUGREPORT);
       g_print ("\n");
 
@@ -499,10 +499,10 @@ main (gint    argc,
     }
 
   builder = gtk_builder_new ();
-  if (!gtk_builder_add_from_string (builder, xfce_about_dialog_ui,
-                                    xfce_about_dialog_ui_length, &error))
+  if (!gtk_builder_add_from_string (builder, expidus_about_dialog_ui,
+                                    expidus_about_dialog_ui_length, &error))
     {
-      xfce_dialog_show_error (NULL, error, _("Failed to load interface"));
+      expidus_dialog_show_error (NULL, error, _("Failed to load interface"));
       g_error_free (error);
       g_object_unref (G_OBJECT (builder));
 
@@ -514,40 +514,40 @@ main (gint    argc,
       G_CALLBACK (gtk_main_quit), NULL);
 
 #ifdef HAVE_GLIBTOP
-  xfce_about_system (builder);
+  expidus_about_system (builder);
 #else
   // Hide system tab
   gtk_notebook_remove_page (GTK_NOTEBOOK (gtk_builder_get_object (builder, "notebook")), 0);
 #endif
 
   object = gtk_builder_get_object (builder, "components-box");
-  xfce_about_about (GTK_WIDGET (object));
+  expidus_about_about (GTK_WIDGET (object));
 
   object = gtk_builder_get_object (builder, "credits-buffer");
-  xfce_about_credits (GTK_TEXT_BUFFER (object));
+  expidus_about_credits (GTK_TEXT_BUFFER (object));
 
   object = gtk_builder_get_object (builder, "copyright-buffer");
-  xfce_about_copyright (GTK_TEXT_BUFFER (object));
+  expidus_about_copyright (GTK_TEXT_BUFFER (object));
 
 #ifdef VENDOR_INFO
-  xfce_about_vendor (builder);
+  expidus_about_vendor (builder);
 #endif
 
   object = gtk_builder_get_object (builder, "gpl-button");
   g_signal_connect_swapped (G_OBJECT (object), "clicked",
-      G_CALLBACK (xfce_about_license_gpl), builder);
+      G_CALLBACK (expidus_about_license_gpl), builder);
 
   object = gtk_builder_get_object (builder, "lgpl-button");
   g_signal_connect_swapped (G_OBJECT (object), "clicked",
-      G_CALLBACK (xfce_about_license_lgpl), builder);
+      G_CALLBACK (expidus_about_license_lgpl), builder);
 
   object = gtk_builder_get_object (builder, "bsd-button");
   g_signal_connect_swapped (G_OBJECT (object), "clicked",
-      G_CALLBACK (xfce_about_license_bsd), builder);
+      G_CALLBACK (expidus_about_license_bsd), builder);
 
   object = gtk_builder_get_object (builder, "help-button");
   g_signal_connect (G_OBJECT (object), "clicked",
-      G_CALLBACK (xfce_about_help), dialog);
+      G_CALLBACK (expidus_about_help), dialog);
 
   object = gtk_builder_get_object (builder, "close-button");
   g_signal_connect_swapped (G_OBJECT (object), "clicked",

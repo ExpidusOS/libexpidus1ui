@@ -22,7 +22,7 @@
 #endif
 
 #include <libexpidus1util/libexpidus1util.h>
-#include <libexpidus1kbd-private/xfce-shortcuts-xfwm4.h>
+#include <libexpidus1kbd-private/expidus-shortcuts-eswm1.h>
 
 typedef struct _ShortcutTemplate ShortcutTemplate;
 
@@ -32,7 +32,7 @@ struct _ShortcutTemplate
   const gchar *feature;
 };
 
-const ShortcutTemplate xfwm4_shortcut_values[] = {
+const ShortcutTemplate eswm1_shortcut_values[] = {
   { N_("Window operations menu"), "popup_menu_key" },
   { N_("Up"), "up_key" },
   { N_("Down"), "down_key" },
@@ -115,19 +115,19 @@ const ShortcutTemplate xfwm4_shortcut_values[] = {
 
 
 const gchar *
-xfce_shortcuts_xfwm4_get_feature_name (const gchar *feature)
+expidus_shortcuts_eswm1_get_feature_name (const gchar *feature)
 {
   guint i;
 
   /* Make sure to use the translations from libexpidus1ui */
-  xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
+  expidus_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
   /* We need to get the human readable string of the action name */
-  for (i = 0; xfwm4_shortcut_values[i].name != NULL; ++i)
+  for (i = 0; eswm1_shortcut_values[i].name != NULL; ++i)
     {
-      if (G_UNLIKELY (g_str_equal (xfwm4_shortcut_values[i].feature, feature)))
+      if (G_UNLIKELY (g_str_equal (eswm1_shortcut_values[i].feature, feature)))
         {
-          return _(xfwm4_shortcut_values[i].name);
+          return _(eswm1_shortcut_values[i].name);
         }
     }
 
@@ -136,15 +136,15 @@ xfce_shortcuts_xfwm4_get_feature_name (const gchar *feature)
 }
 
 GList *
-xfce_shortcuts_xfwm4_get_feature_list (void)
+expidus_shortcuts_eswm1_get_feature_list (void)
 {
   GList *list;
   guint  i;
 
   list = NULL;
 
-  for (i = 0; xfwm4_shortcut_values[i].name != NULL; ++i)
-    list = g_list_prepend (list, (gpointer) xfwm4_shortcut_values[i].feature);
+  for (i = 0; eswm1_shortcut_values[i].name != NULL; ++i)
+    list = g_list_prepend (list, (gpointer) eswm1_shortcut_values[i].feature);
 
   return g_list_reverse (list);
 }

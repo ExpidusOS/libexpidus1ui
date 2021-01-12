@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2007 The Xfce Development Team
+ * Copyright (c) 2007 The Expidus Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -18,7 +18,7 @@
  */
 
 /**
- * SECTION:xfce-gtk-extensions
+ * SECTION:expidus-gtk-extensions
  * @title: Gtk Extensions
  * @short_description: various extensions to Gtk+
  * @stability: Stable
@@ -42,19 +42,19 @@
 #include <gtk/gtk.h>
 #include <pango/pango.h>
 
-#include <libexpidus1ui/xfce-gtk-extensions.h>
-#include <libexpidus1ui/xfce-gdk-extensions.h>
+#include <libexpidus1ui/expidus-gtk-extensions.h>
+#include <libexpidus1ui/expidus-gdk-extensions.h>
 #include <libexpidus1ui/libexpidus1ui-private.h>
 #include <libexpidus1ui/libexpidus1ui-alias.h>
 #include <libexpidus1util/libexpidus1util.h>
 
-/* Xfce frame padding */
+/* Expidus frame padding */
 #define PADDING (6)
 
 
 
 /**
- * xfce_gtk_menu_item_fill_base:
+ * expidus_gtk_menu_item_fill_base:
  * @item : #GtkMenuItem which should be filled
  * @tooltip_text : Tooltip to add on the passed item, or NULL
  * @accel_path : Unique path, used to identify the accelerator, or NULL
@@ -66,7 +66,7 @@
  *
  **/
 static void
-xfce_gtk_menu_item_fill_base (GtkWidget    *item,
+expidus_gtk_menu_item_fill_base (GtkWidget    *item,
                               const gchar  *tooltip_text,
                               const gchar  *accel_path,
                               GCallback     callback,
@@ -80,7 +80,7 @@ xfce_gtk_menu_item_fill_base (GtkWidget    *item,
 
   /* Explicitly dont use 'gtk_menu_item_set_accel_path'
    * in order to give more control over accelerator management for non-permanent menu items */
-  xfce_gtk_menu_item_set_accel_label (GTK_MENU_ITEM (item), accel_path);
+  expidus_gtk_menu_item_set_accel_label (GTK_MENU_ITEM (item), accel_path);
   if (callback != NULL)
     g_signal_connect_swapped (G_OBJECT (item), "activate", callback, callback_param);
   if (menu_to_append_item != NULL)
@@ -90,7 +90,7 @@ xfce_gtk_menu_item_fill_base (GtkWidget    *item,
 
 
 /**
- * xfce_gtk_menu_item_new:
+ * expidus_gtk_menu_item_new:
  * @label_text : Label to use for the #GtkMenuItem
  * @tooltip_text : Tooltip to add on the passed item, or NULL
  * @accel_path : Unique path, used to identify the accelerator, or NULL
@@ -105,7 +105,7 @@ xfce_gtk_menu_item_fill_base (GtkWidget    *item,
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_menu_item_new (const gchar  *label_text,
+expidus_gtk_menu_item_new (const gchar  *label_text,
                         const gchar  *tooltip_text,
                         const gchar  *accel_path,
                         GCallback     callback,
@@ -115,14 +115,14 @@ xfce_gtk_menu_item_new (const gchar  *label_text,
   GtkWidget *item;
 
   item = gtk_menu_item_new_with_mnemonic (label_text);
-  xfce_gtk_menu_item_fill_base (item, tooltip_text, accel_path, callback, callback_param, menu_to_append_item);
+  expidus_gtk_menu_item_fill_base (item, tooltip_text, accel_path, callback, callback_param, menu_to_append_item);
   return item;
 }
 
 
 
 /**
- * xfce_gtk_image_menu_item_new_from_icon_name:
+ * expidus_gtk_image_menu_item_new_from_icon_name:
  * @label_text : Label to use for the #GtkImageMenuItem
  * @tooltip_text : Tooltip to add on the passed item, or NULL
  * @accel_path : Unique path, used to identify the accelerator, or NULL
@@ -138,7 +138,7 @@ xfce_gtk_menu_item_new (const gchar  *label_text,
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_image_menu_item_new_from_icon_name (const gchar  *label_text,
+expidus_gtk_image_menu_item_new_from_icon_name (const gchar  *label_text,
                                              const gchar  *tooltip_text,
                                              const gchar  *accel_path,
                                              GCallback     callback,
@@ -149,14 +149,14 @@ xfce_gtk_image_menu_item_new_from_icon_name (const gchar  *label_text,
   GtkWidget *image = NULL;
 
   image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
-  return xfce_gtk_image_menu_item_new (label_text, tooltip_text, accel_path,
+  return expidus_gtk_image_menu_item_new (label_text, tooltip_text, accel_path,
                                        callback, callback_param, image, menu_to_append_item);
 }
 
 
 
 /**
- * xfce_gtk_image_menu_item_new:
+ * expidus_gtk_image_menu_item_new:
  * @label_text : Label to use for the #GtkImageMenuItem
  * @tooltip_text : Tooltip to add on the passed item, or NULL
  * @accel_path : Unique path, used to identify the accelerator, or NULL
@@ -173,7 +173,7 @@ xfce_gtk_image_menu_item_new_from_icon_name (const gchar  *label_text,
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_image_menu_item_new (const gchar  *label_text,
+expidus_gtk_image_menu_item_new (const gchar  *label_text,
                               const gchar  *tooltip_text,
                               const gchar  *accel_path,
                               GCallback     callback,
@@ -186,7 +186,7 @@ xfce_gtk_image_menu_item_new (const gchar  *label_text,
   G_GNUC_BEGIN_IGNORE_DEPRECATIONS
   item = gtk_image_menu_item_new_with_mnemonic (label_text);
   G_GNUC_END_IGNORE_DEPRECATIONS
-  xfce_gtk_menu_item_fill_base (item, tooltip_text, accel_path, callback, callback_param, menu_to_append_item);
+  expidus_gtk_menu_item_fill_base (item, tooltip_text, accel_path, callback, callback_param, menu_to_append_item);
   if (image != NULL)
     {
       G_GNUC_BEGIN_IGNORE_DEPRECATIONS
@@ -199,7 +199,7 @@ xfce_gtk_image_menu_item_new (const gchar  *label_text,
 
 
 /**
- * xfce_gtk_check_menu_item_new:
+ * expidus_gtk_check_menu_item_new:
  * @label_text : Label to use for the #GtkCheckMenuItem
  * @tooltip_text : Tooltip to add on the passed item, or NULL
  * @accel_path : Unique path, used to identify the accelerator, or NULL
@@ -215,7 +215,7 @@ xfce_gtk_image_menu_item_new (const gchar  *label_text,
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_check_menu_item_new (const gchar  *label_text,
+expidus_gtk_check_menu_item_new (const gchar  *label_text,
                               const gchar  *tooltip_text,
                               const gchar  *accel_path,
                               GCallback     callback,
@@ -226,7 +226,7 @@ xfce_gtk_check_menu_item_new (const gchar  *label_text,
   GtkWidget *item;
 
   item = gtk_check_menu_item_new_with_mnemonic (label_text);
-  xfce_gtk_menu_item_fill_base (item, tooltip_text, accel_path, NULL, NULL, menu_to_append_item);
+  expidus_gtk_menu_item_fill_base (item, tooltip_text, accel_path, NULL, NULL, menu_to_append_item);
 
   /* 'gtk_check_menu_item_set_active' has to be done before 'g_signal_connect_swapped', to don't trigger the callback */
   gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (item), active);
@@ -239,7 +239,7 @@ xfce_gtk_check_menu_item_new (const gchar  *label_text,
 
 
 /**
- * xfce_gtk_radio_menu_item_new:
+ * expidus_gtk_radio_menu_item_new:
  * @label_text : Label to use for the #GtkCheckMenuItem
  * @tooltip_text : Tooltip to add on the passed item, or NULL
  * @accel_path : Unique path, used to identify the accelerator, or NULL
@@ -256,7 +256,7 @@ xfce_gtk_check_menu_item_new (const gchar  *label_text,
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_radio_menu_item_new (const gchar  *label_text,
+expidus_gtk_radio_menu_item_new (const gchar  *label_text,
                               const gchar  *tooltip_text,
                               const gchar  *accel_path,
                               GCallback     callback,
@@ -267,7 +267,7 @@ xfce_gtk_radio_menu_item_new (const gchar  *label_text,
   GtkWidget *item;
 
   /* It's simpler to just use a gtk_check_menu_item and display it with a radio button */
-  item = xfce_gtk_check_menu_item_new (label_text, tooltip_text, accel_path, callback, callback_param, active, menu_to_append_item);
+  item = expidus_gtk_check_menu_item_new (label_text, tooltip_text, accel_path, callback, callback_param, active, menu_to_append_item);
   gtk_check_menu_item_set_draw_as_radio (GTK_CHECK_MENU_ITEM (item), TRUE);
 
   return item;
@@ -276,7 +276,7 @@ xfce_gtk_radio_menu_item_new (const gchar  *label_text,
 
 
 /**
- * xfce_gtk_menu_item_new_from_action_entry:
+ * expidus_gtk_menu_item_new_from_action_entry:
  * @action_entry : Label to use for the #GtkCheckMenuItem
  * @callback_param : optional callback parameter, or NULL.
  * @menu_to_append_item : #GtkMenuShell on which the item should be appended, or NULL
@@ -288,32 +288,32 @@ xfce_gtk_radio_menu_item_new (const gchar  *label_text,
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_menu_item_new_from_action_entry (const XfceGtkActionEntry *action_entry,
+expidus_gtk_menu_item_new_from_action_entry (const ExpidusGtkActionEntry *action_entry,
                                           GObject                  *callback_param,
                                           GtkMenuShell             *menu_to_append_item)
 {
   g_return_val_if_fail (action_entry != NULL, NULL);
 
-  if (action_entry->menu_item_type == XFCE_GTK_IMAGE_MENU_ITEM)
+  if (action_entry->menu_item_type == EXPIDUS_GTK_IMAGE_MENU_ITEM)
     {
-      return xfce_gtk_image_menu_item_new_from_icon_name (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
+      return expidus_gtk_image_menu_item_new_from_icon_name (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
                                                           action_entry->accel_path, action_entry->callback,
                                                           callback_param, action_entry->menu_item_icon_name, menu_to_append_item);
     }
-  if (action_entry->menu_item_type == XFCE_GTK_MENU_ITEM)
+  if (action_entry->menu_item_type == EXPIDUS_GTK_MENU_ITEM)
     {
-      return xfce_gtk_menu_item_new (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
+      return expidus_gtk_menu_item_new (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
                                      action_entry->accel_path, action_entry->callback,
                                      callback_param, menu_to_append_item);
     }
-  g_warning ("xfce_gtk_menu_item_new_from_action_entry: Unknown item_type");
+  g_warning ("expidus_gtk_menu_item_new_from_action_entry: Unknown item_type");
   return NULL;
 }
 
 
 
 /**
- * xfce_gtk_toggle_menu_item_new_from_action_entry:
+ * expidus_gtk_toggle_menu_item_new_from_action_entry:
  * @action_entry : Label to use for the #GtkCheckMenuItem
  * @callback_param : optional callback parameter, or NULL.
  * @active : boolean value indicating whether the check box is active.
@@ -326,33 +326,33 @@ xfce_gtk_menu_item_new_from_action_entry (const XfceGtkActionEntry *action_entry
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_toggle_menu_item_new_from_action_entry (const XfceGtkActionEntry *action_entry,
+expidus_gtk_toggle_menu_item_new_from_action_entry (const ExpidusGtkActionEntry *action_entry,
                                                  GObject                  *callback_param,
                                                  gboolean                  active,
                                                  GtkMenuShell             *menu_to_append_item)
 {
   g_return_val_if_fail (action_entry != NULL, NULL);
 
-  if (action_entry->menu_item_type == XFCE_GTK_CHECK_MENU_ITEM)
+  if (action_entry->menu_item_type == EXPIDUS_GTK_CHECK_MENU_ITEM)
     {
-      return xfce_gtk_check_menu_item_new (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
+      return expidus_gtk_check_menu_item_new (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
                                            action_entry->accel_path, action_entry->callback,
                                            callback_param, active, menu_to_append_item);
     }
-  if (action_entry->menu_item_type == XFCE_GTK_RADIO_MENU_ITEM)
+  if (action_entry->menu_item_type == EXPIDUS_GTK_RADIO_MENU_ITEM)
     {
-      return xfce_gtk_radio_menu_item_new (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
+      return expidus_gtk_radio_menu_item_new (action_entry->menu_item_label_text, action_entry->menu_item_tooltip_text,
                                            action_entry->accel_path, action_entry->callback,
                                            callback_param, active, menu_to_append_item);
     }
-  g_warning ("xfce_gtk_toggle_menu_item_new_from_action_entry: Unknown item_type");
+  g_warning ("expidus_gtk_toggle_menu_item_new_from_action_entry: Unknown item_type");
   return NULL;
 }
 
 
 
 /**
- * xfce_gtk_tool_button_new_from_action_entry:
+ * expidus_gtk_tool_button_new_from_action_entry:
  * @action_entry : Label to use for the #GtkTolButton
  * @callback_param : optional callback parameter, or NULL.
  * @toolbar_to_append_item : #GtkToolBar on which the item should be appended
@@ -364,7 +364,7 @@ xfce_gtk_toggle_menu_item_new_from_action_entry (const XfceGtkActionEntry *actio
  * Since: 4.16
  **/
 GtkWidget*
-xfce_gtk_tool_button_new_from_action_entry (const XfceGtkActionEntry *action_entry,
+expidus_gtk_tool_button_new_from_action_entry (const ExpidusGtkActionEntry *action_entry,
                                             GObject                  *callback_param,
                                             GtkToolbar               *toolbar_to_append_item)
 {
@@ -384,7 +384,7 @@ xfce_gtk_tool_button_new_from_action_entry (const XfceGtkActionEntry *action_ent
 
 
 /**
- * xfce_gtk_menu_append_seperator:
+ * expidus_gtk_menu_append_seperator:
  * @menu : #GtkMenuShell on which the separator should be appended
  *
  * Convenience method do add separators, used to prevent code duplication
@@ -392,7 +392,7 @@ xfce_gtk_tool_button_new_from_action_entry (const XfceGtkActionEntry *action_ent
  * Since: 4.16
  **/
 void
-xfce_gtk_menu_append_seperator (GtkMenuShell *menu)
+expidus_gtk_menu_append_seperator (GtkMenuShell *menu)
 {
   GtkWidget *item;
 
@@ -405,7 +405,7 @@ xfce_gtk_menu_append_seperator (GtkMenuShell *menu)
 
 
 /**
- * xfce_gtk_accel_map_add_entries:
+ * expidus_gtk_accel_map_add_entries:
  * @action_entries : array of action_entries to be added
  * @n_action_entries : size of the action_entries array
  *
@@ -414,7 +414,7 @@ xfce_gtk_menu_append_seperator (GtkMenuShell *menu)
  * Since: 4.16
  **/
 void
-xfce_gtk_accel_map_add_entries (const XfceGtkActionEntry *action_entries,
+expidus_gtk_accel_map_add_entries (const ExpidusGtkActionEntry *action_entries,
                                 guint                     n_action_entries)
 {
   GtkAccelKey key;
@@ -436,20 +436,20 @@ xfce_gtk_accel_map_add_entries (const XfceGtkActionEntry *action_entries,
 
 
 /**
- * xfce_gtk_accel_group_connect_action_entries:
+ * expidus_gtk_accel_group_connect_action_entries:
  * @accel_group   : the #GtkAccelGroup to connect to
  * @action_entries : array of action_entries to be added
  * @n_action_entries : size of the action_entries array
- * @callback_data : data which should be passed to the callback of each #XfceGtkActionEntry
+ * @callback_data : data which should be passed to the callback of each #ExpidusGtkActionEntry
  *
- * This method will connect each accel_path from the #XfceGtkActionEntry in action_entries
+ * This method will connect each accel_path from the #ExpidusGtkActionEntry in action_entries
  * to its related callback. If the accelerator is pressed, the related callback will be called.
  *
  * Since: 4.16
  **/
 void
-xfce_gtk_accel_group_connect_action_entries (GtkAccelGroup            *accel_group,
-                                             const XfceGtkActionEntry *action_entries,
+expidus_gtk_accel_group_connect_action_entries (GtkAccelGroup            *accel_group,
+                                             const ExpidusGtkActionEntry *action_entries,
                                              guint                     n_action_entries,
                                              gpointer                  callback_data)
 {
@@ -473,18 +473,18 @@ xfce_gtk_accel_group_connect_action_entries (GtkAccelGroup            *accel_gro
 
 
 /**
- * xfce_gtk_accel_group_disconnect_action_entries:
+ * expidus_gtk_accel_group_disconnect_action_entries:
  * @accel_group   : the #GtkAccelGroup to connect to
  * @action_entries : array of action_entries to be added
  * @n_action_entries : size of the action_entries array
  *
- * This method will disconnect each accel_path from the #XfceGtkActionEntry in action_entries.
+ * This method will disconnect each accel_path from the #ExpidusGtkActionEntry in action_entries.
  *
  * Since: 4.16
  **/
 void
-xfce_gtk_accel_group_disconnect_action_entries (GtkAccelGroup            *accel_group,
-                                                const XfceGtkActionEntry *action_entries,
+expidus_gtk_accel_group_disconnect_action_entries (GtkAccelGroup            *accel_group,
+                                                const ExpidusGtkActionEntry *action_entries,
                                                 guint                     n_action_entries)
 {
   GtkAccelKey key;
@@ -506,19 +506,19 @@ xfce_gtk_accel_group_disconnect_action_entries (GtkAccelGroup            *accel_
 
 
 /**
- * xfce_gtk_get_action_entry_by_id:
+ * expidus_gtk_get_action_entry_by_id:
  * @action_entries : array of action_entries to be searched
  * @n_action_entries : size of the action_entries array
  * @id : id of the action entry (usually enum values are used)
  *
  * Convenience method to find a specific action_entry from an array of action_entries
  *
- * Return value: (transfer none): The matching #XfceGtkActionEntry or NULL if not found
+ * Return value: (transfer none): The matching #ExpidusGtkActionEntry or NULL if not found
  *
  * Since: 4.16
  **/
-const XfceGtkActionEntry*
-xfce_gtk_get_action_entry_by_id (const XfceGtkActionEntry *action_entries,
+const ExpidusGtkActionEntry*
+expidus_gtk_get_action_entry_by_id (const ExpidusGtkActionEntry *action_entries,
                                  guint                     n_action_entries,
                                  guint                     id)
 {
@@ -534,7 +534,7 @@ xfce_gtk_get_action_entry_by_id (const XfceGtkActionEntry *action_entries,
 
 
 /**
- * xfce_gtk_translate_action_entries:
+ * expidus_gtk_translate_action_entries:
  * @action_entries : array of action_entries to be translated
  * @n_action_entries : size of the action_entries array
  *
@@ -543,7 +543,7 @@ xfce_gtk_get_action_entry_by_id (const XfceGtkActionEntry *action_entries,
  * Since: 4.16
  **/
 void
-xfce_gtk_translate_action_entries (XfceGtkActionEntry *action_entries,
+expidus_gtk_translate_action_entries (ExpidusGtkActionEntry *action_entries,
                                    guint               n_action_entries)
 {
   for (size_t i = 0; i <  n_action_entries; i++)
@@ -556,7 +556,7 @@ xfce_gtk_translate_action_entries (XfceGtkActionEntry *action_entries,
 
 
 /**
- * xfce_gtk_button_new_mixed:
+ * expidus_gtk_button_new_mixed:
  * @stock_id : the name of the stock item.
  * @label    : the text of the button, with an underscore in front of
  *             the mnemonic character.
@@ -566,12 +566,12 @@ xfce_gtk_translate_action_entries (XfceGtkActionEntry *action_entries,
  *
  * When the @stock_id is %NULL a normal mnemonic button will be created,
  * when @label is %NULL a stock button will be created. This behaviour
- * is added for xfce_message_dialog_new().
+ * is added for expidus_message_dialog_new().
  *
  * Return value: (transfer full): the newly created #GtkButton widget.
  **/
 GtkWidget *
-xfce_gtk_button_new_mixed (const gchar *stock_id,
+expidus_gtk_button_new_mixed (const gchar *stock_id,
                            const gchar *label)
 {
   GtkWidget *button;
@@ -601,22 +601,22 @@ xfce_gtk_button_new_mixed (const gchar *stock_id,
 
 
 /**
- * xfce_gtk_frame_box_new:
+ * expidus_gtk_frame_box_new:
  * @label            : the text to use as the label of the frame.
  * @container_return : (out) (allow-none): return location for the frame's container.
  *
- * Creates an Xfce-styled frame. The frame is a #GtkFrame, without
+ * Creates an Expidus-styled frame. The frame is a #GtkFrame, without
  * outline and an optional bolded text label.  The contents of the
  * frame are indented on the left.
  * The return value is the #GtkFrame itself.  The @container_return is
  * a #GtkAlignment widget to which children of the frame should be added.
  *
- * See also: xfce_gtk_frame_box_new_with_content().
+ * See also: expidus_gtk_frame_box_new_with_content().
  *
  * Return value: (transfer full): the newly created #GtkFrame widget.
  **/
 GtkWidget *
-xfce_gtk_frame_box_new (const gchar  *label,
+expidus_gtk_frame_box_new (const gchar  *label,
                         GtkWidget   **container_return)
 {
   GtkWidget *frame;
@@ -660,23 +660,23 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
 
 /**
- * xfce_gtk_frame_box_new_with_content:
+ * expidus_gtk_frame_box_new_with_content:
  * @label   : the text to use as the label of the frame.
  * @content : the #GtkWidget to put inside the frame.
  *
- * Creates a widget with xfce_gtk_frame_box_new() and adds the
+ * Creates a widget with expidus_gtk_frame_box_new() and adds the
  * @content #GtkWidget to the frame.
  *
  * Return value: (transfer full): the newly created #GtkFrame widget.
  **/
 GtkWidget *
-xfce_gtk_frame_box_new_with_content (const gchar *label,
+expidus_gtk_frame_box_new_with_content (const gchar *label,
                                      GtkWidget   *content)
 {
   GtkWidget *frame;
   GtkWidget *container;
 
-  frame = xfce_gtk_frame_box_new (label, &container);
+  frame = expidus_gtk_frame_box_new (label, &container);
   gtk_container_add (GTK_CONTAINER (container), content);
 
   return frame;
@@ -685,7 +685,7 @@ xfce_gtk_frame_box_new_with_content (const gchar *label,
 
 
 /**
- * xfce_gtk_window_center_on_active_screen:
+ * expidus_gtk_window_center_on_active_screen:
  * @window: the #GtkWindow to center.
  *
  * Determines the screen that contains the pointer and centers the
@@ -695,17 +695,17 @@ xfce_gtk_frame_box_new_with_content (const gchar *label,
  * This function only works properly if you call it before realizing the
  * window and you haven't set a fixed window position using gtk_window_move().
  *
- * See also: xfce_gdk_screen_get_active().
+ * See also: expidus_gdk_screen_get_active().
  */
 void
-xfce_gtk_window_center_on_active_screen (GtkWindow *window)
+expidus_gtk_window_center_on_active_screen (GtkWindow *window)
 {
   GdkScreen *screen;
 
   g_return_if_fail (GTK_IS_WINDOW (window));
 
   /* get the screen with the pointer */
-  screen = xfce_gdk_screen_get_active (NULL);
+  screen = expidus_gdk_screen_get_active (NULL);
 
   gtk_window_set_screen (window, screen);
 
@@ -716,7 +716,7 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
 
 
 /**
- * xfce_gtk_menu_popup_until_mapped:
+ * expidus_gtk_menu_popup_until_mapped:
  * @menu: a #GtkMenu.
  * @parent_menu_shell: (allow-none): the menu shell containing the triggering menu item, or %NULL.
  * @parent_menu_item: (allow-none): the menu item whose activation triggered the popup, or %NULL.
@@ -754,7 +754,7 @@ xfce_gtk_window_center_on_active_screen (GtkWindow *window)
  *
  */
 gboolean
-xfce_gtk_menu_popup_until_mapped (GtkMenu *menu,
+expidus_gtk_menu_popup_until_mapped (GtkMenu *menu,
                                   GtkWidget *parent_menu_shell,
                                   GtkWidget *parent_menu_item,
                                   GtkMenuPositionFunc func,
@@ -787,7 +787,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
 
 /**
- * xfce_widget_reparent:
+ * expidus_widget_reparent:
  * @widget: a #GtkWidget.
  * @new_parent: a #GtkContainer to move the widget into
  *
@@ -799,7 +799,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
  * Since: 4.14
  */
 gboolean
-xfce_widget_reparent (GtkWidget *widget,
+expidus_widget_reparent (GtkWidget *widget,
                       GtkWidget *new_parent)
 {
   GtkWidget *parent;
@@ -827,7 +827,7 @@ xfce_widget_reparent (GtkWidget *widget,
 
 
 /**
- * xfce_icon_name_from_desktop_id:
+ * expidus_icon_name_from_desktop_id:
  * @desktop_id : Name of the desktop file.
  *
  * Return value: %NULL on error, else the string value of the "Icon" property.
@@ -835,24 +835,24 @@ xfce_widget_reparent (GtkWidget *widget,
  * Since: 4.16
  **/
 gchar *
-xfce_icon_name_from_desktop_id (const gchar *desktop_id)
+expidus_icon_name_from_desktop_id (const gchar *desktop_id)
 {
     gchar *icon_file;
     gchar *resource;
-    XfceRc *rcfile;
+    ExpidusRc *rcfile;
 
     resource = g_strdup_printf ("applications%c%s.desktop",
                                 G_DIR_SEPARATOR,
                                 desktop_id);
-    rcfile = xfce_rc_config_open (XFCE_RESOURCE_DATA,
+    rcfile = expidus_rc_config_open (EXPIDUS_RESOURCE_DATA,
                                   resource, TRUE);
     g_free (resource);
 
-    if (rcfile && xfce_rc_has_group (rcfile, "Desktop Entry")) {
-        xfce_rc_set_group (rcfile, "Desktop Entry");
-        icon_file = g_strdup (xfce_rc_read_entry (rcfile, "Icon", NULL));
+    if (rcfile && expidus_rc_has_group (rcfile, "Desktop Entry")) {
+        expidus_rc_set_group (rcfile, "Desktop Entry");
+        icon_file = g_strdup (expidus_rc_read_entry (rcfile, "Icon", NULL));
 
-        xfce_rc_close (rcfile);
+        expidus_rc_close (rcfile);
 
         return icon_file;
     }
@@ -863,7 +863,7 @@ xfce_icon_name_from_desktop_id (const gchar *desktop_id)
 
 
 /**
- * xfce_gicon_from_name:
+ * expidus_gicon_from_name:
  * @name : Name of the application.
  *
  * This function will first look for a desktop file of @name and if successful
@@ -877,7 +877,7 @@ xfce_icon_name_from_desktop_id (const gchar *desktop_id)
  * Since: 4.16
  **/
 GIcon *
-xfce_gicon_from_name (const gchar *name)
+expidus_gicon_from_name (const gchar *name)
 {
     gchar *icon_name;
     GIcon *gicon = NULL;
@@ -885,7 +885,7 @@ xfce_gicon_from_name (const gchar *name)
     GFile *path = NULL;
 
     /* Check if there is a desktop file of 'name' */
-    icon_name = xfce_icon_name_from_desktop_id (name);
+    icon_name = expidus_icon_name_from_desktop_id (name);
     if (icon_name) {
         if (g_path_is_absolute (icon_name)) {
             path = g_file_new_for_path (icon_name);
@@ -925,7 +925,7 @@ xfce_gicon_from_name (const gchar *name)
 
 
 /**
- * xfce_gtk_menu_item_set_accel_label:
+ * expidus_gtk_menu_item_set_accel_label:
  * @menu_item : #GtkMenuItem on which the accel label is to set
  * @accel_path : Unique path, used to identify the accelerator, or NULL to show no accelerator
 *
@@ -934,7 +934,7 @@ xfce_gicon_from_name (const gchar *name)
  * Since: 4.16
  **/
 void
-xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
+expidus_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
                                     const gchar *accel_path)
 {
   GtkAccelKey key;
@@ -962,7 +962,7 @@ xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
 
 
 /**
- * xfce_has_gtk_frame_extents:
+ * expidus_has_gtk_frame_extents:
  * @window : A #GdkWindow
  * @extents : A pointer to a #GtkBorder to copy to.
  *
@@ -975,7 +975,7 @@ xfce_gtk_menu_item_set_accel_label (GtkMenuItem *menu_item,
  * Since: 4.16
  **/
 gboolean
-xfce_has_gtk_frame_extents (GdkWindow *window,
+expidus_has_gtk_frame_extents (GdkWindow *window,
                             GtkBorder *extents)
 {
   /* Code adapted from gnome-flashback:
@@ -1028,5 +1028,5 @@ xfce_has_gtk_frame_extents (GdkWindow *window,
 
 
 
-#define __XFCE_GTK_EXTENSIONS_C__
+#define __EXPIDUS_GTK_EXTENSIONS_C__
 #include <libexpidus1ui/libexpidus1ui-aliasdef.c>

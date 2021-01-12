@@ -18,36 +18,36 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#ifndef __XFCE_SHORTCUT_DIALOG_H__
-#define __XFCE_SHORTCUT_DIALOG_H__
+#ifndef __EXPIDUS_SHORTCUT_DIALOG_H__
+#define __EXPIDUS_SHORTCUT_DIALOG_H__
 
 #include <gtk/gtk.h>
 
-#include <libexpidus1kbd-private/xfce-shortcuts.h>
+#include <libexpidus1kbd-private/expidus-shortcuts.h>
 
 G_BEGIN_DECLS
 
-typedef struct _XfceShortcutDialogClass XfceShortcutDialogClass;
-typedef struct _XfceShortcutDialog      XfceShortcutDialog;
+typedef struct _ExpidusShortcutDialogClass ExpidusShortcutDialogClass;
+typedef struct _ExpidusShortcutDialog      ExpidusShortcutDialog;
 
-#define XFCE_TYPE_SHORTCUT_DIALOG            (xfce_shortcut_dialog_get_type ())
-#define XFCE_SHORTCUT_DIALOG(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), XFCE_TYPE_SHORTCUT_DIALOG, XfceShortcutDialog))
-#define XFCE_SHORTCUT_DIALOG_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), XFCE_TYPE_SHORTCUT_DIALOG, XfceShortcutDialogClass))
-#define XFCE_IS_SHORTCUT_DIALOG(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), XFCE_TYPE_SHORTCUT_DIALOG))
-#define XFCE_IS_SHORTCUT_DIALOG_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), XFCE_TYPE_SHORTCUT_DIALOG))
-#define XFCE_SHORTCUT_DIALOG_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), XFCE_TYPE_SHORTCUT_DIALOG, XfceShortcutDialogClass))
+#define EXPIDUS_TYPE_SHORTCUT_DIALOG            (expidus_shortcut_dialog_get_type ())
+#define EXPIDUS_SHORTCUT_DIALOG(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), EXPIDUS_TYPE_SHORTCUT_DIALOG, ExpidusShortcutDialog))
+#define EXPIDUS_SHORTCUT_DIALOG_CLASS(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), EXPIDUS_TYPE_SHORTCUT_DIALOG, ExpidusShortcutDialogClass))
+#define EXPIDUS_IS_SHORTCUT_DIALOG(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), EXPIDUS_TYPE_SHORTCUT_DIALOG))
+#define EXPIDUS_IS_SHORTCUT_DIALOG_CLASS(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), EXPIDUS_TYPE_SHORTCUT_DIALOG))
+#define EXPIDUS_SHORTCUT_DIALOG_GET_CLASS(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), EXPIDUS_TYPE_SHORTCUT_DIALOG, ExpidusShortcutDialogClass))
 
-GType        xfce_shortcut_dialog_get_type        (void) G_GNUC_CONST;
+GType        expidus_shortcut_dialog_get_type        (void) G_GNUC_CONST;
 
-GtkWidget   *xfce_shortcut_dialog_new             (const gchar        *provider,
+GtkWidget   *expidus_shortcut_dialog_new             (const gchar        *provider,
                                                    const gchar        *action_name,
                                                    const gchar        *action) G_GNUC_MALLOC;
-gint         xfce_shortcut_dialog_run             (XfceShortcutDialog *dialog,
+gint         expidus_shortcut_dialog_run             (ExpidusShortcutDialog *dialog,
                                                    GtkWidget          *parent);
-const gchar *xfce_shortcut_dialog_get_shortcut    (XfceShortcutDialog *dialog);
-const gchar *xfce_shortcut_dialog_get_action      (XfceShortcutDialog *action);
-const gchar *xfce_shortcut_dialog_get_action_name (XfceShortcutDialog *action);
+const gchar *expidus_shortcut_dialog_get_shortcut    (ExpidusShortcutDialog *dialog);
+const gchar *expidus_shortcut_dialog_get_action      (ExpidusShortcutDialog *action);
+const gchar *expidus_shortcut_dialog_get_action_name (ExpidusShortcutDialog *action);
 
 G_END_DECLS
 
-#endif /* !__XFCE_SHORTCUT_DIALOG_H__ */
+#endif /* !__EXPIDUS_SHORTCUT_DIALOG_H__ */

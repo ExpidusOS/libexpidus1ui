@@ -19,13 +19,13 @@
  */
 
 /**
- * SECTION:xfce-sm-client
- * @title: XfceSMClient
+ * SECTION:expidus-sm-client
+ * @title: ExpidusSMClient
  * @short_description: Session management client
  * @stability: Stable
  * @include: libexpidus1ui/libexpidus1ui.h
  *
- * #XfceSMClient is a session management client that speaks the X Session
+ * #ExpidusSMClient is a session management client that speaks the X Session
  * Management Protocol (XSMP).  It's designed to be easy to use and hide some
  * of the more esoteric feaures of XSMP from the API user.
  **/
@@ -63,7 +63,7 @@
 #include <libexpidus1util/libexpidus1util.h>
 
 #include <libexpidus1ui/libexpidus1ui-private.h>
-#include <libexpidus1ui/xfce-sm-client.h>
+#include <libexpidus1ui/expidus-sm-client.h>
 #include <libexpidus1ui/libexpidus1ui-marshal.h>
 #include <libexpidus1ui/libexpidus1ui-enum-types.h>
 #include <libexpidus1ui/libexpidus1ui-alias.h>
@@ -79,39 +79,39 @@
 
 typedef enum
 {
-    XFCE_SM_CLIENT_STATE_DISCONNECTED = 0,
-    XFCE_SM_CLIENT_STATE_REGISTERING,
-    XFCE_SM_CLIENT_STATE_IDLE,
-    XFCE_SM_CLIENT_STATE_SAVING_PHASE_1,
-    XFCE_SM_CLIENT_STATE_WAITING_FOR_INTERACT,
-    XFCE_SM_CLIENT_STATE_INTERACTING,
-    XFCE_SM_CLIENT_STATE_WAITING_FOR_PHASE_2,
-    XFCE_SM_CLIENT_STATE_SAVING_PHASE_2,
-    XFCE_SM_CLIENT_STATE_FROZEN,
-} XfceSMClientState;
+    EXPIDUS_SM_CLIENT_STATE_DISCONNECTED = 0,
+    EXPIDUS_SM_CLIENT_STATE_REGISTERING,
+    EXPIDUS_SM_CLIENT_STATE_IDLE,
+    EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_1,
+    EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_INTERACT,
+    EXPIDUS_SM_CLIENT_STATE_INTERACTING,
+    EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_PHASE_2,
+    EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_2,
+    EXPIDUS_SM_CLIENT_STATE_FROZEN,
+} ExpidusSMClientState;
 
 /**
- * XfceSMClientPriority:
- * @XFCE_SM_CLIENT_PRIORITY_HIGHEST: A high priority value.  You probably
+ * ExpidusSMClientPriority:
+ * @EXPIDUS_SM_CLIENT_PRIORITY_HIGHEST: A high priority value.  You probably
  *                                   don't want to use this.
- * @XFCE_SM_CLIENT_PRIORITY_WM: A priority value for use by the window manager.
- * @XFCE_SM_CLIENT_PRIORITY_CORE: A priority value for use by applications that
+ * @EXPIDUS_SM_CLIENT_PRIORITY_WM: A priority value for use by the window manager.
+ * @EXPIDUS_SM_CLIENT_PRIORITY_CORE: A priority value for use by applications that
  *                                place windows on the screen and possibly set
  *                                window manager struts.
- * @XFCE_SM_CLIENT_PRIORITY_DESKTOP: A priority value for use by applications
+ * @EXPIDUS_SM_CLIENT_PRIORITY_DESKTOP: A priority value for use by applications
  *                                   that draw on the desktop.
- * @XFCE_SM_CLIENT_PRIORITY_DEFAULT: A priority value for regular applications.
- * @XFCE_SM_CLIENT_PRIORITY_LOWEST: The lowest possible priority value.
+ * @EXPIDUS_SM_CLIENT_PRIORITY_DEFAULT: A priority value for regular applications.
+ * @EXPIDUS_SM_CLIENT_PRIORITY_LOWEST: The lowest possible priority value.
  *
- * Some sample priority values for use with xfce_sm_client_set_priority().
+ * Some sample priority values for use with expidus_sm_client_set_priority().
  **/
 
 /**
- * XfceSMClientRestartStyle:
- * @XFCE_SM_CLIENT_RESTART_NORMAL: Only restart the application if it is
+ * ExpidusSMClientRestartStyle:
+ * @EXPIDUS_SM_CLIENT_RESTART_NORMAL: Only restart the application if it is
  *                                 still running when the session is next
  *                                 saved.
- * @XFCE_SM_CLIENT_RESTART_IMMEDIATELY: Immediately restart the application
+ * @EXPIDUS_SM_CLIENT_RESTART_IMMEDIATELY: Immediately restart the application
  *                                      if it ever quits.
  *
  * An enumeration describing how the session manager should restart
@@ -119,22 +119,22 @@ typedef enum
  **/
 
 /**
- * XfceSMClientShutdownHint:
- * @XFCE_SM_CLIENT_SHUTDOWN_HINT_ASK: Prompt the user for a choice,
- * @XFCE_SM_CLIENT_SHUTDOWN_HINT_LOGOUT: End the current session,
- * @XFCE_SM_CLIENT_SHUTDOWN_HINT_HALT: Shut down the computer.
- * @XFCE_SM_CLIENT_SHUTDOWN_HINT_REBOOT: Restart the computer.
+ * ExpidusSMClientShutdownHint:
+ * @EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_ASK: Prompt the user for a choice,
+ * @EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_LOGOUT: End the current session,
+ * @EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_HALT: Shut down the computer.
+ * @EXPIDUS_SM_CLIENT_SHUTDOWN_HINT_REBOOT: Restart the computer.
  *
  * Hints to the session manager what kind of shutdown the session manager
  * should perform.
  **/
 
 /**
- * XfceSMClient:
+ * ExpidusSMClient:
  *
  * An opaque struct with only private fields.
  **/
-struct _XfceSMClient
+struct _ExpidusSMClient
 {
     GObject parent;
 
@@ -142,8 +142,8 @@ struct _XfceSMClient
     SmcConn session_connection;
 #endif
 
-    XfceSMClientState state;
-    XfceSMClientRestartStyle restart_style;
+    ExpidusSMClientState state;
+    ExpidusSMClientRestartStyle restart_style;
 
     guint8 priority;
 
@@ -165,21 +165,21 @@ struct _XfceSMClient
     gchar *desktop_file;
 };
 
-typedef struct _XfceSMClientClass
+typedef struct _ExpidusSMClientClass
 {
     GObjectClass parent;
 
     /*< signals >*/
 
-    void (*save_state)(XfceSMClient *sm_client);
-    void (*save_state_extended)(XfceSMClient *sm_client);
+    void (*save_state)(ExpidusSMClient *sm_client);
+    void (*save_state_extended)(ExpidusSMClient *sm_client);
 
-    gboolean (*quit_requested)(XfceSMClient *sm_client);
+    gboolean (*quit_requested)(ExpidusSMClient *sm_client);
 
-    void (*quit)(XfceSMClient *sm_client);
+    void (*quit)(ExpidusSMClient *sm_client);
 
-    void (*quit_cancelled)(XfceSMClient *sm_client);
-} XfceSMClientClass;
+    void (*quit_cancelled)(ExpidusSMClient *sm_client);
+} ExpidusSMClientClass;
 
 typedef struct
 {
@@ -187,7 +187,7 @@ typedef struct
     gchar **argv;
     gchar *client_id;
     gboolean sm_disable;
-} XfceSMClientStartupOptions;
+} ExpidusSMClientStartupOptions;
 
 enum
 {
@@ -213,24 +213,24 @@ enum
     PROP_ARGV,
 };
 
-static void xfce_sm_client_get_property(GObject *obj,
+static void expidus_sm_client_get_property(GObject *obj,
                                         guint property_id,
                                         GValue *value,
                                         GParamSpec *pspec);
-static void xfce_sm_client_set_property(GObject *obj,
+static void expidus_sm_client_set_property(GObject *obj,
                                         guint property_id,
                                         const GValue *value,
                                         GParamSpec *pspec);
-static GObject *xfce_sm_client_constructor(GType type,
+static GObject *expidus_sm_client_constructor(GType type,
                                            guint n_construct_params,
                                            GObjectConstructParam *construct_params);
-static void xfce_sm_client_finalize(GObject *obj);
+static void expidus_sm_client_finalize(GObject *obj);
 
-static void xfce_sm_client_set_client_id(XfceSMClient *sm_client,
+static void expidus_sm_client_set_client_id(ExpidusSMClient *sm_client,
                                          const gchar *client_id);
-static void xfce_sm_client_parse_argv(XfceSMClient *sm_client);
+static void expidus_sm_client_parse_argv(ExpidusSMClient *sm_client);
 #ifdef HAVE_LIBSM
-static void xfce_sm_client_set_property_from_command(XfceSMClient *sm_client,
+static void expidus_sm_client_set_property_from_command(ExpidusSMClient *sm_client,
                                                      const char *property_name,
                                                      gchar **command,
                                                      gint alter_sm_id);
@@ -240,35 +240,35 @@ static gchar **copy_command(gchar **command,
 
 
 static guint signals[N_SIGS] = { 0, };
-static XfceSMClientStartupOptions startup_options = { 0, NULL, NULL, FALSE };
-static XfceSMClient *sm_client_singleton = NULL;
+static ExpidusSMClientStartupOptions startup_options = { 0, NULL, NULL, FALSE };
+static ExpidusSMClient *sm_client_singleton = NULL;
 
 
-G_DEFINE_TYPE(XfceSMClient, xfce_sm_client, G_TYPE_OBJECT)
+G_DEFINE_TYPE(ExpidusSMClient, expidus_sm_client, G_TYPE_OBJECT)
 
 
 static void
-xfce_sm_client_class_init(XfceSMClientClass *klass)
+expidus_sm_client_class_init(ExpidusSMClientClass *klass)
 {
     GObjectClass *gobject_class = (GObjectClass *)klass;
 
-    gobject_class->get_property = xfce_sm_client_get_property;
-    gobject_class->set_property = xfce_sm_client_set_property;
-    gobject_class->constructor = xfce_sm_client_constructor;
-    gobject_class->finalize = xfce_sm_client_finalize;
+    gobject_class->get_property = expidus_sm_client_get_property;
+    gobject_class->set_property = expidus_sm_client_set_property;
+    gobject_class->constructor = expidus_sm_client_constructor;
+    gobject_class->finalize = expidus_sm_client_finalize;
 
     /**
-     * XfceSMClient::save-state:
-     * @sm_client: An #XfceSMClient
+     * ExpidusSMClient::save-state:
+     * @sm_client: An #ExpidusSMClient
      *
      * Signals the client that it should save a copy of its current state
      * such that it could be restarted later in exactly the same state as
      * it is at the time of signal emission.
      *
      * If the state is simple enough to be encoded in the application's
-     * command line, xfce_sm_client_set_restart_command() can be used
+     * command line, expidus_sm_client_set_restart_command() can be used
      * to set that command line.  For more complex state data,
-     * xfce_sm_client_get_state_file() should be used.
+     * expidus_sm_client_get_state_file() should be used.
      *
      * The application should attempt to save its state as quickly as
      * possible, and MUST NOT interact with the user as a part of saving
@@ -277,15 +277,15 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
     signals[SIG_SAVE_STATE] = g_signal_new(I_("save-state"),
                                            G_TYPE_FROM_CLASS(klass),
                                            G_SIGNAL_RUN_LAST,
-                                           G_STRUCT_OFFSET(XfceSMClientClass,
+                                           G_STRUCT_OFFSET(ExpidusSMClientClass,
                                                            save_state),
                                            NULL, NULL,
                                            g_cclosure_marshal_VOID__VOID,
                                            G_TYPE_NONE, 0);
 
     /**
-     * XfceSMClient::save-state-extended:
-     * @sm_client: An #XfceSMClient
+     * ExpidusSMClient::save-state-extended:
+     * @sm_client: An #ExpidusSMClient
      *
      * Allows the application to save extra state information after all
      * other applications in the session have had a chance to save their
@@ -296,15 +296,15 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
     signals[SIG_SAVE_STATE_EXTENDED] = g_signal_new(I_("save-state-extended"),
                                                     G_TYPE_FROM_CLASS(klass),
                                                     G_SIGNAL_RUN_LAST,
-                                                    G_STRUCT_OFFSET(XfceSMClientClass,
+                                                    G_STRUCT_OFFSET(ExpidusSMClientClass,
                                                                     save_state_extended),
                                                     NULL, NULL,
                                                     g_cclosure_marshal_VOID__VOID,
                                                     G_TYPE_NONE, 0);
 
     /**
-     * XfceSMClient::quit-requested:
-     * @sm_client: An #XfceSMClient
+     * ExpidusSMClient::quit-requested:
+     * @sm_client: An #ExpidusSMClient
      *
      * Signals the client that the session manager will soon want the
      * application to quit, perhaps as a part of ending the session
@@ -321,7 +321,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
     signals[SIG_QUIT_REQUESTED] = g_signal_new(I_("quit-requested"),
                                                G_TYPE_FROM_CLASS(klass),
                                                G_SIGNAL_RUN_LAST,
-                                               G_STRUCT_OFFSET(XfceSMClientClass,
+                                               G_STRUCT_OFFSET(ExpidusSMClientClass,
                                                                quit_requested),
                                                g_signal_accumulator_true_handled,
                                                NULL,
@@ -329,29 +329,29 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
                                                G_TYPE_BOOLEAN, 0);
 
     /**
-     * XfceSMClient::quit:
-     * @sm_client: An #XfceSMClient
+     * ExpidusSMClient::quit:
+     * @sm_client: An #ExpidusSMClient
      *
      * Emitted when the application is required to quit.  This is not
      * optional: if the client does not quit a short time after receiving
      * this signal, it will likely be terminated in some other way.  While
      * not required, the application will usually receive quit-requested
      * before receiving quit.  If the application does not connect to this
-     * signal, #XfceSMClient will call <function>exit(3)</function> with
+     * signal, #ExpidusSMClient will call <function>exit(3)</function> with
      * an exit code of zero on behalf of the application.
      **/
     signals[SIG_QUIT] = g_signal_new(I_("quit"),
                                      G_TYPE_FROM_CLASS(klass),
                                      G_SIGNAL_RUN_LAST,
-                                     G_STRUCT_OFFSET(XfceSMClientClass,
+                                     G_STRUCT_OFFSET(ExpidusSMClientClass,
                                                      quit),
                                      NULL, NULL,
                                      g_cclosure_marshal_VOID__VOID,
                                      G_TYPE_NONE, 0);
 
     /**
-     * XfceSMClient::quit-cancelled:
-     * @sm_client: An #XfceSMClient
+     * ExpidusSMClient::quit-cancelled:
+     * @sm_client: An #ExpidusSMClient
      *
      * Informs the application that it will not need to quit.  In most cases,
      * quit-cancelled will be emitted a short time after quit-requested.
@@ -359,7 +359,7 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
     signals[SIG_QUIT_CANCELLED] = g_signal_new(I_("quit-cancelled"),
                                                G_TYPE_FROM_CLASS(klass),
                                                G_SIGNAL_RUN_LAST,
-                                               G_STRUCT_OFFSET(XfceSMClientClass,
+                                               G_STRUCT_OFFSET(ExpidusSMClientClass,
                                                                quit_cancelled),
                                                NULL, NULL,
                                                g_cclosure_marshal_VOID__VOID,
@@ -375,15 +375,15 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
                                     g_param_spec_enum("restart-style",
                                                       "Restart style",
                                                       "Specifies how the client should be restarted by the session manager",
-                                                      XFCE_TYPE_SM_CLIENT_RESTART_STYLE,
-                                                      XFCE_SM_CLIENT_RESTART_NORMAL,
+                                                      EXPIDUS_TYPE_SM_CLIENT_RESTART_STYLE,
+                                                      EXPIDUS_SM_CLIENT_RESTART_NORMAL,
                                                       G_PARAM_READWRITE|G_PARAM_CONSTRUCT|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_PRIORITY,
                                     g_param_spec_uchar("priority",
                                                        "Priority",
                                                        "Determines the ordering in which this client is restarted",
                                                        0, G_MAXUINT8,
-                                                       XFCE_SM_CLIENT_PRIORITY_DEFAULT,
+                                                       EXPIDUS_SM_CLIENT_PRIORITY_DEFAULT,
                                                        G_PARAM_READWRITE|G_PARAM_CONSTRUCT|G_PARAM_STATIC_STRINGS));
     g_object_class_install_property(gobject_class, PROP_CLIENT_ID,
                                     g_param_spec_string("client-id",
@@ -426,18 +426,18 @@ xfce_sm_client_class_init(XfceSMClientClass *klass)
 }
 
 static void
-xfce_sm_client_init(XfceSMClient *sm_client)
+expidus_sm_client_init(ExpidusSMClient *sm_client)
 {
-    sm_client->current_directory = g_strdup(xfce_get_homedir());
+    sm_client->current_directory = g_strdup(expidus_get_homedir());
 }
 
 static void
-xfce_sm_client_get_property(GObject *obj,
+expidus_sm_client_get_property(GObject *obj,
                             guint property_id,
                             GValue *value,
                             GParamSpec *pspec)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(obj);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(obj);
 
     switch(property_id) {
         case PROP_RESUMED:
@@ -476,57 +476,57 @@ xfce_sm_client_get_property(GObject *obj,
 }
 
 static void
-xfce_sm_client_set_property(GObject *obj,
+expidus_sm_client_set_property(GObject *obj,
                             guint property_id,
                             const GValue *value,
                             GParamSpec *pspec)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(obj);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(obj);
 
     switch(property_id) {
         case PROP_RESTART_STYLE:
-            xfce_sm_client_set_restart_style(sm_client,
+            expidus_sm_client_set_restart_style(sm_client,
                                              g_value_get_enum(value));
             break;
 
         case PROP_PRIORITY:
-            xfce_sm_client_set_priority(sm_client, g_value_get_uchar(value));
+            expidus_sm_client_set_priority(sm_client, g_value_get_uchar(value));
             break;
 
         case PROP_CLIENT_ID:
-            xfce_sm_client_set_client_id(sm_client, g_value_get_string(value));
+            expidus_sm_client_set_client_id(sm_client, g_value_get_string(value));
             break;
 
         case PROP_CURRENT_DIRECTORY:
-            xfce_sm_client_set_current_directory(sm_client,
+            expidus_sm_client_set_current_directory(sm_client,
                                                  g_value_get_string(value));
             break;
 
         case PROP_RESTART_COMMAND:
-            xfce_sm_client_set_restart_command(sm_client,
+            expidus_sm_client_set_restart_command(sm_client,
                                                g_value_get_boxed(value));
             break;
 
         case PROP_DESKTOP_FILE:
-            xfce_sm_client_set_desktop_file(sm_client,
+            expidus_sm_client_set_desktop_file(sm_client,
                                             g_value_get_string(value));
             break;
 
         case PROP_ARGC:
             if(sm_client->argc)
-                g_critical("XfceSMClient: Received argc twice");
+                g_critical("ExpidusSMClient: Received argc twice");
             else {
                 sm_client->argc = g_value_get_int(value);
-                xfce_sm_client_parse_argv(sm_client);
+                expidus_sm_client_parse_argv(sm_client);
             }
             break;
 
         case PROP_ARGV:
             if(sm_client->argv)
-                g_critical("XfceSMClient: Received argv twice");
+                g_critical("ExpidusSMClient: Received argv twice");
             else {
                 sm_client->argv = g_value_dup_boxed(value);
-                xfce_sm_client_parse_argv(sm_client);
+                expidus_sm_client_parse_argv(sm_client);
             }
             break;
 
@@ -536,7 +536,7 @@ xfce_sm_client_set_property(GObject *obj,
 }
 
 static GObject *
-xfce_sm_client_constructor(GType type,
+expidus_sm_client_constructor(GType type,
                            guint n_construct_params,
                            GObjectConstructParam *construct_params)
 {
@@ -546,15 +546,15 @@ xfce_sm_client_constructor(GType type,
     if(sm_client_singleton)
         return G_OBJECT(sm_client_singleton);
 
-    obj = G_OBJECT_CLASS(xfce_sm_client_parent_class)->constructor(type,
+    obj = G_OBJECT_CLASS(expidus_sm_client_parent_class)->constructor(type,
                                                                    n_construct_params,
                                                                    construct_params);
 
-    sm_client_singleton = XFCE_SM_CLIENT(obj);
+    sm_client_singleton = EXPIDUS_SM_CLIENT(obj);
 
     desktop_autostart_id = g_getenv("DESKTOP_AUTOSTART_ID");
     if(desktop_autostart_id) {
-        XfceSMClient *sm_client = XFCE_SM_CLIENT(obj);
+        ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(obj);
 
         if(sm_client->client_id
            && strcmp(sm_client->client_id, desktop_autostart_id))
@@ -565,7 +565,7 @@ xfce_sm_client_constructor(GType type,
                       desktop_autostart_id);
         }
 
-        xfce_sm_client_set_client_id(sm_client, desktop_autostart_id);
+        expidus_sm_client_set_client_id(sm_client, desktop_autostart_id);
         g_unsetenv("DESKTOP_AUTOSTART_ID");
     }
 
@@ -573,9 +573,9 @@ xfce_sm_client_constructor(GType type,
 }
 
 static void
-xfce_sm_client_finalize(GObject *obj)
+expidus_sm_client_finalize(GObject *obj)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(obj);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(obj);
 
     g_assert(sm_client == sm_client_singleton);
     sm_client_singleton = NULL;
@@ -589,7 +589,7 @@ xfce_sm_client_finalize(GObject *obj)
 
 #ifdef HAVE_LIBSM
     if(sm_client->session_connection)
-        xfce_sm_client_disconnect(sm_client);
+        expidus_sm_client_disconnect(sm_client);
 #endif
 
     g_free(sm_client->state_file);
@@ -602,32 +602,32 @@ xfce_sm_client_finalize(GObject *obj)
 
     g_strfreev(sm_client->argv);
 
-    G_OBJECT_CLASS(xfce_sm_client_parent_class)->finalize(obj);
+    G_OBJECT_CLASS(expidus_sm_client_parent_class)->finalize(obj);
 }
 
 
 
 static inline const gchar *
-str_from_state(XfceSMClientState state)
+str_from_state(ExpidusSMClientState state)
 {
     switch(state) {
-        case XFCE_SM_CLIENT_STATE_DISCONNECTED:
+        case EXPIDUS_SM_CLIENT_STATE_DISCONNECTED:
             return "DISCONNECTED";
-        case XFCE_SM_CLIENT_STATE_REGISTERING:
+        case EXPIDUS_SM_CLIENT_STATE_REGISTERING:
             return "REGISTERING";
-        case XFCE_SM_CLIENT_STATE_IDLE:
+        case EXPIDUS_SM_CLIENT_STATE_IDLE:
             return "IDLE";
-        case XFCE_SM_CLIENT_STATE_SAVING_PHASE_1:
+        case EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_1:
             return "SAVING_PHASE_1";
-        case XFCE_SM_CLIENT_STATE_WAITING_FOR_INTERACT:
+        case EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_INTERACT:
             return "WAITING_FOR_INTERACT";
-        case XFCE_SM_CLIENT_STATE_INTERACTING:
+        case EXPIDUS_SM_CLIENT_STATE_INTERACTING:
             return "INTERACTING";
-        case XFCE_SM_CLIENT_STATE_WAITING_FOR_PHASE_2:
+        case EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_PHASE_2:
             return "WAITING_FOR_PHASE_2";
-        case XFCE_SM_CLIENT_STATE_SAVING_PHASE_2:
+        case EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_2:
             return "SAVING_PHASE_2";
-        case XFCE_SM_CLIENT_STATE_FROZEN:
+        case EXPIDUS_SM_CLIENT_STATE_FROZEN:
             return "FROZEN";
         default:
             return "(unknown)";
@@ -635,7 +635,7 @@ str_from_state(XfceSMClientState state)
 }
 
 static void
-xfce_sm_client_set_client_id(XfceSMClient *sm_client,
+expidus_sm_client_set_client_id(ExpidusSMClient *sm_client,
                              const gchar *client_id)
 {
     if(!g_strcmp0(sm_client->client_id, client_id))
@@ -650,21 +650,21 @@ xfce_sm_client_set_client_id(XfceSMClient *sm_client,
 }
 
 static void
-xfce_sm_client_set_clone_command(XfceSMClient *sm_client,
+expidus_sm_client_set_clone_command(ExpidusSMClient *sm_client,
                                  gchar **clone_command)
 {
-    g_return_if_fail(XFCE_IS_SM_CLIENT(sm_client));
+    g_return_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client));
     sm_client->clone_command = copy_command(sm_client->clone_command,
                                             clone_command);
 #ifdef HAVE_LIBSM
-    xfce_sm_client_set_property_from_command(sm_client, SmCloneCommand,
+    expidus_sm_client_set_property_from_command(sm_client, SmCloneCommand,
                                              sm_client->clone_command,
                                              SM_ARG_REMOVE);
 #endif
 }
 
 static void
-xfce_sm_client_parse_argv(XfceSMClient *sm_client)
+expidus_sm_client_parse_argv(ExpidusSMClient *sm_client)
 {
     gint argc;
     gchar **argv;
@@ -705,7 +705,7 @@ xfce_sm_client_parse_argv(XfceSMClient *sm_client)
     }
 
     if(client_id)
-        xfce_sm_client_set_client_id(sm_client, client_id);
+        expidus_sm_client_set_client_id(sm_client, client_id);
 
     if(!got_display) {
         GdkDisplay *gdpy = gdk_display_get_default();
@@ -725,9 +725,9 @@ G_GNUC_END_IGNORE_DEPRECATIONS
     DBG("setting restart and clone commands (%s, %s)",
         restart_command && restart_command[0] ? restart_command[0] : "(null)",
         clone_command && clone_command[0] ? clone_command[0] : "(null)");
-    xfce_sm_client_set_restart_command(sm_client, restart_command);
+    expidus_sm_client_set_restart_command(sm_client, restart_command);
     if(clone_command)
-        xfce_sm_client_set_clone_command(sm_client, clone_command);
+        expidus_sm_client_set_clone_command(sm_client, clone_command);
 
     if(restart_command != argv)
         g_free(restart_command);
@@ -742,10 +742,10 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 #ifdef HAVE_LIBSM
 
 static void
-xfce_sm_client_set_state(XfceSMClient *sm_client,
-                         XfceSMClientState new_state)
+expidus_sm_client_set_state(ExpidusSMClient *sm_client,
+                         ExpidusSMClientState new_state)
 {
-    XfceSMClientState old_state = sm_client->state;
+    ExpidusSMClientState old_state = sm_client->state;
 
     if(G_UNLIKELY(old_state == new_state))
         return;
@@ -757,12 +757,12 @@ xfce_sm_client_set_state(XfceSMClient *sm_client,
 }
 
 static inline char
-xsmp_restart_style_from_enum(XfceSMClientRestartStyle style)
+xsmp_restart_style_from_enum(ExpidusSMClientRestartStyle style)
 {
     switch(style) {
-        case XFCE_SM_CLIENT_RESTART_IMMEDIATELY:
+        case EXPIDUS_SM_CLIENT_RESTART_IMMEDIATELY:
             return SmRestartImmediately;
-        case XFCE_SM_CLIENT_RESTART_NORMAL:
+        case EXPIDUS_SM_CLIENT_RESTART_NORMAL:
         default:
             return SmRestartIfRunning;
     }
@@ -786,7 +786,7 @@ static void xsmp_save_yourself(SmcConn smc_conn,
                                int interact_style,
                                Bool fast);
 
-static void xfce_sm_client_set_clone_restart_commands(XfceSMClient *sm_client);
+static void expidus_sm_client_set_clone_restart_commands(ExpidusSMClient *sm_client);
 
 
 static IceIOErrorHandler xsmp_ice_installed_handler = NULL;
@@ -877,7 +877,7 @@ xsmp_ice_init(void)
 }
 
 static void
-xfce_sm_client_handle_save_yourself(XfceSMClient *sm_client,
+expidus_sm_client_handle_save_yourself(ExpidusSMClient *sm_client,
                                     gboolean do_quit_requested,
                                     int dialog_type,
                                     gboolean do_save_state)
@@ -897,7 +897,7 @@ xfce_sm_client_handle_save_yourself(XfceSMClient *sm_client,
                                     (SmPointer)sm_client);
 
         if(status) {
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_WAITING_FOR_INTERACT);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_INTERACT);
             sm_client->needs_save_state = do_save_state;
             /* we want save-state to happen *after* quit-requested if we're
              * doing both, but we can't do quit-requested until we hear
@@ -920,14 +920,14 @@ xfce_sm_client_handle_save_yourself(XfceSMClient *sm_client,
          * cancelled.  since we never did a quit-requested, the client
          * probably won't expect a quit-cancelled, so we do nothing here. */
         sm_client->shutdown_cancelled = FALSE;
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
     } else {
         /* otherwise, we're just done with the SaveYourself here */
         SmcSaveYourselfDone(sm_client->session_connection, True);
         /* the XSMP spec state diagram says to go right back to IDLE after a
          * non-shutdown SaveYourself, but everything else in the spec disagrees:
          * we need to wait for a SaveComplete before going back to IDLE */
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_FROZEN);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_FROZEN);
     }
 }
 
@@ -935,7 +935,7 @@ static void
 xsmp_save_phase_2(SmcConn smc_conn,
                   SmPointer client_data)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(client_data);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(client_data);
 
     TRACE("entering");
 
@@ -944,15 +944,15 @@ xsmp_save_phase_2(SmcConn smc_conn,
      * phase 2.  In our SM client's terminolgy, we support save-state
      * but not quit-requested for phase 2. */
 
-    if(sm_client->state != XFCE_SM_CLIENT_STATE_WAITING_FOR_PHASE_2) {
+    if(sm_client->state != EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_PHASE_2) {
         g_warning("Got SaveYourselfPhase2 in state %s, ignoring",
                   str_from_state(sm_client->state));
         SmcSaveYourselfDone(sm_client->session_connection, True);
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_FROZEN);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_FROZEN);
         return;
     }
 
-    xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_SAVING_PHASE_2);
+    expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_2);
 
     g_signal_emit(G_OBJECT(sm_client), signals[SIG_SAVE_STATE_EXTENDED], 0, NULL);
 
@@ -960,7 +960,7 @@ xsmp_save_phase_2(SmcConn smc_conn,
     /* the XSMP spec state diagram says to go right back to IDLE after a
      * non-shutdown SaveYourself, but everything else in the spec disagrees:
      * we need to wait for a SaveComplete before going back to IDLE */
-    xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_FROZEN);
+    expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_FROZEN);
 
     if(sm_client->shutdown_cancelled) {
         /* if we get here, we received ShutdownCancelled while in a recursive
@@ -968,7 +968,7 @@ xsmp_save_phase_2(SmcConn smc_conn,
          * go back to idle and send quit-cancelled. */
         sm_client->shutdown_cancelled = FALSE;
 
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
         g_signal_emit(G_OBJECT(sm_client), signals[SIG_QUIT_CANCELLED], 0,
                       NULL);
     }
@@ -982,7 +982,7 @@ xsmp_save_yourself(SmcConn smc_conn,
                    int interact_style,
                    Bool fast)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(client_data);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(client_data);
     gboolean do_save_state, do_quit_requested;
 
     TRACE("entering (save_style=%s, shutdown=%s, interact_style=%s, fast=%s",
@@ -994,19 +994,19 @@ xsmp_save_yourself(SmcConn smc_conn,
     /* The first SaveYourself after registering for the first time
      * is a special case (SM specs 7.2).
      */
-    if(sm_client->state == XFCE_SM_CLIENT_STATE_REGISTERING) {
+    if(sm_client->state == EXPIDUS_SM_CLIENT_STATE_REGISTERING) {
         if(save_style == SmSaveLocal
            && interact_style == SmInteractStyleNone
            && !shutdown
            && !fast)
         {
-            xfce_sm_client_set_clone_restart_commands(sm_client);
+            expidus_sm_client_set_clone_restart_commands(sm_client);
             SmcSaveYourselfDone(sm_client->session_connection, True);
             /* XSMP spec state diagram says idle, but the rest of the spec disagrees */
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_FROZEN);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_FROZEN);
         } else {
             g_warning("Initial SaveYourself had unexpected parameters");
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
         }
 
         return;
@@ -1018,15 +1018,15 @@ xsmp_save_yourself(SmcConn smc_conn,
      * the previous SaveYourself and start handling the new one.  that's
      * a bit of a pain, so we're just gonna try to fixup our state on
      * this side and let things go. */
-    if(sm_client->state != XFCE_SM_CLIENT_STATE_IDLE
-       && sm_client->state != XFCE_SM_CLIENT_STATE_FROZEN)
+    if(sm_client->state != EXPIDUS_SM_CLIENT_STATE_IDLE
+       && sm_client->state != EXPIDUS_SM_CLIENT_STATE_FROZEN)
     {
         SmcSaveYourselfDone(sm_client->session_connection, True);
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_FROZEN);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_FROZEN);
         return;
     }
 
-    xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_SAVING_PHASE_1);
+    expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_1);
 
     /* Most of this logic is taken from EggSMClient.  There are many
      * combinations of parameters to the SaveYourself request, but we're
@@ -1063,7 +1063,7 @@ xsmp_save_yourself(SmcConn smc_conn,
     do_quit_requested = (shutdown && interact_style != SmInteractStyleNone);
     do_save_state = (save_style != SmSaveGlobal);
 
-    xfce_sm_client_handle_save_yourself(sm_client, do_quit_requested,
+    expidus_sm_client_handle_save_yourself(sm_client, do_quit_requested,
                                         (interact_style == SmInteractStyleAny
                                          ? SmDialogNormal : SmDialogError),
                                         do_save_state);
@@ -1073,11 +1073,11 @@ static void
 xsmp_die(SmcConn smc_conn,
          SmPointer client_data)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(client_data);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(client_data);
 
     TRACE("entering");
 
-    xfce_sm_client_disconnect(sm_client);
+    expidus_sm_client_disconnect(sm_client);
 
     /* here we give the app a chance to gracefully quit.  if the app
      * has indicated it doesn't want to (by not connecting to the quit
@@ -1088,7 +1088,7 @@ xsmp_die(SmcConn smc_conn,
     {
         g_signal_emit(G_OBJECT(sm_client), signals[SIG_QUIT], 0, NULL);
     } else {
-        DBG("XfceSMClient will now call exit(0) which will abort your "
+        DBG("ExpidusSMClient will now call exit(0) which will abort your "
             "application. If you want to handle this yourself, you can "
             "implement the \"quit\"-signal.");
 
@@ -1100,50 +1100,50 @@ static void
 xsmp_save_complete(SmcConn smc_conn,
                    SmPointer client_data)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(client_data);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(client_data);
 
     TRACE("entering");
 
-    if(sm_client->state != XFCE_SM_CLIENT_STATE_FROZEN) {
+    if(sm_client->state != EXPIDUS_SM_CLIENT_STATE_FROZEN) {
         g_warning("Got SaveComplete in state %s, ignoring",
                   str_from_state(sm_client->state));
     }
 
-    xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+    expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
 }
 
 static void
 xsmp_shutdown_cancelled(SmcConn smc_conn,
                         SmPointer client_data)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(client_data);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(client_data);
 
     TRACE("entering");
 
     switch(sm_client->state) {
-        case XFCE_SM_CLIENT_STATE_FROZEN:
-        case XFCE_SM_CLIENT_STATE_WAITING_FOR_PHASE_2:
+        case EXPIDUS_SM_CLIENT_STATE_FROZEN:
+        case EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_PHASE_2:
             /* if the client has already handled quit-requested, we just go
              * back to idle and inform the client that shutdown was
              * cancelled. */
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
             g_signal_emit(G_OBJECT(sm_client), signals[SIG_QUIT_CANCELLED],
                           0, NULL);
             break;
 
-        case XFCE_SM_CLIENT_STATE_WAITING_FOR_INTERACT:
+        case EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_INTERACT:
             /* if we're waiting to interact (thus waiting to send
              * quit-requested), we just cancel that, and in this case we finish
              * the SaveYourself and move on.  we don't inform the client of
              * the cancellation since we haven't gotten to inform them about
              * the shutdown in the first place. */
             SmcSaveYourselfDone(sm_client->session_connection, True);
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
             break;
 
-        case XFCE_SM_CLIENT_STATE_INTERACTING:
-        case XFCE_SM_CLIENT_STATE_SAVING_PHASE_1:
-        case XFCE_SM_CLIENT_STATE_SAVING_PHASE_2:
+        case EXPIDUS_SM_CLIENT_STATE_INTERACTING:
+        case EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_1:
+        case EXPIDUS_SM_CLIENT_STATE_SAVING_PHASE_2:
             /* this should only happen if the client is currently *inside* one
              * of the quit-requested, save-state, or save-state-extended
              * handlers and is presumably inside a recursive invocation of the
@@ -1155,7 +1155,7 @@ xsmp_shutdown_cancelled(SmcConn smc_conn,
         default:
             g_warning("Got ShutdownCancelled in state %s, ignoring",
                       str_from_state(sm_client->state));
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
             break;
     }
 }
@@ -1164,7 +1164,7 @@ static void
 xsmp_interact(SmcConn smc_conn,
               SmPointer client_data)
 {
-    XfceSMClient *sm_client = XFCE_SM_CLIENT(client_data);
+    ExpidusSMClient *sm_client = EXPIDUS_SM_CLIENT(client_data);
     gboolean cancel = FALSE;
 
     TRACE("entering");
@@ -1173,16 +1173,16 @@ xsmp_interact(SmcConn smc_conn,
      * we should receive an interact message is during a normal save
      * yourself. */
 
-    if(sm_client->state != XFCE_SM_CLIENT_STATE_WAITING_FOR_INTERACT) {
+    if(sm_client->state != EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_INTERACT) {
         g_warning("Got Interact message in state %s, ignoring",
                   str_from_state(sm_client->state));
         SmcInteractDone(sm_client->session_connection, False);
         SmcSaveYourselfDone(sm_client->session_connection, True);
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_FROZEN);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_FROZEN);
         return;
     }
 
-    xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_INTERACTING);
+    expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_INTERACTING);
 
     /* at this point we're ready to emit quit-requested */
     g_signal_emit(G_OBJECT(sm_client), signals[SIG_QUIT_REQUESTED], 0,
@@ -1195,12 +1195,12 @@ xsmp_interact(SmcConn smc_conn,
         sm_client->shutdown_cancelled = FALSE;
         cancel = TRUE;
 
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
         g_signal_emit(G_OBJECT(sm_client), signals[SIG_QUIT_CANCELLED], 0,
                       NULL);
     } else {
         /* we only send InteractDone if we didn't get ShutdownCancelled */
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_FROZEN);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_FROZEN);
         SmcInteractDone(sm_client->session_connection, cancel);
     }
 
@@ -1218,7 +1218,7 @@ xsmp_interact(SmcConn smc_conn,
             sm_client->shutdown_cancelled = FALSE;
             cancel = TRUE;
 
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
             g_signal_emit(G_OBJECT(sm_client), signals[SIG_QUIT_CANCELLED], 0,
                           NULL);
         }
@@ -1235,7 +1235,7 @@ xsmp_interact(SmcConn smc_conn,
                                               xsmp_save_phase_2,
                                               (SmPointer)sm_client);
         if(status) {
-            xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_WAITING_FOR_PHASE_2);
+            expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_WAITING_FOR_PHASE_2);
             return;
         }
     }
@@ -1246,7 +1246,7 @@ xsmp_interact(SmcConn smc_conn,
 }
 
 static void
-xfce_sm_client_set_property_from_command(XfceSMClient *sm_client,
+expidus_sm_client_set_property_from_command(ExpidusSMClient *sm_client,
                                          const char *property_name,
                                          gchar **command,
                                          gint alter_sm_id)
@@ -1337,17 +1337,17 @@ xfce_sm_client_set_property_from_command(XfceSMClient *sm_client,
 }
 
 static void
-xfce_sm_client_set_clone_restart_commands(XfceSMClient *sm_client)
+expidus_sm_client_set_clone_restart_commands(ExpidusSMClient *sm_client)
 {
     TRACE("entering");
 
     /* Restart */
-    xfce_sm_client_set_property_from_command(sm_client, SmRestartCommand,
+    expidus_sm_client_set_property_from_command(sm_client, SmRestartCommand,
                                              sm_client->restart_command,
                                              SM_ARG_APPEND);
 
     /* Clone */
-    xfce_sm_client_set_property_from_command(sm_client, SmCloneCommand,
+    expidus_sm_client_set_property_from_command(sm_client, SmCloneCommand,
                                              (sm_client->clone_command
                                               ? sm_client->clone_command
                                               : sm_client->restart_command),
@@ -1362,7 +1362,7 @@ xfce_sm_client_set_clone_restart_commands(XfceSMClient *sm_client)
         discard_command[i++] = "-rf";
         discard_command[i++] = sm_client->state_file;
         discard_command[i++] = NULL;
-        xfce_sm_client_set_property_from_command(sm_client, SmDiscardCommand,
+        expidus_sm_client_set_property_from_command(sm_client, SmDiscardCommand,
                                                  discard_command, FALSE);
     }
 }
@@ -1372,19 +1372,19 @@ xfce_sm_client_set_clone_restart_commands(XfceSMClient *sm_client)
 
 
 /**
- * xfce_sm_client_error_quark:
+ * expidus_sm_client_error_quark:
  *
- * Gets the XfceSmClient Error Quark.
+ * Gets the ExpidusSmClient Error Quark.
  *
  * Return value: a #GQuark.
  **/
 GQuark
-xfce_sm_client_error_quark (void)
+expidus_sm_client_error_quark (void)
 {
   static GQuark q;
 
   if G_UNLIKELY (q == 0)
-    q = g_quark_from_static_string ("xfce-sm-client-error-quark");
+    q = g_quark_from_static_string ("expidus-sm-client-error-quark");
 
   return q;
 }
@@ -1392,7 +1392,7 @@ xfce_sm_client_error_quark (void)
 
 
 /**
- * xfce_sm_client_get_option_group:
+ * expidus_sm_client_get_option_group:
  * @argc: The application's argument count
  * @argv: The application's argument vector
  *
@@ -1401,7 +1401,7 @@ xfce_sm_client_error_quark (void)
  *
  * This function is a bit sneaky in that it will make a copy of
  * the program's argc and argv <emphasis>before</emphasis> GTK+ etc.
- * has a chance to mess around with it, so #XfceSMClient can later
+ * has a chance to mess around with it, so #ExpidusSMClient can later
  * construct an accurate restart command.  Instead of calling
  * gtk_init() or gtk_init_with_args(), instead you'd do something
  * like:
@@ -1409,7 +1409,7 @@ xfce_sm_client_error_quark (void)
  * <informalexample><programlisting>
  * GOptionContext *context = g_option_context_new("");
  * g_option_context_add_group(context, gtk_get_option_group(TRUE));
- * g_option_context_add_group(context, xfce_sm_client_get_option_group(argc, argv);
+ * g_option_context_add_group(context, expidus_sm_client_get_option_group(argc, argv);
  * g_option_context_parse(context, &argc, &argv, NULL);
  * </programlisting></informalexample>
  *
@@ -1420,7 +1420,7 @@ xfce_sm_client_error_quark (void)
  * Returns: A new #GOptionGroup
  **/
 GOptionGroup *
-xfce_sm_client_get_option_group(gint  argc,
+expidus_sm_client_get_option_group(gint  argc,
                                 gchar **argv)
 {
     const GOptionEntry entries[] = {
@@ -1445,28 +1445,28 @@ xfce_sm_client_get_option_group(gint  argc,
 }
 
 /**
- * xfce_sm_client_get: (constructor)
+ * expidus_sm_client_get: (constructor)
  *
  * Gets the application's SM client instance.  This is best
- * used with xfce_sm_client_get_option_group() above (and using
+ * used with expidus_sm_client_get_option_group() above (and using
  * the returned #GOptionGroup with g_option_context_parse()), as the
  * command line parsing will figure out many of the SM client's
  * required property values for you.
  *
  * If you are not using Gtk or Glib's command-line option parser,
- * take a look at xfce_sm_client_new_with_argv() and
- * xfce_sm_client_new_full().
+ * take a look at expidus_sm_client_new_with_argv() and
+ * expidus_sm_client_new_full().
  *
- * If you have already created an #XfceSMClient instance using
- * this function or one of the xfce_sm_client_new_*() functions,
+ * If you have already created an #ExpidusSMClient instance using
+ * this function or one of the expidus_sm_client_new_*() functions,
  * this will return the same instance.
  *
- * Returns: (transfer full): A new or existing #XfceSMClient
+ * Returns: (transfer full): A new or existing #ExpidusSMClient
  **/
-XfceSMClient *
-xfce_sm_client_get(void)
+ExpidusSMClient *
+expidus_sm_client_get(void)
 {
-    return g_object_new(XFCE_TYPE_SM_CLIENT,
+    return g_object_new(EXPIDUS_TYPE_SM_CLIENT,
                         "argc", startup_options.argc,
                         "argv", startup_options.argv,
                         "client-id", startup_options.client_id,
@@ -1474,32 +1474,32 @@ xfce_sm_client_get(void)
 }
 
 /**
- * xfce_sm_client_get_with_argv: (constructor)
+ * expidus_sm_client_get_with_argv: (constructor)
  * @argc: The number of arguments passed to main()
  * @argv: The argument vector passed to main()
- * @restart_style: An #XfceSMClientRestartStyle
+ * @restart_style: An #ExpidusSMClientRestartStyle
  * @priority: A restart priority
  *
- * Creates a new #XfceSMClient instance.  It attempts to
+ * Creates a new #ExpidusSMClient instance.  It attempts to
  * set all required properties using the app's command line.
  * Note that this function does not actually connect to the session
  * manager, so other actions can be taken (such as setting custom
  * properties or connecting signals) before calling
- * xfce_sm_client_connect().
+ * expidus_sm_client_connect().
  *
  * If you are using Gtk or Glib's command-line option parser,
- * it is recommended that you use xfce_sm_client_get_option_group()
- * and xfce_sm_client_get() instead.
+ * it is recommended that you use expidus_sm_client_get_option_group()
+ * and expidus_sm_client_get() instead.
  *
- * Returns: (transfer full): A new #XfceSMClient instance
+ * Returns: (transfer full): A new #ExpidusSMClient instance
  **/
-XfceSMClient *
-xfce_sm_client_get_with_argv(gint argc,
+ExpidusSMClient *
+expidus_sm_client_get_with_argv(gint argc,
                              gchar **argv,
-                             XfceSMClientRestartStyle restart_style,
+                             ExpidusSMClientRestartStyle restart_style,
                              guchar priority)
 {
-    return g_object_new(XFCE_TYPE_SM_CLIENT,
+    return g_object_new(EXPIDUS_TYPE_SM_CLIENT,
                         "argc", argc,
                         "argv", argv,
                         "restart-style", restart_style,
@@ -1508,8 +1508,8 @@ xfce_sm_client_get_with_argv(gint argc,
 }
 
 /**
- * xfce_sm_client_get_full: (constructor)
- * @restart_style: An XfceSMClientRestartStyle
+ * expidus_sm_client_get_full: (constructor)
+ * @restart_style: An ExpidusSMClientRestartStyle
  * @priority: A restart priority
  * @resumed_client_id: The client id used in the previous session
  * @current_directory: The application's working directory
@@ -1522,23 +1522,23 @@ xfce_sm_client_get_with_argv(gint argc,
  * Note that this function does not actually connect to the session
  * manager, so other actions can be taken (such as setting custom
  * properties or connecting signals) before calling
- * xfce_sm_client_connect().
+ * expidus_sm_client_connect().
  *
- * It is recommended to use xfce_sm_client_get_with_argv(), or,
+ * It is recommended to use expidus_sm_client_get_with_argv(), or,
  * if you are using Gtk or Glib's command-line option parser,
- * xfce_sm_client_get_option_group() and xfce_sm_client_get() instead.
+ * expidus_sm_client_get_option_group() and expidus_sm_client_get() instead.
  *
- * Returns: (transfer full): A new #XfceSMClient instance
+ * Returns: (transfer full): A new #ExpidusSMClient instance
  **/
-XfceSMClient *
-xfce_sm_client_get_full(XfceSMClientRestartStyle restart_style,
+ExpidusSMClient *
+expidus_sm_client_get_full(ExpidusSMClientRestartStyle restart_style,
                         guchar priority,
                         const gchar *resumed_client_id,
                         const gchar *current_directory,
                         const gchar **restart_command,
                         const gchar *desktop_file)
 {
-    return g_object_new(XFCE_TYPE_SM_CLIENT,
+    return g_object_new(EXPIDUS_TYPE_SM_CLIENT,
                         "restart-style", restart_style,
                         "priority", priority,
                         "client-id", resumed_client_id,
@@ -1549,8 +1549,8 @@ xfce_sm_client_get_full(XfceSMClientRestartStyle restart_style,
 }
 
 /**
- * xfce_sm_client_connect:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_connect:
+ * @sm_client: An #ExpidusSMClient
  * @error: (out) (allow-none) (transfer full): A #GError location.
  *
  * Attempts to connect to the session manager.
@@ -1559,7 +1559,7 @@ xfce_sm_client_get_full(XfceSMClientRestartStyle restart_style,
  *          occurs, @error will be set.
  **/
 gboolean
-xfce_sm_client_connect(XfceSMClient *sm_client,
+expidus_sm_client_connect(ExpidusSMClient *sm_client,
                        GError **error)
 {
 #ifdef HAVE_LIBSM
@@ -1574,7 +1574,7 @@ xfce_sm_client_connect(XfceSMClient *sm_client,
     char *given_client_id = NULL;
 #endif
 
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), FALSE);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client), FALSE);
     g_return_val_if_fail(!error || !*error, FALSE);
 
     if(startup_options.sm_disable)
@@ -1610,13 +1610,13 @@ xfce_sm_client_connect(XfceSMClient *sm_client,
 
     if(!sm_client->session_connection) {
         if(error) {
-            g_set_error(error, XFCE_SM_CLIENT_ERROR, XFCE_SM_CLIENT_ERROR_FAILED,
+            g_set_error(error, EXPIDUS_SM_CLIENT_ERROR, EXPIDUS_SM_CLIENT_ERROR_FAILED,
                         _("Failed to connect to the session manager: %s"), buf);
         }
         return FALSE;
     } else if(!given_client_id) {
         if(error) {
-            g_set_error(error, XFCE_SM_CLIENT_ERROR, XFCE_SM_CLIENT_ERROR_INVALID_CLIENT,
+            g_set_error(error, EXPIDUS_SM_CLIENT_ERROR, EXPIDUS_SM_CLIENT_ERROR_INVALID_CLIENT,
                         _("Session manager did not return a valid client id"));
         }
         return FALSE;
@@ -1625,12 +1625,12 @@ xfce_sm_client_connect(XfceSMClient *sm_client,
     if(sm_client->client_id
        && !strcmp(sm_client->client_id, given_client_id))
     {
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_IDLE);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_IDLE);
         sm_client->resumed = TRUE;
         g_object_notify(G_OBJECT(sm_client), "resumed");
     } else {
-        xfce_sm_client_set_client_id(sm_client, given_client_id);
-        xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_REGISTERING);
+        expidus_sm_client_set_client_id(sm_client, given_client_id);
+        expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_REGISTERING);
     }
 
     free(given_client_id);
@@ -1713,8 +1713,8 @@ xfce_sm_client_connect(XfceSMClient *sm_client,
 }
 
 /**
- * xfce_sm_client_disconnect:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_disconnect:
+ * @sm_client: An #ExpidusSMClient
  *
  * Disconnects the application from the session manager.
  *
@@ -1726,7 +1726,7 @@ xfce_sm_client_connect(XfceSMClient *sm_client,
  *
  **/
 void
-xfce_sm_client_disconnect(XfceSMClient *sm_client)
+expidus_sm_client_disconnect(ExpidusSMClient *sm_client)
 {
     if(startup_options.sm_disable)
         return;
@@ -1737,20 +1737,20 @@ xfce_sm_client_disconnect(XfceSMClient *sm_client)
         return;
     }
 
-    if(sm_client->restart_style == XFCE_SM_CLIENT_RESTART_IMMEDIATELY)
-        xfce_sm_client_set_restart_style(sm_client, XFCE_SM_CLIENT_RESTART_NORMAL);
+    if(sm_client->restart_style == EXPIDUS_SM_CLIENT_RESTART_IMMEDIATELY)
+        expidus_sm_client_set_restart_style(sm_client, EXPIDUS_SM_CLIENT_RESTART_NORMAL);
 
     SmcCloseConnection(sm_client->session_connection, 0, NULL);
     sm_client->session_connection = NULL;
     gdk_x11_set_sm_client_id(NULL);
 
-    xfce_sm_client_set_state(sm_client, XFCE_SM_CLIENT_STATE_DISCONNECTED);
+    expidus_sm_client_set_state(sm_client, EXPIDUS_SM_CLIENT_STATE_DISCONNECTED);
 #endif
 }
 
 /**
- * xfce_sm_client_is_connected:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_is_connected:
+ * @sm_client: An #ExpidusSMClient
  *
  * Determines whether or not the application has connected to the
  * session manager.
@@ -1758,9 +1758,9 @@ xfce_sm_client_disconnect(XfceSMClient *sm_client)
  * Returns: %TRUE if connected to the session manager, %FALSE otherwise
  **/
 gboolean
-xfce_sm_client_is_connected(XfceSMClient *sm_client)
+expidus_sm_client_is_connected(ExpidusSMClient *sm_client)
 {
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), FALSE);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client), FALSE);
 #ifdef HAVE_LIBSM
     return !!sm_client->session_connection;
 #else
@@ -1769,8 +1769,8 @@ xfce_sm_client_is_connected(XfceSMClient *sm_client)
 }
 
 /**
- * xfce_sm_client_is_resumed:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_is_resumed:
+ * @sm_client: An #ExpidusSMClient
  *
  * Determines whether the application was resumed from a previous
  * session, or if the application has been started fresh with no
@@ -1779,15 +1779,15 @@ xfce_sm_client_is_connected(XfceSMClient *sm_client)
  * Returns: %TRUE if resumed from a previous session, %FALSE otherwise
  **/
 gboolean
-xfce_sm_client_is_resumed(XfceSMClient *sm_client)
+expidus_sm_client_is_resumed(ExpidusSMClient *sm_client)
 {
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), FALSE);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client), FALSE);
     return sm_client->resumed;
 }
 
 /**
- * xfce_sm_client_set_desktop_file:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_set_desktop_file:
+ * @sm_client: An #ExpidusSMClient
  * @desktop_file: The path to the application's .desktop file
  *
  * Sets the application's .desktop file.  In addition to informing
@@ -1804,16 +1804,16 @@ xfce_sm_client_is_resumed(XfceSMClient *sm_client)
  * Desktop Menu Specification</ulink>.
  **/
 void
-xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
+expidus_sm_client_set_desktop_file(ExpidusSMClient *sm_client,
                                 const gchar *desktop_file)
 {
-    XfceRc *rcfile = NULL;
+    ExpidusRc *rcfile = NULL;
     gchar *real_desktop_file = NULL;
     gboolean has_default_icon = FALSE;
     GList *icon_list;
     const gchar *name, *icon, *exec;
 
-    g_return_if_fail(XFCE_IS_SM_CLIENT(sm_client));
+    g_return_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client));
     g_return_if_fail(desktop_file);
 
     if(!g_strcmp0(sm_client->desktop_file, desktop_file))
@@ -1823,7 +1823,7 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
         gchar res_name[1024];
 
         g_snprintf(res_name, sizeof(res_name), "applications/%s", desktop_file);
-        real_desktop_file = xfce_resource_lookup(XFCE_RESOURCE_DATA, res_name);
+        real_desktop_file = expidus_resource_lookup(EXPIDUS_RESOURCE_DATA, res_name);
         if(!real_desktop_file) {
             g_warning("Cannot find file \"%s\" in the standard search path",
                       desktop_file);
@@ -1833,13 +1833,13 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
         desktop_file = real_desktop_file;
     }
 
-    rcfile = xfce_rc_simple_open(desktop_file, TRUE);
+    rcfile = expidus_rc_simple_open(desktop_file, TRUE);
     if(!rcfile) {
         g_warning("Unable to open \"%s\"", desktop_file);
         goto out;
     }
 
-    if(!xfce_rc_has_group(rcfile, "Desktop Entry")) {
+    if(!expidus_rc_has_group(rcfile, "Desktop Entry")) {
         g_warning("File \"%s\" is not a valid .desktop file", desktop_file);
         goto out;
     }
@@ -1847,10 +1847,10 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
     g_free(sm_client->desktop_file);
     sm_client->desktop_file = g_strdup(desktop_file);
 
-    xfce_rc_set_group(rcfile, "Desktop Entry");
+    expidus_rc_set_group(rcfile, "Desktop Entry");
 
     if(!g_get_application_name()) {
-        name = xfce_rc_read_entry(rcfile, "Name", NULL);
+        name = expidus_rc_read_entry(rcfile, "Name", NULL);
         if(name)
             g_set_application_name(name);
     }
@@ -1865,7 +1865,7 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
     }
 
     if(!has_default_icon) {
-        icon = xfce_rc_read_entry(rcfile, "Icon", NULL);
+        icon = expidus_rc_read_entry(rcfile, "Icon", NULL);
         if(icon) {
             if(g_path_is_absolute(icon))
                 gtk_window_set_default_icon_from_file(icon, NULL);
@@ -1874,7 +1874,7 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
         }
     }
 
-    exec = xfce_rc_read_entry(rcfile, "Exec", NULL);
+    exec = expidus_rc_read_entry(rcfile, "Exec", NULL);
     if(exec) {
         gchar **clone_argv = NULL;
         gint clone_argc = 0;
@@ -1882,7 +1882,7 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
         /* FIXME: pull out the %-var substitutions first */
 
         if(g_shell_parse_argv(exec, &clone_argc, &clone_argv, NULL)) {
-            xfce_sm_client_set_clone_command(sm_client, clone_argv);
+            expidus_sm_client_set_clone_command(sm_client, clone_argv);
             g_strfreev(clone_argv);
         }
     }
@@ -1906,13 +1906,13 @@ xfce_sm_client_set_desktop_file(XfceSMClient *sm_client,
 
 out:
     if(rcfile)
-        xfce_rc_close(rcfile);
+        expidus_rc_close(rcfile);
     g_free(real_desktop_file);
 }
 
 /**
- * xfce_sm_client_request_shutdown:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_request_shutdown:
+ * @sm_client: An #ExpidusSMClient
  * @shutdown_hint: The type of shutdown requested
  *
  * Sends a request to the session manager to end the session.
@@ -1926,10 +1926,10 @@ out:
  * </para></note>
  **/
 void
-xfce_sm_client_request_shutdown(XfceSMClient *sm_client,
-                                XfceSMClientShutdownHint shutdown_hint)
+expidus_sm_client_request_shutdown(ExpidusSMClient *sm_client,
+                                ExpidusSMClientShutdownHint shutdown_hint)
 {
-    g_return_if_fail(XFCE_IS_SM_CLIENT(sm_client));
+    g_return_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client));
 
     if(startup_options.sm_disable)
         return;
@@ -1945,17 +1945,17 @@ xfce_sm_client_request_shutdown(XfceSMClient *sm_client,
 }
 
 /**
- * xfce_sm_client_set_restart_style:
- * @sm_client: An #XfceSMClient
- * @restart_style: An #XfceSMClientRestartStyle value
+ * expidus_sm_client_set_restart_style:
+ * @sm_client: An #ExpidusSMClient
+ * @restart_style: An #ExpidusSMClientRestartStyle value
  *
  * Sets the restart style hint to @restart_style.
  **/
 void
-xfce_sm_client_set_restart_style(XfceSMClient *sm_client,
-                                 XfceSMClientRestartStyle restart_style)
+expidus_sm_client_set_restart_style(ExpidusSMClient *sm_client,
+                                 ExpidusSMClientRestartStyle restart_style)
 {
-    g_return_if_fail(XFCE_IS_SM_CLIENT(sm_client));
+    g_return_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client));
 
     if(sm_client->restart_style == restart_style)
         return;
@@ -1986,8 +1986,8 @@ xfce_sm_client_set_restart_style(XfceSMClient *sm_client,
 }
 
 /**
- * xfce_sm_client_set_priority:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_set_priority:
+ * @sm_client: An #ExpidusSMClient
  * @priority: A 8-bit signed priority value
  *
  * Sets the startup priority for @sm_client to @priority.  Note
@@ -1995,10 +1995,10 @@ xfce_sm_client_set_restart_style(XfceSMClient *sm_client,
  * should be reserved for components of the desktop environment.
  **/
 void
-xfce_sm_client_set_priority(XfceSMClient *sm_client,
+expidus_sm_client_set_priority(ExpidusSMClient *sm_client,
                             guint8 priority)
 {
-    g_return_if_fail(XFCE_IS_SM_CLIENT(sm_client));
+    g_return_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client));
 
     if(sm_client->priority == priority)
         return;
@@ -2026,8 +2026,8 @@ xfce_sm_client_set_priority(XfceSMClient *sm_client,
 }
 
 /**
- * xfce_sm_client_set_current_directory:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_set_current_directory:
+ * @sm_client: An #ExpidusSMClient
  * @current_directory: A valid path name
  *
  * Sets the startup working directory of @sm_client to
@@ -2035,10 +2035,10 @@ xfce_sm_client_set_priority(XfceSMClient *sm_client,
  * home directory.
  **/
 void
-xfce_sm_client_set_current_directory(XfceSMClient *sm_client,
+expidus_sm_client_set_current_directory(ExpidusSMClient *sm_client,
                                      const gchar *current_directory)
 {
-    g_return_if_fail(XFCE_IS_SM_CLIENT(sm_client));
+    g_return_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client));
     g_return_if_fail(current_directory && current_directory[0]);
 
     if(!g_strcmp0(sm_client->current_directory, current_directory))
@@ -2083,8 +2083,8 @@ copy_command(gchar **command,
 }
 
 /**
- * xfce_sm_client_set_restart_command:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_set_restart_command:
+ * @sm_client: An #ExpidusSMClient
  * @restart_command: An argument vector
  *
  * Sets the application's "restart" command, which is used to restart
@@ -2096,14 +2096,14 @@ copy_command(gchar **command,
  * added (if not already present).
  **/
 void
-xfce_sm_client_set_restart_command(XfceSMClient *sm_client,
+expidus_sm_client_set_restart_command(ExpidusSMClient *sm_client,
                                    gchar **restart_command)
 {
-    g_return_if_fail(XFCE_IS_SM_CLIENT(sm_client));
+    g_return_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client));
     sm_client->restart_command = copy_command(sm_client->restart_command,
                                               restart_command);
 #ifdef HAVE_LIBSM
-    xfce_sm_client_set_property_from_command(sm_client, SmRestartCommand,
+    expidus_sm_client_set_property_from_command(sm_client, SmRestartCommand,
                                              sm_client->restart_command,
                                              SM_ARG_APPEND);
 #endif
@@ -2111,42 +2111,42 @@ xfce_sm_client_set_restart_command(XfceSMClient *sm_client,
 }
 
 /**
- * xfce_sm_client_get_restart_style:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_get_restart_style:
+ * @sm_client: An #ExpidusSMClient
  *
  * Retrieves the session client's restart style.  See
- * xfce_sm_client_set_restart_style() for more information.
+ * expidus_sm_client_set_restart_style() for more information.
  *
- * Returns: a value from the #XfceSMClientRestartStyle enum
+ * Returns: a value from the #ExpidusSMClientRestartStyle enum
  **/
-XfceSMClientRestartStyle
-xfce_sm_client_get_restart_style(XfceSMClient *sm_client)
+ExpidusSMClientRestartStyle
+expidus_sm_client_get_restart_style(ExpidusSMClient *sm_client)
 {
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client),
-                         XFCE_SM_CLIENT_RESTART_NORMAL);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client),
+                         EXPIDUS_SM_CLIENT_RESTART_NORMAL);
     return sm_client->restart_style;
 }
 
 /**
- * xfce_sm_client_get_priority:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_get_priority:
+ * @sm_client: An #ExpidusSMClient
  *
  * Retrieves the session client's restart priority.  See
- * xfce_sm_client_set_priority() for more information.
+ * expidus_sm_client_set_priority() for more information.
  *
  * Returns: a value from #G_MININT8 to #G_MAXINT8
  **/
 guint8
-xfce_sm_client_get_priority(XfceSMClient *sm_client)
+expidus_sm_client_get_priority(ExpidusSMClient *sm_client)
 {
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client),
-                         XFCE_SM_CLIENT_PRIORITY_DEFAULT);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client),
+                         EXPIDUS_SM_CLIENT_PRIORITY_DEFAULT);
     return sm_client->priority;
 }
 
 /**
- * xfce_sm_client_get_client_id:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_get_client_id:
+ * @sm_client: An #ExpidusSMClient
  *
  * Retrieves the session client's unique ID.  This ID can
  * be used to construct a filename used to restore the
@@ -2155,21 +2155,21 @@ xfce_sm_client_get_priority(XfceSMClient *sm_client)
  *
  * <note><para>
  * Instead of constructing a state filename, it is
- * recommended to use xfce_sm_client_get_state_file().
+ * recommended to use expidus_sm_client_get_state_file().
  * </para></note>
  *
  * Returns: an opaque object-owned string
  **/
 const gchar *
-xfce_sm_client_get_client_id(XfceSMClient *sm_client)
+expidus_sm_client_get_client_id(ExpidusSMClient *sm_client)
 {
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client), NULL);
     return sm_client->client_id;
 }
 
 /**
- * xfce_sm_client_get_state_file:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_get_state_file:
+ * @sm_client: An #ExpidusSMClient
  *
  * Constructs a filename that can be used to restore or save
  * state information.
@@ -2187,19 +2187,19 @@ xfce_sm_client_get_client_id(XfceSMClient *sm_client)
  * and handle state cleanup (setting of the discard command) for you.
  *
  * Before calling this function, the application must have a
- * valid program identifier set (see xfce_sm_client_set_program())
- * and a valid client ID (see xfce_sm_client_get_client_id()).
+ * valid program identifier set (see expidus_sm_client_set_program())
+ * and a valid client ID (see expidus_sm_client_get_client_id()).
  *
  * Returns: a file name string, owned by the object or %NULL if
  *          the session client is disabled.
  **/
 const gchar *
-xfce_sm_client_get_state_file(XfceSMClient *sm_client)
+expidus_sm_client_get_state_file(ExpidusSMClient *sm_client)
 {
     gchar *resource, *p;
     const gchar *prgname;
 
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client), NULL);
 
     if(!sm_client->client_id)
         return NULL;
@@ -2218,10 +2218,10 @@ xfce_sm_client_get_state_file(XfceSMClient *sm_client)
             *p = '_';
     }
 
-    sm_client->state_file = xfce_resource_save_location(XFCE_RESOURCE_CACHE,
+    sm_client->state_file = expidus_resource_save_location(EXPIDUS_RESOURCE_CACHE,
                                                         resource, TRUE);
     if(!sm_client->state_file) {
-        g_critical("XfceSMClient: Unable to create state file as "
+        g_critical("ExpidusSMClient: Unable to create state file as "
                    "\"$XDG_CACHE_HOME/%s\"", resource);
     }
 
@@ -2238,7 +2238,7 @@ xfce_sm_client_get_state_file(XfceSMClient *sm_client)
         discard_command[i++] = sm_client->state_file;
         discard_command[i++] = NULL;
 
-        xfce_sm_client_set_property_from_command(sm_client, SmDiscardCommand,
+        expidus_sm_client_set_property_from_command(sm_client, SmDiscardCommand,
                                                  discard_command, FALSE);
     }
 #endif
@@ -2247,38 +2247,38 @@ xfce_sm_client_get_state_file(XfceSMClient *sm_client)
 }
 
 /**
- * xfce_sm_client_get_current_directory:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_get_current_directory:
+ * @sm_client: An #ExpidusSMClient
  *
  * Retrieves the session client's working directory.  See
- * xfce_sm_client_set_current_directory() for more information.
+ * expidus_sm_client_set_current_directory() for more information.
  *
  * Returns: an object-owned string
  **/
 const gchar *
-xfce_sm_client_get_current_directory(XfceSMClient *sm_client)
+expidus_sm_client_get_current_directory(ExpidusSMClient *sm_client)
 {
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client), NULL);
     return sm_client->current_directory;
 }
 
 /**
- * xfce_sm_client_get_restart_command:
- * @sm_client: An #XfceSMClient
+ * expidus_sm_client_get_restart_command:
+ * @sm_client: An #ExpidusSMClient
  *
  * Retrieves the session client's restart command.  See
- * xfce_sm_client_set_restart_command() for more information.
+ * expidus_sm_client_set_restart_command() for more information.
  *
  * Returns: an object-owned string vector
  **/
 const gchar * const *
-xfce_sm_client_get_restart_command(XfceSMClient *sm_client)
+expidus_sm_client_get_restart_command(ExpidusSMClient *sm_client)
 {
-    g_return_val_if_fail(XFCE_IS_SM_CLIENT(sm_client), NULL);
+    g_return_val_if_fail(EXPIDUS_IS_SM_CLIENT(sm_client), NULL);
     return (const gchar * const *)sm_client->restart_command;
 }
 
 
 
-#define __XFCE_SM_CLIENT_C__
+#define __EXPIDUS_SM_CLIENT_C__
 #include <libexpidus1ui/libexpidus1ui-aliasdef.c>

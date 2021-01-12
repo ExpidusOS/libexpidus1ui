@@ -14,18 +14,18 @@ AM_CPPFLAGS = \
 	$(PLATFORM_CPPFLAGS)
 
 libexpidus1ui_enum_headers = \
-	xfce-sm-client.h
+	expidus-sm-client.h
 
 libexpidus1ui_headers = \
 	libexpidus1ui.h \
 	libexpidus1ui-config.h \
 	libexpidus1ui-enum-types.h \
-	xfce-dialogs.h \
-	xfce-gdk-extensions.h \
-	xfce-gtk-extensions.h \
-	xfce-spawn.h \
-	xfce-filename-input.h \
-	xfce-titled-dialog.h \
+	expidus-dialogs.h \
+	expidus-gdk-extensions.h \
+	expidus-gtk-extensions.h \
+	expidus-spawn.h \
+	expidus-filename-input.h \
+	expidus-titled-dialog.h \
 	$(libexpidus1ui_enum_headers)
 
 libexpidus1ui_built_sources = \
@@ -43,13 +43,13 @@ libexpidus1ui_sources = \
 	$(libexpidus1ui_built_sources) \
 	libexpidus1ui-config.c \
 	libexpidus1ui-private.h \
-	xfce-dialogs.c \
-	xfce-gdk-extensions.c \
-	xfce-gtk-extensions.c \
-	xfce-sm-client.c \
-	xfce-spawn.c \
-	xfce-filename-input.c \
-	xfce-titled-dialog.c
+	expidus-dialogs.c \
+	expidus-gdk-extensions.c \
+	expidus-gtk-extensions.c \
+	expidus-sm-client.c \
+	expidus-spawn.c \
+	expidus-filename-input.c \
+	expidus-titled-dialog.c
 
 ##
 ## GTK+ 3 support library
@@ -106,22 +106,24 @@ INTROSPECTION_GIRS =
 INTROSPECTION_SCANNER_ENV = CC="$(CC)"
 INTROSPECTION_SCANNER_ARGS = \
 	--add-include-path=$(srcdir) \
+	--add-include-path=$(prefix)/include/expidus1 \
 	--add-include-path=$(prefix)/share/gir-1.0 \
 	--warn-all \
-	--identifier-prefix=Xfce \
-	--identifier-prefix=xfce \
-	--identifier-prefix=libxfce \
+	--identifier-prefix=Expidus \
+	--identifier-prefix=expidus \
+	--identifier-prefix=libexpidus \
 	--c-include=libexpidus1ui/libexpidus1ui.h
 INTROSPECTION_COMPILER_ARGS = \
 	--includedir=$(srcdir) \
 	--includedir=$(prefix)/share/gir-1.0 \
+	--includedir=$(prefix)/include/expidus1 \
 	--includedir=.
 
 if HAVE_INTROSPECTION
 introspection_sources = $(libexpidus1ui_2_la_SOURCES)
 
 Libexpidus1ui-2.0.gir: libexpidus1ui-2.la Makefile
-Libexpidus1ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libexpidus1util-1.0
+Libexpidus1ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libxfce4util-1.0
 Libexpidus1ui_2_0_gir_CFLAGS = $(AM_CPPFLAGS)
 Libexpidus1ui_2_0_gir_LIBS = libexpidus1ui-2.la
 Libexpidus1ui_2_0_gir_FILES = $(introspection_sources)
@@ -185,7 +187,7 @@ stamp-libexpidus1ui-enum-types.h: $(libexpidus1ui_enum_headers) Makefile
 	$(AM_V_GEN) ( cd $(srcdir) && glib-mkenums \
 		--fhead "#ifndef __LIBEXPIDUS1UI_ENUM_TYPES_H__\n#define __LIBEXPIDUS1UI_ENUM_TYPES_H__\n\nG_BEGIN_DECLS\n\n" \
 		--fprod "/* enumerations from \"@filename@\" */\n\n" \
-		--vhead "GType @enum_name@_get_type(void) G_GNUC_CONST;\n#define XFCE_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n\n" \
+		--vhead "GType @enum_name@_get_type(void) G_GNUC_CONST;\n#define EXPIDUS_TYPE_@ENUMSHORT@ (@enum_name@_get_type())\n\n" \
 		--ftail "G_END_DECLS\n\n#endif /* !__LIBEXPIDUS1UI_ENUM_TYPES_H__ */" \
 		$(libexpidus1ui_enum_headers) ) >xgen-leth
 	cmp -s xgen-leth libexpidus1ui-enum-types.h || cp xgen-leth libexpidus1ui-enum-types.h

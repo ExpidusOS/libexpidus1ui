@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 Xfce Development Team
+ * Copyright (C) 2020 Expidus Development Team
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ typedef struct
 }
 ContributorGroup;
 
-static const ContributorInfo xfce_contributors_core[] =
+static const ContributorInfo expidus_contributors_core[] =
 {
   { "Alexander Schwinn", "alexxcons@xfce.org" },
   { "Ali Abdallah", "ali@xfce.org" },
@@ -45,7 +45,7 @@ static const ContributorInfo xfce_contributors_core[] =
   { NULL, NULL}
 };
 
-static const ContributorInfo xfce_contributors_active[] =
+static const ContributorInfo expidus_contributors_active[] =
 {
   { "Alistair Buxton", "a.j.buxton@gmail.com" },
   { "Gaël Bonithon", "gael@xfce.org" },
@@ -59,26 +59,26 @@ static const ContributorInfo xfce_contributors_active[] =
   { NULL, NULL }
 };
 
-static const ContributorInfo xfce_contributors_server[] =
+static const ContributorInfo expidus_contributors_server[] =
 {
   { "Romain Bouvier", "skunnyk@alteroot.org" },
   { "Mike Massonnet", "mmassonnet@gmail.com" },
   { NULL, NULL }
 };
 
-static const ContributorInfo xfce_contributors_translators_supervision[] =
+static const ContributorInfo expidus_contributors_translators_supervision[] =
 {
   { "Vinzenz Vietzke", "vinz@vinzv.de" },
   { NULL, NULL }
 };
 
-static const ContributorInfo xfce_contributors_documentation_supervision[] =
+static const ContributorInfo expidus_contributors_documentation_supervision[] =
 {
   { "Kevin Bowen", "kevin.bowen@gmail.com" },
   { NULL, NULL }
 };
 
-static const ContributorInfo xfce_contributors_previous[] =
+static const ContributorInfo expidus_contributors_previous[] =
 {
   { "Andrzej Radecki", "ndrwrdck@gmail.com" },
   { "Auke Kok", "sofar@foo-projects.org" },
@@ -128,30 +128,30 @@ static const ContributorInfo xfce_contributors_previous[] =
   { NULL, NULL }
 };
 
-static const ContributorGroup xfce_contributors[] =
+static const ContributorGroup expidus_contributors[] =
 {
   /*{ N_("Project Lead"),
-    xfce_contributors_lead
+    expidus_contributors_lead
   },*/
   { N_("Core developers"),
-    xfce_contributors_core
+    expidus_contributors_core
   },
   { N_("Active contributors"),
-    xfce_contributors_active
+    expidus_contributors_active
   },
   { N_("Servers maintained by"),
-    xfce_contributors_server
+    expidus_contributors_server
   },
   { N_("Translations supervision"),
-    xfce_contributors_translators_supervision
+    expidus_contributors_translators_supervision
   },
   { N_("Documentation supervision"),
-    xfce_contributors_documentation_supervision
+    expidus_contributors_documentation_supervision
   },
   { N_("Translators"),
     NULL
   },
   { N_("Previous contributors"),
-    xfce_contributors_previous
+    expidus_contributors_previous
   }
 };

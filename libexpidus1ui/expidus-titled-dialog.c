@@ -18,13 +18,13 @@
  */
 
 /**
- * SECTION:xfce-titled-dialog
- * @title: XfceTitledDialog
+ * SECTION:expidus-titled-dialog
+ * @title: ExpidusTitledDialog
  * @short_description: A titled dialog window
  * @stability: Stable
  * @include: libexpidus1ui/libexpidus1ui.h
  *
- * #XfceTitledDialog is a titled dialog window supporting an optional
+ * #ExpidusTitledDialog is a titled dialog window supporting an optional
  * subtitle and mixed or pixbuf buttons.
  **/
 
@@ -38,13 +38,13 @@
 
 #include <gdk/gdkkeysyms.h>
 
-#include <libexpidus1ui/xfce-titled-dialog.h>
+#include <libexpidus1ui/expidus-titled-dialog.h>
 #include <libexpidus1ui/libexpidus1ui-private.h>
 #include <libexpidus1ui/libexpidus1ui-alias.h>
-#include <libexpidus1ui/xfce-gtk-extensions.h>
+#include <libexpidus1ui/expidus-gtk-extensions.h>
 
 
-#define XFCE_TITLED_DIALOG_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), XFCE_TYPE_TITLED_DIALOG, XfceTitledDialogPrivate))
+#define EXPIDUS_TITLED_DIALOG_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), EXPIDUS_TYPE_TITLED_DIALOG, ExpidusTitledDialogPrivate))
 
 
 
@@ -56,24 +56,24 @@ enum
 };
 
 
-static GObject *xfce_titled_dialog_constructor    (GType                   type,
+static GObject *expidus_titled_dialog_constructor    (GType                   type,
                                                    guint                   n_construct_params,
                                                    GObjectConstructParam  *construct_params);
-static void     xfce_titled_dialog_finalize       (GObject                *object);
-static void     xfce_titled_dialog_get_property   (GObject                *object,
+static void     expidus_titled_dialog_finalize       (GObject                *object);
+static void     expidus_titled_dialog_get_property   (GObject                *object,
                                                    guint                   prop_id,
                                                    GValue                 *value,
                                                    GParamSpec             *pspec);
-static void     xfce_titled_dialog_set_property   (GObject                *object,
+static void     expidus_titled_dialog_set_property   (GObject                *object,
                                                    guint                   prop_id,
                                                    const GValue           *value,
                                                    GParamSpec             *pspec);
-static void     xfce_titled_dialog_close          (GtkDialog              *dialog);
-static void     xfce_titled_dialog_update_icon    (XfceTitledDialog       *titled_dialog);
+static void     expidus_titled_dialog_close          (GtkDialog              *dialog);
+static void     expidus_titled_dialog_update_icon    (ExpidusTitledDialog       *titled_dialog);
 
 
 
-struct _XfceTitledDialogPrivate
+struct _ExpidusTitledDialogPrivate
 {
   GtkWidget *headerbar;
   GtkWidget *icon;
@@ -90,31 +90,31 @@ struct _ResponseData
 
 
 
-G_DEFINE_TYPE (XfceTitledDialog, xfce_titled_dialog, GTK_TYPE_DIALOG)
+G_DEFINE_TYPE (ExpidusTitledDialog, expidus_titled_dialog, GTK_TYPE_DIALOG)
 
 
 
 static void
-xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
+expidus_titled_dialog_class_init (ExpidusTitledDialogClass *klass)
 {
   GtkDialogClass *gtkdialog_class;
   GtkBindingSet  *binding_set;
   GObjectClass   *gobject_class;
 
   /* add our private data to the class */
-  g_type_class_add_private (klass, sizeof (XfceTitledDialogPrivate));
+  g_type_class_add_private (klass, sizeof (ExpidusTitledDialogPrivate));
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->constructor = xfce_titled_dialog_constructor;
-  gobject_class->get_property = xfce_titled_dialog_get_property;
-  gobject_class->set_property = xfce_titled_dialog_set_property;
-  gobject_class->finalize = xfce_titled_dialog_finalize;
+  gobject_class->constructor = expidus_titled_dialog_constructor;
+  gobject_class->get_property = expidus_titled_dialog_get_property;
+  gobject_class->set_property = expidus_titled_dialog_set_property;
+  gobject_class->finalize = expidus_titled_dialog_finalize;
 
   gtkdialog_class = GTK_DIALOG_CLASS (klass);
-  gtkdialog_class->close = xfce_titled_dialog_close;
+  gtkdialog_class->close = expidus_titled_dialog_close;
 
   /**
-   * XfceTitledDialog:subtitle:
+   * ExpidusTitledDialog:subtitle:
    *
    * The subtitle displayed below the main dialog title.
    **/
@@ -136,13 +136,13 @@ xfce_titled_dialog_class_init (XfceTitledDialogClass *klass)
 
 
 static GObject *
-xfce_titled_dialog_constructor (GType                  type,
+expidus_titled_dialog_constructor (GType                  type,
                                 guint                  n_construct_params,
                                 GObjectConstructParam *construct_params)
 {
   GObject *object;
 
-  object = G_OBJECT_CLASS (xfce_titled_dialog_parent_class)->constructor (type,
+  object = G_OBJECT_CLASS (expidus_titled_dialog_parent_class)->constructor (type,
                                                            n_construct_params,
                                                            construct_params);
   g_object_set (G_OBJECT (object), "use-header-bar", TRUE, NULL);
@@ -153,10 +153,10 @@ xfce_titled_dialog_constructor (GType                  type,
 
 
 static void
-xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
+expidus_titled_dialog_init (ExpidusTitledDialog *titled_dialog)
 {
   /* connect the private data */
-  titled_dialog->priv = XFCE_TITLED_DIALOG_GET_PRIVATE (titled_dialog);
+  titled_dialog->priv = EXPIDUS_TITLED_DIALOG_GET_PRIVATE (titled_dialog);
 
   /* Get the headerbar of the dialog */
   titled_dialog->priv->headerbar = gtk_dialog_get_header_bar (GTK_DIALOG (titled_dialog));
@@ -172,37 +172,37 @@ xfce_titled_dialog_init (XfceTitledDialog *titled_dialog)
   gtk_widget_show (titled_dialog->priv->icon);
 
   /* make sure to update the icon whenever one of the relevant window properties changes */
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (xfce_titled_dialog_update_icon), NULL);
-  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (xfce_titled_dialog_update_icon), NULL);
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon", G_CALLBACK (expidus_titled_dialog_update_icon), NULL);
+  g_signal_connect (G_OBJECT (titled_dialog), "notify::icon-name", G_CALLBACK (expidus_titled_dialog_update_icon), NULL);
 }
 
 
 
 static void
-xfce_titled_dialog_finalize (GObject *object)
+expidus_titled_dialog_finalize (GObject *object)
 {
-  XfceTitledDialog *titled_dialog = XFCE_TITLED_DIALOG (object);
+  ExpidusTitledDialog *titled_dialog = EXPIDUS_TITLED_DIALOG (object);
 
   /* release the subtitle */
   g_free (titled_dialog->priv->subtitle);
 
-  (*G_OBJECT_CLASS (xfce_titled_dialog_parent_class)->finalize) (object);
+  (*G_OBJECT_CLASS (expidus_titled_dialog_parent_class)->finalize) (object);
 }
 
 
 
 static void
-xfce_titled_dialog_get_property (GObject    *object,
+expidus_titled_dialog_get_property (GObject    *object,
                                  guint       prop_id,
                                  GValue     *value,
                                  GParamSpec *pspec)
 {
-  XfceTitledDialog *titled_dialog = XFCE_TITLED_DIALOG (object);
+  ExpidusTitledDialog *titled_dialog = EXPIDUS_TITLED_DIALOG (object);
 
   switch (prop_id)
     {
     case PROP_SUBTITLE:
-      g_value_set_string (value, xfce_titled_dialog_get_subtitle (titled_dialog));
+      g_value_set_string (value, expidus_titled_dialog_get_subtitle (titled_dialog));
       break;
 
     default:
@@ -214,17 +214,17 @@ xfce_titled_dialog_get_property (GObject    *object,
 
 
 static void
-xfce_titled_dialog_set_property (GObject      *object,
+expidus_titled_dialog_set_property (GObject      *object,
                                  guint         prop_id,
                                  const GValue *value,
                                  GParamSpec   *pspec)
 {
-  XfceTitledDialog *titled_dialog = XFCE_TITLED_DIALOG (object);
+  ExpidusTitledDialog *titled_dialog = EXPIDUS_TITLED_DIALOG (object);
 
   switch (prop_id)
     {
     case PROP_SUBTITLE:
-      xfce_titled_dialog_set_subtitle (titled_dialog, g_value_get_string (value));
+      expidus_titled_dialog_set_subtitle (titled_dialog, g_value_get_string (value));
       break;
 
     default:
@@ -236,7 +236,7 @@ xfce_titled_dialog_set_property (GObject      *object,
 
 
 static void
-xfce_titled_dialog_close (GtkDialog *dialog)
+expidus_titled_dialog_close (GtkDialog *dialog)
 {
   GdkEvent *event;
 
@@ -255,7 +255,7 @@ xfce_titled_dialog_close (GtkDialog *dialog)
 
 
 static void
-xfce_titled_dialog_update_icon (XfceTitledDialog *titled_dialog)
+expidus_titled_dialog_update_icon (ExpidusTitledDialog *titled_dialog)
 {
   const gchar *icon_name = gtk_window_get_icon_name (GTK_WINDOW (titled_dialog));
 
@@ -343,7 +343,7 @@ add_response_data (GtkDialog *dialog,
 
 /* Repack all the buttons that would normally end up in the headerbar to the action area */
 static void
-xfce_titled_dialog_repack_dialog (GtkWidget *action_area,
+expidus_titled_dialog_repack_dialog (GtkWidget *action_area,
                                   GtkWidget *headerbar,
                                   GtkWidget *button,
                                   gint       response_id)
@@ -364,22 +364,22 @@ xfce_titled_dialog_repack_dialog (GtkWidget *action_area,
 
 
 /**
- * xfce_titled_dialog_new:
+ * expidus_titled_dialog_new:
  *
- * Allocates a new #XfceTitledDialog instance.
+ * Allocates a new #ExpidusTitledDialog instance.
  *
- * Return value: the newly allocated #XfceTitledDialog.
+ * Return value: the newly allocated #ExpidusTitledDialog.
  **/
 GtkWidget*
-xfce_titled_dialog_new (void)
+expidus_titled_dialog_new (void)
 {
-  return g_object_new (XFCE_TYPE_TITLED_DIALOG, NULL);
+  return g_object_new (EXPIDUS_TYPE_TITLED_DIALOG, NULL);
 }
 
 
 
 /**
- * xfce_titled_dialog_new_with_buttons:
+ * expidus_titled_dialog_new_with_buttons:
  * @title             : (allow-none): title of the dialog, or %NULL.
  * @parent            : (allow-none): transient parent window of the dialog, or %NULL.
  * @flags             : from #GtkDialogFlags.
@@ -389,12 +389,12 @@ xfce_titled_dialog_new (void)
  * See the documentation of gtk_dialog_new_with_buttons() for details about the
  * parameters and the returned dialog.
  *
- * Return value: the newly allocated #XfceTitledDialog.
+ * Return value: the newly allocated #ExpidusTitledDialog.
  *
- * Deprecated: 4.16: Use #xfce_titled_dialog_new_with_mixed_buttons instead.
+ * Deprecated: 4.16: Use #expidus_titled_dialog_new_with_mixed_buttons instead.
  **/
 GtkWidget*
-xfce_titled_dialog_new_with_buttons (const gchar    *title,
+expidus_titled_dialog_new_with_buttons (const gchar    *title,
                                      GtkWindow      *parent,
                                      GtkDialogFlags  flags,
                                      const gchar    *first_button_text,
@@ -409,7 +409,7 @@ xfce_titled_dialog_new_with_buttons (const gchar    *title,
   gint         response_id;
 
   /* allocate the dialog */
-  dialog = g_object_new (XFCE_TYPE_TITLED_DIALOG,
+  dialog = g_object_new (EXPIDUS_TYPE_TITLED_DIALOG,
                          "destroy-with-parent", ((flags & GTK_DIALOG_DESTROY_WITH_PARENT) != 0),
                          "modal", ((flags & GTK_DIALOG_MODAL) != 0),
                          "title", title,
@@ -433,7 +433,7 @@ G_GNUC_BEGIN_IGNORE_DEPRECATIONS
       button = gtk_button_new_from_stock (button_text);
 G_GNUC_END_IGNORE_DEPRECATIONS
       gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
-      xfce_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
+      expidus_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
       button_text = va_arg (args, const gchar *);
     }
   va_end (args);
@@ -444,7 +444,7 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
 
 /**
- * xfce_titled_dialog_new_with_mixed_buttons:
+ * expidus_titled_dialog_new_with_mixed_buttons:
  * @title                  :  (allow-none):title of the dialog, or %NULL.
  * @parent                 : (allow-none): transient parent window of the dialog, or %NULL.
  * @flags                  : from #GtkDialogFlags.
@@ -452,16 +452,16 @@ G_GNUC_END_IGNORE_DEPRECATIONS
  * @first_button_text      : (allow-none): text to go in first, or %NULL.
  * @...                    : response ID for the first button, then additional buttons, ending with %NULL.
  *
- * Creates an #XfceTitledDialog using xfce_gtk_button_new_mixed. This allows
+ * Creates an #ExpidusTitledDialog using expidus_gtk_button_new_mixed. This allows
  * the buttons to use an optional named or stock icon.
  *
- * Return value: the newly allocated #XfceTitledDialog.
+ * Return value: the newly allocated #ExpidusTitledDialog.
  *
  * Since: 4.14
  *
  **/
 GtkWidget*
-xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
+expidus_titled_dialog_new_with_mixed_buttons (const gchar    *title,
                                            GtkWindow      *parent,
                                            GtkDialogFlags  flags,
                                            const gchar    *first_button_icon_name,
@@ -477,7 +477,7 @@ xfce_titled_dialog_new_with_mixed_buttons (const gchar    *title,
   gint         response_id;
 
   /* allocate the dialog */
-  dialog = g_object_new (XFCE_TYPE_TITLED_DIALOG,
+  dialog = g_object_new (EXPIDUS_TYPE_TITLED_DIALOG,
                          "destroy-with-parent", ((flags & GTK_DIALOG_DESTROY_WITH_PARENT) != 0),
                          "modal", ((flags & GTK_DIALOG_MODAL) != 0),
                          "title", title,
@@ -505,11 +505,11 @@ G_GNUC_END_IGNORE_DEPRECATIONS
       response_id = va_arg (args, gint);
 
       /* build our button and add it */
-      button = xfce_gtk_button_new_mixed (icon_name, button_text);
+      button = expidus_gtk_button_new_mixed (icon_name, button_text);
       gtk_widget_set_can_default (button, TRUE);
 
       gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response_id);
-      xfce_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
+      expidus_titled_dialog_repack_dialog (action_area, headerbar, button, response_id);
       gtk_widget_show (button);
 
       /* this is to pickup for the next button.
@@ -532,13 +532,13 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
 
 /**
- * xfce_titled_dialog_create_action_area:
- * @titled_dialog : a #XfceTitledDialog.
+ * expidus_titled_dialog_create_action_area:
+ * @titled_dialog : a #ExpidusTitledDialog.
  *
  * This function creates a custom action area (of type #GtkButtonBox) and has to
- * be used in combination with #xfce_titled_dialog_add_action_widget.
+ * be used in combination with #expidus_titled_dialog_add_action_widget.
  *
- * When using the XfceTitledDialogClass directly to create dialogs this function is
+ * When using the ExpidusTitledDialogClass directly to create dialogs this function is
  * useful to keep action widgets out of the #GtkHeaderBar in which they would
  * normally end up by calling #gtk_dialog_add_action_widget.
  *
@@ -546,11 +546,11 @@ G_GNUC_END_IGNORE_DEPRECATIONS
  *
  **/
 void
-xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog)
+expidus_titled_dialog_create_action_area (ExpidusTitledDialog *titled_dialog)
 {
   GtkWidget *dialog_vbox;
 
-  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
+  g_return_if_fail (EXPIDUS_IS_TITLED_DIALOG (titled_dialog));
 
   /* Create new buttonbox to act as custom action area for the dialog */
   titled_dialog->priv->action_area = gtk_button_box_new (GTK_ORIENTATION_HORIZONTAL);
@@ -567,13 +567,13 @@ xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog)
 
 
 /**
- * xfce_titled_dialog_add_button:
- * @titled_dialog : a #XfceTitledDialog.
+ * expidus_titled_dialog_add_button:
+ * @titled_dialog : a #ExpidusTitledDialog.
  * @button_text   : text of button.
  * @response_id   : response ID for @child.
  *
  * This function is a replacement for #gtk_dialog_add_button and assumes that
- * you have called #xfce_titled_dialog_create_action_area before.
+ * you have called #expidus_titled_dialog_create_action_area before.
  *
  * Buttons with #GTK_RESPONSE_HELP will be added to the secondary group of children
  * (see #gtk_button_box_set_child_secondary for reference).
@@ -584,20 +584,20 @@ xfce_titled_dialog_create_action_area (XfceTitledDialog *titled_dialog)
  *
  **/
 GtkWidget *
-xfce_titled_dialog_add_button (XfceTitledDialog *titled_dialog,
+expidus_titled_dialog_add_button (ExpidusTitledDialog *titled_dialog,
                                const gchar      *button_text,
                                gint              response_id)
 {
   GtkWidget *button;
 
-  g_return_val_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog), NULL);
+  g_return_val_if_fail (EXPIDUS_IS_TITLED_DIALOG (titled_dialog), NULL);
   g_return_val_if_fail (GTK_IS_WIDGET (titled_dialog->priv->action_area), NULL);
   g_return_val_if_fail (button_text != NULL, NULL);
 
   button = gtk_button_new_with_label (button_text);
   gtk_button_set_use_underline (GTK_BUTTON (button), TRUE);
 
-  xfce_titled_dialog_add_action_widget (titled_dialog, button, response_id);
+  expidus_titled_dialog_add_action_widget (titled_dialog, button, response_id);
 
   return button;
 }
@@ -605,13 +605,13 @@ xfce_titled_dialog_add_button (XfceTitledDialog *titled_dialog,
 
 
 /**
- * xfce_titled_dialog_add_action_widget:
- * @titled_dialog : a #XfceTitledDialog.
+ * expidus_titled_dialog_add_action_widget:
+ * @titled_dialog : a #ExpidusTitledDialog.
  * @child         : an activatable widget.
  * @response_id   : response ID for @child.
  *
  * This function is a replacement for #gtk_dialog_add_action_widget and assumes that
- * you have called #xfce_titled_dialog_create_action_area before.
+ * you have called #expidus_titled_dialog_create_action_area before.
  *
  * Children with #GTK_RESPONSE_HELP will be added to the secondary group of children
  * (see #gtk_button_box_set_child_secondary for reference).
@@ -620,11 +620,11 @@ xfce_titled_dialog_add_button (XfceTitledDialog *titled_dialog,
  *
  **/
 void
-xfce_titled_dialog_add_action_widget (XfceTitledDialog *titled_dialog,
+expidus_titled_dialog_add_action_widget (ExpidusTitledDialog *titled_dialog,
                                       GtkWidget        *child,
                                       gint              response_id)
 {
-  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
+  g_return_if_fail (EXPIDUS_IS_TITLED_DIALOG (titled_dialog));
   g_return_if_fail (GTK_IS_WIDGET (titled_dialog->priv->action_area));
   g_return_if_fail (GTK_IS_WIDGET (child));
 
@@ -640,8 +640,8 @@ xfce_titled_dialog_add_action_widget (XfceTitledDialog *titled_dialog,
 
 
 /**
- * xfce_titled_dialog_set_default_response:
- * @titled_dialog : a #XfceTitledDialog.
+ * expidus_titled_dialog_set_default_response:
+ * @titled_dialog : a #ExpidusTitledDialog.
  * @response_id   : a response ID
  *
  * Sets the last widget in the dialog’s action area with the given @response_id
@@ -649,20 +649,20 @@ xfce_titled_dialog_add_action_widget (XfceTitledDialog *titled_dialog,
  * the default widget.
  *
  * This function is a replacement for #gtk_dialog_set_default_response, which does
- * not work with #XfceTitledDialog.
+ * not work with #ExpidusTitledDialog.
  *
  * Since: 4.16
  *
  **/
 void
-xfce_titled_dialog_set_default_response (XfceTitledDialog *titled_dialog,
+expidus_titled_dialog_set_default_response (ExpidusTitledDialog *titled_dialog,
                                          gint              response_id)
 {
   GtkWidget *action_area;
   GList     *children;
   GList     *tmp_list;
 
-  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
+  g_return_if_fail (EXPIDUS_IS_TITLED_DIALOG (titled_dialog));
 
 G_GNUC_BEGIN_IGNORE_DEPRECATIONS
   action_area = gtk_dialog_get_action_area (GTK_DIALOG (titled_dialog));
@@ -687,8 +687,8 @@ G_GNUC_END_IGNORE_DEPRECATIONS
 
 
 /**
- * xfce_titled_dialog_get_subtitle:
- * @titled_dialog : a #XfceTitledDialog.
+ * expidus_titled_dialog_get_subtitle:
+ * @titled_dialog : a #ExpidusTitledDialog.
  *
  * Returns the subtitle of the @titled_dialog, or %NULL
  * if no subtitle is displayed in the @titled_dialog.
@@ -697,17 +697,17 @@ G_GNUC_END_IGNORE_DEPRECATIONS
  * Return value: the subtitle of @titled_dialog, or %NULL.
  **/
 const gchar*
-xfce_titled_dialog_get_subtitle (XfceTitledDialog *titled_dialog)
+expidus_titled_dialog_get_subtitle (ExpidusTitledDialog *titled_dialog)
 {
-  g_return_val_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog), NULL);
+  g_return_val_if_fail (EXPIDUS_IS_TITLED_DIALOG (titled_dialog), NULL);
   return titled_dialog->priv->subtitle;
 }
 
 
 
 /**
- * xfce_titled_dialog_set_subtitle:
- * @titled_dialog : a #XfceTitledDialog.
+ * expidus_titled_dialog_set_subtitle:
+ * @titled_dialog : a #ExpidusTitledDialog.
  * @subtitle      : the new subtitle for the @titled_dialog, or %NULL.
  *
  * Sets the subtitle displayed by @titled_dialog to @subtitle; if
@@ -715,10 +715,10 @@ xfce_titled_dialog_get_subtitle (XfceTitledDialog *titled_dialog)
  * This is just a convenience function around #gtk_header_bar_set_subtitle.
  **/
 void
-xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
+expidus_titled_dialog_set_subtitle (ExpidusTitledDialog *titled_dialog,
                                  const gchar      *subtitle)
 {
-  g_return_if_fail (XFCE_IS_TITLED_DIALOG (titled_dialog));
+  g_return_if_fail (EXPIDUS_IS_TITLED_DIALOG (titled_dialog));
   g_return_if_fail (subtitle == NULL || g_utf8_validate (subtitle, -1, NULL));
 
   /* release the previous subtitle */
@@ -737,5 +737,5 @@ xfce_titled_dialog_set_subtitle (XfceTitledDialog *titled_dialog,
 
 
 
-#define __XFCE_TITLED_DIALOG_C__
+#define __EXPIDUS_TITLED_DIALOG_C__
 #include <libexpidus1ui/libexpidus1ui-aliasdef.c>

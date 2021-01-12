@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 The Xfce Development Team
+ * Copyright (c) 2020 The Expidus Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -18,8 +18,8 @@
  */
 
 /**
- * SECTION:xfce-filename-input
- * @title: XfceFilenameInput
+ * SECTION:expidus-filename-input
+ * @title: ExpidusFilenameInput
  * @short_description: widget for filename input
  * @stability: Stable
  * @include: libexpidus1ui/libexpidus1ui.h
@@ -45,7 +45,7 @@
 #include <gtk/gtk.h>
 #include <libexpidus1util/libexpidus1util.h>
 
-#include <libexpidus1ui/xfce-filename-input.h>
+#include <libexpidus1ui/expidus-filename-input.h>
 #include <libexpidus1ui/libexpidus1ui-private.h>
 #include <libexpidus1ui/libexpidus1ui-alias.h>
 
@@ -68,29 +68,29 @@ enum
 
 
 
-static void     xfce_filename_input_set_property  (GObject      *object,
+static void     expidus_filename_input_set_property  (GObject      *object,
                                                    guint         prop_id,
                                                    const GValue *value,
                                                    GParamSpec   *pspec);
-static void     xfce_filename_input_finalize      (GObject      *object);
-static void     xfce_filename_input_entry_changed (GtkEditable  *editable,
+static void     expidus_filename_input_finalize      (GObject      *object);
+static void     expidus_filename_input_entry_changed (GtkEditable  *editable,
                                                    gpointer      data);
-static gboolean xfce_filename_input_entry_undo    (GtkWidget    *widget,
+static gboolean expidus_filename_input_entry_undo    (GtkWidget    *widget,
                                                    GdkEvent     *event,
                                                    gpointer      data);
 
 
 
-struct _XfceFilenameInputClass
+struct _ExpidusFilenameInputClass
 {
   GtkBoxClass parent;
 
   /* signals */
-  void (*text_valid)   (XfceFilenameInput *filename_input);
-  void (*text_invalid) (XfceFilenameInput *filename_input);
+  void (*text_valid)   (ExpidusFilenameInput *filename_input);
+  void (*text_invalid) (ExpidusFilenameInput *filename_input);
 };
 
-struct _XfceFilenameInput
+struct _ExpidusFilenameInput
 {
   GtkBox    parent;
 
@@ -106,20 +106,20 @@ struct _XfceFilenameInput
 
 static guint signals[N_SIGS];
 
-G_DEFINE_TYPE (XfceFilenameInput, xfce_filename_input, GTK_TYPE_BOX)
+G_DEFINE_TYPE (ExpidusFilenameInput, expidus_filename_input, GTK_TYPE_BOX)
 
 
 
 static void
-xfce_filename_input_class_init (XfceFilenameInputClass *klass)
+expidus_filename_input_class_init (ExpidusFilenameInputClass *klass)
 {
   GObjectClass *gobject_class = (GObjectClass *)klass;
 
-  gobject_class->finalize = xfce_filename_input_finalize;
-  gobject_class->set_property = xfce_filename_input_set_property;
+  gobject_class->finalize = expidus_filename_input_finalize;
+  gobject_class->set_property = expidus_filename_input_set_property;
 
   /**
-   * XfceFilenameInput:original-filename:
+   * ExpidusFilenameInput:original-filename:
    *
    * The original name of the file, to be used as the initial text
    * displayed in the GtkEntry. A NULL value indicates no original
@@ -137,7 +137,7 @@ xfce_filename_input_class_init (XfceFilenameInputClass *klass)
                            G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS));
 
   /**
-   * XfceFilenameInput:max-text-length:
+   * ExpidusFilenameInput:max-text-length:
    *
    * The maximum permitted length of a filename. A value of -1
    * indicates no maximum length.
@@ -154,8 +154,8 @@ xfce_filename_input_class_init (XfceFilenameInputClass *klass)
                         G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY | G_PARAM_STATIC_STRINGS));
 
   /**
-   * XfceFilenameInput::text-valid:
-   * @filename_input: An #XfceFilenameInput
+   * ExpidusFilenameInput::text-valid:
+   * @filename_input: An #ExpidusFilenameInput
    *
    * Signals that the current text is a valid filename. This signal is
    * emitted whenever the user changes the text and the result is a valid
@@ -167,14 +167,14 @@ xfce_filename_input_class_init (XfceFilenameInputClass *klass)
   signals[SIG_TEXT_VALID] = g_signal_new  ("text-valid",
                                            G_TYPE_FROM_CLASS (klass),
                                            G_SIGNAL_RUN_LAST,
-                                           G_STRUCT_OFFSET (XfceFilenameInputClass,
+                                           G_STRUCT_OFFSET (ExpidusFilenameInputClass,
                                                             text_valid),
                                            NULL, NULL, NULL,
                                            G_TYPE_NONE, 0);
 
   /**
-   * XfceFilenameInput::text-invalid:
-   * @filename_input: An #XfceFilenameInput
+   * ExpidusFilenameInput::text-invalid:
+   * @filename_input: An #ExpidusFilenameInput
    *
    * Signals that the current text is not a valid filename. This signal is
    * emitted whenever the user changes the text and the result is not a valid
@@ -186,14 +186,14 @@ xfce_filename_input_class_init (XfceFilenameInputClass *klass)
   signals[SIG_TEXT_VALID] = g_signal_new  ("text-invalid",
                                            G_TYPE_FROM_CLASS (klass),
                                            G_SIGNAL_RUN_LAST,
-                                           G_STRUCT_OFFSET (XfceFilenameInputClass,
+                                           G_STRUCT_OFFSET (ExpidusFilenameInputClass,
                                                             text_invalid),
                                            NULL, NULL, NULL,
                                            G_TYPE_NONE, 0);
 }
 
 static void
-xfce_filename_input_init (XfceFilenameInput *filename_input)
+expidus_filename_input_init (ExpidusFilenameInput *filename_input)
 {
   GError *err = NULL;
 
@@ -223,20 +223,20 @@ xfce_filename_input_init (XfceFilenameInput *filename_input)
 
   /* allow reverting the filename with ctrl + z */
   g_signal_connect (filename_input->entry, "key-press-event",
-                    G_CALLBACK (xfce_filename_input_entry_undo), filename_input);
+                    G_CALLBACK (expidus_filename_input_entry_undo), filename_input);
 
   /* set up a callback to check the input text whenever it is changed*/
   g_signal_connect (filename_input->entry, "changed",
-                    G_CALLBACK (xfce_filename_input_entry_changed), filename_input);
+                    G_CALLBACK (expidus_filename_input_entry_changed), filename_input);
 }
 
 static void
-xfce_filename_input_set_property (GObject      *object,
+expidus_filename_input_set_property (GObject      *object,
                                   guint         prop_id,
                                   const GValue *value,
                                   GParamSpec   *pspec)
 {
-  XfceFilenameInput *filename_input = XFCE_FILENAME_INPUT (object);
+  ExpidusFilenameInput *filename_input = EXPIDUS_FILENAME_INPUT (object);
   const gchar       *filename;
 
   switch (prop_id)
@@ -260,21 +260,21 @@ xfce_filename_input_set_property (GObject      *object,
 }
 
 static void
-xfce_filename_input_finalize (GObject *object)
+expidus_filename_input_finalize (GObject *object)
 {
-  XfceFilenameInput *filename_input = XFCE_FILENAME_INPUT (object);
+  ExpidusFilenameInput *filename_input = EXPIDUS_FILENAME_INPUT (object);
 
   g_regex_unref (filename_input->whitespace_regex);
   g_regex_unref (filename_input->dir_sep_regex);
 
   g_free (filename_input->original_filename);
 
-  (*G_OBJECT_CLASS (xfce_filename_input_parent_class)->finalize) (object);
+  (*G_OBJECT_CLASS (expidus_filename_input_parent_class)->finalize) (object);
 }
 
 /**
- * xfce_filename_input_get_text:
- * @filename_input     : a #XfceFilenameInput instance.
+ * expidus_filename_input_get_text:
+ * @filename_input     : a #ExpidusFilenameInput instance.
  *
  * Gets the current text of the widget.
  *
@@ -284,9 +284,9 @@ xfce_filename_input_finalize (GObject *object)
  *
  **/
 const gchar*
-xfce_filename_input_get_text (XfceFilenameInput *filename_input)
+expidus_filename_input_get_text (ExpidusFilenameInput *filename_input)
 {
-  g_return_val_if_fail (XFCE_IS_FILENAME_INPUT (filename_input), NULL);
+  g_return_val_if_fail (EXPIDUS_IS_FILENAME_INPUT (filename_input), NULL);
 
   /* NB the returned string must not be modified or freed,
      as it belongs to the GtkEntry */
@@ -294,8 +294,8 @@ xfce_filename_input_get_text (XfceFilenameInput *filename_input)
 }
 
 /**
- * xfce_filename_input_check:
- * @filename_input     : a #XfceFilenameInput instance.
+ * expidus_filename_input_check:
+ * @filename_input     : a #ExpidusFilenameInput instance.
  *
  * Forces a check of the current input text even when it has not changed.
  * This is useful to force the appropriate signal to be sent to indicate
@@ -307,16 +307,16 @@ xfce_filename_input_get_text (XfceFilenameInput *filename_input)
  *
  **/
 void
-xfce_filename_input_check (XfceFilenameInput *filename_input)
+expidus_filename_input_check (ExpidusFilenameInput *filename_input)
 {
-  g_return_if_fail (XFCE_IS_FILENAME_INPUT (filename_input));
+  g_return_if_fail (EXPIDUS_IS_FILENAME_INPUT (filename_input));
 
   g_signal_emit_by_name (filename_input->entry, "changed", 0);
 }
 
 /**
- * xfce_filename_input_get_entry:
- * @filename_input     : a #XfceFilenameInput instance.
+ * expidus_filename_input_get_entry:
+ * @filename_input     : a #ExpidusFilenameInput instance.
  *
  * Gets the #GtkEntry associated to filename_input
  *
@@ -326,15 +326,15 @@ xfce_filename_input_check (XfceFilenameInput *filename_input)
  *
  **/
 GtkEntry*
-xfce_filename_input_get_entry (XfceFilenameInput *filename_input)
+expidus_filename_input_get_entry (ExpidusFilenameInput *filename_input)
 {
-  g_return_val_if_fail (XFCE_IS_FILENAME_INPUT (filename_input), NULL);
+  g_return_val_if_fail (EXPIDUS_IS_FILENAME_INPUT (filename_input), NULL);
 
   return filename_input->entry;
 }
 
 /**
- * xfce_filename_input_sensitise_widget:
+ * expidus_filename_input_sensitise_widget:
  * @widget     : a #GtkWidget
  *
  * A convenience function to be connected as a callback for the  "text-valid" signal
@@ -345,13 +345,13 @@ xfce_filename_input_get_entry (XfceFilenameInput *filename_input)
  *
  **/
 void
-xfce_filename_input_sensitise_widget (GtkWidget *widget)
+expidus_filename_input_sensitise_widget (GtkWidget *widget)
 {
   gtk_widget_set_sensitive (widget, TRUE);
 }
 
 /**
- * xfce_filename_input_desensitise_widget:
+ * expidus_filename_input_desensitise_widget:
  * @widget     : a #GtkWidget
  *
  * A convenience function to be connected as a callback for the  "text-invalid" signal
@@ -362,16 +362,16 @@ xfce_filename_input_sensitise_widget (GtkWidget *widget)
  *
  **/
 void
-xfce_filename_input_desensitise_widget (GtkWidget *widget)
+expidus_filename_input_desensitise_widget (GtkWidget *widget)
 {
   gtk_widget_set_sensitive (widget, FALSE);
 }
 
 static void
-xfce_filename_input_entry_changed (GtkEditable *editable,
+expidus_filename_input_entry_changed (GtkEditable *editable,
                                    gpointer     data)
 {
-  XfceFilenameInput *filename_input;
+  ExpidusFilenameInput *filename_input;
   GtkEntry          *entry;
   GtkLabel          *label;
 
@@ -385,8 +385,8 @@ xfce_filename_input_entry_changed (GtkEditable *editable,
   g_return_if_fail (GTK_IS_ENTRY (editable));
   entry = GTK_ENTRY (editable);
 
-  g_return_if_fail (XFCE_IS_FILENAME_INPUT (data));
-  filename_input = XFCE_FILENAME_INPUT (data);
+  g_return_if_fail (EXPIDUS_IS_FILENAME_INPUT (data));
+  filename_input = EXPIDUS_FILENAME_INPUT (data);
   label = filename_input->label;
 
   /* get the string representing the current text of the GtkEntry */
@@ -447,16 +447,16 @@ xfce_filename_input_entry_changed (GtkEditable *editable,
 }
 
 static gboolean
-xfce_filename_input_entry_undo (GtkWidget  *widget,
+expidus_filename_input_entry_undo (GtkWidget  *widget,
                                 GdkEvent   *event,
                                 gpointer    data)
 {
   guint              keyval;
   GdkModifierType    state;
-  XfceFilenameInput *filename_input;
+  ExpidusFilenameInput *filename_input;
 
-  g_return_val_if_fail (XFCE_IS_FILENAME_INPUT (data), GDK_EVENT_PROPAGATE);
-  filename_input = XFCE_FILENAME_INPUT (data);
+  g_return_val_if_fail (EXPIDUS_IS_FILENAME_INPUT (data), GDK_EVENT_PROPAGATE);
+  filename_input = EXPIDUS_FILENAME_INPUT (data);
 
   /* if there is no original filename to restore, we are done */
   if (filename_input->original_filename == NULL)
@@ -478,5 +478,5 @@ xfce_filename_input_entry_undo (GtkWidget  *widget,
   return GDK_EVENT_PROPAGATE;
 }
 
-#define __XFCE_FILENAME_INPUT_C__
+#define __EXPIDUS_FILENAME_INPUT_C__
 #include <libexpidus1ui/libexpidus1ui-aliasdef.c>

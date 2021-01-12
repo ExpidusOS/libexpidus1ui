@@ -19,5 +19,5 @@
 
 #include <glib.h>
 
-const gchar *xfce_shortcuts_xfwm4_get_feature_name (const gchar *feature);
-GList       *xfce_shortcuts_xfwm4_get_feature_list (void);
+const gchar *expidus_shortcuts_eswm1_get_feature_name (const gchar *feature);
+GList       *expidus_shortcuts_eswm1_get_feature_list (void);

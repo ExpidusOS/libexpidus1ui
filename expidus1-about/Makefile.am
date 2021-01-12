@@ -58,7 +58,7 @@ DISTCLEANFILES = \
 if MAINTAINER_MODE
 
 about-dialog-ui.h: $(srcdir)/expidus1-about-dialog.glade Makefile
-	$(AM_V_GEN) xdt-csource --static --strip-comments --strip-content --name=xfce_about_dialog_ui $< >$@
+	$(AM_V_GEN) xdt-csource --static --strip-comments --strip-content --name=expidus_about_dialog_ui $< >$@
 
 BUILT_SOURCES = \
 	$(expidus1_about_built_sources)

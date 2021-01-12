@@ -12,24 +12,24 @@ AM_CPPFLAGS = \
 	$(PLATFORM_CPPFLAGS)
 
 libexpidus1kbd_headers = \
-	xfce-shortcuts-provider.h \
-	xfce-shortcuts-grabber.h \
-	xfce-shortcut-dialog.h \
-	xfce-shortcuts.h \
-	xfce-shortcuts-xfwm4.h
+	expidus-shortcuts-provider.h \
+	expidus-shortcuts-grabber.h \
+	expidus-shortcut-dialog.h \
+	expidus-shortcuts.h \
+	expidus-shortcuts-eswm1.h
 
 libexpidus1kbd_built_sources = \
-	xfce-shortcuts-marshal.c \
-	xfce-shortcuts-marshal.h
+	expidus-shortcuts-marshal.c \
+	expidus-shortcuts-marshal.h
 
 libexpidus1kbd_sources = \
 	$(libexpidus1kbd_headers) \
 	$(libexpidus1kbd_built_sources) \
-	xfce-shortcuts-provider.c \
-	xfce-shortcuts-grabber.c \
-	xfce-shortcut-dialog.c \
-	xfce-shortcuts.c \
-	xfce-shortcuts-xfwm4.c
+	expidus-shortcuts-provider.c \
+	expidus-shortcuts-grabber.c \
+	expidus-shortcut-dialog.c \
+	expidus-shortcuts.c \
+	expidus-shortcuts-eswm1.c
 
 
 lib_LTLIBRARIES = libexpidus1kbd-private-3.la
@@ -68,7 +68,7 @@ libexpidus1kbd_private_3_la_LIBADD = \
 	$(LIBEXPIDUS1UTIL_LIBS) \
 	$(ESCONF_LIBS)
 
-settingsdir = $(sysconfdir)/xdg/expidus1/esconf/xfce-perchannel-xml
+settingsdir = $(sysconfdir)/xdg/expidus1/esconf/expidus-perchannel-xml
 settings_DATA = expidus1-keyboard-shortcuts.xml
 
 pkgconfigdir = $(libdir)/pkgconfig
@@ -76,12 +76,12 @@ pkgconfig_DATA = libexpidus1kbd-private-3.pc
 
 
 if MAINTAINER_MODE
-xfce-shortcuts-marshal.h: xfce-shortcuts-marshal.list Makefile
-	$(AM_V_GEN) glib-genmarshal --prefix=_xfce_shortcuts_marshal --internal --header $< > $@
+expidus-shortcuts-marshal.h: expidus-shortcuts-marshal.list Makefile
+	$(AM_V_GEN) glib-genmarshal --prefix=_expidus_shortcuts_marshal --internal --header $< > $@
 
-xfce-shortcuts-marshal.c: xfce-shortcuts-marshal.list Makefile xfce-shortcuts-marshal.h
-	$(AM_V_GEN) echo "#include \"xfce-shortcuts-marshal.h\"" > $@ \
-	&& glib-genmarshal --prefix=_xfce_shortcuts_marshal --body $< >> $@
+expidus-shortcuts-marshal.c: expidus-shortcuts-marshal.list Makefile expidus-shortcuts-marshal.h
+	$(AM_V_GEN) echo "#include \"expidus-shortcuts-marshal.h\"" > $@ \
+	&& glib-genmarshal --prefix=_expidus_shortcuts_marshal --body $< >> $@
 
 DISTCLEANFILES = \
 	$(libexpidus1kbd_built_sources)
@@ -92,7 +92,7 @@ endif
 
 EXTRA_DIST = \
 	$(settings_DATA) \
-	xfce-shortcuts-marshal.list
+	expidus-shortcuts-marshal.list
 
 # required for gtk-doc
 dist-hook: all

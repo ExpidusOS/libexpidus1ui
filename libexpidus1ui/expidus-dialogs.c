@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2006-2007 Benedikt Meurer <benny@xfce.org>
- * Copyright (c) 2019      The Xfce Development Team
+ * Copyright (c) 2019      The Expidus Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -19,13 +19,13 @@
  */
 
 /**
- * SECTION:xfce-dialogs
- * @title: XfceDialogs
+ * SECTION:expidus-dialogs
+ * @title: ExpidusDialogs
  * @short_description: A collection of helper dialogs
  * @stability: Stable
  * @include: libexpidus1ui/libexpidus1ui.h
  *
- * Xfce-dialogs are a collection of helper dialogs to display
+ * Expidus-dialogs are a collection of helper dialogs to display
  * the help dialog with link to the docs website, warning, info, and
  * error dialogs and more.
  **/
@@ -47,36 +47,36 @@
 #include <gtk/gtk.h>
 #include <libexpidus1util/libexpidus1util.h>
 
-#include <libexpidus1ui/xfce-dialogs.h>
-#include <libexpidus1ui/xfce-gtk-extensions.h>
-#include <libexpidus1ui/xfce-gdk-extensions.h>
-#include <libexpidus1ui/xfce-spawn.h>
+#include <libexpidus1ui/expidus-dialogs.h>
+#include <libexpidus1ui/expidus-gtk-extensions.h>
+#include <libexpidus1ui/expidus-gdk-extensions.h>
+#include <libexpidus1ui/expidus-spawn.h>
 #include <libexpidus1ui/libexpidus1ui-private.h>
 #include <libexpidus1ui/libexpidus1ui-alias.h>
 
 #include "libexpidus1ui-resources.h"
 
 static void
-xfce_dialog_show_help_auto_toggled (GtkWidget *button)
+expidus_dialog_show_help_auto_toggled (GtkWidget *button)
 {
-  XfceRc   *rc;
+  ExpidusRc   *rc;
   gboolean  active = FALSE;
 
   if (button != NULL)
     active = gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (button));
 
-  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "expidus1/help.rc", FALSE);
+  rc = expidus_rc_config_open (EXPIDUS_RESOURCE_CONFIG, "expidus1/help.rc", FALSE);
   if (rc != NULL)
     {
-      xfce_rc_write_bool_entry (rc, "auto-online", active);
-      xfce_rc_close (rc);
+      expidus_rc_write_bool_entry (rc, "auto-online", active);
+      expidus_rc_close (rc);
     }
 }
 
 
 
 static void
-xfce_dialog_show_help_uri (GdkScreen *screen,
+expidus_dialog_show_help_uri (GdkScreen *screen,
                            GtkWindow *parent,
                            GString   *uri)
 {
@@ -93,7 +93,7 @@ xfce_dialog_show_help_uri (GdkScreen *screen,
     {
       cmd = g_strdup_printf ("%s --launch WebBrowser '%s'", path, uri->str);
 
-      result = xfce_spawn_command_line_on_screen (screen, cmd, FALSE, TRUE, &error);
+      result = expidus_spawn_command_line_on_screen (screen, cmd, FALSE, TRUE, &error);
 
       g_free (path);
       g_free (cmd);
@@ -106,7 +106,7 @@ xfce_dialog_show_help_uri (GdkScreen *screen,
 
   if (!result)
     {
-      xfce_dialog_show_error (parent, error,
+      expidus_dialog_show_error (parent, error,
           _("Failed to open web browser for online documentation"));
       g_error_free (error);
     }
@@ -115,7 +115,7 @@ xfce_dialog_show_help_uri (GdkScreen *screen,
 
 
 static void
-xfce_dialog_show_help_response (GtkWidget *dialog,
+expidus_dialog_show_help_response (GtkWidget *dialog,
                                 gint       response_id,
                                 GString   *uri)
 {
@@ -123,14 +123,14 @@ xfce_dialog_show_help_response (GtkWidget *dialog,
 
   if (response_id == GTK_RESPONSE_YES)
     {
-      xfce_dialog_show_help_uri (gtk_widget_get_screen (dialog),
+      expidus_dialog_show_help_uri (gtk_widget_get_screen (dialog),
                                  gtk_window_get_transient_for (GTK_WINDOW (dialog)),
                                  uri);
     }
   else
     {
       /* unset auto */
-      xfce_dialog_show_help_auto_toggled (NULL);
+      expidus_dialog_show_help_auto_toggled (NULL);
     }
 
   g_string_free (uri, TRUE);
@@ -140,7 +140,7 @@ xfce_dialog_show_help_response (GtkWidget *dialog,
 
 
 /**
- * xfce_dialog_show_help:
+ * expidus_dialog_show_help:
  * @parent    : (allow-none): transient parent of the dialog, or %NULL.
  * @component : (allow-none): name of the component opening the help page or %NULL. If the
  *              value is %NULL the target will be the main page of the
@@ -152,47 +152,47 @@ xfce_dialog_show_help_response (GtkWidget *dialog,
  * the webbrowser and redirect the user to the correct location.
  *
  * Appart from the @component, @page and @offset the following information
- * is also send to the server: user language and the xfce_version_string().
+ * is also send to the server: user language and the expidus_version_string().
  *
- * See also: xfce_dialog_show_help_with_version().
+ * See also: expidus_dialog_show_help_with_version().
  *
  * Since: 4.10
  */
 void
-xfce_dialog_show_help (GtkWindow   *parent,
+expidus_dialog_show_help (GtkWindow   *parent,
                        const gchar *component,
                        const gchar *page,
                        const gchar *offset)
 {
-  xfce_dialog_show_help_with_version (parent, component, page, offset, NULL);
+  expidus_dialog_show_help_with_version (parent, component, page, offset, NULL);
 }
 
 
 
 /**
- * xfce_dialog_show_help_with_version:
+ * expidus_dialog_show_help_with_version:
  * @parent    : (allow-none): transient parent of the dialog, or %NULL.
  * @component : (allow-none): name of the component opening the help page or %NULL. If the
  *              value is %NULL the target will be the main page of the
  *              documentation website.
  * @page      : (allow-none): subpage of the @component on the website or %NULL.
  * @offset    : (allow-none): anchor offset in @page or %NULL.
- * @version   : (allow-none): alternative version, or %NULL to use xfce_version_string().
+ * @version   : (allow-none): alternative version, or %NULL to use expidus_version_string().
  *
  * Asks the user to visit the online documentation. If confirmed, it will open
  * the webbrowser and redirect the user to the correct location.
  *
  * Apart from the @component, @page and @offset the following information
- * is also sent to the server: user language and the xfce_version_string()
+ * is also sent to the server: user language and the expidus_version_string()
  * or @version if set.
  *
- * See also: xfce_dialog_show_help().
+ * See also: expidus_dialog_show_help().
  *
  * Since: 4.12
  *
  */
 void
-xfce_dialog_show_help_with_version (GtkWindow   *parent,
+expidus_dialog_show_help_with_version (GtkWindow   *parent,
                                     const gchar *component,
                                     const gchar *page,
                                     const gchar *offset,
@@ -205,7 +205,7 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
   gchar       *locale;
   GtkWidget   *message_box;
   GtkWidget   *button;
-  XfceRc      *rc;
+  ExpidusRc      *rc;
   gboolean     auto_online;
   GdkScreen   *screen;
 
@@ -220,7 +220,7 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
 
   /* use desktop version if none is set */
   if (version == NULL)
-    version = xfce_version_string ();
+    version = expidus_version_string ();
 
   /* build the redirect uri */
   uri = g_string_new (MANUAL_WEBSITE);
@@ -235,20 +235,20 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
     g_string_append_printf (uri, "&offset=%s", offset);
 
   /* check if we should automatically go online */
-  rc = xfce_rc_config_open (XFCE_RESOURCE_CONFIG, "expidus1/help.rc", TRUE);
+  rc = expidus_rc_config_open (EXPIDUS_RESOURCE_CONFIG, "expidus1/help.rc", TRUE);
   if (rc != NULL)
     {
-      auto_online = xfce_rc_read_bool_entry (rc, "auto-online", FALSE);
-      xfce_rc_close (rc);
+      auto_online = expidus_rc_read_bool_entry (rc, "auto-online", FALSE);
+      expidus_rc_close (rc);
 
       if (auto_online)
         {
           if (parent != NULL)
             screen = gtk_window_get_screen (GTK_WINDOW (parent));
           else
-            screen = xfce_gdk_screen_get_active (NULL);
+            screen = expidus_gdk_screen_get_active (NULL);
 
-          xfce_dialog_show_help_uri (screen, parent, uri);
+          expidus_dialog_show_help_uri (screen, parent, uri);
           g_string_free (uri, TRUE);
 
           return;
@@ -266,7 +266,7 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
   else
     primary = g_strdup (_("Do you want to read the manual online?"));
 
-  dialog = xfce_message_dialog_new (parent,
+  dialog = expidus_message_dialog_new (parent,
                                     NULL,
                                     "dialog-question",
                                     primary,
@@ -288,7 +288,7 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
   g_object_set (G_OBJECT (button), "halign", GTK_ALIGN_END, "margin-start", 6, "margin-end", 6, NULL);
   gtk_widget_set_hexpand (button, TRUE);
   g_signal_connect (G_OBJECT (button), "toggled",
-      G_CALLBACK (xfce_dialog_show_help_auto_toggled), NULL);
+      G_CALLBACK (expidus_dialog_show_help_auto_toggled), NULL);
   gtk_widget_show (button);
 
   /* don't focus the checkbutton */
@@ -299,14 +299,14 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
   /* show the dialog without locking the mainloop */
   gtk_window_set_modal (GTK_WINDOW (dialog), parent != NULL);
   g_signal_connect (G_OBJECT (dialog), "response",
-      G_CALLBACK (xfce_dialog_show_help_response), uri);
+      G_CALLBACK (expidus_dialog_show_help_response), uri);
   gtk_window_present (GTK_WINDOW (dialog));
 }
 
 
 
 /**
- * xfce_dialog_show_info:
+ * expidus_dialog_show_info:
  * @parent         : (allow-none): transient parent of the dialog, or %NULL.
  * @secondary_text : (allow-none): secondary text of the dialog or %NULL.
  * @primary_format : the printf()-style format for the primary problem description.
@@ -315,7 +315,7 @@ xfce_dialog_show_help_with_version (GtkWindow   *parent,
  * Displays an information dialog on @parent using the @primary_format as message.
  */
 void
-xfce_dialog_show_info (GtkWindow   *parent,
+expidus_dialog_show_info (GtkWindow   *parent,
                        const gchar *secondary_text,
                        const gchar *primary_format,
                        ...)
@@ -329,10 +329,10 @@ xfce_dialog_show_info (GtkWindow   *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, NULL,
+  expidus_message_dialog (parent, NULL,
                        "dialog-information",
                        primary_text, secondary_text,
-                       XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
+                       EXPIDUS_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
                        GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
@@ -341,7 +341,7 @@ xfce_dialog_show_info (GtkWindow   *parent,
 
 
 /**
- * xfce_dialog_show_warning:
+ * expidus_dialog_show_warning:
  * @parent         : (allow-none): transient parent of the dialog, or %NULL.
  * @secondary_text : (allow-none): secondary text of the dialog or %NULL.
  * @primary_format : the printf()-style format for the primary problem description.
@@ -350,7 +350,7 @@ xfce_dialog_show_info (GtkWindow   *parent,
  * Displays a warning dialog on @parent using the @primary_format as message.
  */
 void
-xfce_dialog_show_warning (GtkWindow   *parent,
+expidus_dialog_show_warning (GtkWindow   *parent,
                           const gchar *secondary_text,
                           const gchar *primary_format,
                           ...)
@@ -364,10 +364,10 @@ xfce_dialog_show_warning (GtkWindow   *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, NULL,
+  expidus_message_dialog (parent, NULL,
                        "dialog-warning",
                        primary_text, secondary_text,
-                       XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
+                       EXPIDUS_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
                        GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
@@ -376,7 +376,7 @@ xfce_dialog_show_warning (GtkWindow   *parent,
 
 
 /**
- * xfce_dialog_show_error:
+ * expidus_dialog_show_error:
  * @parent         : (allow-none): transient parent of the dialog, or %NULL.
  * @error          : (allow-none): a #GError, which gives a more precise description of the problem or %NULL.
  * @primary_format : the printf()-style format for the primary problem description.
@@ -386,7 +386,7 @@ xfce_dialog_show_warning (GtkWindow   *parent,
  * displaying @error as secondary error text.
  */
 void
-xfce_dialog_show_error (GtkWindow    *parent,
+expidus_dialog_show_error (GtkWindow    *parent,
                         const GError *error,
                         const gchar  *primary_format,
                         ...)
@@ -400,10 +400,10 @@ xfce_dialog_show_error (GtkWindow    *parent,
   primary_text = g_strdup_vprintf (primary_format, args);
   va_end (args);
 
-  xfce_message_dialog (parent, NULL,
+  expidus_message_dialog (parent, NULL,
                        "dialog-error",
                        primary_text, error ? error->message : NULL,
-                       XFCE_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
+                       EXPIDUS_BUTTON_TYPE_MIXED, "window-close-symbolic", _("Close"),
                        GTK_RESPONSE_CLOSE, NULL);
 
   g_free (primary_text);
@@ -412,7 +412,7 @@ xfce_dialog_show_error (GtkWindow    *parent,
 
 
 /**
- * xfce_dialog_confirm:
+ * expidus_dialog_confirm:
  * @parent         : (allow-none): transient parent of the dialog, or %NULL.
  * @stock_id       : the stock name of the confirm button, for example #GTK_STOCK_YES or #GTK_STOCK_CLEAR.
  * @confirm_label  : (allow-none): if non-%NULL, this text is used on the confirm button together with the @stock_id icon.
@@ -428,7 +428,7 @@ xfce_dialog_show_error (GtkWindow    *parent,
  * Return value: TRUE if the user confirms, else FALSE.
  */
 gboolean
-xfce_dialog_confirm (GtkWindow   *parent,
+expidus_dialog_confirm (GtkWindow   *parent,
                      const gchar *stock_id,
                      const gchar *confirm_label,
                      const gchar *secondary_text,
@@ -459,12 +459,12 @@ xfce_dialog_confirm (GtkWindow   *parent,
       no_stock_id = _("Cancel");
     }
 
-  response_id = xfce_message_dialog (parent, NULL,
+  response_id = expidus_message_dialog (parent, NULL,
                                      "dialog-question",
                                      primary_text,
                                      secondary_text,
                                      no_stock_id, GTK_RESPONSE_NO,
-                                     XFCE_BUTTON_TYPE_MIXED, stock_id, confirm_label, GTK_RESPONSE_YES,
+                                     EXPIDUS_BUTTON_TYPE_MIXED, stock_id, confirm_label, GTK_RESPONSE_YES,
                                      NULL);
 
   g_free (primary_text);
@@ -475,7 +475,7 @@ xfce_dialog_confirm (GtkWindow   *parent,
 
 
 /**
- * xfce_dialog_confirm_close_tabs:
+ * expidus_dialog_confirm_close_tabs:
  * @parent              : (allow-none): transient parent of the dialog, or %NULL.
  * @num_tabs            : the number of open tabs for display to user
  * @show_confirm_box    : whether to ask the user if this confirmation shall be shown in the future
@@ -502,7 +502,7 @@ xfce_dialog_confirm (GtkWindow   *parent,
  * Since: 4.16
  */
 gint
-xfce_dialog_confirm_close_tabs (GtkWindow *parent,
+expidus_dialog_confirm_close_tabs (GtkWindow *parent,
                                 gint       num_tabs,
                                 gboolean   show_confirm_box,
                                 gboolean  *confirm_box_checked)
@@ -525,14 +525,14 @@ xfce_dialog_confirm_close_tabs (GtkWindow *parent,
 
   warning_icon = "dialog-warning";
 
-  dialog = xfce_message_dialog_new (parent,
+  dialog = expidus_message_dialog_new (parent,
                                     _("Warning"),
                                     warning_icon,
                                     primary_text,
                                     secondary_text,
-                                    XFCE_BUTTON_TYPE_MIXED, NULL, _("_Cancel"), GTK_RESPONSE_CANCEL,
-                                    XFCE_BUTTON_TYPE_MIXED, NULL, _("Close T_ab"), GTK_RESPONSE_CLOSE,
-                                    XFCE_BUTTON_TYPE_MIXED, NULL, _("Close _Window"), GTK_RESPONSE_YES,
+                                    EXPIDUS_BUTTON_TYPE_MIXED, NULL, _("_Cancel"), GTK_RESPONSE_CANCEL,
+                                    EXPIDUS_BUTTON_TYPE_MIXED, NULL, _("Close T_ab"), GTK_RESPONSE_CLOSE,
+                                    EXPIDUS_BUTTON_TYPE_MIXED, NULL, _("Close _Window"), GTK_RESPONSE_YES,
                                     NULL);
 
   if (show_confirm_box)
@@ -559,7 +559,7 @@ xfce_dialog_confirm_close_tabs (GtkWindow *parent,
 
 
 /**
- * xfce_message_dialog_new_valist:
+ * expidus_message_dialog_new_valist:
  * @parent            : (allow-none): transient parent of the dialog, or %NULL.
  * @title             : (allow-none): title of the dialog, or %NULL.
  * @icon_stock_id     : gtk stock icon name to show in the dialog.
@@ -568,13 +568,13 @@ xfce_dialog_confirm_close_tabs (GtkWindow *parent,
  * @first_button_text : text for the first button.
  * @args              : argument list.
  *
- * See xfce_message_dialog_new(), this version takes a va_list for
+ * See expidus_message_dialog_new(), this version takes a va_list for
  * language bindings to use.
  *
  * Returns: (transfer full): A new #GtkMessageDialog.
  **/
 GtkWidget *
-xfce_message_dialog_new_valist (GtkWindow   *parent,
+expidus_message_dialog_new_valist (GtkWindow   *parent,
                                 const gchar *title,
                                 const gchar *icon_stock_id,
                                 const gchar *primary_text,
@@ -658,12 +658,12 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 
   /* put the dialog on the active screen if no parent is defined */
   if (parent == NULL)
-    xfce_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
+    expidus_gtk_window_center_on_active_screen (GTK_WINDOW (dialog));
 
   /* add buttons */
   while (text != NULL)
     {
-      if (strcmp (text, XFCE_BUTTON_TYPE_MIXED) == 0)
+      if (strcmp (text, EXPIDUS_BUTTON_TYPE_MIXED) == 0)
         {
           /* get arguments */
           stock_id = va_arg (args, const gchar *);
@@ -671,12 +671,12 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
           response = va_arg (args, gint);
 
           /* add a mixed button to the dialog */
-          button = xfce_gtk_button_new_mixed (stock_id, label);
+          button = expidus_gtk_button_new_mixed (stock_id, label);
           gtk_widget_set_can_default (button, TRUE);
           gtk_dialog_add_action_widget (GTK_DIALOG (dialog), button, response);
           gtk_widget_show (button);
         }
-      else if (strcmp (text, XFCE_BUTTON_TYPE_PIXBUF) == 0)
+      else if (strcmp (text, EXPIDUS_BUTTON_TYPE_PIXBUF) == 0)
         {
           /* get arguments */
           pixbuf = va_arg (args, GdkPixbuf *);
@@ -736,7 +736,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
 
 
 /**
- * xfce_message_dialog_new:
+ * expidus_message_dialog_new:
  * @parent            : (allow-none): transient parent of the dialog, or %NULL.
  * @title             : (allow-none): title of the dialog, or %NULL.
  * @stock_id          : gtk stock icon name to show in the dialog.
@@ -745,26 +745,26 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  * @first_button_text : text for the first button.
  * @...               : %NULL terminated list of parameters.
  *
- * xfce_message_dialog_new() allows you to easily create Gtk+ message dialogs.
- * It accepts GTK+ stock buttons (deprecated), mixed buttons (using XFCE_BUTTON_TYPE_MIXED)
- * or buttons with a #GdkPixbuf (using XFCE_BUTTON_TYPE_PIXBUF).
+ * expidus_message_dialog_new() allows you to easily create Gtk+ message dialogs.
+ * It accepts GTK+ stock buttons (deprecated), mixed buttons (using EXPIDUS_BUTTON_TYPE_MIXED)
+ * or buttons with a #GdkPixbuf (using EXPIDUS_BUTTON_TYPE_PIXBUF).
  *
  * The buttons are defined by @first_button_text and the next arguments in the
  * following format @type, @param1[, @param2, @param3].
  *
  * <variablelist>
  *   <varlistentry>
- *     <term><varname>XFCE_BUTTON_TYPE_MIXED</varname></term>
+ *     <term><varname>EXPIDUS_BUTTON_TYPE_MIXED</varname></term>
  *     <listitem>
  *       <para>
  *         This allows you to easily create mixed buttons in a dialog.
  *         @param1 is used for the icon name, @param2 for the label and
- *         @param3 for the response_id. See also xfce_gtk_button_new_mixed().
+ *         @param3 for the response_id. See also expidus_gtk_button_new_mixed().
  *       </para>
  *     </listitem>
  *   </varlistentry>
  *   <varlistentry>
- *     <term><varname>XFCE_BUTTON_TYPE_PIXBUF</varname></term>
+ *     <term><varname>EXPIDUS_BUTTON_TYPE_PIXBUF</varname></term>
  *     <listitem>
  *       <para>
  *         Creates a button with the #GdkPixbuf as button icon.
@@ -789,17 +789,17 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  * two stock buttons, a #GdkPixbuf button and a mixed button.
  *
  * <example>
- * <title>Creating a Xfce Message Dialog</title>
+ * <title>Creating a Expidus Message Dialog</title>
  * <programlisting>
  * GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_size (filename, 24, 24);
  *
- * GtkWidget *dialog = xfce_message_dialog (parent, "Question",
+ * GtkWidget *dialog = expidus_message_dialog (parent, "Question",
  *                                          GTK_STOCK_DIALOG_QUESTION,
  *                                          "There are unsaved modifications",
  *                                          "The menu has been modified, do you want to save it before quitting?",
  *                                          GTK_STOCK_SAVE, GTK_RESPONSE_YES,
- *                                          XFCE_BUTTON_TYPE_MIXED, "edit-delete", _("Forget modifications"), GTK_RESPONSE_APPLY,
- *                                          XFCE_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
+ *                                          EXPIDUS_BUTTON_TYPE_MIXED, "edit-delete", _("Forget modifications"), GTK_RESPONSE_APPLY,
+ *                                          EXPIDUS_BUTTON_TYPE_PIXBUF, pixbuf, "Quit", GTK_RESPONSE_NO,
  *                                          GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
  *                                          NULL);
  *
@@ -810,7 +810,7 @@ xfce_message_dialog_new_valist (GtkWindow   *parent,
  * Return value: (transfer full): A new #GtkMessageDialog.
  **/
 GtkWidget *
-xfce_message_dialog_new (GtkWindow   *parent,
+expidus_message_dialog_new (GtkWindow   *parent,
                          const gchar *title,
                          const gchar *stock_id,
                          const gchar *primary_text,
@@ -824,7 +824,7 @@ xfce_message_dialog_new (GtkWindow   *parent,
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), NULL);
 
   va_start (args, first_button_text);
-  dialog = xfce_message_dialog_new_valist (parent, title, stock_id, primary_text,
+  dialog = expidus_message_dialog_new_valist (parent, title, stock_id, primary_text,
                                            secondary_text, first_button_text, args);
   va_end (args);
 
@@ -834,7 +834,7 @@ xfce_message_dialog_new (GtkWindow   *parent,
 
 
 /**
- * xfce_message_dialog:
+ * expidus_message_dialog:
  * @parent            : (allow-none): transient parent of the dialog, or %NULL.
  * @title             : (allow-none): title of the dialog, or %NULL.
  * @stock_id          : gtk stock icon name to show in the dialog.
@@ -843,15 +843,15 @@ xfce_message_dialog_new (GtkWindow   *parent,
  * @first_button_text : text for the first button.
  * @...               : %NULL ended list of parameters.
  *
- * Create a new dialog as in xfce_message_dialog_new(), then runs the
+ * Create a new dialog as in expidus_message_dialog_new(), then runs the
  * dialog using #gtk_dialog_run and return the response id selected by the user.
  *
- * See xfce_message_dialog_new() for more information.
+ * See expidus_message_dialog_new() for more information.
  *
  * Returns: the selected response id.
  **/
 gint
-xfce_message_dialog (GtkWindow   *parent,
+expidus_message_dialog (GtkWindow   *parent,
                      const gchar *title,
                      const gchar *stock_id,
                      const gchar *primary_text,
@@ -866,7 +866,7 @@ xfce_message_dialog (GtkWindow   *parent,
   g_return_val_if_fail (parent == NULL || GTK_IS_WINDOW (parent), 0);
 
   va_start (args, first_button_text);
-  dialog = xfce_message_dialog_new_valist (parent, title, stock_id, primary_text,
+  dialog = expidus_message_dialog_new_valist (parent, title, stock_id, primary_text,
                                            secondary_text, first_button_text, args);
   va_end (args);
 
@@ -879,5 +879,5 @@ xfce_message_dialog (GtkWindow   *parent,
 
 
 
-#define __XFCE_DIALOGS_C__
+#define __EXPIDUS_DIALOGS_C__
 #include <libexpidus1ui/libexpidus1ui-aliasdef.c>

@@ -36,79 +36,79 @@
 
 #include <libexpidus1util/libexpidus1util.h>
 
-#include <libexpidus1kbd-private/xfce-shortcuts-grabber.h>
-#include <libexpidus1kbd-private/xfce-shortcuts-marshal.h>
+#include <libexpidus1kbd-private/expidus-shortcuts-grabber.h>
+#include <libexpidus1kbd-private/expidus-shortcuts-marshal.h>
 
 
 
-#define XFCE_SHORTCUTS_GRABBER_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), XFCE_TYPE_SHORTCUTS_GRABBER, XfceShortcutsGrabberPrivate))
+#define EXPIDUS_SHORTCUTS_GRABBER_GET_PRIVATE(obj) (G_TYPE_INSTANCE_GET_PRIVATE ((obj), EXPIDUS_TYPE_SHORTCUTS_GRABBER, ExpidusShortcutsGrabberPrivate))
 #define MODIFIERS_ERROR ((GdkModifierType)(-1))
 #define MODIFIERS_NONE 0
 
 
-typedef struct _XfceKey XfceKey;
+typedef struct _ExpidusKey ExpidusKey;
 
 
 
-static void            xfce_shortcuts_grabber_constructed      (GObject                   *object);
-static void            xfce_shortcuts_grabber_finalize         (GObject                   *object);
-static void            xfce_shortcuts_grabber_keys_changed     (GdkKeymap                 *keymap,
-                                                                XfceShortcutsGrabber      *grabber);
-static void            xfce_shortcuts_grabber_grab_all         (XfceShortcutsGrabber      *grabber);
-static void            xfce_shortcuts_grabber_ungrab_all       (XfceShortcutsGrabber      *grabber);
-static void            xfce_shortcuts_grabber_grab             (XfceShortcutsGrabber      *grabber,
-                                                                XfceKey                   *key,
+static void            expidus_shortcuts_grabber_constructed      (GObject                   *object);
+static void            expidus_shortcuts_grabber_finalize         (GObject                   *object);
+static void            expidus_shortcuts_grabber_keys_changed     (GdkKeymap                 *keymap,
+                                                                ExpidusShortcutsGrabber      *grabber);
+static void            expidus_shortcuts_grabber_grab_all         (ExpidusShortcutsGrabber      *grabber);
+static void            expidus_shortcuts_grabber_ungrab_all       (ExpidusShortcutsGrabber      *grabber);
+static void            expidus_shortcuts_grabber_grab             (ExpidusShortcutsGrabber      *grabber,
+                                                                ExpidusKey                   *key,
                                                                 gboolean                   grab);
-static GdkFilterReturn xfce_shortcuts_grabber_event_filter     (GdkXEvent                 *gdk_xevent,
+static GdkFilterReturn expidus_shortcuts_grabber_event_filter     (GdkXEvent                 *gdk_xevent,
                                                                 GdkEvent                  *event,
-                                                                XfceShortcutsGrabber      *grabber);
+                                                                ExpidusShortcutsGrabber      *grabber);
 
 
 
-struct _XfceShortcutsGrabberPrivate
+struct _ExpidusShortcutsGrabberPrivate
 {
   GHashTable *keys;
 };
 
 typedef enum
 {
-  UNDEFINED_GRAB_STATE = 0, /* Initial value after g_new0(XfceKey) */
+  UNDEFINED_GRAB_STATE = 0, /* Initial value after g_new0(ExpidusKey) */
   NOT_GRABBED,
   GRABBED,
-} XfceKeyGrabState;
+} ExpidusKeyGrabState;
 
-struct _XfceKey
+struct _ExpidusKey
 {
   guint            keyval;
   guint            modifiers;
   GArray          *keycodes;
-  XfceKeyGrabState grab_state;
+  ExpidusKeyGrabState grab_state;
 };
 
 
 
-G_DEFINE_TYPE (XfceShortcutsGrabber, xfce_shortcuts_grabber, G_TYPE_OBJECT)
+G_DEFINE_TYPE (ExpidusShortcutsGrabber, expidus_shortcuts_grabber, G_TYPE_OBJECT)
 
 
 
 static void
-xfce_shortcuts_grabber_class_init (XfceShortcutsGrabberClass *klass)
+expidus_shortcuts_grabber_class_init (ExpidusShortcutsGrabberClass *klass)
 {
   GObjectClass *gobject_class;
 
-  g_type_class_add_private (klass, sizeof (XfceShortcutsGrabberPrivate));
+  g_type_class_add_private (klass, sizeof (ExpidusShortcutsGrabberPrivate));
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->constructed = xfce_shortcuts_grabber_constructed;
-  gobject_class->finalize = xfce_shortcuts_grabber_finalize;
+  gobject_class->constructed = expidus_shortcuts_grabber_constructed;
+  gobject_class->finalize = expidus_shortcuts_grabber_finalize;
 
   g_signal_new ("shortcut-activated",
-                XFCE_TYPE_SHORTCUTS_GRABBER,
+                EXPIDUS_TYPE_SHORTCUTS_GRABBER,
                 G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,
                 0,
                 NULL,
                 NULL,
-                _xfce_shortcuts_marshal_VOID__STRING_INT,
+                _expidus_shortcuts_marshal_VOID__STRING_INT,
                 G_TYPE_NONE,
                 2,
                 G_TYPE_STRING, G_TYPE_INT);
@@ -117,12 +117,12 @@ xfce_shortcuts_grabber_class_init (XfceShortcutsGrabberClass *klass)
 
 
 static void
-xfce_shortcuts_grabber_init (XfceShortcutsGrabber *grabber)
+expidus_shortcuts_grabber_init (ExpidusShortcutsGrabber *grabber)
 {
   GdkDisplay      *display;
   GdkKeymap       *keymap;
 
-  grabber->priv = XFCE_SHORTCUTS_GRABBER_GET_PRIVATE (grabber);
+  grabber->priv = EXPIDUS_SHORTCUTS_GRABBER_GET_PRIVATE (grabber);
   grabber->priv->keys = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, g_free);
 
   /* Workaround: Make sure modmap is up to date
@@ -138,68 +138,68 @@ xfce_shortcuts_grabber_init (XfceShortcutsGrabber *grabber)
 
 
 static void
-xfce_shortcuts_grabber_constructed (GObject *object)
+expidus_shortcuts_grabber_constructed (GObject *object)
 {
   GdkDisplay *display;
   GdkKeymap  *keymap;
 
-  XfceShortcutsGrabber *grabber = XFCE_SHORTCUTS_GRABBER (object);
+  ExpidusShortcutsGrabber *grabber = EXPIDUS_SHORTCUTS_GRABBER (object);
 
   display = gdk_display_get_default ();
   keymap = gdk_keymap_get_for_display (display);
-  g_signal_connect (keymap, "keys-changed", G_CALLBACK (xfce_shortcuts_grabber_keys_changed),
+  g_signal_connect (keymap, "keys-changed", G_CALLBACK (expidus_shortcuts_grabber_keys_changed),
                     grabber);
 
   /* Flush events before adding the event filter */
   XAllowEvents (GDK_DISPLAY_XDISPLAY (display), AsyncBoth, CurrentTime);
 
   /* Add event filter */
-  gdk_window_add_filter (NULL, (GdkFilterFunc) xfce_shortcuts_grabber_event_filter, grabber);
+  gdk_window_add_filter (NULL, (GdkFilterFunc) expidus_shortcuts_grabber_event_filter, grabber);
 }
 
 
 
 static void
-xfce_shortcuts_grabber_finalize (GObject *object)
+expidus_shortcuts_grabber_finalize (GObject *object)
 {
-  XfceShortcutsGrabber *grabber = XFCE_SHORTCUTS_GRABBER (object);
+  ExpidusShortcutsGrabber *grabber = EXPIDUS_SHORTCUTS_GRABBER (object);
 
-  xfce_shortcuts_grabber_ungrab_all (grabber);
+  expidus_shortcuts_grabber_ungrab_all (grabber);
   g_hash_table_unref (grabber->priv->keys);
 
-  (*G_OBJECT_CLASS (xfce_shortcuts_grabber_parent_class)->finalize) (object);
+  (*G_OBJECT_CLASS (expidus_shortcuts_grabber_parent_class)->finalize) (object);
 }
 
 
 
 static void
-xfce_shortcuts_grabber_keys_changed (GdkKeymap            *keymap,
-                                     XfceShortcutsGrabber *grabber)
+expidus_shortcuts_grabber_keys_changed (GdkKeymap            *keymap,
+                                     ExpidusShortcutsGrabber *grabber)
 {
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
+  g_return_if_fail (EXPIDUS_IS_SHORTCUTS_GRABBER (grabber));
 
   TRACE ("Keys changed, regrabbing");
 
-  xfce_shortcuts_grabber_grab_all (grabber);
+  expidus_shortcuts_grabber_grab_all (grabber);
 }
 
 
 
 static gboolean
 grab_key (const gchar          *shortcut,
-          XfceKey              *key,
-          XfceShortcutsGrabber *grabber)
+          ExpidusKey              *key,
+          ExpidusShortcutsGrabber *grabber)
 {
-  xfce_shortcuts_grabber_grab (grabber, key, TRUE);
+  expidus_shortcuts_grabber_grab (grabber, key, TRUE);
   return FALSE;
 }
 
 
 
 static void
-xfce_shortcuts_grabber_grab_all (XfceShortcutsGrabber *grabber)
+expidus_shortcuts_grabber_grab_all (ExpidusShortcutsGrabber *grabber)
 {
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
+  g_return_if_fail (EXPIDUS_IS_SHORTCUTS_GRABBER (grabber));
   g_hash_table_foreach (grabber->priv->keys,
                         (GHFunc) (void (*)(void)) grab_key,
                         grabber);
@@ -209,19 +209,19 @@ xfce_shortcuts_grabber_grab_all (XfceShortcutsGrabber *grabber)
 
 static gboolean
 ungrab_key (const gchar          *shortcut,
-            XfceKey              *key,
-            XfceShortcutsGrabber *grabber)
+            ExpidusKey              *key,
+            ExpidusShortcutsGrabber *grabber)
 {
-  xfce_shortcuts_grabber_grab (grabber, key, FALSE);
+  expidus_shortcuts_grabber_grab (grabber, key, FALSE);
   return FALSE;
 }
 
 
 
 static void
-xfce_shortcuts_grabber_ungrab_all (XfceShortcutsGrabber *grabber)
+expidus_shortcuts_grabber_ungrab_all (ExpidusShortcutsGrabber *grabber)
 {
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
+  g_return_if_fail (EXPIDUS_IS_SHORTCUTS_GRABBER (grabber));
   g_hash_table_foreach (grabber->priv->keys,
                         (GHFunc) (void (*)(void)) ungrab_key,
                         grabber);
@@ -230,8 +230,8 @@ xfce_shortcuts_grabber_ungrab_all (XfceShortcutsGrabber *grabber)
 
 
 static void
-xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
-                             XfceKey              *key,
+expidus_shortcuts_grabber_grab (ExpidusShortcutsGrabber *grabber,
+                             ExpidusKey              *key,
                              gboolean              grab)
 {
   GdkModifierType  numlock_modifier;
@@ -246,7 +246,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
   gint             n_keys;
   gint             screens;
 
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
+  g_return_if_fail (EXPIDUS_IS_SHORTCUTS_GRABBER (grabber));
   g_return_if_fail (key != NULL);
 
   if (key->grab_state == (grab ? GRABBED : NOT_GRABBED)) {
@@ -384,7 +384,7 @@ xfce_shortcuts_grabber_grab (XfceShortcutsGrabber *grabber,
 
 struct EventKeyFindContext
 {
-  XfceShortcutsGrabber *grabber;
+  ExpidusShortcutsGrabber *grabber;
   GdkModifierType       modifiers;
   guint                 keyval;
   const gchar          *result;
@@ -394,7 +394,7 @@ struct EventKeyFindContext
 
 static gboolean
 find_event_key (const gchar                *shortcut,
-                XfceKey                    *key,
+                ExpidusKey                    *key,
                 struct EventKeyFindContext *context)
 {
   g_return_val_if_fail (context != NULL, FALSE);
@@ -417,9 +417,9 @@ find_event_key (const gchar                *shortcut,
 
 
 static GdkFilterReturn
-xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
+expidus_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
                                      GdkEvent             *event,
-                                     XfceShortcutsGrabber *grabber)
+                                     ExpidusShortcutsGrabber *grabber)
 {
   struct EventKeyFindContext  context;
   GdkKeymap                  *keymap;
@@ -430,7 +430,7 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
   gchar                      *raw_shortcut_name;
   gint                        timestamp;
 
-  g_return_val_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber), GDK_FILTER_CONTINUE);
+  g_return_val_if_fail (EXPIDUS_IS_SHORTCUTS_GRABBER (grabber), GDK_FILTER_CONTINUE);
 
   xevent = (XEvent *) gdk_xevent;
 
@@ -513,31 +513,31 @@ xfce_shortcuts_grabber_event_filter (GdkXEvent            *gdk_xevent,
 
 
 
-XfceShortcutsGrabber *
-xfce_shortcuts_grabber_new (void)
+ExpidusShortcutsGrabber *
+expidus_shortcuts_grabber_new (void)
 {
-  return g_object_new (XFCE_TYPE_SHORTCUTS_GRABBER, NULL);
+  return g_object_new (EXPIDUS_TYPE_SHORTCUTS_GRABBER, NULL);
 }
 
 
 
 void
-xfce_shortcuts_grabber_add (XfceShortcutsGrabber *grabber,
+expidus_shortcuts_grabber_add (ExpidusShortcutsGrabber *grabber,
                             const gchar          *shortcut)
 {
-  XfceKey *key;
+  ExpidusKey *key;
 
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
+  g_return_if_fail (EXPIDUS_IS_SHORTCUTS_GRABBER (grabber));
   g_return_if_fail (shortcut != NULL);
 
-  key = g_new0 (XfceKey, 1);
+  key = g_new0 (ExpidusKey, 1);
   key->keycodes = g_array_new (FALSE, TRUE, sizeof (guint));
 
   gtk_accelerator_parse (shortcut, &key->keyval, &key->modifiers);
 
   if (G_LIKELY (key->keyval != 0))
     {
-      xfce_shortcuts_grabber_grab (grabber, key, TRUE);
+      expidus_shortcuts_grabber_grab (grabber, key, TRUE);
       g_hash_table_insert (grabber->priv->keys, g_strdup (shortcut), key);
     }
   else
@@ -550,19 +550,19 @@ xfce_shortcuts_grabber_add (XfceShortcutsGrabber *grabber,
 
 
 void
-xfce_shortcuts_grabber_remove (XfceShortcutsGrabber *grabber,
+expidus_shortcuts_grabber_remove (ExpidusShortcutsGrabber *grabber,
                                const gchar          *shortcut)
 {
-  XfceKey *key;
+  ExpidusKey *key;
 
-  g_return_if_fail (XFCE_IS_SHORTCUTS_GRABBER (grabber));
+  g_return_if_fail (EXPIDUS_IS_SHORTCUTS_GRABBER (grabber));
   g_return_if_fail (shortcut != NULL);
 
   key = g_hash_table_lookup (grabber->priv->keys, shortcut);
 
   if (G_LIKELY (key != NULL))
     {
-      xfce_shortcuts_grabber_grab (grabber, key, FALSE);
+      expidus_shortcuts_grabber_grab (grabber, key, FALSE);
       g_hash_table_remove (grabber->priv->keys, shortcut);
     }
 }

@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2003-2007 Benedikt Meurer <benny@xfce.org>
- * Copyright (c) 2007      The Xfce Development Team
+ * Copyright (c) 2007      The Expidus Development Team
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -19,7 +19,7 @@
  */
 
 /**
- * SECTION:xfce-gdk-extensions
+ * SECTION:expidus-gdk-extensions
  * @title: Gdk Extensions
  * @short_description: various extensions to Gdk
  * @stability: Stable
@@ -36,7 +36,7 @@
 #include <string.h>
 #endif
 
-#include <libexpidus1ui/xfce-gdk-extensions.h>
+#include <libexpidus1ui/expidus-gdk-extensions.h>
 #include <libexpidus1ui/libexpidus1ui-private.h>
 #include <libexpidus1ui/libexpidus1ui-alias.h>
 
@@ -47,7 +47,7 @@
 
 
 /**
- * xfce_gdk_screen_get_active:
+ * expidus_gdk_screen_get_active:
  * @monitor_return : (out) (allow-none): Address to store the monitor number to or %NULL.
  *                   Under gtk3 this will always be set to '0'.
  *
@@ -58,7 +58,7 @@
  * Return value: (transfer full): the currently active #GdkScreen.
  **/
 GdkScreen *
-xfce_gdk_screen_get_active (gint *monitor_return)
+expidus_gdk_screen_get_active (gint *monitor_return)
 {
   GdkDisplay       *display;
   gint              rootx, rooty;
@@ -88,7 +88,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
 
 
 /**
- * xfce_gdk_screen_get_geometry:
+ * expidus_gdk_screen_get_geometry:
  *
  * Returns the width and height of the default #GdkScreen.
  * This is a replacement for gdk_screen_width/gdk_screen_height.
@@ -99,7 +99,7 @@ xfce_gdk_screen_get_active (gint *monitor_return)
  * Since: 4.14
  **/
 GdkRectangle *
-xfce_gdk_screen_get_geometry (void)
+expidus_gdk_screen_get_geometry (void)
 {
   GdkRectangle *geometry;
   gint x, y, w, h;
@@ -134,5 +134,5 @@ xfce_gdk_screen_get_geometry (void)
 }
 
 
-#define __XFCE_GDK_EXTENSIONS_C__
+#define __EXPIDUS_GDK_EXTENSIONS_C__
 #include <libexpidus1ui/libexpidus1ui-aliasdef.c>

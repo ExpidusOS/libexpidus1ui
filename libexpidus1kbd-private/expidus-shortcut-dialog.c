@@ -30,39 +30,39 @@
 #include <libexpidus1util/libexpidus1util.h>
 #include <libexpidus1ui/libexpidus1ui.h>
 
-#include <libexpidus1kbd-private/xfce-shortcuts.h>
-#include <libexpidus1kbd-private/xfce-shortcut-dialog.h>
+#include <libexpidus1kbd-private/expidus-shortcuts.h>
+#include <libexpidus1kbd-private/expidus-shortcut-dialog.h>
 
 
 
-static void     xfce_shortcut_dialog_finalize         (GObject                 *object);
-static void     xfce_shortcut_dialog_create_contents  (XfceShortcutDialog      *dialog,
+static void     expidus_shortcut_dialog_finalize         (GObject                 *object);
+static void     expidus_shortcut_dialog_create_contents  (ExpidusShortcutDialog      *dialog,
                                                        const gchar             *provider,
                                                        const gchar             *action_name,
                                                        const gchar             *action);
-static gboolean xfce_shortcut_dialog_key_pressed      (XfceShortcutDialog      *dialog,
+static gboolean expidus_shortcut_dialog_key_pressed      (ExpidusShortcutDialog      *dialog,
                                                        GdkEventKey             *event);
-static gboolean xfce_shortcut_dialog_key_released     (XfceShortcutDialog      *dialog,
+static gboolean expidus_shortcut_dialog_key_released     (ExpidusShortcutDialog      *dialog,
                                                        GdkEventKey             *event);
-static void     xfce_shortcut_dialog_prepare_grab     (GdkSeat                 *seat,
+static void     expidus_shortcut_dialog_prepare_grab     (GdkSeat                 *seat,
                                                        GdkWindow               *window,
                                                        gpointer                 user_data);
 
 
-struct _XfceShortcutDialogClass
+struct _ExpidusShortcutDialogClass
 {
-  XfceTitledDialogClass __parent__;
+  ExpidusTitledDialogClass __parent__;
 
-  gboolean (*validate_shortcut) (XfceShortcutDialog *dialog,
+  gboolean (*validate_shortcut) (ExpidusShortcutDialog *dialog,
                                  const gchar        *shortcut,
                                  gpointer            user_data);
 
   gint validate_shortcut_signal;
 };
 
-struct _XfceShortcutDialog
+struct _ExpidusShortcutDialog
 {
-  XfceTitledDialog __parent__;
+  ExpidusTitledDialog __parent__;
 
   GtkWidget *shortcut_label;
   GtkWidget *key_box;
@@ -74,7 +74,7 @@ struct _XfceShortcutDialog
 
 
 
-G_DEFINE_TYPE (XfceShortcutDialog, xfce_shortcut_dialog, XFCE_TYPE_TITLED_DIALOG)
+G_DEFINE_TYPE (ExpidusShortcutDialog, expidus_shortcut_dialog, EXPIDUS_TYPE_TITLED_DIALOG)
 
 
 
@@ -124,15 +124,15 @@ marshal_BOOLEAN__STRING (GClosure     *closure,
 
 
 static void
-xfce_shortcut_dialog_class_init (XfceShortcutDialogClass *klass)
+expidus_shortcut_dialog_class_init (ExpidusShortcutDialogClass *klass)
 {
   GObjectClass *gobject_class;
 
   /* Make sure to use the translations from libexpidus1ui */
-  xfce_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
+  expidus_textdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR, "UTF-8");
 
   gobject_class = G_OBJECT_CLASS (klass);
-  gobject_class->finalize = xfce_shortcut_dialog_finalize;
+  gobject_class->finalize = expidus_shortcut_dialog_finalize;
 
   klass->validate_shortcut = NULL;
 
@@ -140,7 +140,7 @@ xfce_shortcut_dialog_class_init (XfceShortcutDialogClass *klass)
   klass->validate_shortcut_signal = g_signal_new ("validate-shortcut",
                                                   G_TYPE_FROM_CLASS (klass),
                                                   G_SIGNAL_RUN_LAST | G_SIGNAL_ACTION,
-                                                  G_STRUCT_OFFSET (XfceShortcutDialogClass, validate_shortcut),
+                                                  G_STRUCT_OFFSET (ExpidusShortcutDialogClass, validate_shortcut),
                                                   NULL,
                                                   NULL,
                                                   marshal_BOOLEAN__STRING,
@@ -152,7 +152,7 @@ xfce_shortcut_dialog_class_init (XfceShortcutDialogClass *klass)
 
 
 static void
-xfce_shortcut_dialog_init (XfceShortcutDialog *dialog)
+expidus_shortcut_dialog_init (ExpidusShortcutDialog *dialog)
 {
   dialog->shortcut = NULL;
 }
@@ -160,31 +160,31 @@ xfce_shortcut_dialog_init (XfceShortcutDialog *dialog)
 
 
 static void
-xfce_shortcut_dialog_finalize (GObject *object)
+expidus_shortcut_dialog_finalize (GObject *object)
 {
-  XfceShortcutDialog *dialog = XFCE_SHORTCUT_DIALOG (object);
+  ExpidusShortcutDialog *dialog = EXPIDUS_SHORTCUT_DIALOG (object);
 
   g_free (dialog->action_name);
   g_free (dialog->action);
   g_free (dialog->shortcut);
 
-  (*G_OBJECT_CLASS (xfce_shortcut_dialog_parent_class)->finalize) (object);
+  (*G_OBJECT_CLASS (expidus_shortcut_dialog_parent_class)->finalize) (object);
 }
 
 
 
 GtkWidget*
-xfce_shortcut_dialog_new (const gchar *provider,
+expidus_shortcut_dialog_new (const gchar *provider,
                           const gchar *action_name,
                           const gchar *action)
 {
-  XfceShortcutDialog *dialog;
+  ExpidusShortcutDialog *dialog;
 
-  dialog = g_object_new (XFCE_TYPE_SHORTCUT_DIALOG, NULL);
+  dialog = g_object_new (EXPIDUS_TYPE_SHORTCUT_DIALOG, NULL);
   dialog->action_name = g_strdup (action_name);
   dialog->action = g_strdup (action);
 
-  xfce_shortcut_dialog_create_contents (dialog, provider, action_name, action);
+  expidus_shortcut_dialog_create_contents (dialog, provider, action_name, action);
 
   return GTK_WIDGET (dialog);
 }
@@ -192,7 +192,7 @@ xfce_shortcut_dialog_new (const gchar *provider,
 
 
 static void
-xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
+expidus_shortcut_dialog_create_contents (ExpidusShortcutDialog *dialog,
                                       const gchar        *provider,
                                       const gchar        *action_name,
                                       const gchar        *action)
@@ -209,13 +209,13 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   const gchar *format;
   gchar       *markup;
 
-  if (g_utf8_collate (provider, "xfwm4") == 0)
+  if (g_utf8_collate (provider, "eswm1") == 0)
     {
       title = _("Window Manager Action Shortcut");
       /* TRANSLATORS: this string will be used to create an explanation for
        * the user in a following string */
       action_type = _("action");
-      icon_name = "com.expidus.xfwm4";
+      icon_name = "com.expidus.eswm1";
     }
   else if (g_utf8_collate (provider, "commands") == 0)
     {
@@ -238,20 +238,20 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   gtk_window_set_title (GTK_WINDOW (dialog), title);
   gtk_window_set_icon_name (GTK_WINDOW (dialog), icon_name);
 
-  xfce_titled_dialog_create_action_area (XFCE_TITLED_DIALOG (dialog));
+  expidus_titled_dialog_create_action_area (EXPIDUS_TITLED_DIALOG (dialog));
 
-  /* Create clear button for xfwm4 */
-  if (g_utf8_collate (provider, "xfwm4") == 0)
+  /* Create clear button for eswm1 */
+  if (g_utf8_collate (provider, "eswm1") == 0)
     {
       button = gtk_button_new_from_icon_name ("edit-clear-symbolic", GTK_ICON_SIZE_BUTTON);
       gtk_button_set_label (GTK_BUTTON (button), _("Clear"));
-      xfce_titled_dialog_add_action_widget (XFCE_TITLED_DIALOG (dialog), button, GTK_RESPONSE_REJECT);
+      expidus_titled_dialog_add_action_widget (EXPIDUS_TITLED_DIALOG (dialog), button, GTK_RESPONSE_REJECT);
       gtk_widget_show (button);
     }
 
   /* Create cancel button */
   button = gtk_button_new_with_mnemonic (_("_Cancel"));
-  xfce_titled_dialog_add_action_widget (XFCE_TITLED_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
+  expidus_titled_dialog_add_action_widget (EXPIDUS_TITLED_DIALOG (dialog), button, GTK_RESPONSE_CANCEL);
   gtk_widget_show (button);
 
   content_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 18);
@@ -300,20 +300,20 @@ xfce_shortcut_dialog_create_contents (XfceShortcutDialog *dialog,
   g_free (markup);
 
   /* Connect to key release signal for determining the new shortcut */
-  g_signal_connect_swapped (dialog, "key-press-event", G_CALLBACK (xfce_shortcut_dialog_key_pressed), dialog);
-  g_signal_connect_swapped (dialog, "key-release-event", G_CALLBACK (xfce_shortcut_dialog_key_released), dialog);
+  g_signal_connect_swapped (dialog, "key-press-event", G_CALLBACK (expidus_shortcut_dialog_key_pressed), dialog);
+  g_signal_connect_swapped (dialog, "key-release-event", G_CALLBACK (expidus_shortcut_dialog_key_released), dialog);
 }
 
 
 gint
-xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
+expidus_shortcut_dialog_run (ExpidusShortcutDialog *dialog,
                           GtkWidget          *parent)
 {
   GdkDisplay       *display;
   GdkSeat          *seat;
   gint              response = GTK_RESPONSE_CANCEL;
 
-  g_return_val_if_fail (XFCE_IS_SHORTCUT_DIALOG (dialog), GTK_RESPONSE_CANCEL);
+  g_return_val_if_fail (EXPIDUS_IS_SHORTCUT_DIALOG (dialog), GTK_RESPONSE_CANCEL);
 
   gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (parent));
   gtk_window_set_destroy_with_parent (GTK_WINDOW (dialog), TRUE);
@@ -325,7 +325,7 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
   if (gdk_seat_grab (seat,
                  gdk_screen_get_root_window (gdk_display_get_default_screen (display)),
                  GDK_SEAT_CAPABILITY_KEYBOARD, TRUE, NULL, NULL,
-                 xfce_shortcut_dialog_prepare_grab, NULL) == GDK_GRAB_SUCCESS)
+                 expidus_shortcut_dialog_prepare_grab, NULL) == GDK_GRAB_SUCCESS)
     {
       /* Run the dialog and wait for the user to enter a valid shortcut */
       response = gtk_dialog_run (GTK_DIALOG (dialog));
@@ -352,7 +352,7 @@ xfce_shortcut_dialog_run (XfceShortcutDialog *dialog,
 
 
 static gboolean
-xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
+expidus_shortcut_dialog_key_pressed (ExpidusShortcutDialog *dialog,
                                   GdkEventKey        *event)
 {
   GdkDisplay      *display;
@@ -434,7 +434,7 @@ xfce_shortcut_dialog_key_pressed (XfceShortcutDialog *dialog,
 
 
 static gboolean
-xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
+expidus_shortcut_dialog_key_released (ExpidusShortcutDialog *dialog,
                                    GdkEventKey        *event)
 {
   gboolean    shortcut_accepted = FALSE;
@@ -475,34 +475,34 @@ xfce_shortcut_dialog_key_released (XfceShortcutDialog *dialog,
 
 
 const gchar*
-xfce_shortcut_dialog_get_shortcut (XfceShortcutDialog *dialog)
+expidus_shortcut_dialog_get_shortcut (ExpidusShortcutDialog *dialog)
 {
-  g_return_val_if_fail (XFCE_IS_SHORTCUT_DIALOG (dialog), NULL);
+  g_return_val_if_fail (EXPIDUS_IS_SHORTCUT_DIALOG (dialog), NULL);
   return dialog->shortcut;
 }
 
 
 
 const gchar *
-xfce_shortcut_dialog_get_action (XfceShortcutDialog *dialog)
+expidus_shortcut_dialog_get_action (ExpidusShortcutDialog *dialog)
 {
-  g_return_val_if_fail (XFCE_IS_SHORTCUT_DIALOG (dialog), NULL);
+  g_return_val_if_fail (EXPIDUS_IS_SHORTCUT_DIALOG (dialog), NULL);
   return dialog->action;
 }
 
 
 
 const gchar *
-xfce_shortcut_dialog_get_action_name (XfceShortcutDialog *dialog)
+expidus_shortcut_dialog_get_action_name (ExpidusShortcutDialog *dialog)
 {
-  g_return_val_if_fail (XFCE_IS_SHORTCUT_DIALOG (dialog), NULL);
+  g_return_val_if_fail (EXPIDUS_IS_SHORTCUT_DIALOG (dialog), NULL);
   return dialog->action_name;
 }
 
 
 
 static void
-xfce_shortcut_dialog_prepare_grab (GdkSeat   *seat,
+expidus_shortcut_dialog_prepare_grab (GdkSeat   *seat,
                                    GdkWindow *window,
                                    gpointer   user_data)
 {
