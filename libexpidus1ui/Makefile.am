@@ -123,7 +123,7 @@ if HAVE_INTROSPECTION
 introspection_sources = $(libexpidus1ui_2_la_SOURCES)
 
 Libexpidus1ui-2.0.gir: libexpidus1ui-2.la Makefile
-Libexpidus1ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libxfce4util-1.0
+Libexpidus1ui_2_0_gir_INCLUDES = GObject-2.0 GLib-2.0 Gtk-3.0 Libexpidus1util-1.0
 Libexpidus1ui_2_0_gir_CFLAGS = $(AM_CPPFLAGS)
 Libexpidus1ui_2_0_gir_LIBS = libexpidus1ui-2.la
 Libexpidus1ui_2_0_gir_FILES = $(introspection_sources)

@@ -9,14 +9,14 @@ and/or use gtk-doc annotations.  -->
   <include name="GLib" version="2.0"/>
   <include name="GObject" version="2.0"/>
   <include name="Gtk" version="3.0"/>
-  <include name="Libxfce4util" version="1.0"/>
+  <include name="Libexpidus1util" version="1.0"/>
   <package name="libexpidus1ui-2"/>
   <c:include name="libexpidus1ui/libexpidus1ui.h"/>
   <namespace name="Libexpidus1ui"
              version="2.0"
              shared-library="libexpidus1ui-2.so.0"
-             c:identifier-prefixes="Expidus,xfce,libxfce"
-             c:symbol-prefixes="xfce,xfce,libxfce">
+             c:identifier-prefixes="Expidus,expidus,libexpidus"
+             c:symbol-prefixes="expidus,expidus,libexpidus">
     <constant name="BUTTON_TYPE_MIXED"
               value="button-mixed"
               c:type="EXPIDUS_BUTTON_TYPE_MIXED">
@@ -479,7 +479,8 @@ and expidus_sm_client_get() instead.</doc>
           </parameter>
         </parameters>
       </constructor>
-      <function name="error_quark" c:identifier="expidus_sm_client_error_quark">
+      <function name="error_quark"
+                c:identifier="expidus_sm_client_error_quark">
         <doc xml:space="preserve"
              filename="expidus-sm-client.c"
              line="1374">Gets the ExpidusSmClient Error Quark.</doc>
@@ -536,7 +537,9 @@ or similar.</doc>
           </parameter>
         </parameters>
       </function>
-      <method name="connect" c:identifier="expidus_sm_client_connect" throws="1">
+      <method name="connect"
+              c:identifier="expidus_sm_client_connect"
+              throws="1">
         <doc xml:space="preserve"
              filename="expidus-sm-client.c"
              line="1551">Attempts to connect to the session manager.</doc>
@@ -580,7 +583,8 @@ the session when logging out.
           </instance-parameter>
         </parameters>
       </method>
-      <method name="get_client_id" c:identifier="expidus_sm_client_get_client_id">
+      <method name="get_client_id"
+              c:identifier="expidus_sm_client_get_client_id">
         <doc xml:space="preserve"
              filename="expidus-sm-client.c"
              line="2147">Retrieves the session client's unique ID.  This ID can
@@ -630,7 +634,8 @@ expidus_sm_client_set_current_directory() for more information.</doc>
           </instance-parameter>
         </parameters>
       </method>
-      <method name="get_priority" c:identifier="expidus_sm_client_get_priority">
+      <method name="get_priority"
+              c:identifier="expidus_sm_client_get_priority">
         <doc xml:space="preserve"
              filename="expidus-sm-client.c"
              line="2130">Retrieves the session client's restart priority.  See
@@ -686,7 +691,8 @@ expidus_sm_client_set_restart_style() for more information.</doc>
           <doc xml:space="preserve"
                filename="expidus-sm-client.c"
                line="2120">a value from the #ExpidusSMClientRestartStyle enum</doc>
-          <type name="SMClientRestartStyle" c:type="ExpidusSMClientRestartStyle"/>
+          <type name="SMClientRestartStyle"
+                c:type="ExpidusSMClientRestartStyle"/>
         </return-value>
         <parameters>
           <instance-parameter name="sm_client" transfer-ownership="none">
@@ -736,7 +742,8 @@ and a valid client ID (see expidus_sm_client_get_client_id()).</doc>
           </instance-parameter>
         </parameters>
       </method>
-      <method name="is_connected" c:identifier="expidus_sm_client_is_connected">
+      <method name="is_connected"
+              c:identifier="expidus_sm_client_is_connected">
         <doc xml:space="preserve"
              filename="expidus-sm-client.c"
              line="1751">Determines whether or not the application has connected to the
@@ -873,7 +880,8 @@ Desktop Menu Specification&lt;/ulink&gt;.</doc>
           </parameter>
         </parameters>
       </method>
-      <method name="set_priority" c:identifier="expidus_sm_client_set_priority">
+      <method name="set_priority"
+              c:identifier="expidus_sm_client_set_priority">
         <doc xml:space="preserve"
              filename="expidus-sm-client.c"
              line="1988">Sets the startup priority for @sm_client to @priority.  Note
@@ -1089,7 +1097,9 @@ signal.</doc>
              line="95">A high priority value.  You probably
                                   don't want to use this.</doc>
       </member>
-      <member name="wm" value="15" c:identifier="EXPIDUS_SM_CLIENT_PRIORITY_WM">
+      <member name="wm"
+              value="15"
+              c:identifier="EXPIDUS_SM_CLIENT_PRIORITY_WM">
         <doc xml:space="preserve"
              filename="expidus-sm-client.c"
              line="97">A priority value for use by the window manager.</doc>
@@ -2313,7 +2323,8 @@ is added for expidus_message_dialog_new().</doc>
         </parameter>
       </parameters>
     </function>
-    <function name="gtk_frame_box_new" c:identifier="expidus_gtk_frame_box_new">
+    <function name="gtk_frame_box_new"
+              c:identifier="expidus_gtk_frame_box_new">
       <doc xml:space="preserve"
            filename="expidus-gtk-extensions.c"
            line="603">Creates an Expidus-styled frame. The frame is a #GtkFrame, without
@@ -3240,7 +3251,10 @@ language bindings to use.</doc>
         </parameter>
       </parameters>
     </function>
-    <function name="spawn" c:identifier="expidus_spawn" version="4.16" throws="1">
+    <function name="spawn"
+              c:identifier="expidus_spawn"
+              version="4.16"
+              throws="1">
       <doc xml:space="preserve"
            filename="expidus-spawn.c"
            line="635">Like gdk_spawn_on_screen(), but also supports startup notification
