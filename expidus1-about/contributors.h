@@ -42,6 +42,7 @@ static const ContributorInfo expidus_contributors_core[] =
   { "Romain Bouvier", "skunnyk@alteroot.org" },
   { "Sean Davis", "bluesabre@xfce.org" },
   { "Simon Steinbeiß", "simon@xfce.org" },
+  { "Tristan Ross", "rosscomputerguy@protonmail.com" },
   { NULL, NULL}
 };
 
