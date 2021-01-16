@@ -11,14 +11,14 @@
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="expidus1-session-logout"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="xflock4"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="exo-open --launch TerminalEmulator"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;l" type="string" value="eslock1"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="endo-open --launch TerminalEmulator"/>
       <property name="XF86Display" type="string" value="expidus1-display-settings --minimal"/>
       <property name="&lt;Super&gt;p" type="string" value="expidus1-display-settings --minimal"/>
-      <property name="&lt;Primary&gt;Escape" type="string" value="xfdesktop --menu"/>
-      <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="HomePage" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
+      <property name="&lt;Primary&gt;Escape" type="string" value="esdesktop --menu"/>
+      <property name="XF86WWW" type="string" value="endo-open --launch WebBrowser"/>
+      <property name="HomePage" type="string" value="endo-open --launch WebBrowser"/>
+      <property name="XF86Mail" type="string" value="endo-open --launch MailReader"/>
       <property name="Print" type="string" value="expidus1-screenshooter"/>
       <property name="&lt;Alt&gt;Print" type="string" value="expidus1-screenshooter -w"/>
       <property name="&lt;Shift&gt;Print" type="string" value="expidus1-screenshooter -r"/>
@@ -29,6 +29,9 @@
       <property name="&lt;Super&gt;r" type="string" value="expidus1-appfinder -c">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
+			<property name="Super" type="string" value="esdashboard">
+        <property name="startup-notify" type="bool" value="true"/>
+			</property>
     </property>
   </property>
   <property name="eswm1" type="empty">
