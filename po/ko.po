@@ -665,8 +665,8 @@ msgstr "D-Bus 미리 보기 그림 관리 명세를 구현합니다."
 #: ../expidus1-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "이 목록의 빠진 내용을 아시는 분은 망설이지 마시고 <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues>에 버그를 알려주십시오."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "이 목록의 빠진 내용을 아시는 분은 망설이지 마시고 <https://github.com/ExpidusOS/libexpidus1ui/issues>에 버그를 알려주십시오."
 
 #: ../expidus1-about/main.c:333
 msgid "Thanks to all who helped making this software available!"
@@ -674,26 +674,26 @@ msgstr "이 소프트웨어를 사용할 수 있게 도와준 모든 분께 감�
 
 #: ../expidus1-about/main.c:350
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4는 Oliver Foundan(fourdan@xfce.org)의 지적 소유물입니다. 다른 구성요소는 제각각의 저작권자가 저작권을 소유하고 있습니다."
 
 #: ../expidus1-about/main.c:355
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "libexpidus1ui, libexpidus1util, exo 꾸러미는 자유 소프트웨어 재단에서 발표한 GNU 라이브러리 일반 공중 사용 허가서 버전 2 (또는 취향에 따라) 이상의 조항에 따라 배포합니다."
+msgstr "libexpidus1ui, libexpidus1util, endo 꾸러미는 자유 소프트웨어 재단에서 발표한 GNU 라이브러리 일반 공중 사용 허가서 버전 2 (또는 취향에 따라) 이상의 조항에 따라 배포합니다."
 
 #: ../expidus1-about/main.c:362
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "투나, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop eswm1 는 자유 소프트웨어 재단에서 발표한 GNU 일반 공중 사용 허가서 버전 2 (또는 취향에 따라) 이상의 라이선스 조항에 따라 배포합니다."
+msgstr "투나, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop eswm1 는 자유 소프트웨어 재단에서 발표한 GNU 일반 공중 사용 허가서 버전 2 (또는 취향에 따라) 이상의 라이선스 조항에 따라 배포합니다."
 
 #: ../expidus1-about/main.c:509
 #, c-format
@@ -811,8 +811,8 @@ msgstr "시스템"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus는 완전한 기능을 갖춘 데스크톱 환경을 함께 제공하는 프로그램 모음입니다.\n다음 프로그램은 Expidus 코어의 일부입니다."
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:14

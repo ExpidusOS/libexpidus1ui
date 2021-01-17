@@ -675,8 +675,8 @@ msgstr "Navštivte stránku <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Pokud víte o někom, kdo na tomto seznamu chybí, neváhejte a vyplňte hlášení o chybě na stránce <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Pokud víte o někom, kdo na tomto seznamu chybí, neváhejte a vyplňte hlášení o chybě na stránce <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -684,26 +684,26 @@ msgstr "Díky všem, kteří se podíleli na vytváření tohoto softwaru."
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Vlastníkem autorských práv Expidus 4 je Olivier Fourdan (fourdan@xfce.org). Různé komponenty jsou chráněny autorskými právy příslušných autorů."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Balíčky libexpidus1ui, libexpidus1util a exo jsou distribuovány pod podmínkami licence GNU Library General Public License publikované organizací Free Software Foundation; ve verzi 2 této licence, nebo (dle vašeho výběru) pozdější."
+msgstr "Balíčky libexpidus1ui, libexpidus1util a endo jsou distribuovány pod podmínkami licence GNU Library General Public License publikované organizací Free Software Foundation; ve verzi 2 této licence, nebo (dle vašeho výběru) pozdější."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Balíčky thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop a eswm1 jsou distribudovány pod podmínkami licence GNU General Public License publikované organizací Free Software Foundation; ve verzi 2 této licence, nebo (dle vašeho výběru) pozdější."
+msgstr "Balíčky lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop a eswm1 jsou distribudovány pod podmínkami licence GNU General Public License publikované organizací Free Software Foundation; ve verzi 2 této licence, nebo (dle vašeho výběru) pozdější."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -816,8 +816,8 @@ msgstr "Systém"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Prostředí Expidus je sbírkou programů, které dohromady poskytují plnohodnostné pracovní prostředí.\nSoučástí jádra prostředí Expidus jsou tyto programy:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

@@ -675,8 +675,8 @@ msgstr "Silahkan kunjungi <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Jika Anda merasa ada yang terlewat pada daftar ini, jangan ragu untuk mengirimkan laporan kutu ke <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Jika Anda merasa ada yang terlewat pada daftar ini, jangan ragu untuk mengirimkan laporan kutu ke <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -684,26 +684,26 @@ msgstr "Terima kasih pada semua pihak yang terlibat sehingga peranti lunak ini t
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 adalah hak cipta Olivier Fourdan (fourdan@xfce.org). Komponen berbeda merupakan hak cipta masing-masing pembuatnya."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Paket libexpidus1ui, libexpidus1util dan exo didistribusikan di bawah ketentuan GNU Library General Public License yang dipublikasikan oleh Free Software Foundation; baik versi 2 maupun (sesuai pilihan Anda) versi berikutnya."
+msgstr "Paket libexpidus1ui, libexpidus1util dan endo didistribusikan di bawah ketentuan GNU Library General Public License yang dipublikasikan oleh Free Software Foundation; baik versi 2 maupun (sesuai pilihan Anda) versi berikutnya."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Paket thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop dan eswm1 didistribusikan di bawah ketentuan GNU General Public License yang dipublikasikan oleh Free Software Foundation; baik versi 2 maupun (sesuai pilihan Anda) versi berikutnya."
+msgstr "Paket lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop dan eswm1 didistribusikan di bawah ketentuan GNU General Public License yang dipublikasikan oleh Free Software Foundation; baik versi 2 maupun (sesuai pilihan Anda) versi berikutnya."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -816,8 +816,8 @@ msgstr "Sistem"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus adalah sekumpulan program yang secara bersama-sama menyediakan sebuah lingkungan desktop dengan fitur yang lengkap.\nProgram-program berikut adalah bagian dari inti Expidus:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

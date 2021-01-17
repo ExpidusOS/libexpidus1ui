@@ -672,8 +672,8 @@ msgstr "Lisateavet leiad <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Kui sa tead kedagi, kes on siit loendist puudu, siis ära kõhkle esitamast veateadet meie arendussaidis <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Kui sa tead kedagi, kes on siit loendist puudu, siis ära kõhkle esitamast veateadet meie arendussaidis <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -681,26 +681,26 @@ msgstr "Suur tänu kõigile, kes on selle tarkvara loonud ning meile kasutatavak
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 autoriõigused kuuluvad Olivier Fourdan'ile (fourdan@xfce.org). Erinevate komponentide autoriõigused kuuluvad nende vastavatele autoritele."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Libexpidus1ui, libexpidus1util ja exo teegid on avaldatud Vaba Tarkvara Fondi GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
+msgstr "Libexpidus1ui, libexpidus1util ja endo teegid on avaldatud Vaba Tarkvara Fondi GNU Vähem Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU LGPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Rakendused thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop ja eswm1 on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU GPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
+msgstr "Rakendused lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop ja eswm1 on levitatud Vaba Tarkvara Fondi poolt avaldatud GNU Üldise Avaliku Litsentsi alusel (Free Software Foundation GNU GPL). Litsentsi versiooniks võib olla 2 või sinu soovil ka mõni hilisem versioon."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -813,8 +813,8 @@ msgstr "Süsteem"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus on tarkvarakogum, mis üheskoos tagab tervikliku töölauakeskkonna.\nExpidus tuumikrakendused on:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

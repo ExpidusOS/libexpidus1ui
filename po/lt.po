@@ -673,8 +673,8 @@ msgstr "Žiūrėkite <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Jei ko nors šiame sąraše trūksta, nesivaržykite ir užpildykite pranešimą apie klaidą, adresu <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Jei ko nors šiame sąraše trūksta, nesivaržykite ir užpildykite pranešimą apie klaidą, adresu <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -682,26 +682,26 @@ msgstr "Dėkojame visiems, kurie prisidėjo tam, kad ši programinė įranga bū
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 autorinės teisės priklauso Olivier Fourdan (fourdan@xfce.org). Kiti komponentai priklauso atitinkamiems autoriams."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Libexpidus1ui, libexpidus1util ir exo paketai yra platinami pagal Free Software Foundation paskelbtą GNU Bendrąją Viešąją Licenciją; arba pagal licencijos versiją 2, arba (jūsų nuožiūra) bet kurią vėlesnę versiją."
+msgstr "Libexpidus1ui, libexpidus1util ir endo paketai yra platinami pagal Free Software Foundation paskelbtą GNU Bendrąją Viešąją Licenciją; arba pagal licencijos versiją 2, arba (jūsų nuožiūra) bet kurią vėlesnę versiją."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Paketai thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop ir eswm1 yra platinami pagal Free Software Foundation paskelbtą GNU Bendrąją Viešąją Licenciją; arba pagal licencijos versiją 2, arba (jūsų nuožiūra) bet kurią vėlesnę versiją. "
+msgstr "Paketai lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop ir eswm1 yra platinami pagal Free Software Foundation paskelbtą GNU Bendrąją Viešąją Licenciją; arba pagal licencijos versiją 2, arba (jūsų nuožiūra) bet kurią vėlesnę versiją. "
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -814,8 +814,8 @@ msgstr "Sistema"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus - tai programų rinkinys, kartu sudarantis pilną darbalaukio aplinką.\nĮ Expidus branduolį įeina šios programos:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

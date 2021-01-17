@@ -674,8 +674,8 @@ msgstr "Visite <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Se considera que falta algo nesta lista; non dubide e redacte un informe de fallos a través de  <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues>."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Se considera que falta algo nesta lista; non dubide e redacte un informe de fallos a través de  <https://github.com/ExpidusOS/libexpidus1ui/issues>."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -683,26 +683,26 @@ msgstr "Grazas a todas as persoas que axudaron a facer que este software estea d
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 ten copyright de Olivier Fourdan (fourdan@xfce.org). Os diferentes compoñentes de teñen copyright dos seus respectivos autores."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Os paquetes libexpidus1ui, libexpidus1util e exo distribúense baixo os termos da Licenza pública xeral da biblioteca GNU tal e como a publica a Free Software Foundation; xa sexa a versión 2 da licenza, ou (segundo a súa elección) calquera versión posterior."
+msgstr "Os paquetes libexpidus1ui, libexpidus1util e endo distribúense baixo os termos da Licenza pública xeral da biblioteca GNU tal e como a publica a Free Software Foundation; xa sexa a versión 2 da licenza, ou (segundo a súa elección) calquera versión posterior."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Os paquetes thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop e eswm1 distribúense baixo os termos da licenza pública xeral GNU tal como foi publicada pola Free Software Foundation; xa sexa a versión 2 da licenza, ou (segundo a súa elección) calquera versión posterior."
+msgstr "Os paquetes lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop e eswm1 distribúense baixo os termos da licenza pública xeral GNU tal como foi publicada pola Free Software Foundation; xa sexa a versión 2 da licenza, ou (segundo a súa elección) calquera versión posterior."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -815,8 +815,8 @@ msgstr "Sistema"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "O Expidus é unha colección de programas que xuntos fornecen un contorno de escritorio con moitas características.\nOs seguintes programas forman parte do núcleo de Expidus:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

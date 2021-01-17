@@ -637,8 +637,8 @@ msgstr ""
 
 #: ../expidus1-about/main.c:120
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured "
-"desktop environment. The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured "
+"desktop environment. The following programs are part of the ExpidusOS Shell base:"
 msgstr ""
 
 #: ../expidus1-about/main.c:144
@@ -676,13 +676,13 @@ msgstr ""
 
 #: ../expidus1-about/main.c:284
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr ""
 
 #: ../expidus1-about/main.c:289
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
@@ -690,8 +690,8 @@ msgstr ""
 
 #: ../expidus1-about/main.c:296
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."

@@ -673,8 +673,8 @@ msgstr "Zie a.u.b. <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Als u vindt dat er iemand op deze lijst ontbreekt, aarzel dan niet en dien een foutmelding in op <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Als u vindt dat er iemand op deze lijst ontbreekt, aarzel dan niet en dien een foutmelding in op <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -682,26 +682,26 @@ msgstr "Dank aan allen die geholpen hebben om deze programmatuur beschikbaar te 
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 behoort auteursrechtelijk aan Olivier Fourdan (fourdan@xfce.org). De verschillende onderdelen behoren auteursrechtelijk aan hun respectievelijke makers."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "De pakketten libexpidus1ui, libexpidus1util en exo worden gedistribueerd onder de voorwaarden van de GNU Library General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van de Licentie, hetzij (naar uw keuze) enige nieuwere versie."
+msgstr "De pakketten libexpidus1ui, libexpidus1util en endo worden gedistribueerd onder de voorwaarden van de GNU Library General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van de Licentie, hetzij (naar uw keuze) enige nieuwere versie."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "De pakketten thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop en eswm1 worden gedistribueerd onder de voorwaarden van de GNU General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van die licentie, hetzij (naar uw keuze) enige nieuwere versie."
+msgstr "De pakketten lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop en eswm1 worden gedistribueerd onder de voorwaarden van de GNU General Public License zoals gepubliceerd door de Free Software Foundation; hetzij versie 2 van die licentie, hetzij (naar uw keuze) enige nieuwere versie."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -814,8 +814,8 @@ msgstr "Systeem"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus is een verzameling programma's die gezamenlijk een volledige functierijke werkomgeving bieden.\nDe volgende programma's maken deel uit van de kern van Expidus:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

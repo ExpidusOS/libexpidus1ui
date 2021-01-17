@@ -666,7 +666,7 @@ msgstr ""
 #: ../expidus1-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 msgstr ""
 
 #: ../expidus1-about/main.c:333
@@ -675,26 +675,26 @@ msgstr "Շնորհակալութիւն բոլոր նրանց, ովքեր աւգ�
 
 #: ../expidus1-about/main.c:350
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus4-ի հեղինակային իրաւունքը պատկանում է Օլիվեր Ֆաունդանին (fourdan@xfce.org)։ Տարբեր բաղադրիչների հեղինակային իրաւունքները պաշտպանուում են դրանք ստեղծող հեղինակների կողմից։"
 
 #: ../expidus1-about/main.c:355
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "libexpidus1ui, libxfcegui4, libexpidus1util, thunar-vfs եւ exo փաթեթները մշակուում են ըստ Free Software Foundation֊ի թողարկած, GNU գրադարանների հանրային արտաւնագրի երկրորդ կամ (կամընտրական) աւելի նոր տարբերակի կաննոների համաձայն։"
+msgstr "libexpidus1ui, libxfcegui4, libexpidus1util, lunar-vfs եւ endo փաթեթները մշակուում են ըստ Free Software Foundation֊ի թողարկած, GNU գրադարանների հանրային արտաւնագրի երկրորդ կամ (կամընտրական) աւելի նոր տարբերակի կաննոների համաձայն։"
 
 #: ../expidus1-about/main.c:362
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr " Thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop եւ eswm1 փաթեթները մշակուած են ըստ GNU հանրային արտաւնագրի երկրորդ կամ (կամընտրական) աւելի նոր տարբերակի կանոնների համաձայն։"
+msgstr " Thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop եւ eswm1 փաթեթները մշակուած են ըստ GNU հանրային արտաւնագրի երկրորդ կամ (կամընտրական) աւելի նոր տարբերակի կանոնների համաձայն։"
 
 #: ../expidus1-about/main.c:509
 #, c-format
@@ -812,8 +812,8 @@ msgstr "Համակարգ"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr ""
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:14

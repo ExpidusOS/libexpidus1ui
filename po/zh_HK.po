@@ -665,7 +665,7 @@ msgstr ""
 #: ../expidus1-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 msgstr ""
 
 #: ../expidus1-about/main.c:333
@@ -674,26 +674,26 @@ msgstr "感謝所有幫助製作出這個軟件的人！"
 
 #: ../expidus1-about/main.c:350
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 版權所有者為 Olivier Fourdan (fourdan@xfce.org)。不同的部件是由其各自的作者擁有其版權。"
 
 #: ../expidus1-about/main.c:355
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "libexpidus1ui，libexpidus1util和exo軟件包根據自由軟件基金會發布的GNU庫通用公共許可證的條款分發；許可的版本2，或（由您選擇）任何更高的版本。"
+msgstr "libexpidus1ui，libexpidus1util和endo軟件包根據自由軟件基金會發布的GNU庫通用公共許可證的條款分發；許可的版本2，或（由您選擇）任何更高的版本。"
 
 #: ../expidus1-about/main.c:362
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar，expidus1-appfinder，expidus1-panel，expidus1-session，expidus1-settings，esconf，xfdesktop和eswm1軟件包是根據自由軟件基金會發布的GNU通用公共許可證的條款分發的； 許可的版本2，或（由您選擇）任何更高的版本。"
+msgstr "lunar，expidus1-appfinder，expidus1-panel，expidus1-session，expidus1-settings，esconf，esdesktop和eswm1軟件包是根據自由軟件基金會發布的GNU通用公共許可證的條款分發的； 許可的版本2，或（由您選擇）任何更高的版本。"
 
 #: ../expidus1-about/main.c:509
 #, c-format
@@ -811,8 +811,8 @@ msgstr "系統"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr ""
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:14

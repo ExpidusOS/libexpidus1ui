@@ -676,8 +676,8 @@ msgstr "Consulteu <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Si sabeu d'algú que hagi d'estar en aquesta llista; no dubteu en informar d'aquest error a <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Si sabeu d'algú que hagi d'estar en aquesta llista; no dubteu en informar d'aquest error a <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -685,26 +685,26 @@ msgstr "Gràcies a tots aquells que heu ajudat a fer aquest programari una reali
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 té drets d'autor d'Olivier Fourdan (fourdan@xfce.org). Els diferents components tenen els drets d'autor dels seus respectius autors."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Els paquets libexpidus1ui, libexpidus1util i exo es distribueixen sota els termes de la llicència GNU Library General Public License, tal com l'ha publicada la Free Software Foundation; ja sigui la versió 2 de la llicència o, segons el vostre criteri, qualsevol versió posterior."
+msgstr "Els paquets libexpidus1ui, libexpidus1util i endo es distribueixen sota els termes de la llicència GNU Library General Public License, tal com l'ha publicada la Free Software Foundation; ja sigui la versió 2 de la llicència o, segons el vostre criteri, qualsevol versió posterior."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Els paquets thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop i eswm1 es distribueixen sota els termes de la llicència GNU General Public License, tal com l'ha publicada la Free Software Foundation; ja sigui la versió 2 de la llicència o, segons el vostre criteri, qualsevol versió posterior."
+msgstr "Els paquets lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop i eswm1 es distribueixen sota els termes de la llicència GNU General Public License, tal com l'ha publicada la Free Software Foundation; ja sigui la versió 2 de la llicència o, segons el vostre criteri, qualsevol versió posterior."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -817,8 +817,8 @@ msgstr "Sistema"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus és una col·lecció de programes que en conjunt ofereixen un entorn d'escriptori ple de funcionalitats.\nEls següents programes formen part del nucli de Expidus:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

@@ -680,8 +680,8 @@ msgstr "Se venligst <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Hvis der mangler nogen i listen, er du velkommen til at fejlrapportere det på <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Hvis der mangler nogen i listen, er du velkommen til at fejlrapportere det på <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -689,26 +689,26 @@ msgstr "Tak til alle som hjalp med at gøre softwaren tilgængelig!"
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Olivier Fourdan har ophavsret på Expidus 4 (fourdan@xfce.org). De enkelte forfattere har ophavsret på de forskellige komponenter."
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Pakkerne libexpidus1ui, libexpidus1util og exo distribueres under vilkårene i GNU Library General Public License som udgivet af Free Software Foundation; enten version 2 af licensen, eller (efter eget valg) enhver senere version."
+msgstr "Pakkerne libexpidus1ui, libexpidus1util og endo distribueres under vilkårene i GNU Library General Public License som udgivet af Free Software Foundation; enten version 2 af licensen, eller (efter eget valg) enhver senere version."
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Pakkerne thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop og eswm1 distribueres under vilkårene i GNU General Public License som udgivet af Free Software Foundation; enten version 2 af licensen, eller (efter eget valg) enhver senere version."
+msgstr "Pakkerne lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop og eswm1 distribueres under vilkårene i GNU General Public License som udgivet af Free Software Foundation; enten version 2 af licensen, eller (efter eget valg) enhver senere version."
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -821,8 +821,8 @@ msgstr "System"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus er en samling af programmer der tilsammen leverer et fuldt funktionsdygtigt skrivebordsmiljø. Følgende programmer er en del af kernen i Expidus:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

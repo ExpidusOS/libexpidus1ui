@@ -610,7 +610,7 @@ expidus_shortcuts_provider_has_shortcut (ExpidusShortcutsProvider *provider,
       primary = "Primary";
 
       /* Replace Primary in the string by Control using the same logic
-       * as exo_str_replace. */
+       * as endo_str_replace. */
 
       while (*shortcut != '\0')
         {

@@ -71,7 +71,7 @@ glade_expidus_titled_dialog_post_create (GladeWidgetAdaptor *adaptor,
 
       /* create the action area */
 G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-      /* TODO: Move exo_gtk_dialog_get_action_area to libexpidus1ui */
+      /* TODO: Move endo_gtk_dialog_get_action_area to libexpidus1ui */
       action_area = glade_widget_adaptor_create_internal (vbox,
           G_OBJECT (gtk_dialog_get_action_area (dialog)),
           "action_area", "dialog", FALSE, reason);
@@ -107,7 +107,7 @@ glade_expidus_titled_dialog_get_internal_child (GladeWidgetAdaptor *adaptor,
   else if (strcmp ("action_area", name) == 0)
     {
 G_GNUC_BEGIN_IGNORE_DEPRECATIONS
-      /* TODO: Move exo_gtk_dialog_get_action_area to libexpidus1ui */
+      /* TODO: Move endo_gtk_dialog_get_action_area to libexpidus1ui */
       child = gtk_dialog_get_action_area (dialog);
 G_GNUC_END_IGNORE_DEPRECATIONS
     }

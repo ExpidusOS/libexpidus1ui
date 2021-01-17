@@ -664,8 +664,8 @@ msgstr "Кіші көріністерді басқару D-Bus специфик�
 #: ../expidus1-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Бұл тізімнен қалып қойған біреуді білсеңіз, ақаулық хабарламасын <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> жеріне жазыңыз."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Бұл тізімнен қалып қойған біреуді білсеңіз, ақаулық хабарламасын <https://github.com/ExpidusOS/libexpidus1ui/issues> жеріне жазыңыз."
 
 #: ../expidus1-about/main.c:333
 msgid "Thanks to all who helped making this software available!"
@@ -673,26 +673,26 @@ msgstr "Осы бағдарламалық қамтаманы қолжетерл�
 
 #: ../expidus1-about/main.c:350
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 құқықтарына Olivier Fourdan (fourdan@xfce.org) ие. Әр түрлі құрауыштар өз авторларының меншігі болып табылады."
 
 #: ../expidus1-about/main.c:355
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "libexpidus1ui, libexpidus1util және exo дестелері Free Software Foundation жариялаған GNU Library General Public License аясында таратылады; нұсқасы 2 немесе (таңдауыңызша) одан кейін шыққан кез-келгені."
+msgstr "libexpidus1ui, libexpidus1util және endo дестелері Free Software Foundation жариялаған GNU Library General Public License аясында таратылады; нұсқасы 2 немесе (таңдауыңызша) одан кейін шыққан кез-келгені."
 
 #: ../expidus1-about/main.c:362
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop және eswm1 дестелері Free Software Foundation жариялаған GNU General Public License аясында таратылады; нұсқасы 2 немесе (таңдауыңызша) одан кейін шыққан кез-келгені."
+msgstr "lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop және eswm1 дестелері Free Software Foundation жариялаған GNU General Public License аясында таратылады; нұсқасы 2 немесе (таңдауыңызша) одан кейін шыққан кез-келгені."
 
 #: ../expidus1-about/main.c:509
 #, c-format
@@ -810,8 +810,8 @@ msgstr "Жүйелік"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus - бұл мүмкіндіктері көп жұмыс үстел ортасын құрайтын бірнеше бағдарламалардың жинағы.\nКелесі бағдарламалар Expidus өзегін құрайды:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:14

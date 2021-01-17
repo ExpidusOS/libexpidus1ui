@@ -27,11 +27,11 @@ msgstr "S’u arrit të hapej shfletuesi për dokumentimin në internet"
 #: ../libexpidus1ui/expidus-dialogs.c:265
 #, c-format
 msgid "Do you want to read the %s manual online?"
-msgstr "Doni ta lexoni doracakun e %s në internet?"
+msgstr "Doni ta lendoni doracakun e %s në internet?"
 
 #: ../libexpidus1ui/expidus-dialogs.c:267
 msgid "Do you want to read the manual online?"
-msgstr "Doni ta lexoni doracakun në internet?"
+msgstr "Doni ta lendoni doracakun në internet?"
 
 #: ../libexpidus1ui/expidus-dialogs.c:273
 msgid ""
@@ -47,7 +47,7 @@ msgstr "_Anuloje"
 
 #: ../libexpidus1ui/expidus-dialogs.c:277
 msgid "_Read Online"
-msgstr "_Lexojeni Në Internet"
+msgstr "_Lendojeni Në Internet"
 
 #: ../libexpidus1ui/expidus-dialogs.c:286
 msgid "_Always go directly to the online documentation"
@@ -666,8 +666,8 @@ msgstr "Sendërton specifikime D-Bus administrimi miniaturash."
 #: ../expidus1-about/main.c:329
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "Nëse dini dikë që mungon në këtë listë, mos ngurroni të hapni një çështje te <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "Nëse dini dikë që mungon në këtë listë, mos ngurroni të hapni një çështje te <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
 
 #: ../expidus1-about/main.c:333
 msgid "Thanks to all who helped making this software available!"
@@ -675,26 +675,26 @@ msgstr "Falënderime për të gjithë ata që ndihmuan në realizimin e këtij s
 
 #: ../expidus1-about/main.c:350
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 është e drejtë kopjimi e Olivier Fourdan-it (fourdan@xfce.org). Përbërësit e ndryshëm janë nën të drejta kopjimi nga autorët përkatës."
 
 #: ../expidus1-about/main.c:355
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "Paketat libexpidus1ui, libexpidus1util dhe exo qarkullojnë sipas kushteve të licencës GNU Library General Public License, siç botohet ajo nga Free Software Foundation; versioni 2 i Licencës, ose (në dëshirën tuaj) çfarëdo versioni të mëvonshëm."
+msgstr "Paketat libexpidus1ui, libexpidus1util dhe endo qarkullojnë sipas kushteve të licencës GNU Library General Public License, siç botohet ajo nga Free Software Foundation; versioni 2 i Licencës, ose (në dëshirën tuaj) çfarëdo versioni të mëvonshëm."
 
 #: ../expidus1-about/main.c:362
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "Paketat thunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, xfdesktop dhe eswm1 shpërndahen sipas kushteve të licencës GNU General Public License, siç botohet nga Free Software Foundation; versioni 2 i Licencës, ose (në dëshirën tuaj) çfarëdo versioni të mëvonshëm."
+msgstr "Paketat lunar, expidus1-appfinder, expidus1-panel, expidus1-session, expidus1-settings, esconf, esdesktop dhe eswm1 shpërndahen sipas kushteve të licencës GNU General Public License, siç botohet nga Free Software Foundation; versioni 2 i Licencës, ose (në dëshirën tuaj) çfarëdo versioni të mëvonshëm."
 
 #: ../expidus1-about/main.c:509
 #, c-format
@@ -812,8 +812,8 @@ msgstr "Sistem"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:12
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus-ja është një koleksion programesh që të tërë tok furnizojnë një mjedis desktop të plotë.\nProgramet vijuese janë pjesë e paketës bazë Expidus:"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:14

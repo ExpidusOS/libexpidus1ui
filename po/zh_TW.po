@@ -675,8 +675,8 @@ msgstr "請見 <https://www.xfce.org/about/credits>"
 #: ../expidus1-about/main.c:300
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "若您發現清單中有些人沒有列出來，請不要猶豫在 <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> 遞交臭蟲回報。"
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "若您發現清單中有些人沒有列出來，請不要猶豫在 <https://github.com/ExpidusOS/libexpidus1ui/issues> 遞交臭蟲回報。"
 
 #: ../expidus1-about/main.c:304
 msgid "Thanks to all who helped making this software available!"
@@ -684,26 +684,26 @@ msgstr "感謝所有幫助製作出這個軟體的人！"
 
 #: ../expidus1-about/main.c:321
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 著作權所有者為 Olivier Fourdan (fourdan@xfce.org)。不同的部件是由其各自的作者擁有其著作權。"
 
 #: ../expidus1-about/main.c:326
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "libexpidus1ui、libexpidus1util 與 exo 套件是基於自由軟體基金會發佈的 GNU Library General Public License 授權條款給予授權；不管是該授權的第 2 版，或（根據您自己選擇）的後續版本都可以。"
+msgstr "libexpidus1ui、libexpidus1util 與 endo 套件是基於自由軟體基金會發佈的 GNU Library General Public License 授權條款給予授權；不管是該授權的第 2 版，或（根據您自己選擇）的後續版本都可以。"
 
 #: ../expidus1-about/main.c:333
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar、expidus1-appfinder、expidus-panel、expidus1-session、expidus1-settings、esconf、xfdeskop 與 eswm1 套件是基於自由軟體基金會發佈的 GNU General Public License 授權條款給予授權；不管是該授權的第 2 版，或（根據您自己選擇）的後續版本都可以。"
+msgstr "lunar、expidus1-appfinder、expidus-panel、expidus1-session、expidus1-settings、esconf、xfdeskop 與 eswm1 套件是基於自由軟體基金會發佈的 GNU General Public License 授權條款給予授權；不管是該授權的第 2 版，或（根據您自己選擇）的後續版本都可以。"
 
 #: ../expidus1-about/main.c:479
 #, c-format
@@ -816,8 +816,8 @@ msgstr "系統"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus 是個程式的集合，這些程式一同提供多功能的桌面環境。\n下列程式為 Expidus 的核心部份："
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

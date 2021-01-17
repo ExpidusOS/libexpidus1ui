@@ -299,7 +299,7 @@
 - Better documentation processing
 - Change expidus_dialog_show_help(_with_version)
 - Default debug to yes instead of full
-- Remove exo dependancy Bug #13326
+- Remove endo dependancy Bug #13326
 - fix: add libexpidus1ui_get_resource to abi check symbols Bug #13326
 - Let autotools find and invoke glib-compile-resources Bug #13326
 - Add support for GOBJECT-INTROSPECTION Bug #13461
@@ -393,7 +393,7 @@
 - Use <Primary> instead of <Control> (bug #8200).
 - Fix keyboard shortcuts with keypad (bug #4178).
 - Autotools updates.
-- Prefer exo-open for opening the manual pages.
+- Prefer endo-open for opening the manual pages.
 - Add error domain for ExpidusSmClient.
 - Translation updates: Amharic, Arabic, Asturian, Bulgarian, Bengali,
   Catalan (Valencian), Czech, Danish, German, Greek, English (United
@@ -440,7 +440,7 @@
 - Add Alt + F1 as a shortcut for applications menu.
 - Remove unused code from the internal header widget.
 - Add expidus1-about from expidus-utils package.
-- Use xdt-csource instead of exo-csource, depend on xdt 4.9.0.
+- Use xdt-csource instead of endo-csource, depend on xdt 4.9.0.
 - Update to new expidus1-appfinder commands.
 - Fix build against 3.9 Glade (bug #7334).
 - Add shortcuts for XF86WWW and XF86Mail.

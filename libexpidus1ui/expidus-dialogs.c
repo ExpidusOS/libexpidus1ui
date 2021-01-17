@@ -88,7 +88,7 @@ expidus_dialog_show_help_uri (GdkScreen *screen,
   g_return_if_fail (GDK_IS_SCREEN (screen));
   g_return_if_fail (parent == NULL || GTK_IS_WINDOW (parent));
 
-  path = g_find_program_in_path ("exo-open");
+  path = g_find_program_in_path ("endo-open");
   if (G_LIKELY (path != NULL))
     {
       cmd = g_strdup_printf ("%s --launch WebBrowser '%s'", path, uri->str);
@@ -100,7 +100,7 @@ expidus_dialog_show_help_uri (GdkScreen *screen,
     }
   else
     {
-      /* not very likely to happen, but it is possible exo is not installed */
+      /* not very likely to happen, but it is possible endo is not installed */
       result = gtk_show_uri_on_window (parent, uri->str, gtk_get_current_event_time (), &error);
     }
 

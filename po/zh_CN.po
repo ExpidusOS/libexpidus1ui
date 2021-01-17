@@ -676,8 +676,8 @@ msgstr "实现缩略图管理 D-Bus 规范。"
 #: ../expidus1-about/main.c:340
 msgid ""
 "If you know of anyone missing from this list; don't hesitate and file a bug "
-"on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."
-msgstr "如果您知道此列表漏掉了某个人，请毫不犹豫地在 <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> 上提交缺陷。"
+"on <https://github.com/ExpidusOS/libexpidus1ui/issues> ."
+msgstr "如果您知道此列表漏掉了某个人，请毫不犹豫地在 <https://github.com/ExpidusOS/libexpidus1ui/issues> 上提交缺陷。"
 
 #: ../expidus1-about/main.c:344
 msgid "Thanks to all who helped making this software available!"
@@ -685,26 +685,26 @@ msgstr "感谢所有成就该软件的人们！"
 
 #: ../expidus1-about/main.c:361
 msgid ""
-"Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+"ExpidusOS Shell is designed by Midstall Software. The different "
 "components are copyrighted by their respective authors."
 msgstr "Expidus 4 版权归 Olivier Fourdan(fourdan@xfce.org)所有。不同组件的版权归它们各自的作者所有。"
 
 #: ../expidus1-about/main.c:366
 msgid ""
-"The libexpidus1ui, libexpidus1util and exo packages are distributed under the "
+"The libexpidus1ui, libexpidus1util and endo packages are distributed under the "
 "terms of the GNU Library General Public License as published by the Free "
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version."
-msgstr "libexpidus1ui、libexpidus1util 和 exo 软件包以自由软件基金会发布的 GNU 宽通用公共许可协议第 2 版或按（您可以选择的）更高版本发布。"
+msgstr "libexpidus1ui、libexpidus1util 和 endo 软件包以自由软件基金会发布的 GNU 宽通用公共许可协议第 2 版或按（您可以选择的）更高版本发布。"
 
 #: ../expidus1-about/main.c:373
 msgid ""
-"The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-"expidus1-settings, esconf, xfdesktop and eswm1 are distributed under the terms "
+"The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+"expidus1-settings, esconf, esdesktop and eswm1 are distributed under the terms "
 "of the GNU General Public License as published by the Free Software "
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
-msgstr "thunar、expidus1-appfinder、expidus1-panel、expidus1-session、expidus1-settings、esconf、xfdesktop 和 eswm1 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第 2 版或按（您可以选择的）更高版本发布。"
+msgstr "lunar、expidus1-appfinder、expidus1-panel、expidus1-session、expidus1-settings、esconf、esdesktop 和 eswm1 软件包以自由软件基金会发布的 GNU 通用公共许可协议的第 2 版或按（您可以选择的）更高版本发布。"
 
 #: ../expidus1-about/main.c:519
 #, c-format
@@ -813,8 +813,8 @@ msgstr "系统"
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:13
 msgid ""
-"Expidus is a collection of programs that together provide a full-featured desktop environment.\n"
-"The following programs are part of the Expidus core:"
+"ExpidusOS Shell is a collection of programs that together provide a full-featured desktop environment.\n"
+"The following programs are part of the ExpidusOS Shell base:"
 msgstr "Expidus 是一个提供全功能桌面环境的程序集。\n以下程序是 Expidus 核心的部分："
 
 #: ../expidus1-about/expidus1-about-dialog.glade.h:15

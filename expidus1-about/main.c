@@ -36,10 +36,6 @@
 #endif
 
 #define MARGIN 20
-#define DOCS_URL "https://docs.xfce.com/expidus/"
-#define DOCS_URL_SLUG "/start"
-
-
 
 typedef struct
 {
@@ -47,6 +43,7 @@ typedef struct
   const gchar *icon_name;
   const gchar *display_name;
   const gchar *description;
+	const gchar *website;
 }
 AboutModules;
 
@@ -133,57 +130,62 @@ expidus_about_about (GtkWidget *vbox)
       { "eswm1",
         "com.expidus.eswm1",
         N_("Window Manager"),
-        N_("Handles the placement of windows on the screen.")
+        N_("Handles the placement of windows on the screen."),
+				"https://github.com/ExpidusOS/eswm"
       },
       { "expidus1-panel",
         "com.expidus.panel",
         N_("Panel"),
-        N_("Provides a home for window buttons, launchers, app menu and more.")
+        N_("Provides a home for window buttons, launchers, app menu and more."),
+				"https://github.com/ExpidusOS/panel"
       },
-      { "xfdesktop",
-        "com.expidus.xfdesktop",
+      { "esdesktop",
+        "com.expidus.esdesktop",
         N_("Desktop Manager"),
-        N_("Sets desktop backgrounds, handles icons and more.")
+        N_("Sets desktop backgrounds, handles icons and more."),
+				"https://github.com/ExpidusOS/esdesktop"
       },
-      { "thunar",
-        "com.expidus.thunar",
+      { "lunar",
+        "com.expidus.lunar",
         N_("File Manager"),
-        N_("Manages your files in a modern, easy-to-use and fast way.")
-      },
-      { "thunar-volman",
-        "com.expidus.volman",
-        N_("Volume Manager"),
-        N_("Manages removable drives and media for Thunar.")
+        N_("Manages your files in a modern, easy-to-use and fast way."),
+				"https://github.com/ExpidusOS/lunar"
       },
       { "expidus1-session",
         "com.expidus.session",
         N_("Session Manager"),
-        N_("Saves and restores your session, handles startup, autostart and shutdown.")
+        N_("Saves and restores your session, handles startup, autostart and shutdown."),
+				"https://github.com/ExpidusOS/session"
       },
       { "expidus1-settings",
         "com.expidus.settings.manager",
         N_("Setting System"),
-        N_("Configures appearance, display, keyboard and mouse settings.")
+        N_("Configures appearance, display, keyboard and mouse settings."),
+				"https://github.com/ExpidusOS/settings"
       },
       { "expidus1-appfinder",
         "com.expidus.appfinder",
         N_("Application Finder"),
-        N_("Quickly finds and launches applications installed on your system.")
+        N_("Quickly finds and launches applications installed on your system."),
+				"https://github.com/ExpidusOS/appfinder"
       },
       { "esconf",
         "com.expidus.settings.editor",
         N_("Settings Daemon"),
-        N_("Stores your settings in a D-Bus-based configuration system.")
+        N_("Stores your settings in a D-Bus-based configuration system."),
+				"https://github.com/ExpidusOS/esconf"
       },
-      { "garcon",
+      { "markon",
         "com.expidus.garcon",
         N_("A Menu Library"),
-        N_("Implements a freedesktop.org compliant menu based on GLib and GIO.")
+        N_("Implements a freedesktop.org compliant menu based on GLib and GIO."),
+				"https://github.com/ExpidusOS/markon"
       },
       { "tumbler",
-        "com.expidus.tumbler",
+        "org.xfce.tumbler",
         N_("Thumbnails Service"),
-        N_("Implements the thumbnail management D-Bus specification.")
+        N_("Implements the thumbnail management D-Bus specification."),
+				"https://github.com/xfce-mirror/tumbler"
       }
     };
 
@@ -199,9 +201,9 @@ expidus_about_about (GtkWidget *vbox)
       gchar         *str;
 
       info = expidus_about_info + i;
-      format = "<b>%s</b> (<a href='%s%s%s'>%s</a>)";
-      str = g_markup_printf_escaped (format, _(info->display_name), DOCS_URL,
-                                     info->name, DOCS_URL_SLUG, info->name);
+      format = "<b>%s</b> (<a href='%s'>%s</a>)";
+      str = g_markup_printf_escaped (format, _(info->display_name),
+                                     info->website, info->name);
 
       component = gtk_label_new (NULL);
       gtk_label_set_markup (GTK_LABEL (component), str);
@@ -298,7 +300,7 @@ expidus_about_credits (GtkTextBuffer *buffer)
 
   gtk_text_buffer_insert (buffer, &end,
       _("If you know of anyone missing from this list; don't hesitate and "
-        "file a bug on <https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues> ."), -1);
+        "file a bug on <http://github.com/ExpidusOS/libexpidus1ui> ."), -1);
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert_with_tags (buffer, &end,
       _("Thanks to all who helped making this software available!"), -1, title, NULL);
@@ -318,20 +320,20 @@ expidus_about_copyright (GtkTextBuffer *buffer)
   gtk_text_buffer_get_end_iter (buffer, &end);
 
   gtk_text_buffer_insert (buffer, &end,
-      _("Expidus 4 is copyright Olivier Fourdan (fourdan@xfce.org). The different "
+      _("ExpidusOS Shell is designed by Midstall Software. The different "
         "components are copyrighted by their respective authors."), -1);
 
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
-      _("The libexpidus1ui, libexpidus1util and exo packages are "
+      _("The libexpidus1ui, libexpidus1util and endo packages are "
         "distributed under the terms of the GNU Library General Public License as "
         "published by the Free Software Foundation; either version 2 of the License, or "
         "(at your option) any later version."), -1);
 
   gtk_text_buffer_insert (buffer, &end, "\n\n", -1);
   gtk_text_buffer_insert (buffer, &end,
-      _("The packages thunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
-        "expidus1-settings, esconf, xfdesktop and eswm1 are "
+      _("The packages lunar, expidus1-appfinder, expidus1-panel, expidus1-session, "
+        "expidus1-settings, esconf, esdesktop and eswm1 are "
         "distributed under the terms of the GNU General Public License as "
         "published by the Free Software Foundation; either version 2 of the "
         "License, or (at your option) any later version."), -1);

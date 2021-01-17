@@ -31,7 +31,7 @@ dnl ***************************
 dnl *** Initialize autoconf ***
 dnl ***************************
 AC_COPYRIGHT([Copyright (c) 2007-2019 The Expidus development team])
-AC_INIT([libexpidus1ui], [libexpidus1ui_version], [https://gitlab.xfce.com/expidus/libexpidus1ui/-/issues], [libexpidus1ui])
+AC_INIT([libexpidus1ui], [libexpidus1ui_version], [https://github.com/ExpidusOS/libexpidus1ui/issues], [libexpidus1ui])
 AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIRS([m4])
 AC_REVISION([libexpidus1ui_version_build])
